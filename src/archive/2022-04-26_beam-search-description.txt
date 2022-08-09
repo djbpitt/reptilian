@@ -1,0 +1,79 @@
+2022-04-26
+
+Beam search description
+=======================
+
+Assumptions:
+
+1) All tokens appear exactly once in all witnesses
+2) Assume invisible START and END nodes shared by all witnesses
+
+===
+
+Witness 0: the/0 red/1 and/2 some/3 black/4 cats/5
+Witness 1: the/0 black/1 and/2 some/3 red/4 cats/5
+
+@Root
+[[the], 0] (* we have excluded repetition)
+
+TIER 1 (1 option)
+
+@[[the], 0]
+[[the, red], 6]
+[[the, black], 6]
+[[the, SKIP], 4]
+
+TIER 2 (3 options)
+
+@[[the, red], 6]
+[[the, red, cat], 10]
+
+@[[the, black], 6]
+[[the, black, cat], 10]
+
+@[[the, SKIP], 4]
+[[the, SKIP, and], 6]
+
+TIER 3 (3 options)
+
+@[[the, red, cats], 10]
+DONE
+
+@[[the, black, cats], 10]
+DONE
+
+@[[the, SKIP, and], 6]
+[[the, SKIP, and, some], 8]
+
+TIER 4 (3 options)
+
+@[[the, red, cats], 10]
+DONE (aligned 3 tokens)
+
+@[[the, black, cats], 10]
+DONE (aligned 3 tokens)
+
+@[[the, SKIP, and, some, cats], 10]
+DONE (aligned 4 tokens)
+
+===
+
+Assessment:
+
+1) Weights at each step are number of tokens no longer available (already aligned or skipped). 
+2) Favor β lowest weights.
+3) All weights will be same at the end of all branches.
+4) Favor largest number of aligned tokens at end.
+
+In case of ties? Options:
+
+1) Prefer longer gaps over more gaps (affine)
+2) Prefer alignment with larger number of shared tokens in corresponding gaps
+3) Choose one arbitrarily
+______
+
+2022-06-28
+
+Status and work plan
+====================
+
