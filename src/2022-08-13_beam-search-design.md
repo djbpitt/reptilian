@@ -22,3 +22,25 @@ Witnesses will often agree, and if we track the ones that are covered by a parti
 2. **Exit condition:** Each beam option becomes a list of blocks taken, so that the end result is a list of blocks that contains the majority order. When we reach the final token of the majority of witnesses, we’re done.
 3. We need to reassess how we evaluate the options. Start from shared Start token, advance one position in each witness (plus skip), and compute the score for advancing all pointers for all witnesses in sync with that one. The maximum number of scorings equals the number of witnesses plus one.
 4. **Caution:** Is it possible that *all* first blocks are transposed? (No, because the Start token must be part of the eventual graph.)
+
+# 2022-09-13
+
+## Alignments and skipping during beam search
+
+1. We get an okay alignment, although limited to full-depth, non-repeating blocks.
+2. The non-aligned ranges between aligned blocks may have new full-depth, non-repeating blocks that we could align on a next pass using the same methods. **TODO:** we don’t do this yet.
+3. Our initial approach skipped only if we got no results without skipping, which sometimes missed better alignments. By always skipping a large number of times we got better results (yay!). This is bad (boo!) for three reasons:
+   1. Magic number of skips (on top of magic beam size)
+   2. Skips when it doesn’t have to skip (extra work, may not scale)
+   3. The problem is transpositions, but skipping all the time ignores transpositions. CollateX recognizes transpositions and only then triggers special handling.
+4. What we know about transposition
+   1. The score for each step is the total number of aligned and skipped tokens, and we favor lower scores because they have the highest potential for future alignment. Scores are precomputed for all blocks.
+   2. The difference between the score at the beginning of a step and at the end is the change in the number of tokens aligned or skipped. A big change in score combined with a small step forward means a large step forward in other witnesses, which increases the likelihood of (but does not guarantee) a skip.
+   3. Could we use that difference as a trigger for a) when to skip during a beam step and b) how far to skip?
+   4. Beyond the (correct) assumption that a larger change in score means a greater likelihood of transposition, do we have more certain information and where there are or are not transpositions?
+
+## Other stuff to fix
+
+1. Process unaligned ranges with same full-depth, non-repeating block alignment until we run out.
+2. We are not doing anything with first and last unaligned tokens; we look only between blocks.
+1. **New method needed:** At some point we run out of full-depth, non-repeating blocks and have to deal with blocks that are not full-depth. We don’t do this yet.
