@@ -2,956 +2,1908 @@ digraph {
 	0 [label=Root]
 	1 [label="the individuals of the same variety or sub - variety of our older cultivated plants and animals , one of the first points which strikes us"]
 	0 -> 1
-	2 [label="is , that they generally differ"]
+	2 [label="[(30, 31), (12821, 12822), (25672, 25673), (38734, 38735), (52052, 52052), (66283, 66283)]"]
 	0 -> 2
-	3 [label="than do the individuals of any one species or variety in a state of nature ."]
+	3 [label="is , that they generally differ"]
 	0 -> 3
-	4 [label="we reflect on the vast diversity of the plants and animals which have been cultivated , and which have varied during all ages under the most different climates and treatment ,"]
+	4 [label="[(37, 43), (12828, 12832), (25679, 25683), (38741, 38745), (52058, 52062), (66289, 66293)]"]
 	0 -> 4
-	5 [label="we are driven to conclude that this"]
+	5 [label="than do the individuals of any one species or variety in a state of nature ."]
 	0 -> 5
-	6 [label="due to our domestic productions having been raised under conditions of life not so uniform as , and somewhat different from , those to which the parent - species"]
+	6 [label="[(59, 60), (12848, 12849), (25699, 25700), (38761, 38762), (52078, 52080), (66309, 66311)]"]
 	0 -> 6
-	7 [label="been exposed under nature . there is"]
+	7 [label="we reflect on the vast diversity of the plants and animals which have been cultivated , and which have varied during all ages under the most different climates and treatment ,"]
 	0 -> 7
-	8 [label=", some probability in the view propounded by andrew knight , that this variability may be partly connected with excess of food . it seems"]
+	8 [label="[(91, 93), (12880, 12882), (25731, 25733), (38793, 38795), (52111, 52111), (66342, 66342)]"]
 	0 -> 8
-	9 [label="clear that organic beings must be exposed during several generations to"]
+	9 [label="we are driven to conclude that this"]
 	0 -> 9
-	10 [label="to cause any"]
+	10 [label="[(100, 104), (12889, 12893), (25740, 25744), (38802, 38806), (52118, 52121), (66349, 66352)]"]
 	0 -> 10
-	11 [label="amount of variation ; and that"]
+	11 [label="due to our domestic productions having been raised under conditions of life not so uniform as , and somewhat different from , those to which the parent - species"]
 	0 -> 11
-	12 [label="when the organisation has once begun to vary , it generally continues"]
+	12 [label="[(133, 134), (12922, 12923), (25773, 25774), (38835, 38836), (52150, 52151), (66381, 66382)]"]
 	0 -> 12
-	13 [label="for many generations . no case is on record of a variable"]
+	13 [label="been exposed under nature . there is"]
 	0 -> 13
-	14 [label="ceasing to"]
+	14 [label="[(141, 146), (12930, 12934), (25781, 25785), (38843, 38847), (52158, 52162), (66389, 66391)]"]
 	0 -> 14
-	15 [label="under cultivation . our oldest cultivated plants , such as wheat , still"]
+	15 [label=", some probability in the view propounded by andrew knight , that this variability may be partly connected with excess of food . it seems"]
 	0 -> 15
-	16 [label="yield new varieties : our oldest domesticated animals are still capable of rapid improvement or modification ."]
+	16 [label="[(171, 172), (12959, 12960), (25810, 25811), (38872, 38873), (52187, 52187), (66416, 66416)]"]
 	0 -> 16
-	17 [label="monstrosities cannot be separated by any"]
+	17 [label="clear that organic beings must be exposed during several generations to"]
 	0 -> 17
-	18 [label="variations ."]
+	18 [label="[(183, 188), (12971, 12976), (25822, 25827), (38884, 38889), (52198, 52200), (66427, 66429)]"]
 	0 -> 18
-	19 [label="any change in the conditions"]
+	19 [label="to cause any"]
 	0 -> 19
-	20 [label=". nothing is more easy than to tame an animal , and few things more difficult than to get it to breed freely under confinement , even"]
+	20 [label="[(191, 192), (12979, 12980), (25830, 25831), (38892, 38893), (52203, 52204), (66432, 66433)]"]
 	0 -> 20
-	21 [label="when the male and female unite . how many animals there are which will not breed , though"]
+	21 [label="amount of variation ; and that"]
 	0 -> 21
-	22 [label="in their native country ! this is generally"]
+	22 [label="[(198, 198), (12986, 12986), (25837, 25837), (38899, 38900), (52210, 52211), (66439, 66440)]"]
 	0 -> 22
-	23 [label="attributed to vitiated instincts"]
+	23 [label="when the organisation has once begun to vary , it generally continues"]
 	0 -> 23
-	24 [label="many cultivated plants display the utmost vigour , and yet rarely or never seed ! in some few"]
+	24 [label="[(210, 212), (12998, 13000), (25849, 25851), (38912, 38914), (52223, 52224), (66452, 66453)]"]
 	0 -> 24
-	25 [label="cases it has been"]
+	25 [label="for many generations . no case is on record of a variable"]
 	0 -> 25
-	26 [label=", such as a little more or less water at some particular period of growth , will determine whether or not"]
+	26 [label="[(224, 225), (13012, 13013), (25863, 25864), (38926, 38927), (52236, 52237), (66465, 66466)]"]
 	0 -> 26
-	27 [label=". i cannot here"]
+	27 [label="ceasing to"]
 	0 -> 27
-	28 [label="details which i have collected"]
+	28 [label="[(227, 229), (13015, 13017), (25866, 25868), (38929, 38931), (52239, 52240), (66468, 66469)]"]
 	0 -> 28
-	29 [label="on this curious subject ; but to show how singular the laws are which determine the reproduction of animals under confinement , i may"]
+	29 [label="under cultivation . our oldest cultivated plants , such as wheat , still"]
 	0 -> 29
-	30 [label="mention that carnivorous animals , even from the tropics , breed in this country pretty freely under confinement , with the exception of the plantigrades or bear family"]
+	30 [label="[(242, 243), (13030, 13031), (25881, 25882), (38944, 38945), (52253, 52253), (66482, 66482)]"]
 	0 -> 30
-	31 [label="; whereas"]
+	31 [label="yield new varieties : our oldest domesticated animals are still capable of rapid improvement or modification ."]
 	0 -> 31
-	32 [label="carnivorous birds , with the rarest exceptions , hardly ever lay fertile eggs . many exotic plants have pollen utterly worthless , in the same"]
+	32 [label="[(260, 320), (13048, 13108), (25899, 25959), (38962, 39022), (52270, 52760), (66499, 66991)]"]
 	0 -> 32
-	33 [label="condition as in the most sterile hybrids . when , on the one hand , we see domesticated animals and plants , though often weak and sickly ,"]
+	33 [label="monstrosities cannot be separated by any"]
 	0 -> 33
-	34 [label="freely under confinement ; and when , on the other hand , we see individuals , though taken young from a state of nature"]
+	34 [label="[(326, 332), (13114, 13120), (25965, 25971), (39028, 39034), (52766, 52770), (66997, 67001)]"]
 	0 -> 34
-	35 [label="perfectly tamed , long - lived"]
+	35 [label="variations ."]
 	0 -> 35
-	36 [label="and healthy ( of which i could give numerous instances ), yet having their reproductive system so seriously affected by unperceived causes as to fail"]
+	36 [label="[(334, 417), (13122, 13205), (25973, 26056), (39036, 39119), (52772, 52891), (67003, 67123)]"]
 	0 -> 36
-	37 [label=", we need not be surprised at this system , when it does act under confinement , acting"]
+	37 [label="any change in the conditions"]
 	0 -> 37
-	38 [label=", and producing offspring"]
+	38 [label="[(422, 424), (13210, 13212), (26061, 26063), (39124, 39126), (52896, 52960), (67128, 67191)]"]
 	0 -> 38
-	39 [label=influence]
+	39 [label=". nothing is more easy than to tame an animal , and few things more difficult than to get it to breed freely under confinement , even"]
 	0 -> 39
-	40 [label="i find in the domestic duck that the bones of the wing weigh less and the bones of the leg more , in proportion to the whole skeleton , than do the same bones in the wild"]
+	40 [label="[(451, 455), (13239, 13243), (26090, 26094), (39153, 39157), (52987, 52987), (67218, 67218)]"]
 	0 -> 40
-	41 [label="duck ; and"]
+	41 [label="when the male and female unite . how many animals there are which will not breed , though"]
 	0 -> 41
-	42 [label="this change may be safely attributed to the domestic duck flying much less , and walking more , than its wild"]
+	42 [label="[(473, 480), (13261, 13268), (26112, 26119), (39175, 39182), (53005, 53011), (67236, 67242)]"]
 	0 -> 42
-	43 [label=". the great and inherited development of the udders in cows and goats in countries where they are habitually milked , in comparison with"]
+	43 [label="in their native country ! this is generally"]
 	0 -> 43
-	44 [label="these organs in other countries , is"]
+	44 [label="[(488, 488), (13276, 13276), (26127, 26127), (39190, 39190), (53019, 53023), (67250, 67254)]"]
 	0 -> 44
-	45 [label="another instance of the"]
+	45 [label="attributed to vitiated instincts"]
 	0 -> 45
-	46 [label="of use . not"]
+	46 [label="[(492, 495), (13280, 13283), (26131, 26134), (39194, 39197), (53027, 53028), (67258, 67259)]"]
 	0 -> 46
-	47 [label="can be named which has not in some country drooping ears ; and the view"]
+	47 [label="many cultivated plants display the utmost vigour , and yet rarely or never seed ! in some few"]
 	0 -> 47
-	48 [label=suggested]
+	48 [label="[(513, 514), (13301, 13302), (26152, 26153), (39215, 39216), (53046, 53046), (67277, 67277)]"]
 	0 -> 48
-	49 [label="that the drooping is due to the disuse of the muscles of the ear , from the animals"]
+	49 [label="cases it has been"]
 	0 -> 49
-	50 [label=alarmed]
+	50 [label="[(518, 524), (13306, 13311), (26157, 26162), (39220, 39225), (53050, 53056), (67281, 67287)]"]
 	0 -> 50
-	51 [label=", seems probable ."]
+	51 [label=", such as a little more or less water at some particular period of growth , will determine whether or not"]
 	0 -> 51
-	52 [label="many laws"]
+	52 [label="[(545, 550), (13332, 13337), (26183, 26188), (39246, 39251), (53077, 53082), (67308, 67313)]"]
 	0 -> 52
-	53 [label="variation , some few of which can be dimly seen , and will"]
+	53 [label=". i cannot here"]
 	0 -> 53
-	54 [label=". i will here only allude to what may be called"]
+	54 [label="[(554, 558), (13341, 13345), (26192, 26196), (39255, 39259), (53086, 53088), (67317, 67319)]"]
 	0 -> 54
-	55 [label="in the embryo or larva will"]
+	55 [label="details which i have collected"]
 	0 -> 55
-	56 [label="entail changes in the mature animal . in monstrosities , the correlations between quite distinct parts are very curious ; and many instances are given in isidore geoffroy st . hilaire ' s great work on this subject . breeders believe that long limbs are almost always accompanied by an elongated head . some instances of correlation are quite whimsical"]
+	56 [label="[(563, 563), (13350, 13350), (26201, 26201), (39264, 39264), (53093, 53096), (67324, 67327)]"]
 	0 -> 56
-	57 [label="thus cats"]
+	57 [label="on this curious subject ; but to show how singular the laws are which determine the reproduction of animals under confinement , i may"]
 	0 -> 57
-	58 [label="blue eyes are"]
+	58 [label="[(587, 588), (13374, 13375), (26225, 26226), (39288, 39289), (53120, 53120), (67351, 67351)]"]
 	0 -> 58
-	59 [label=deaf]
+	59 [label="mention that carnivorous animals , even from the tropics , breed in this country pretty freely under confinement , with the exception of the plantigrades or bear family"]
 	0 -> 59
-	60 [label="colour and constitutional peculiarities go together , of which many remarkable cases could be given amongst animals and plants . from"]
+	60 [label="[(616, 616), (13403, 13403), (26254, 26259), (39317, 39322), (53148, 53153), (67379, 67384)]"]
 	0 -> 60
-	61 [label="facts collected by heusinger , it appears that white sheep and pigs are"]
+	61 [label="; whereas"]
 	0 -> 61
-	62 [label="by certain"]
+	62 [label="[(618, 619), (13405, 13405), (26261, 26261), (39324, 39324), (53155, 53155), (67386, 67386)]"]
 	0 -> 62
-	63 [label="hairless dogs have imperfect teeth"]
+	63 [label="carnivorous birds , with the rarest exceptions , hardly ever lay fertile eggs . many exotic plants have pollen utterly worthless , in the same"]
 	0 -> 63
-	64 [label="and coarse - haired animals are apt to have , as is asserted , long or many horns ; pigeons with feathered feet have skin between their outer toes ; pigeons with short beaks have small feet , and those with long beaks large feet . hence"]
+	64 [label="[(644, 645), (13430, 13431), (26286, 26287), (39349, 39350), (53180, 53180), (67411, 67411)]"]
 	0 -> 64
-	65 [label="if man goes on selecting , and thus augmenting , any peculiarity , he will almost certainly"]
+	65 [label="condition as in the most sterile hybrids . when , on the one hand , we see domesticated animals and plants , though often weak and sickly ,"]
 	0 -> 65
-	66 [label="other parts of the structure , owing to the mysterious laws of"]
+	66 [label="[(673, 676), (13459, 13462), (26315, 26318), (39378, 39381), (53208, 53210), (67439, 67440)]"]
 	0 -> 66
-	67 [label="of the various ,"]
+	67 [label="freely under confinement ; and when , on the other hand , we see individuals , though taken young from a state of nature"]
 	0 -> 67
-	68 [label="unknown , or"]
+	68 [label="[(700, 701), (13486, 13487), (26342, 26343), (39405, 39406), (53234, 53235), (67464, 67464)]"]
 	0 -> 68
-	69 [label="laws of variation"]
+	69 [label="perfectly tamed , long - lived"]
 	0 -> 69
-	70 [label="infinitely complex and diversified . it is well worth while carefully to study the several treatises"]
+	70 [label="[(707, 708), (13493, 13494), (26349, 26350), (39412, 39413), (53241, 53242), (67470, 67470)]"]
 	0 -> 70
-	71 [label="on some of our old cultivated plants , as on the hyacinth , potato , even the dahlia , & c .; and it is really surprising to note the endless points"]
+	71 [label="and healthy ( of which i could give numerous instances ), yet having their reproductive system so seriously affected by unperceived causes as to fail"]
 	0 -> 71
-	72 [label="structure and constitution in which the varieties and sub - varieties differ slightly from each other . the whole organisation seems to have become plastic , and"]
+	72 [label="[(733, 735), (13519, 13521), (26375, 26377), (39438, 39440), (53267, 53269), (67495, 67497)]"]
 	0 -> 72
-	73 [label="degree from that of the parental type . any variation which is not inherited is unimportant for us . but the number and diversity of inheritable deviations of structure , both those of slight and those of considerable physiological importance ,"]
+	73 [label=", we need not be surprised at this system , when it does act under confinement , acting"]
 	0 -> 73
-	74 [label="endless . dr . prosper lucas ' s treatise , in two large volumes , is the fullest and the best on this subject . no breeder doubts how strong is the tendency to inheritance"]
+	74 [label="[(753, 756), (13539, 13542), (26395, 26398), (39458, 39461), (53287, 53288), (67515, 67516)]"]
 	0 -> 74
-	75 [label="like produces like is his fundamental belief : doubts have been thrown on this principle"]
+	75 [label=", and producing offspring"]
 	0 -> 75
-	76 [label="by theoretical writers"]
+	76 [label="[(760, 773), (13546, 13557), (26402, 26413), (39465, 39486), (53292, 53620), (67520, 67889)]"]
 	0 -> 76
-	77 [label=", and we see it in the father and child , we cannot tell whether it may not be due to the same"]
+	77 [label=influence]
 	0 -> 77
-	78 [label="on both ; but when amongst individuals , apparently exposed to the same conditions , any very rare deviation , due to some extraordinary combination of circumstances , appears in the parent — say , once"]
+	78 [label="[(774, 803), (13558, 13587), (26414, 26443), (39487, 39516), (53621, 53651), (67890, 67892)]"]
 	0 -> 78
-	79 [label="several million individuals — and it reappears in the child , the mere doctrine of chances almost compels us to attribute its reappearance to inheritance . every one must have heard of cases of albinism , prickly skin , hairy bodies , & c ., appearing in several members of the same family . if strange and rare deviations of structure are"]
+	79 [label="i find in the domestic duck that the bones of the wing weigh less and the bones of the leg more , in proportion to the whole skeleton , than do the same bones in the wild"]
 	0 -> 79
-	80 [label="inherited , less strange and commoner deviations may be freely admitted to be inheritable . perhaps the correct way of viewing the whole subject"]
+	80 [label="[(840, 841), (13624, 13625), (26480, 26481), (39553, 39554), (53688, 53689), (67929, 67929)]"]
 	0 -> 80
-	81 [label="would be , to look at the inheritance of every character whatever as the rule , and non - inheritance as the anomaly . the laws governing inheritance are"]
+	81 [label="duck ; and"]
 	0 -> 81
-	82 [label="no one can say why"]
+	82 [label="[(844, 847), (13628, 13631), (26484, 26487), (39557, 39560), (53692, 53692), (67932, 67932)]"]
 	0 -> 82
-	83 [label="peculiarity in different individuals of the same species ,"]
+	83 [label="this change may be safely attributed to the domestic duck flying much less , and walking more , than its wild"]
 	0 -> 83
-	84 [label="different species , is sometimes inherited and sometimes not so ; why the child often reverts in certain"]
+	84 [label="[(868, 869), (13652, 13653), (26508, 26509), (39581, 39582), (53713, 53714), (67953, 67954)]"]
 	0 -> 84
-	85 [label="to its grandfather or grandmother or"]
+	85 [label=". the great and inherited development of the udders in cows and goats in countries where they are habitually milked , in comparison with"]
 	0 -> 85
-	86 [label="more remote ancestor ; why a peculiarity is often transmitted from one sex to both sexes , or to one sex alone , more commonly but not exclusively to the like sex . it is a fact of some"]
+	86 [label="[(893, 896), (13677, 13680), (26533, 26536), (39606, 39609), (53738, 53741), (67978, 67978)]"]
 	0 -> 86
-	87 [label="importance to us , that peculiarities appearing in the males of our domestic breeds are often transmitted"]
+	87 [label="these organs in other countries , is"]
 	0 -> 87
-	88 [label="either exclusively"]
+	88 [label="[(903, 903), (13687, 13687), (26543, 26543), (39616, 39617), (53748, 53749), (67985, 67986)]"]
 	0 -> 88
-	89 [label="or in a much greater degree , to"]
+	89 [label="another instance of the"]
 	0 -> 89
-	90 [label="males alone . a much more important rule , which i think may be trusted , is that , at whatever period of life a peculiarity first appears , it tends to"]
+	90 [label="[(907, 908), (13691, 13692), (26547, 26548), (39621, 39622), (53753, 53754), (67990, 67991)]"]
 	0 -> 90
-	91 [label="appear in the offspring at a corresponding age , though sometimes earlier . in many cases this could not be otherwise"]
+	91 [label="of use . not"]
 	0 -> 91
-	92 [label="thus the inherited peculiarities in the horns of cattle could appear only in the offspring when nearly mature ; peculiarities in the"]
+	92 [label="[(912, 916), (13696, 13700), (26552, 26556), (39626, 39630), (53758, 53763), (67995, 68000)]"]
 	0 -> 92
-	93 [label="are known to appear at the corresponding caterpillar or cocoon stage . but hereditary diseases and some other facts make me believe that the rule has a wider extension , and that"]
+	93 [label="can be named which has not in some country drooping ears ; and the view"]
 	0 -> 93
-	94 [label="when there is no apparent reason why a peculiarity should appear at any particular age , yet that it does tend to appear in the offspring at the same period at which it first appeared in the parent . i believe this rule to be of the highest importance in explaining the laws of embryology . these remarks are of course confined to the first appearance of the peculiarity , and not to"]
+	94 [label="[(931, 931), (13715, 13715), (26571, 26571), (39645, 39648), (53778, 53781), (68015, 68018)]"]
 	0 -> 94
-	95 [label="primary cause"]
+	95 [label=suggested]
 	0 -> 95
-	96 [label="which may have acted on the ovules or"]
+	96 [label="[(932, 936), (13716, 13720), (26572, 26576), (39649, 39649), (53782, 53782), (68019, 68019)]"]
 	0 -> 96
-	97 [label="male element ; in nearly the same manner as"]
+	97 [label="that the drooping is due to the disuse of the muscles of the ear , from the animals"]
 	0 -> 97
-	98 [label="offspring from a short - horned cow by a long - horned bull ,"]
+	98 [label="[(954, 957), (13738, 13741), (26594, 26597), (39667, 39669), (53800, 53802), (68037, 68040)]"]
 	0 -> 98
-	99 [label=", though appearing late in life , is clearly due to the male element . having alluded to the subject of reversion , i may here refer to a statement often made by naturalists — namely , that our domestic varieties , when run wild , gradually but"]
+	99 [label=alarmed]
 	0 -> 99
-	100 [label="revert in character to their aboriginal stocks . hence it has been argued that no deductions can be drawn from domestic races to species in a state of nature . i have in vain endeavoured to discover on what decisive facts the above statement has so often and so boldly been made . there would be great difficulty in proving its truth : we may safely conclude that very many of the most strongly"]
+	100 [label="[(958, 960), (13742, 13744), (26598, 26600), (39670, 39672), (53803, 53805), (68041, 68041)]"]
 	0 -> 100
-	101 [label="marked domestic varieties could not possibly live in a wild state . in many cases we do not know what the aboriginal stock was , and so could not tell whether or not nearly perfect reversion had ensued . it would be"]
+	101 [label=", seems probable ."]
 	0 -> 101
-	102 [label="in order to prevent the effects of intercrossing , that only a single variety should"]
+	102 [label="[(964, 966), (13748, 13750), (26604, 26606), (39676, 39678), (53809, 53809), (68045, 68045)]"]
 	0 -> 102
-	103 [label="turned loose in its new home . nevertheless , as our varieties certainly do occasionally revert in some of their characters to ancestral forms , it seems to me not improbable"]
+	103 [label="many laws"]
 	0 -> 103
-	104 [label="that if we could succeed in naturalising , or were to cultivate , during many generations , the several races , for instance , of the cabbage , in very poor soil ( in which case , however , some effect would have to be attributed to the"]
+	104 [label="[(968, 969), (13752, 13753), (26608, 26609), (39680, 39681), (53811, 53812), (68047, 68048)]"]
 	0 -> 104
-	105 [label="action of the poor soil ), that they would"]
+	105 [label="variation , some few of which can be dimly seen , and will"]
 	0 -> 105
-	106 [label="to a large extent , or even wholly , revert to the wild aboriginal stock . whether or not the experiment would succeed , is not of great importance for our line of argument ; for by the experiment itself the conditions of life are changed . if it could be shown that our domestic varieties manifested a strong tendency to reversion , — that is , to lose their acquired characters , whilst kept under"]
+	106 [label="[(982, 986), (13766, 13770), (26622, 26626), (39694, 39698), (53825, 53829), (68061, 68065)]"]
 	0 -> 106
-	107 [label="conditions , and whilst kept in a considerable body , so that free intercrossing might check , by blending together , any slight deviations"]
+	107 [label=". i will here only allude to what may be called"]
 	0 -> 107
-	108 [label="structure , in such case , i grant that we could deduce nothing from domestic varieties in regard to species . but there is not a shadow of evidence in favour of this view : to assert that we could not breed our cart and race - horses , long and short - horned cattle , and poultry of various breeds , and esculent vegetables , for an"]
+	108 [label="[(997, 1003), (13781, 13787), (26637, 26643), (39709, 39715), (53840, 53845), (68076, 68081)]"]
 	0 -> 108
-	109 [label="number of generations , would be opposed to all experience ."]
+	109 [label="in the embryo or larva will"]
 	0 -> 109
-	110 [label=". when we look to the hereditary varieties or races of our domestic animals and plants , and compare them with"]
+	110 [label="[(1009, 1011), (13793, 13795), (26649, 26651), (39721, 39722), (53851, 53852), (68087, 68088)]"]
 	0 -> 110
-	111 [label=", we generally perceive in each domestic race , as already remarked , less uniformity of character than in true species . domestic races"]
+	111 [label="entail changes in the mature animal . in monstrosities , the correlations between quite distinct parts are very curious ; and many instances are given in isidore geoffroy st . hilaire ' s great work on this subject . breeders believe that long limbs are almost always accompanied by an elongated head . some instances of correlation are quite whimsical"]
 	0 -> 111
-	112 [label="often have a somewhat monstrous character ; by which i mean , that , although differing from each other , and from"]
+	112 [label="[(1071, 1072), (13855, 13856), (26711, 26712), (39782, 39783), (53912, 53913), (68148, 68149)]"]
 	0 -> 112
-	113 [label="other species of the same genus , in several trifling respects , they often differ in an extreme degree in some one part , both when compared one with another , and more especially when compared with"]
+	113 [label="thus cats"]
 	0 -> 113
-	114 [label="nature to which they are nearest allied . with these exceptions ( and with that of the perfect fertility of varieties when crossed , — a subject hereafter to be discussed ), domestic races of the same species differ from each other"]
+	114 [label="[(1074, 1075), (13858, 13859), (26714, 26715), (39785, 39791), (53915, 53921), (68151, 68157)]"]
 	0 -> 114
-	115 [label="in the same manner as"]
+	115 [label="blue eyes are"]
 	0 -> 115
-	116 [label="allied species of the same genus in a state of nature"]
+	116 [label="[(1078, 1079), (13862, 13863), (26718, 26719), (39794, 39795), (53924, 53925), (68160, 68161)]"]
 	0 -> 116
-	117 [label="this must be admitted"]
+	117 [label=deaf]
 	0 -> 117
-	118 [label="been ranked by"]
+	118 [label="[(1080, 1081), (13864, 13865), (26720, 26721), (39796, 39797), (53926, 53927), (68162, 68181)]"]
 	0 -> 118
-	119 [label="competent judges as mere varieties"]
+	119 [label="colour and constitutional peculiarities go together , of which many remarkable cases could be given amongst animals and plants . from"]
 	0 -> 119
-	120 [label=". if any"]
+	120 [label="[(1102, 1103), (13886, 13887), (26742, 26743), (39818, 39818), (53948, 53948), (68202, 68202)]"]
 	0 -> 120
-	121 [label="marked distinction existed between"]
+	121 [label="facts collected by heusinger , it appears that white sheep and pigs are"]
 	0 -> 121
-	122 [label="species , this source of doubt"]
+	122 [label="[(1116, 1121), (13900, 13905), (26756, 26761), (39831, 39832), (53961, 53962), (68215, 68216)]"]
 	0 -> 122
-	123 [label="not so perpetually recur . it has often been stated that domestic races do not differ from each other in characters of generic value ."]
+	123 [label="by certain"]
 	0 -> 123
-	124 [label="be shown that this statement is"]
+	124 [label="[(1123, 1126), (13907, 13910), (26763, 26868), (39834, 39945), (53964, 54075), (68218, 68329)]"]
 	0 -> 124
-	125 [label="correct ; but naturalists differ"]
+	125 [label="hairless dogs have imperfect teeth"]
 	0 -> 125
-	126 [label="in determining what characters are of generic value ; all such valuations being at present empirical ."]
+	126 [label="[(1131, 1135), (13915, 13919), (26873, 26877), (39950, 39954), (54080, 54084), (68334, 68338)]"]
 	0 -> 126
-	127 [label="we have no right to expect often to"]
+	127 [label="and coarse - haired animals are apt to have , as is asserted , long or many horns ; pigeons with feathered feet have skin between their outer toes ; pigeons with short beaks have small feet , and those with long beaks large feet . hence"]
 	0 -> 127
-	128 [label="to estimate the amount of structural difference between"]
+	128 [label="[(1182, 1183), (13966, 13967), (26924, 26924), (40001, 40001), (54131, 54131), (68385, 68385)]"]
 	0 -> 128
-	129 [label=", we are soon involved in doubt , from not knowing whether they"]
+	129 [label="if man goes on selecting , and thus augmenting , any peculiarity , he will almost certainly"]
 	0 -> 129
-	130 [label=". this point , if it could be cleared up , would be interesting ; if , for instance , it could be shown that the greyhound , bloodhound , terrier , spaniel , and bull - dog , which we all know propagate their kind"]
+	130 [label="[(1200, 1202), (13984, 13986), (26941, 26943), (40018, 40020), (54148, 54150), (68402, 68404)]"]
 	0 -> 130
-	131 [label="truly , were the offspring of any single species , then such facts would have great weight in making us doubt about the immutability of the many"]
+	131 [label="other parts of the structure , owing to the mysterious laws of"]
 	0 -> 131
-	132 [label="natural species — for instance , of the many foxes — inhabiting different quarters of the world . i do not believe , as we shall presently see , that"]
+	132 [label="[(1214, 1221), (13998, 14005), (26955, 26962), (40032, 40039), (54162, 54166), (68416, 68420)]"]
 	0 -> 132
-	133 [label=", there is presumptive"]
+	133 [label="of the various ,"]
 	0 -> 133
-	134 [label="or even strong"]
+	134 [label="[(1225, 1226), (14009, 14010), (26966, 26967), (40043, 40044), (54170, 54170), (68424, 68424)]"]
 	0 -> 134
-	135 [label=". it has often been assumed that man has chosen for domestication animals and plants having an extraordinary inherent tendency to vary , and likewise to withstand diverse climates . i do not dispute that these capacities have added largely to the value of most of our domesticated productions ; but how could a savage possibly know , when he first tamed an animal , whether it would vary in succeeding generations , and whether it would endure other climates ? has the little variability of the ass"]
+	135 [label="unknown , or"]
 	0 -> 135
-	136 [label=", or the small power of endurance of warmth by the reindeer , or of cold by the common camel"]
+	136 [label="[(1229, 1231), (14013, 14015), (26970, 26972), (40047, 40049), (54173, 54176), (68427, 68430)]"]
 	0 -> 136
-	137 [label="prevented their domestication ? i cannot doubt that if other animals and plants , equal in number to our domesticated productions , and belonging to equally diverse classes and countries , were taken from a state of nature , and could be made to breed for an equal number of generations under domestication , they would"]
+	137 [label="laws of variation"]
 	0 -> 137
-	138 [label="on an average"]
+	138 [label="[(1234, 1235), (14018, 14019), (26975, 26976), (40052, 40053), (54179, 54180), (68433, 68434)]"]
 	0 -> 138
-	139 [label="as largely as the parent species of our existing domesticated productions have varied . in the case of most of our anciently domesticated animals and plants ,"]
+	139 [label="infinitely complex and diversified . it is well worth while carefully to study the several treatises"]
 	0 -> 139
-	140 [label="possible to come to any definite conclusion , whether they"]
+	140 [label="[(1251, 1252), (14035, 14036), (26992, 26993), (40069, 40069), (54196, 54196), (68450, 68450)]"]
 	0 -> 140
-	141 [label="species . the argument mainly relied on by those who believe in the multiple origin of our domestic animals is , that we find in the most ancient"]
+	141 [label="on some of our old cultivated plants , as on the hyacinth , potato , even the dahlia , & c .; and it is really surprising to note the endless points"]
 	0 -> 141
-	142 [label="on the monuments of egypt ,"]
+	142 [label="[(1283, 1284), (14067, 14068), (27024, 27025), (40100, 40101), (54227, 54228), (68481, 68482)]"]
 	0 -> 142
-	143 [label=", much diversity in the breeds ; and that some of"]
+	143 [label="structure and constitution in which the varieties and sub - varieties differ slightly from each other . the whole organisation seems to have become plastic , and"]
 	0 -> 143
-	144 [label="breeds closely resemble"]
+	144 [label="[(1311, 1317), (14095, 14101), (27052, 27058), (40128, 40134), (54255, 54261), (68509, 68513)]"]
 	0 -> 144
-	145 [label="identical with"]
+	145 [label="degree from that of the parental type . any variation which is not inherited is unimportant for us . but the number and diversity of inheritable deviations of structure , both those of slight and those of considerable physiological importance ,"]
 	0 -> 145
-	146 [label="those still existing ."]
+	146 [label="[(1358, 1359), (14142, 14143), (27099, 27100), (40175, 40176), (54302, 54303), (68554, 68555)]"]
 	0 -> 146
-	147 [label="remain vague"]
+	147 [label="endless . dr . prosper lucas ' s treatise , in two large volumes , is the fullest and the best on this subject . no breeder doubts how strong is the tendency to inheritance"]
 	0 -> 147
-	148 [label=". in regard to sheep and goats i can form no"]
+	148 [label="[(1394, 1395), (14178, 14179), (27135, 27136), (40211, 40212), (54338, 54340), (68590, 68592)]"]
 	0 -> 148
-	149 [label="opinion ."]
+	149 [label="like produces like is his fundamental belief : doubts have been thrown on this principle"]
 	0 -> 149
-	150 [label="from facts communicated to me by mr . blyth , on the habits , voice ,"]
+	150 [label="[(1410, 1410), (14194, 14194), (27151, 27151), (40227, 40227), (54355, 54356), (68607, 68608)]"]
 	0 -> 150
-	151 [label="of the humped indian cattle ,"]
+	151 [label="by theoretical writers"]
 	0 -> 151
-	152 [label="descended from a different aboriginal stock from our european cattle ; and"]
+	152 [label="[(1413, 1421), (14197, 14206), (27154, 27163), (40230, 40239), (54359, 54367), (68611, 68619)]"]
 	0 -> 152
-	153 [label="competent judges believe that these latter have had"]
+	153 [label=", and we see it in the father and child , we cannot tell whether it may not be due to the same"]
 	0 -> 153
-	154 [label=". with respect to horses , from reasons which i cannot"]
+	154 [label="[(1444, 1447), (14229, 14232), (27186, 27189), (40262, 40265), (54390, 54393), (68642, 68645)]"]
 	0 -> 154
-	155 [label="inclined to believe , in opposition to several authors , that all the races"]
+	155 [label="on both ; but when amongst individuals , apparently exposed to the same conditions , any very rare deviation , due to some extraordinary combination of circumstances , appears in the parent — say , once"]
 	0 -> 155
-	156 [label="wild indian fowl"]
+	156 [label="[(1483, 1484), (14268, 14269), (27225, 27226), (40301, 40302), (54429, 54430), (68681, 68682)]"]
 	0 -> 156
-	157 [label="gallus bankiva"]
+	157 [label="several million individuals — and it reappears in the child , the mere doctrine of chances almost compels us to attribute its reappearance to inheritance . every one must have heard of cases of albinism , prickly skin , hairy bodies , & c ., appearing in several members of the same family . if strange and rare deviations of structure are"]
 	0 -> 157
-	158 [label="in regard to ducks and rabbits ,"]
+	158 [label="[(1545, 1546), (14330, 14331), (27287, 27288), (40363, 40364), (54491, 54492), (68743, 68744)]"]
 	0 -> 158
-	159 [label="breeds of which differ"]
+	159 [label="inherited , less strange and commoner deviations may be freely admitted to be inheritable . perhaps the correct way of viewing the whole subject"]
 	0 -> 159
-	160 [label="descended from the common wild duck and rabbit . the doctrine of the origin of our several domestic races from several aboriginal stocks , has been carried to an absurd extreme by some authors . they believe that every race which breeds true , let the distinctive characters be ever so slight , has had its wild prototype . at this rate there must have existed at least a score of species of wild cattle , as many sheep , and several goats"]
+	160 [label="[(1570, 1571), (14355, 14356), (27312, 27313), (40388, 40389), (54516, 54517), (68768, 68768)]"]
 	0 -> 160
-	161 [label="in europe alone , and several even within great britain . one author believes that there formerly existed"]
+	161 [label="would be , to look at the inheritance of every character whatever as the rule , and non - inheritance as the anomaly . the laws governing inheritance are"]
 	0 -> 161
-	162 [label="eleven wild species of sheep peculiar to"]
+	162 [label="[(1600, 1603), (14385, 14388), (27342, 27345), (40418, 40421), (54546, 54552), (68797, 68803)]"]
 	0 -> 162
-	163 [label="! when we bear in mind that britain has now"]
+	163 [label="no one can say why"]
 	0 -> 163
-	164 [label="one peculiar mammal , and france but few distinct from those of germany"]
+	164 [label="[(1608, 1610), (14393, 14394), (27350, 27351), (40426, 40427), (54557, 54559), (68808, 68810)]"]
 	0 -> 164
-	165 [label=", and so with hungary , spain , & c ., but that each of these kingdoms possesses several peculiar breeds of cattle , sheep , & c ., we must admit that many domestic breeds"]
+	165 [label="peculiarity in different individuals of the same species ,"]
 	0 -> 165
-	166 [label="have originated in europe ; for whence"]
+	166 [label="[(1619, 1623), (14403, 14407), (27360, 27364), (40436, 40440), (54568, 54570), (68819, 68821)]"]
 	0 -> 166
-	167 [label="been derived"]
+	167 [label="different species , is sometimes inherited and sometimes not so ; why the child often reverts in certain"]
 	0 -> 167
-	168 [label="? so it is in india . even in the case of the"]
+	168 [label="[(1641, 1642), (14425, 14426), (27382, 27383), (40458, 40459), (54588, 54589), (68839, 68840)]"]
 	0 -> 168
-	169 [label="world , which i"]
+	169 [label="to its grandfather or grandmother or"]
 	0 -> 169
-	170 [label="descended from several wild species ,"]
+	170 [label="[(1648, 1650), (14432, 14433), (27389, 27390), (40465, 40466), (54595, 54595), (68846, 68846)]"]
 	0 -> 170
-	171 [label="that there has been an immense amount of inherited variation"]
+	171 [label="more remote ancestor ; why a peculiarity is often transmitted from one sex to both sexes , or to one sex alone , more commonly but not exclusively to the like sex . it is a fact of some"]
 	0 -> 171
-	172 [label="believe that animals closely resembling the italian greyhound , the bloodhound , the bull - dog ,"]
+	172 [label="[(1689, 1690), (14472, 14473), (27429, 27430), (40505, 40506), (54634, 54634), (68885, 68885)]"]
 	0 -> 172
-	173 [label="- dog , or blenheim spaniel , & c . — so unlike all wild canidæ — ever existed"]
+	173 [label="importance to us , that peculiarities appearing in the males of our domestic breeds are often transmitted"]
 	0 -> 173
-	174 [label="in a state of nature ? it has often been loosely said that all our races of dogs have been produced by the crossing of a few aboriginal species ; but by crossing we can"]
+	174 [label="[(1707, 1707), (14490, 14490), (27447, 27447), (40523, 40524), (54651, 54652), (68902, 68903)]"]
 	0 -> 174
-	175 [label="forms in some degree intermediate between their parents ; and if we account for our several domestic races by this process , we must admit the former existence of the most extreme forms , as the italian greyhound , bloodhound , bull - dog , & c ., in the wild state . moreover , the possibility of making distinct races by crossing has been greatly exaggerated ."]
+	175 [label="either exclusively"]
 	0 -> 175
-	176 [label="that a race may be modified by occasional crosses , if aided by the careful selection of"]
+	176 [label="[(1709, 1710), (14492, 14493), (27449, 27450), (40526, 40526), (54654, 54654), (68905, 68905)]"]
 	0 -> 176
-	177 [label="which present"]
+	177 [label="or in a much greater degree , to"]
 	0 -> 177
-	178 [label="desired character ; but"]
+	178 [label="[(1718, 1718), (14501, 14501), (27458, 27458), (40534, 40534), (54662, 54663), (68913, 68914)]"]
 	0 -> 178
-	179 [label=". sir j . sebright expressly"]
+	179 [label="males alone . a much more important rule , which i think may be trusted , is that , at whatever period of life a peculiarity first appears , it tends to"]
 	0 -> 179
-	180 [label="this object , and failed . the offspring from the first cross between two pure breeds is tolerably and sometimes ( as i have found with pigeons )"]
+	180 [label="[(1750, 1750), (14533, 14533), (27490, 27490), (40566, 40566), (54695, 54697), (68946, 68948)]"]
 	0 -> 180
-	181 [label=", and everything seems simple enough ; but when these mongrels are crossed one with another for several generations , hardly two of them"]
+	181 [label="appear in the offspring at a corresponding age , though sometimes earlier . in many cases this could not be otherwise"]
 	0 -> 181
-	182 [label="and then the"]
+	182 [label="[(1771, 1772), (14554, 14555), (27511, 27512), (40587, 40588), (54718, 54719), (68969, 68970)]"]
 	0 -> 182
-	183 [label="of the task becomes"]
+	183 [label="thus the inherited peculiarities in the horns of cattle could appear only in the offspring when nearly mature ; peculiarities in the"]
 	0 -> 183
-	184 [label="breeds of the domestic pigeon"]
+	184 [label="[(1794, 1795), (14577, 14578), (27534, 27535), (40610, 40611), (54741, 54742), (68992, 68995)]"]
 	0 -> 184
-	185 [label="believing that it is always best to study some special group , i have , after deliberation , taken up domestic pigeons . i have kept every breed which i could purchase or obtain , and have been most kindly favoured with skins from several quarters of the world , more especially by the hon . w ."]
+	185 [label="are known to appear at the corresponding caterpillar or cocoon stage . but hereditary diseases and some other facts make me believe that the rule has a wider extension , and that"]
 	0 -> 185
-	186 [label="from india , and by the hon . c . murray from persia . many treatises in different languages have been published on pigeons , and some of them are very important , as being of considerable antiquity . i have associated with several eminent fanciers , and have been permitted to join two of the london pigeon clubs . the diversity of the breeds is something astonishing . compare the english carrier and the short - faced tumbler , and see the wonderful difference in their beaks , entailing corresponding differences in their skulls . the carrier , more especially the male bird , is also remarkable from the wonderful development of the carunculated skin about the head"]
+	186 [label="[(1827, 1827), (14610, 14610), (27567, 27567), (40643, 40644), (54774, 54775), (69027, 69028)]"]
 	0 -> 186
-	187 [label="and this is accompanied by greatly elongated eyelids , very large external orifices to the nostrils , and a wide gape of mouth . the short - faced tumbler has a beak in outline almost like that of a finch ; and the common tumbler has the singular"]
+	187 [label="when there is no apparent reason why a peculiarity should appear at any particular age , yet that it does tend to appear in the offspring at the same period at which it first appeared in the parent . i believe this rule to be of the highest importance in explaining the laws of embryology . these remarks are of course confined to the first appearance of the peculiarity , and not to"]
 	0 -> 187
-	188 [label="inherited habit of flying at a great height in a compact flock , and tumbling in the air head over heels . the runt is a bird of great size , with long"]
+	188 [label="[(1900, 1901), (14683, 14684), (27640, 27641), (40717, 40718), (54848, 54849), (69101, 69102)]"]
 	0 -> 188
-	189 [label="massive beak and large feet ; some of the sub - breeds of runts have very long necks , others very long wings and tails , others singularly short tails . the barb is allied to the carrier , but , instead of a"]
+	189 [label="primary cause"]
 	0 -> 189
-	190 [label="long beak , has a very short and"]
+	190 [label="[(1903, 1904), (14686, 14687), (27643, 27644), (40720, 40721), (54851, 54852), (69104, 69104)]"]
 	0 -> 190
-	191 [label="broad one . the pouter has a much elongated body , wings , and legs ; and its enormously developed crop , which it glories in inflating , may well excite astonishment and even laughter . the turbit has a"]
+	191 [label="which may have acted on the ovules or"]
 	0 -> 191
-	192 [label="short and conical beak , with a line of reversed feathers down the breast ; and it has the habit of continually expanding"]
+	192 [label="[(1912, 1912), (14695, 14695), (27652, 27654), (40729, 40731), (54860, 54862), (69112, 69114)]"]
 	0 -> 192
-	193 [label="the upper part of the œsophagus . the jacobin has the feathers so much reversed along the back of the neck that they form a hood"]
+	193 [label="male element ; in nearly the same manner as"]
 	0 -> 193
-	194 [label="and it has , proportionally to its size ,"]
+	194 [label="[(1921, 1924), (14704, 14707), (27663, 27665), (40740, 40742), (54871, 54873), (69123, 69131)]"]
 	0 -> 194
-	195 [label="elongated wing and tail feathers . the trumpeter and laugher , as their names express , utter a very different coo from the other breeds . the fantail has thirty or even forty tail"]
+	195 [label="offspring from a short - horned cow by a long - horned bull ,"]
 	0 -> 195
-	196 [label="feathers , instead of twelve or fourteen"]
+	196 [label="[(1938, 1943), (14721, 14726), (27679, 27684), (40756, 40761), (54887, 54892), (69145, 69144)]"]
 	0 -> 196
-	197 [label="the normal number in all"]
+	197 [label=", though appearing late in life , is clearly due to the male element . having alluded to the subject of reversion , i may here refer to a statement often made by naturalists — namely , that our domestic varieties , when run wild , gradually but"]
 	0 -> 197
-	198 [label="members of the great pigeon family"]
+	198 [label="[(1991, 1992), (14774, 14775), (27732, 27733), (40809, 40810), (54940, 54941), (69192, 69193)]"]
 	0 -> 198
-	199 [label="these feathers are kept expanded , and are carried so erect"]
+	199 [label="revert in character to their aboriginal stocks . hence it has been argued that no deductions can be drawn from domestic races to species in a state of nature . i have in vain endeavoured to discover on what decisive facts the above statement has so often and so boldly been made . there would be great difficulty in proving its truth : we may safely conclude that very many of the most strongly"]
 	0 -> 199
-	200 [label="that in good birds the head and tail touch"]
+	200 [label="[(2066, 2067), (14849, 14850), (27807, 27808), (40884, 40885), (55015, 55016), (69267, 69267)]"]
 	0 -> 200
-	201 [label="the oil - gland is quite aborted . several other less distinct breeds might"]
+	201 [label="marked domestic varieties could not possibly live in a wild state . in many cases we do not know what the aboriginal stock was , and so could not tell whether or not nearly perfect reversion had ensued . it would be"]
 	0 -> 201
-	202 [label="specified . in the skeletons of the several breeds , the development of the bones of the face in length and breadth and curvature differs enormously . the shape , as well as the breadth and length of the ramus of the lower jaw , varies in a highly remarkable manner . the"]
+	202 [label="[(2109, 2112), (14892, 14895), (27850, 27853), (40927, 40930), (55058, 55060), (69309, 69310)]"]
 	0 -> 202
-	203 [label="the caudal and sacral vertebræ vary"]
+	203 [label="in order to prevent the effects of intercrossing , that only a single variety should"]
 	0 -> 203
-	204 [label="; as does the number of the ribs , together with their relative breadth and the presence of processes . the size and shape of the apertures in the sternum are highly variable ; so is the degree of divergence and relative size of the two arms of the furcula . the proportional width of the gape of mouth , the proportional length of the eyelids , of the orifice of the nostrils , of the tongue ( not always in strict correlation with the length of beak ), the size of the crop and of the upper part of the œsophagus ; the development and abortion of the oil - gland ; the number of the primary wing and caudal feathers ; the relative length of"]
+	204 [label="[(2127, 2128), (14910, 14911), (27868, 27869), (40945, 40946), (55075, 55077), (69325, 69327)]"]
 	0 -> 204
-	205 [label="wing and tail to each other and to the body ; the relative length of"]
+	205 [label="turned loose in its new home . nevertheless , as our varieties certainly do occasionally revert in some of their characters to ancestral forms , it seems to me not improbable"]
 	0 -> 205
-	206 [label="leg and"]
+	206 [label="[(2159, 2160), (14942, 14943), (27900, 27901), (40977, 40978), (55108, 55109), (69358, 69358)]"]
 	0 -> 206
-	207 [label="; the number of scutellæ on the toes , the development of skin between the toes , are all points of structure which are variable . the period at which the perfect plumage is acquired varies , as does the state of the down with which the nestling birds are clothed when hatched . the shape and size of the eggs vary . the manner of flight"]
+	207 [label="that if we could succeed in naturalising , or were to cultivate , during many generations , the several races , for instance , of the cabbage , in very poor soil ( in which case , however , some effect would have to be attributed to the"]
 	0 -> 207
-	208 [label="in some breeds the voice and disposition"]
+	208 [label="[(2208, 2209), (14991, 14992), (27949, 27950), (41026, 41027), (55157, 55158), (69406, 69407)]"]
 	0 -> 208
-	209 [label=". lastly , in certain breeds , the males and females have come to differ"]
+	209 [label="action of the poor soil ), that they would"]
 	0 -> 209
-	210 [label="a slight degree from each other . altogether at least a score of pigeons might be chosen , which"]
+	210 [label="[(2218, 2218), (15001, 15001), (27959, 27959), (41036, 41036), (55167, 55167), (69416, 69417)]"]
 	0 -> 210
-	211 [label="if shown to an ornithologist , and he were told that they were wild birds , would certainly"]
+	211 [label="to a large extent , or even wholly , revert to the wild aboriginal stock . whether or not the experiment would succeed , is not of great importance for our line of argument ; for by the experiment itself the conditions of life are changed . if it could be shown that our domestic varieties manifested a strong tendency to reversion , — that is , to lose their acquired characters , whilst kept under"]
 	0 -> 211
-	212 [label="be ranked by him as well - defined species . moreover , i do not believe that any ornithologist would"]
+	212 [label="[(2293, 2294), (15076, 15078), (28034, 28036), (41111, 41113), (55242, 55244), (69492, 69494)]"]
 	0 -> 212
-	213 [label="place the english carrier , the short - faced tumbler , the runt , the barb , pouter , and fantail in the same genus ; more especially as in each of these breeds several truly - inherited sub - breeds , or species"]
+	213 [label="conditions , and whilst kept in a considerable body , so that free intercrossing might check , by blending together , any slight deviations"]
 	0 -> 213
-	214 [label="them , could be shown him . great as"]
+	214 [label="[(2318, 2319), (15102, 15104), (28060, 28062), (41137, 41139), (55268, 55270), (69518, 69520)]"]
 	0 -> 214
-	215 [label="between the breeds of"]
+	215 [label="structure , in such case , i grant that we could deduce nothing from domestic varieties in regard to species . but there is not a shadow of evidence in favour of this view : to assert that we could not breed our cart and race - horses , long and short - horned cattle , and poultry of various breeds , and esculent vegetables , for an"]
 	0 -> 215
-	216 [label=", i am fully convinced that the common opinion of naturalists is correct , namely , that all"]
+	216 [label="[(2387, 2389), (15172, 15174), (28130, 28132), (41207, 41209), (55338, 55339), (69588, 69589)]"]
 	0 -> 216
-	217 [label="pigeon ( columba livia ), including under this term several geographical races or sub - species , which differ from each other in the most trifling respects . as several of the reasons which have led me to this belief are in some degree applicable in other cases , i will here briefly give them . if the several breeds are not varieties , and have not proceeded from the rock - pigeon , they must have descended from at least seven or eight aboriginal stocks ; for it is impossible to make the present domestic breeds by the crossing of any lesser number : how , for instance , could a pouter be produced by crossing two breeds unless one of the parent - stocks"]
+	217 [label="number of generations , would be opposed to all experience ."]
 	0 -> 217
-	218 [label="the characteristic enormous crop ? the supposed aboriginal stocks must all have been rock - pigeons , that is ,"]
+	218 [label="[(2400, 2446), (15185, 15231), (28143, 28189), (41220, 41290), (55350, 55372), (69600, 69622)]"]
 	0 -> 218
-	219 [label="or willingly"]
+	219 [label=". when we look to the hereditary varieties or races of our domestic animals and plants , and compare them with"]
 	0 -> 219
-	220 [label="on trees . but besides c . livia , with its geographical sub - species , only two or three other species of rock - pigeons are known ; and these have not any of the characters of the domestic breeds . hence the supposed aboriginal stocks must either still exist in the countries where they were originally domesticated , and yet be unknown to ornithologists ; and this , considering their size , habits , and remarkable characters , seems"]
+	220 [label="[(2467, 2471), (15252, 15255), (28210, 28213), (41311, 41314), (55393, 55396), (69643, 69646)]"]
 	0 -> 220
-	221 [label="improbable ; or they must have become extinct in the wild state . but birds breeding on precipices , and good fliers , are unlikely to be exterminated ; and the common rock - pigeon , which has the same habits with the domestic breeds , has not been exterminated even on several of the smaller british islets , or on the shores of the mediterranean . hence the supposed extermination of so many species having similar habits with the rock - pigeon seems"]
+	221 [label=", we generally perceive in each domestic race , as already remarked , less uniformity of character than in true species . domestic races"]
 	0 -> 221
-	222 [label="a very rash assumption . moreover , the several above - named domesticated breeds have been transported to all parts of the world , and , therefore , some of them must have been carried back again into their native country ; but not one has"]
+	222 [label="[(2495, 2502), (15279, 15286), (28237, 28244), (41338, 41338), (55420, 55420), (69670, 69670)]"]
 	0 -> 222
-	223 [label="become wild or feral , though the dovecot - pigeon , which is the rock - pigeon in a very slightly altered state , has become feral in several places . again , all recent experience shows that it is"]
+	223 [label="often have a somewhat monstrous character ; by which i mean , that , although differing from each other , and from"]
 	0 -> 223
-	224 [label="difficult to get"]
+	224 [label="[(2524, 2525), (15308, 15308), (28266, 28266), (41360, 41360), (55442, 55442), (69692, 69692)]"]
 	0 -> 224
-	225 [label="to breed freely under domestication ; yet"]
+	225 [label="other species of the same genus , in several trifling respects , they often differ in an extreme degree in some one part , both when compared one with another , and more especially when compared with"]
 	0 -> 225
-	226 [label="on the hypothesis of the multiple origin of our pigeons , it must be assumed that at least seven or eight species were so thoroughly domesticated in ancient times by half -"]
+	226 [label="[(2562, 2566), (15345, 15349), (28303, 28307), (41397, 41400), (55479, 55482), (69729, 69732)]"]
 	0 -> 226
-	227 [label="man , as to be quite prolific under confinement . an argument"]
+	227 [label="nature to which they are nearest allied . with these exceptions ( and with that of the perfect fertility of varieties when crossed , — a subject hereafter to be discussed ), domestic races of the same species differ from each other"]
 	0 -> 227
-	228 [label="of great weight , and applicable in several other cases , is , that the above"]
+	228 [label="[(2607, 2607), (15390, 15390), (28348, 28348), (41441, 41451), (55523, 55533), (69773, 69773)]"]
 	0 -> 228
-	229 [label="specified breeds , though agreeing generally"]
+	229 [label="in the same manner as"]
 	0 -> 229
-	230 [label="in constitution , habits , voice , colouring , and in most parts of their structure ,"]
+	230 [label="[(2612, 2626), (15395, 15409), (28353, 28367), (41456, 41459), (55538, 55541), (69778, 69781)]"]
 	0 -> 230
-	231 [label=", yet are certainly highly abnormal in other parts"]
+	231 [label="allied species of the same genus in a state of nature"]
 	0 -> 231
-	232 [label="we may look in vain"]
+	232 [label="[(2637, 2640), (15420, 15423), (28378, 28382), (41470, 41474), (55552, 55553), (69792, 69804)]"]
 	0 -> 232
-	233 [label="the whole great family of columbidæ for a beak like that of the english carrier , or that of the short - faced tumbler , or barb ; for reversed feathers like those of the jacobin ; for a crop like that of the pouter ; for tail - feathers like those of the fantail . hence it must be assumed not only that half -"]
+	233 [label="this must be admitted"]
 	0 -> 233
-	234 [label="man succeeded in thoroughly domesticating several species , but that he intentionally or by chance picked out extraordinarily abnormal species ; and further , that these very species have since all become extinct or unknown . so many strange contingencies"]
+	234 [label="[(2644, 2665), (15427, 15448), (28386, 28407), (41478, 41499), (55557, 55570), (69808, 69821)]"]
 	0 -> 234
-	235 [label="improbable in the highest degree . some facts in regard to the colouring of pigeons well deserve consideration . the rock"]
+	235 [label="been ranked by"]
 	0 -> 235
-	236 [label="pigeon is of a slaty - blue ,"]
+	236 [label="[(2668, 2669), (15451, 15451), (28410, 28423), (41502, 41515), (55573, 55587), (69824, 69838)]"]
 	0 -> 236
-	237 [label="the indian sub - species , c . intermedia of strickland ,"]
+	237 [label="competent judges as mere varieties"]
 	0 -> 237
-	238 [label=bluish]
+	238 [label="[(2674, 2687), (15456, 15469), (28428, 28428), (41520, 41520), (55592, 55592), (69843, 69843)]"]
 	0 -> 238
-	239 [label="the tail has a terminal dark bar , with the"]
+	239 [label=". if any"]
 	0 -> 239
-	240 [label="the outer feathers externally edged"]
+	240 [label="[(2690, 2690), (15472, 15472), (28431, 28431), (41523, 41523), (55595, 55596), (69846, 69847)]"]
 	0 -> 240
-	241 [label="the wings have two black bars"]
+	241 [label="marked distinction existed between"]
 	0 -> 241
-	242 [label="some semi - domestic breeds"]
+	242 [label="[(2694, 2697), (15476, 15479), (28435, 28438), (41527, 41530), (55600, 55605), (69851, 69856)]"]
 	0 -> 242
-	243 [label="truly wild breeds"]
+	243 [label="species , this source of doubt"]
 	0 -> 243
-	244 [label="have , besides the two black bars , the wings chequered with black . these several marks do not occur together in any other species of the whole family . now , in every one of the domestic breeds , taking thoroughly well - bred birds , all the above marks , even to the white edging of the outer tail - feathers , sometimes concur perfectly developed . moreover , when"]
+	244 [label="[(2703, 2704), (15485, 15486), (28444, 28445), (41536, 41537), (55611, 55612), (69862, 69863)]"]
 	0 -> 244
-	245 [label="birds belonging to two"]
+	245 [label="not so perpetually recur . it has often been stated that domestic races do not differ from each other in characters of generic value ."]
 	0 -> 245
-	246 [label="distinct breeds are crossed ,"]
+	246 [label="[(2729, 2733), (15511, 15515), (28470, 28474), (41562, 41566), (55637, 55639), (69888, 69890)]"]
 	0 -> 246
-	247 [label="blue or"]
+	247 [label="be shown that this statement is"]
 	0 -> 247
-	248 [label="any of the above - specified marks , the mongrel offspring are very apt suddenly to acquire these characters"]
+	248 [label="[(2739, 2740), (15521, 15522), (28480, 28481), (41572, 41573), (55645, 55646), (69896, 69897)]"]
 	0 -> 248
-	249 [label="i crossed some"]
+	249 [label="correct ; but naturalists differ"]
 	0 -> 249
-	250 [label="white fantails"]
+	250 [label="[(2745, 2747), (15527, 15528), (28486, 28487), (41578, 41579), (55651, 55652), (69902, 69903)]"]
 	0 -> 250
-	251 [label="fantails with"]
+	251 [label="in determining what characters are of generic value ; all such valuations being at present empirical ."]
 	0 -> 251
-	252 [label=", and they produced"]
+	252 [label="[(2764, 2780), (15545, 15561), (28504, 28520), (41596, 41612), (55669, 55684), (69920, 69935)]"]
 	0 -> 252
-	253 [label="of as beautiful a blue colour , with the white"]
+	253 [label="we have no right to expect often to"]
 	0 -> 253
-	254 [label=", double black wing - bar , and barred and white - edged tail - feathers , as any wild rock"]
+	254 [label="[(2788, 2800), (15569, 15581), (28528, 28540), (41620, 41632), (55692, 55705), (69943, 69956)]"]
 	0 -> 254
-	255 [label="pigeon ! we can understand these facts , on the well - known principle of reversion to ancestral characters"]
+	255 [label="to estimate the amount of structural difference between"]
 	0 -> 255
-	256 [label="if all the domestic breeds"]
+	256 [label="[(2808, 2815), (15589, 15596), (28548, 28555), (41640, 41647), (55713, 55720), (69964, 69967)]"]
 	0 -> 256
-	257 [label="pigeon . but if we deny this , we must make one of the two following highly improbable suppositions . either ,"]
+	257 [label=", we are soon involved in doubt , from not knowing whether they"]
 	0 -> 257
-	258 [label=", that all the several imagined aboriginal stocks were coloured and marked like the rock"]
+	258 [label="[(2828, 2837), (15609, 15616), (28568, 28577), (41660, 41669), (55733, 55742), (69980, 69988)]"]
 	0 -> 258
-	259 [label="pigeon , although no other existing species is thus coloured and marked , so that in each separate breed there might be a tendency to revert to the very same colours and markings . or , secondly , that each breed , even the purest , has within a dozen"]
+	259 [label=". this point , if it could be cleared up , would be interesting ; if , for instance , it could be shown that the greyhound , bloodhound , terrier , spaniel , and bull - dog , which we all know propagate their kind"]
 	0 -> 259
-	260 [label="at most"]
+	260 [label="[(2883, 2884), (15662, 15663), (28623, 28624), (41715, 41716), (55788, 55789), (70034, 70034)]"]
 	0 -> 260
-	261 [label="within a score"]
+	261 [label="truly , were the offspring of any single species , then such facts would have great weight in making us doubt about the immutability of the many"]
 	0 -> 261
-	262 [label="of generations , been crossed by the rock"]
+	262 [label="[(2911, 2915), (15690, 15693), (28651, 28654), (41743, 41746), (55816, 55819), (70061, 70063)]"]
 	0 -> 262
-	263 [label="i say within a dozen or twenty generations , for"]
+	263 [label="natural species — for instance , of the many foxes — inhabiting different quarters of the world . i do not believe , as we shall presently see , that"]
 	0 -> 263
-	264 [label=", removed by a greater number of generations . in a breed which has been crossed only once"]
+	264 [label="[(2945, 2966), (15723, 15768), (28684, 28729), (41776, 41821), (55849, 55898), (70093, 70142)]"]
 	0 -> 264
-	265 [label=", the tendency to"]
+	265 [label=", there is presumptive"]
 	0 -> 265
-	266 [label="to any character derived from such"]
+	266 [label="[(2970, 2971), (15772, 15773), (28733, 28734), (41825, 41826), (55902, 55903), (70146, 70146)]"]
 	0 -> 266
-	267 [label="cross will naturally become less and less , as in each succeeding generation there will be less of the foreign blood ; but when there has been no cross"]
+	267 [label="or even strong"]
 	0 -> 267
-	268 [label=", and there is a tendency in"]
+	268 [label="[(2974, 2981), (15776, 15789), (28737, 28750), (41829, 41842), (55906, 55917), (70149, 70160)]"]
 	0 -> 268
-	269 [label="to revert to a character"]
+	269 [label=". it has often been assumed that man has chosen for domestication animals and plants having an extraordinary inherent tendency to vary , and likewise to withstand diverse climates . i do not dispute that these capacities have added largely to the value of most of our domesticated productions ; but how could a savage possibly know , when he first tamed an animal , whether it would vary in succeeding generations , and whether it would endure other climates ? has the little variability of the ass"]
 	0 -> 269
-	270 [label="lost during some former generation , this tendency , for all that we can see to the contrary , may be transmitted undiminished for an indefinite number of generations . these two"]
+	270 [label="[(3069, 3073), (15877, 15881), (28838, 28842), (41930, 41932), (56005, 56007), (70248, 70250)]"]
 	0 -> 270
-	271 [label="distinct cases"]
+	271 [label=", or the small power of endurance of warmth by the reindeer , or of cold by the common camel"]
 	0 -> 271
-	272 [label="are often confounded"]
+	272 [label="[(3093, 3094), (15901, 15902), (28862, 28862), (41952, 41953), (56027, 56028), (70270, 70271)]"]
 	0 -> 272
-	273 [label="on inheritance . lastly , the hybrids or mongrels from between all the"]
+	273 [label="prevented their domestication ? i cannot doubt that if other animals and plants , equal in number to our domesticated productions , and belonging to equally diverse classes and countries , were taken from a state of nature , and could be made to breed for an equal number of generations under domestication , they would"]
 	0 -> 273
-	274 [label="are perfectly fertile"]
+	274 [label="[(3150, 3151), (15958, 15959), (28918, 28919), (42009, 42009), (56084, 56084), (70327, 70327)]"]
 	0 -> 274
-	275 [label="i can state"]
+	275 [label="on an average"]
 	0 -> 275
-	276 [label="from my own observations , purposely made"]
+	276 [label="[(3154, 3154), (15962, 15962), (28922, 28922), (42012, 42013), (56087, 56088), (70330, 70331)]"]
 	0 -> 276
-	277 [label="on the most distinct breeds . now ,"]
+	277 [label="as largely as the parent species of our existing domesticated productions have varied . in the case of most of our anciently domesticated animals and plants ,"]
 	0 -> 277
-	278 [label="perfectly fertile . some authors believe that long - continued domestication eliminates this strong tendency to sterility"]
+	278 [label="[(3181, 3187), (15989, 15995), (28949, 28952), (42040, 42043), (56115, 56118), (70358, 70361)]"]
 	0 -> 278
-	279 [label="from the history of the dog"]
+	279 [label="possible to come to any definite conclusion , whether they"]
 	0 -> 279
-	280 [label=", if applied to species closely related"]
+	280 [label="[(3197, 3203), (16005, 16012), (28962, 28969), (42053, 42060), (56128, 56135), (70371, 70378)]"]
 	0 -> 280
-	281 [label=". but to extend"]
+	281 [label="species . the argument mainly relied on by those who believe in the multiple origin of our domestic animals is , that we find in the most ancient"]
 	0 -> 281
-	282 [label="so far as to suppose that species , aboriginally as distinct as carriers , tumblers , pouters , and fantails now are , should yield offspring perfectly fertile"]
+	282 [label="[(3231, 3235), (16040, 16044), (28997, 29001), (42088, 42090), (56163, 56165), (70406, 70408)]"]
 	0 -> 282
-	283 [label="inter se ,"]
+	283 [label="on the monuments of egypt ,"]
 	0 -> 283
-	284 [label="rash in the extreme . from these several reasons , namely"]
+	284 [label="[(3241, 3240), (16050, 16049), (29007, 29006), (42096, 42104), (56171, 56179), (70414, 70422)]"]
 	0 -> 284
-	285 [label="the improbability of man having formerly"]
+	285 [label=", much diversity in the breeds ; and that some of"]
 	0 -> 285
-	286 [label="seven or eight supposed species of pigeons to breed freely under domestication"]
+	286 [label="[(3251, 3252), (16060, 16061), (29017, 29018), (42115, 42117), (56190, 56192), (70433, 70435)]"]
 	0 -> 286
-	287 [label="these supposed species being quite unknown in a wild state , and their"]
+	287 [label="breeds closely resemble"]
 	0 -> 287
-	288 [label="these species"]
+	288 [label="[(3255, 3258), (16064, 16067), (29021, 29024), (42120, 42123), (56195, 56198), (70438, 70442)]"]
 	0 -> 288
-	289 [label="very abnormal characters"]
+	289 [label="identical with"]
 	0 -> 289
-	290 [label=", as compared with all other columbidæ , though so like"]
+	290 [label="[(3260, 3261), (16069, 16070), (29026, 29027), (42125, 42125), (56200, 56200), (70444, 70445)]"]
 	0 -> 290
-	291 [label="the blue colour and various"]
+	291 [label="those still existing ."]
 	0 -> 291
-	292 [label="in all the breeds , both when kept pure and when crossed"]
+	292 [label="[(3265, 3390), (16074, 16199), (29031, 29156), (42129, 42330), (56204, 56403), (70449, 70646)]"]
 	0 -> 292
-	293 [label="the mongrel offspring being perfectly fertile ; — from these several reasons , taken together ,"]
+	293 [label="remain vague"]
 	0 -> 293
-	294 [label="that all our domestic breeds"]
+	294 [label="[(3392, 3429), (16201, 16293), (29158, 29221), (42332, 42397), (56405, 56469), (70648, 70712)]"]
 	0 -> 294
-	295 [label="columba livia with its geographical"]
+	295 [label=". in regard to sheep and goats i can form no"]
 	0 -> 295
-	296 [label=". in favour of this view , i may add ,"]
+	296 [label="[(3440, 3440), (16304, 16304), (29232, 29232), (42408, 42408), (56480, 56481), (70723, 70724)]"]
 	0 -> 296
-	297 [label="has been found capable of domestication in europe and in india ; and that it agrees in habits and in a great number of points of structure with all the domestic breeds . secondly ,"]
+	297 [label="opinion ."]
 	0 -> 297
-	298 [label=", although an english carrier or"]
+	298 [label="[(3442, 3446), (16306, 16310), (29234, 29234), (42410, 42410), (56483, 56483), (70726, 70726)]"]
 	0 -> 298
-	299 [label="short - faced tumbler differs immensely in certain characters from the rock - pigeon , yet"]
+	299 [label="from facts communicated to me by mr . blyth , on the habits , voice ,"]
 	0 -> 299
-	300 [label="by comparing the several sub - breeds of these"]
+	300 [label="[(3462, 3467), (16326, 16331), (29250, 29255), (42426, 42430), (56499, 56503), (70742, 70746)]"]
 	0 -> 300
-	301 [label=", more especially those brought from distant countries , we can make"]
+	301 [label="of the humped indian cattle ,"]
 	0 -> 301
-	302 [label="an almost perfect series"]
+	302 [label="[(3473, 3476), (16337, 16340), (29261, 29266), (42436, 42442), (56509, 56516), (70752, 70759)]"]
 	0 -> 302
-	303 [label=". thirdly , those characters which are mainly distinctive of each breed"]
+	303 [label="descended from a different aboriginal stock from our european cattle ; and"]
 	0 -> 303
-	304 [label="are in each"]
+	304 [label="[(3488, 3489), (16352, 16353), (29278, 29279), (42454, 42455), (56528, 56529), (70771, 70772)]"]
 	0 -> 304
-	305 [label="eminently variable"]
+	305 [label="competent judges believe that these latter have had"]
 	0 -> 305
-	306 [label="; and the explanation of this fact will be obvious when we"]
+	306 [label="[(3497, 3502), (16361, 16366), (29287, 29292), (42463, 42511), (56537, 56588), (70780, 70830)]"]
 	0 -> 306
-	307 [label="treat of selection . fourthly , pigeons have been watched"]
+	307 [label=". with respect to horses , from reasons which i cannot"]
 	0 -> 307
-	308 [label="and tended with the utmost care , and loved by many people . they have been domesticated for thousands of years in several quarters of the world ; the earliest known record of pigeons is in the fifth ægyptian dynasty , about 3000 b . c ., as was pointed out to me by professor lepsius ; but mr . birch informs me that pigeons are given in a bill of fare in the previous dynasty . in the time of the romans , as we hear from pliny , immense prices were given for pigeons ; \" nay , they are come to this pass , that they can reckon up their pedigree and race .\" pigeons were much valued by akber khan in india , about the year 1600 ; never less than 20 , 000 pigeons were taken with the court . \" the monarchs of iran and turan sent him some very rare birds"]
+	308 [label="[(3513, 3519), (16377, 16383), (29303, 29311), (42522, 42530), (56599, 56605), (70841, 70847)]"]
 	0 -> 308
-	309 [label="and , continues the courtly historian , \" his majesty by crossing the breeds , which method was never practised before , has improved them astonishingly .\" about this same period the dutch were as eager about pigeons as were the old romans . the paramount importance of these considerations in explaining the immense amount of variation which pigeons have undergone , will"]
+	309 [label="inclined to believe , in opposition to several authors , that all the races"]
 	0 -> 309
-	310 [label="be obvious when we treat of selection . we shall then , also , see how it is that the"]
+	310 [label="[(3533, 3579), (16397, 16443), (29325, 29371), (42544, 42590), (56619, 56661), (70861, 70903)]"]
 	0 -> 310
-	311 [label="breeds so often have a somewhat monstrous character . it is also a most favourable circumstance for the production of distinct breeds , that male and female pigeons can be easily mated for life ; and thus different breeds can be kept together in the same aviary . i have discussed the probable origin of domestic pigeons at some , yet quite insufficient , length ; because when i first kept pigeons and watched the several kinds ,"]
+	311 [label="wild indian fowl"]
 	0 -> 311
-	312 [label=", i felt fully as much difficulty in believing that"]
+	312 [label="[(3582, 3583), (16446, 16447), (29374, 29375), (42593, 42594), (56664, 56665), (70906, 70907)]"]
 	0 -> 312
-	313 [label="from a common parent , as any naturalist could in coming to a similar conclusion in regard to the many species of finches , or other"]
+	313 [label="gallus bankiva"]
 	0 -> 313
-	314 [label="groups of birds , in nature . one circumstance has struck me much ; namely , that"]
+	314 [label="[(3585, 3586), (16449, 16450), (29377, 29378), (42596, 42637), (56667, 56689), (70909, 70931)]"]
 	0 -> 314
-	315 [label="all the breeders of the various domestic animals and the cultivators of plants , with whom i have"]
+	315 [label="in regard to ducks and rabbits ,"]
 	0 -> 315
-	316 [label="conversed , or whose treatises i have read , are firmly convinced that the several breeds to which each has attended , are descended from so many aboriginally distinct species . ask , as i have asked , a celebrated raiser of hereford cattle , whether his cattle might not have descended from long - horns ,"]
+	316 [label="[(3593, 3594), (16457, 16458), (29385, 29386), (42644, 42645), (56696, 56697), (70938, 70939)]"]
 	0 -> 316
-	317 [label=", and he will laugh you to scorn . i have never met a pigeon , or poultry , or"]
+	317 [label="breeds of which differ"]
 	0 -> 317
-	318 [label="duck , or rabbit fancier , who was not fully convinced that each main breed was descended from a distinct species . van mons , in his treatise on pears and apples , shows how utterly he disbelieves that the several sorts , for instance a ribston - pippin or codlin - apple , could ever have proceeded from the seeds of the same tree . innumerable other examples could be given . the explanation , i think , is simple : from long - continued study they are strongly impressed with the differences between the several races ; and though they well know that each race varies slightly , for they win their prizes by selecting such slight differences , yet they ignore all general arguments , and refuse to sum up in their minds slight differences accumulated during many"]
+	318 [label="[(3598, 3613), (16462, 16477), (29390, 29406), (42649, 42666), (56701, 56714), (70943, 70956)]"]
 	0 -> 318
-	319 [label="generations . may not those naturalists who , knowing far less of the laws of inheritance than does the breeder , and knowing no more than he does of the intermediate links in the long lines of descent , yet admit that many of our domestic races"]
+	319 [label="descended from the common wild duck and rabbit . the doctrine of the origin of our several domestic races from several aboriginal stocks , has been carried to an absurd extreme by some authors . they believe that every race which breeds true , let the distinctive characters be ever so slight , has had its wild prototype . at this rate there must have existed at least a score of species of wild cattle , as many sheep , and several goats"]
 	0 -> 319
-	320 [label="descended from the same parents — may they not learn a lesson of caution , when they deride the idea of species in a state of nature being lineal descendants of other species ?"]
+	320 [label="[(3696, 3696), (16560, 16560), (29489, 29489), (42749, 42749), (56797, 56798), (71039, 71040)]"]
 	0 -> 320
-	321 [label="let us now briefly consider the steps by which domestic races have been produced , either from one or from several allied species . some"]
+	321 [label="in europe alone , and several even within great britain . one author believes that there formerly existed"]
 	0 -> 321
-	322 [label="action of the external conditions of life , and some"]
+	322 [label="[(3714, 3717), (16578, 16581), (29507, 29510), (42767, 42770), (56816, 56819), (71058, 71058)]"]
 	0 -> 322
-	323 [label="to habit ; but he would be a bold man who would account by such agencies for the differences"]
+	323 [label="eleven wild species of sheep peculiar to"]
 	0 -> 323
-	324 [label="a dray and race horse , a greyhound and"]
+	324 [label="[(3724, 3725), (16588, 16589), (29517, 29518), (42777, 42778), (56826, 56827), (71065, 71067)]"]
 	0 -> 324
-	325 [label=", a carrier and tumbler pigeon . one of the most remarkable features in our domesticated races is that we see in them adaptation , not indeed to the"]
+	325 [label="! when we bear in mind that britain has now"]
 	0 -> 325
-	326 [label="own good , but to"]
+	326 [label="[(3735, 3736), (16599, 16600), (29528, 29529), (42788, 42789), (56837, 56838), (71077, 71078)]"]
 	0 -> 326
-	327 [label="use or fancy . some variations useful to him have probably arisen suddenly , or by one step ; many botanists , for instance , believe that the"]
+	327 [label="one peculiar mammal , and france but few distinct from those of germany"]
 	0 -> 327
-	328 [label=", with its hooks , which cannot be rivalled by any mechanical contrivance , is only a variety of the wild dipsacus ; and this amount of change may have suddenly arisen in a seedling . so it has probably been with the turnspit dog ; and this is known to have been the case with the ancon sheep . but when we compare the dray - horse and race - horse , the dromedary and camel , the various breeds of sheep fitted either for cultivated land or mountain pasture , with the wool of one breed good for one purpose , and that of another breed for another purpose ; when we compare the many breeds of dogs , each good for man in"]
+	328 [label="[(3749, 3751), (16613, 16615), (29542, 29544), (42802, 42805), (56851, 56854), (71091, 71091)]"]
 	0 -> 328
-	329 [label="different ways ; when we compare the game - cock , so pertinacious in battle , with other breeds so little"]
+	329 [label=", and so with hungary , spain , & c ., but that each of these kingdoms possesses several peculiar breeds of cattle , sheep , & c ., we must admit that many domestic breeds"]
 	0 -> 329
-	330 [label=", with \" everlasting layers \" which never desire to sit , and with the bantam so small and elegant ; when we compare the host of agricultural , culinary , orchard , and flower - garden races of plants , most useful to man at different seasons and for different purposes , or so beautiful in his eyes , we must , i think , look further than to mere variability . we cannot suppose that all the breeds were suddenly produced as perfect and as useful as we now see them ; indeed , in"]
+	330 [label="[(3785, 3785), (16649, 16649), (29578, 29578), (42839, 42839), (56888, 56888), (71125, 71126)]"]
 	0 -> 330
-	331 [label="cases , we know that this has not been their history . the key is"]
+	331 [label="have originated in europe ; for whence"]
 	0 -> 331
-	332 [label="power of accumulative selection : nature gives successive variations ; man adds them up in certain directions useful to him . in this sense he may be said to"]
+	332 [label="[(3792, 3795), (16656, 16659), (29585, 29588), (42846, 42849), (56895, 56897), (71133, 71137)]"]
 	0 -> 332
-	333 [label="for himself useful breeds . the great power of this principle of selection is not hypothetical . it is certain that several of our eminent breeders have , even within a single lifetime , modified to a large extent"]
+	333 [label="been derived"]
 	0 -> 333
-	334 [label="breeds of cattle and sheep . in order fully to realise what they have done , it is almost necessary to read several of the many treatises devoted to this subject , and to inspect the animals . breeders habitually speak of an"]
+	334 [label="[(3797, 3815), (16661, 16679), (29590, 29608), (42851, 42869), (56899, 56918), (71139, 71139)]"]
 	0 -> 334
-	335 [label="organisation as something"]
+	335 [label="? so it is in india . even in the case of the"]
 	0 -> 335
-	336 [label="plastic , which they can model almost as they please . if i had space i could quote numerous passages to this effect from highly competent authorities . youatt , who was probably better acquainted with the works of"]
+	336 [label="[(3828, 3833), (16692, 16697), (29621, 29626), (42882, 42887), (56931, 56936), (71152, 71159)]"]
 	0 -> 336
-	337 [label="than almost any other individual , and who was himself a very good judge of"]
+	337 [label="world , which i"]
 	0 -> 337
-	338 [label=", speaks of the principle of selection as \" that which enables the agriculturist , not only to modify the character of his flock , but to change it altogether . it is the"]
+	338 [label="[(3837, 3841), (16701, 16705), (29630, 29633), (42891, 42894), (56940, 56943), (71163, 71165)]"]
 	0 -> 338
-	339 [label="wand , by means of which he may summon into life whatever form and mould he pleases .\" lord somerville , speaking of what breeders have done for sheep , says : — \" it would seem as if they had chalked out upon a wall a form perfect in itself , and then had given it existence .\""]
+	339 [label="descended from several wild species ,"]
 	0 -> 339
-	340 [label=".\" in saxony the importance of the principle of selection in regard to merino sheep is so fully recognised , that men follow it as a trade"]
+	340 [label="[(3847, 3850), (16711, 16714), (29639, 29643), (42900, 42904), (56949, 56953), (71171, 71175)]"]
 	0 -> 340
-	341 [label="the sheep are placed on a table and are studied , like a picture by a connoisseur ; this is done three times at intervals of months , and the sheep are each time marked and classed , so that the very best may ultimately be selected for breeding . what english breeders have actually effected is proved by the enormous prices given for animals with a good pedigree ; and these have"]
+	341 [label="that there has been an immense amount of inherited variation"]
 	0 -> 341
-	342 [label="been exported to almost every quarter of the world . the improvement is by no means generally due to crossing different breeds ; all the best breeders are strongly opposed to this practice , except sometimes amongst closely allied sub - breeds . and when a cross has been made , the closest selection is far more indispensable even than in ordinary cases . if selection consisted merely in separating some very distinct variety , and breeding from it , the principle would be so obvious as hardly to be worth notice ; but its importance consists in the great effect produced by the accumulation in one direction , during successive generations , of differences absolutely inappreciable by an uneducated eye — differences which i for one have vainly attempted to appreciate . not one man in a thousand has accuracy of eye and judgment sufficient to become an eminent breeder . if gifted with these qualities , and he studies his subject for years , and devotes his lifetime to it with indomitable perseverance , he will succeed , and may make great improvements ; if he wants any of these qualities , he will assuredly fail . few would readily believe in the natural capacity and years of practice requisite to become even a skilful pigeon - fancier . the same principles are followed by horticulturists ; but the variations are here often more abrupt . no one supposes that our choicest productions have been produced by a single variation from the aboriginal stock . we have proofs that this"]
+	342 [label="[(3860, 3863), (16724, 16727), (29653, 29657), (42914, 42918), (56963, 56967), (71185, 71189)]"]
 	0 -> 342
-	343 [label="so in"]
+	343 [label="believe that animals closely resembling the italian greyhound , the bloodhound , the bull - dog ,"]
 	0 -> 343
-	344 [label="in which exact records have been kept ; thus , to give a very trifling instance , the steadily - increasing size of the common gooseberry may be quoted . we see an astonishing improvement in many florists"]
+	344 [label="[(3880, 3877), (16744, 16741), (29674, 29675), (42935, 42936), (56984, 56985), (71206, 71207)]"]
 	0 -> 344
-	345 [label="flowers , when the flowers of the present day are compared with drawings made only twenty or thirty years ago . when a race of plants is once pretty well established , the seed - raisers do not pick out the best plants , but merely go over their seed - beds , and pull up the \" rogues ,\" as they call the plants that deviate from the proper standard . with animals this kind of selection is , in fact ,"]
+	345 [label="- dog , or blenheim spaniel , & c . — so unlike all wild canidæ — ever existed"]
 	0 -> 345
-	346 [label="followed ; for hardly any one is so careless as to"]
+	346 [label="[(3894, 3895), (16758, 16759), (29692, 29693), (42953, 42954), (57002, 57003), (71224, 71224)]"]
 	0 -> 346
-	347 [label="his worst animals"]
+	347 [label="in a state of nature ? it has often been loosely said that all our races of dogs have been produced by the crossing of a few aboriginal species ; but by crossing we can"]
 	0 -> 347
-	348 [label=". in regard to plants , there is another means of observing the accumulated effects of selection — namely , by comparing the diversity of flowers in the different varieties of the same species in the flower - garden ; the diversity of leaves , pods , or tubers , or whatever part is valued , in the kitchen - garden , in comparison with the flowers of the same varieties ; and the diversity of fruit of the same species in the orchard , in comparison with the leaves and flowers of the same set of varieties . see how different the leaves of the cabbage are , and how extremely alike the flowers ; how unlike the flowers of the heartsease are , and how alike the leaves ; how much the fruit of the different kinds of gooseberries differ in size , colour , shape , and hairiness , and yet the flowers present very slight differences . it is not that the varieties which differ largely in some one point do not differ at all in other points ; this is hardly ever"]
+	348 [label="[(3930, 3932), (16794, 16796), (29728, 29730), (42989, 42991), (57038, 57040), (71259, 71261)]"]
 	0 -> 348
-	349 [label="perhaps never , the case . the"]
+	349 [label="forms in some degree intermediate between their parents ; and if we account for our several domestic races by this process , we must admit the former existence of the most extreme forms , as the italian greyhound , bloodhound , bull - dog , & c ., in the wild state . moreover , the possibility of making distinct races by crossing has been greatly exaggerated ."]
 	0 -> 349
-	350 [label=", the importance of which should never be overlooked , will ensure some differences ; but , as a general rule ,"]
+	350 [label="[(3999, 4004), (16863, 16868), (29797, 29804), (43058, 43065), (57107, 57114), (71328, 71335)]"]
 	0 -> 350
-	351 [label="that the continued selection of slight variations , either in the leaves , the flowers , or the fruit , will produce races differing from each other chiefly in these characters . it may be objected that the principle of selection has been reduced to methodical practice for scarcely more than three - quarters of a century ; it has certainly been more attended to of late years , and many treatises have been published on the subject ; and the result"]
+	351 [label="that a race may be modified by occasional crosses , if aided by the careful selection of"]
 	0 -> 351
-	352 [label="has been , in a corresponding degree , rapid and important . but it is very far from true that the principle is a modern discovery . i could give several references to"]
+	352 [label="[(4021, 4025), (16885, 16889), (29821, 29824), (43082, 43084), (57131, 57133), (71352, 71354)]"]
 	0 -> 352
-	353 [label="the full"]
+	353 [label="which present"]
 	0 -> 353
-	354 [label=". in rude and barbarous periods of english history choice animals were often imported , and laws were passed to prevent their exportation : the destruction of horses under a certain size was ordered , and this may be compared to the \" roguing \" of plants by nurserymen . the principle of selection i find distinctly given in an ancient chinese encyclopædia . explicit rules are laid down by some of the roman classical writers . from passages in genesis , it is clear that the colour of domestic animals was at that early period attended to . savages now sometimes cross their dogs with wild canine animals , to improve the breed , and they formerly did so , as is attested by passages in pliny . the savages in south africa match their draught cattle by colour , as do some of the esquimaux their teams of dogs . livingstone"]
+	354 [label="[(4027, 4028), (16891, 16892), (29826, 29827), (43086, 43087), (57135, 57136), (71356, 71357)]"]
 	0 -> 354
-	355 [label="good domestic breeds"]
+	355 [label="desired character ; but"]
 	0 -> 355
-	356 [label="valued by the negroes"]
+	356 [label="[(4032, 4052), (16896, 16916), (29831, 29851), (43091, 43109), (57140, 57158), (71361, 71376)]"]
 	0 -> 356
-	357 [label="the interior of africa who have not associated with europeans . some of these facts do not show actual selection , but they show that the breeding of domestic animals was carefully attended to in ancient times , and is now attended to by the lowest savages . it would , indeed , have been a strange fact , had attention not been paid to breeding , for the inheritance of good and bad qualities is so obvious ."]
+	357 [label=". sir j . sebright expressly"]
 	0 -> 357
-	358 [label=". at the present time , eminent breeders try by methodical selection , with a distinct object in view , to make a new strain or sub - breed , superior to anything"]
+	358 [label="[(4058, 4060), (16922, 16924), (29857, 29859), (43115, 43117), (57164, 57166), (71382, 71384)]"]
 	0 -> 358
-	359 [label="in the country . but , for our purpose , a"]
+	359 [label="this object , and failed . the offspring from the first cross between two pure breeds is tolerably and sometimes ( as i have found with pigeons )"]
 	0 -> 359
-	360 [label="of selection , which may be called unconscious , and which results from every one trying to possess and breed from the best individual animals , is more important . thus , a man who intends keeping pointers naturally tries to get as good dogs as he can , and afterwards breeds from his own best dogs , but he has no wish or expectation of permanently altering the breed . nevertheless"]
+	360 [label="[(4088, 4090), (16952, 16954), (29887, 29889), (43145, 43147), (57194, 57196), (71412, 71416)]"]
 	0 -> 360
-	361 [label="that this process , continued during centuries , would improve and modify"]
+	361 [label=", and everything seems simple enough ; but when these mongrels are crossed one with another for several generations , hardly two of them"]
 	0 -> 361
-	362 [label="breed , in the same way as bakewell , collins , & c ., by this very same process , only carried on more methodically , did greatly modify , even during their"]
+	362 [label="[(4114, 4118), (16978, 16982), (29913, 29917), (43171, 43175), (57220, 57223), (71440, 71443)]"]
 	0 -> 362
-	363 [label="lifetimes , the forms and qualities of their cattle . slow and insensible changes of this kind"]
+	363 [label="and then the"]
 	0 -> 363
-	364 [label="never be recognised unless actual measurements or careful drawings of the breeds in question"]
+	364 [label="[(4121, 4129), (16985, 16993), (29920, 29928), (43178, 43185), (57226, 57228), (71446, 71447)]"]
 	0 -> 364
-	365 [label="been made long ago , which"]
+	365 [label="of the task becomes"]
 	0 -> 365
-	366 [label="serve for comparison . in some cases , however , unchanged"]
+	366 [label="[(4133, 4178), (16997, 17042), (29932, 29977), (43189, 43232), (57232, 57274), (71451, 71453)]"]
 	0 -> 366
-	367 [label="or but little changed individuals of the same breed"]
+	367 [label="breeds of the domestic pigeon"]
 	0 -> 367
-	368 [label="in less civilised districts , where the breed has been less improved . there is reason to believe that king charles ' s spaniel has been unconsciously modified to a large extent since the time of that monarch . some highly competent authorities are convinced that the setter is directly derived from the spaniel , and has probably been slowly altered from it . it is known that the english pointer has been greatly changed within the last century , and in this case the change has , it is believed , been chiefly effected by crosses with the"]
+	368 [label="[(4183, 4184), (17047, 17048), (29982, 29983), (43237, 43243), (57279, 57285), (71458, 71464)]"]
 	0 -> 368
-	369 [label="; but what concerns us is , that the change has been effected unconsciously and gradually , and yet so effectually , that , though the old spanish pointer certainly came from spain , mr . borrow has not seen , as i am informed by him , any native dog in spain like our pointer . by a similar process of selection , and by careful training ,"]
+	369 [label="believing that it is always best to study some special group , i have , after deliberation , taken up domestic pigeons . i have kept every breed which i could purchase or obtain , and have been most kindly favoured with skins from several quarters of the world , more especially by the hon . w ."]
 	0 -> 369
-	370 [label="english racehorses have come to surpass in fleetness and size the parent"]
+	370 [label="[(4242, 4243), (17106, 17107), (30041, 30042), (43301, 43302), (57343, 57344), (71522, 71523)]"]
 	0 -> 370
-	371 [label=", so that the latter , by the regulations for the"]
+	371 [label="from india , and by the hon . c . murray from persia . many treatises in different languages have been published on pigeons , and some of them are very important , as being of considerable antiquity . i have associated with several eminent fanciers , and have been permitted to join two of the london pigeon clubs . the diversity of the breeds is something astonishing . compare the english carrier and the short - faced tumbler , and see the wonderful difference in their beaks , entailing corresponding differences in their skulls . the carrier , more especially the male bird , is also remarkable from the wonderful development of the carunculated skin about the head"]
 	0 -> 371
-	372 [label="races , are favoured in the weights"]
+	372 [label="[(4362, 4363), (17226, 17227), (30161, 30162), (43421, 43422), (57463, 57464), (71642, 71643)]"]
 	0 -> 372
-	373 [label="they carry . lord spencer and others have shown how the cattle of england have increased in weight and in early maturity , compared with the stock formerly kept in this country . by comparing the accounts given in"]
+	373 [label="and this is accompanied by greatly elongated eyelids , very large external orifices to the nostrils , and a wide gape of mouth . the short - faced tumbler has a beak in outline almost like that of a finch ; and the common tumbler has the singular"]
 	0 -> 373
-	374 [label="treatises of"]
+	374 [label="[(4411, 4413), (17275, 17275), (30210, 30210), (43470, 43470), (57512, 57512), (71691, 71691)]"]
 	0 -> 374
-	375 [label="in britain , india , and persia , we can"]
+	375 [label="inherited habit of flying at a great height in a compact flock , and tumbling in the air head over heels . the runt is a bird of great size , with long"]
 	0 -> 375
-	376 [label="trace the stages through which they have insensibly passed , and come to differ so greatly from the rock - pigeon . youatt gives an excellent illustration of the effects of a course of selection , which may be considered as"]
+	376 [label="[(4446, 4447), (17308, 17309), (30243, 30244), (43503, 43504), (57545, 57545), (71724, 71724)]"]
 	0 -> 376
-	377 [label=", in so far that the breeders could never have expected"]
+	377 [label="massive beak and large feet ; some of the sub - breeds of runts have very long necks , others very long wings and tails , others singularly short tails . the barb is allied to the carrier , but , instead of a"]
 	0 -> 377
-	378 [label=wished]
+	378 [label="[(4491, 4492), (17353, 17354), (30288, 30289), (43548, 43549), (57589, 57589), (71768, 71768)]"]
 	0 -> 378
-	379 [label="the result which ensued — namely , the production of two distinct strains . the two flocks of leicester sheep kept by mr . buckley and mr . burgess , as mr . youatt remarks , \" have been purely bred from the original stock of mr . bakewell for upwards of fifty years . there is not a suspicion existing in the mind of any one at all acquainted with the subject"]
+	379 [label="long beak , has a very short and"]
 	0 -> 379
-	380 [label="that the owner of either of them has deviated in any one instance from the pure blood of mr . bakewell ' s flock , and yet the difference between the sheep possessed by these two gentlemen is so great that they have the appearance of being quite different varieties .\" if there exist savages so barbarous as never to think of the inherited character of the offspring of their domestic animals , yet any one animal particularly useful to them , for any special purpose , would be carefully preserved during famines and other accidents , to which savages are so liable , and such choice animals would thus generally leave more offspring than the inferior ones ; so that in this case there would be a kind of unconscious selection going on . we see the value set on animals even by the barbarians of tierra del fuego , by their killing and devouring their old women , in times of dearth , as of less value than their dogs . in plants the same gradual process of improvement , through the occasional preservation of the best individuals , whether or not sufficiently distinct to be ranked at their first appearance as distinct varieties , and whether or not two or more species or races have become blended together by crossing , may plainly be recognised in the increased size and beauty which we now see in the varieties of the heartsease , rose , pelargonium , dahlia , and other plants , when compared with the older varieties or with their parent - stocks . no one would ever expect to get a first - rate heartsease or dahlia from the seed of a wild plant . no one would expect to raise a first - rate melting pear from the seed of the wild pear , though he might succeed from a poor seedling growing wild , if it had come from a garden - stock . the pear , though cultivated in classical times , appears , from"]
+	380 [label="[(4500, 4501), (17362, 17363), (30297, 30298), (43557, 43558), (57597, 57597), (71776, 71776)]"]
 	0 -> 380
-	381 [label="description , to have been a fruit of very inferior quality . i have seen great surprise expressed in horticultural works at the wonderful skill of gardeners , in having produced such splendid results from such poor materials ; but the art"]
+	381 [label="broad one . the pouter has a much elongated body , wings , and legs ; and its enormously developed crop , which it glories in inflating , may well excite astonishment and even laughter . the turbit has a"]
 	0 -> 381
-	382 [label="has been simple , and , as far as the final result is concerned , has been followed almost unconsciously . it has consisted in always cultivating the best known variety , sowing its seeds , and , when a slightly better variety"]
+	382 [label="[(4541, 4542), (17403, 17404), (30338, 30339), (43598, 43599), (57637, 57638), (71816, 71816)]"]
 	0 -> 382
-	383 [label="chanced to appear , selecting it , and so onwards . but the gardeners of the classical period , who cultivated the best"]
+	383 [label="short and conical beak , with a line of reversed feathers down the breast ; and it has the habit of continually expanding"]
 	0 -> 383
-	384 [label="they could procure , never thought what splendid fruit we should eat ; though we owe our excellent fruit , in some small degree , to their having naturally chosen and preserved the best varieties they could anywhere find . a large amount of change"]
+	384 [label="[(4565, 4566), (17427, 17428), (30362, 30363), (43622, 43623), (57661, 57662), (71839, 71842)]"]
 	0 -> 384
-	385 [label=", thus slowly and unconsciously accumulated , explains , as i believe , the well - known fact , that in a"]
+	385 [label="the upper part of the œsophagus . the jacobin has the feathers so much reversed along the back of the neck that they form a hood"]
 	0 -> 385
-	386 [label="number of cases we cannot recognise , and therefore do not know , the wild parent - stocks of the plants which have been longest cultivated in our flower and kitchen gardens . if it has taken centuries or thousands of years to improve or modify most of our plants up to their present standard of usefulness to man , we can understand how it is that neither australia , the cape of good hope , nor any other region inhabited by quite uncivilised man , has afforded us a single plant worth culture . it is not that these countries , so rich in species , do not by a strange chance possess the aboriginal stocks of any useful plants , but that the native plants have not been improved by continued selection up to a standard of perfection comparable with that"]
+	386 [label="[(4592, 4593), (17454, 17455), (30389, 30390), (43649, 43650), (57688, 57689), (71868, 71869)]"]
 	0 -> 386
-	387 [label="the plants in countries anciently civilised . in regard to the domestic animals kept by uncivilised man , it should not be overlooked that they almost always have to struggle for their own food , at least during certain seasons . and in two countries very differently circumstanced , individuals of the same species , having slightly different constitutions or structure , would often succeed better in the one country than in the other"]
+	387 [label="and it has , proportionally to its size ,"]
 	0 -> 387
-	388 [label="and thus by a process of \" natural selection ,\" as will hereafter be more fully explained , two sub - breeds might be formed . this , perhaps , partly explains"]
+	388 [label="[(4602, 4603), (17464, 17465), (30399, 30400), (43659, 43660), (57698, 57699), (71878, 71878)]"]
 	0 -> 388
-	389 [label="has been remarked by some authors ,"]
+	389 [label="elongated wing and tail feathers . the trumpeter and laugher , as their names express , utter a very different coo from the other breeds . the fantail has thirty or even forty tail"]
 	0 -> 389
-	390 [label="have more of the character of"]
+	390 [label="[(4637, 4638), (17499, 17499), (30434, 30435), (43694, 43695), (57733, 57734), (71912, 71913)]"]
 	0 -> 390
-	391 [label="species than the varieties kept in civilised countries . on the view here given of the"]
+	391 [label="feathers , instead of twelve or fourteen"]
 	0 -> 391
-	392 [label="important part which selection by man has played , it becomes at once obvious , how it is that our domestic races show adaptation in their structure or in their habits to"]
+	392 [label="[(4645, 4646), (17506, 17507), (30442, 30443), (43702, 43703), (57741, 57742), (71920, 71921)]"]
 	0 -> 392
-	393 [label="wants or fancies . we can , i think , further understand the frequently abnormal character of our domestic races , and likewise their differences being so great in external characters"]
+	393 [label="the normal number in all"]
 	0 -> 393
-	394 [label="and relatively so slight in internal parts or organs . man can hardly select , or only with much difficulty , any deviation of structure excepting such as is externally visible ; and indeed he rarely cares for what is internal . he can never act by selection , excepting on variations which are first given to him in some slight degree by nature . no man would ever try to make a fantail"]
+	394 [label="[(4651, 4651), (17512, 17512), (30448, 30448), (43708, 43708), (57747, 57747), (71926, 71927)]"]
 	0 -> 394
-	395 [label="till he saw a pigeon with a tail developed in some slight degree in an unusual manner , or a pouter till he saw a pigeon with a crop of somewhat unusual size ; and the more abnormal or unusual any character was when it first appeared , the more likely it would be to catch his attention . but to use such an expression as trying to make a fantail , is , i have no doubt , in most cases , utterly"]
+	395 [label="members of the great pigeon family"]
 	0 -> 395
-	396 [label=". the man who first selected a pigeon with a slightly larger tail , never dreamed what the descendants of that pigeon would become through long - continued , partly unconscious and partly methodical"]
+	396 [label="[(4657, 4659), (17518, 17520), (30454, 30456), (43714, 43716), (57753, 57755), (71933, 71934)]"]
 	0 -> 396
-	397 [label="selection . perhaps the parent"]
+	397 [label="these feathers are kept expanded , and are carried so erect"]
 	0 -> 397
-	398 [label="bird of all fantails had only fourteen tail - feathers somewhat expanded , like the present java fantail , or like individuals of other and distinct breeds , in which as many as seventeen tail - feathers have been counted . perhaps the first pouter - pigeon did not inflate its crop much more than the turbit now does the upper part of its œsophagus , — a habit which is disregarded by all fanciers , as it is not one of the points of the breed . nor let it be thought that some great deviation of structure would be necessary to catch the"]
+	398 [label="[(4670, 4670), (17531, 17531), (30467, 30468), (43727, 43728), (57766, 57767), (71945, 71946)]"]
 	0 -> 398
-	399 [label="eye : he perceives extremely small differences , and it is in human nature to value any novelty , however slight , in"]
+	399 [label="that in good birds the head and tail touch"]
 	0 -> 399
-	400 [label="own possession . nor must the value which would formerly"]
+	400 [label="[(4679, 4680), (17540, 17541), (30477, 30478), (43737, 43738), (57776, 57777), (71955, 71956)]"]
 	0 -> 400
-	401 [label="set on any slight differences in the individuals of the same species , be judged of by the value which"]
+	401 [label="the oil - gland is quite aborted . several other less distinct breeds might"]
 	0 -> 401
-	402 [label="set on them , after several breeds have"]
+	402 [label="[(4694, 4696), (17555, 17556), (30492, 30493), (43752, 43753), (57791, 57792), (71970, 71971)]"]
 	0 -> 402
-	403 [label="fairly been established ."]
+	403 [label="specified . in the skeletons of the several breeds , the development of the bones of the face in length and breadth and curvature differs enormously . the shape , as well as the breadth and length of the ramus of the lower jaw , varies in a highly remarkable manner . the"]
 	0 -> 403
-	404 [label="are rejected as faults or deviations from the standard of perfection"]
+	404 [label="[(4749, 4751), (17609, 17611), (30546, 30545), (43806, 43805), (57845, 57844), (72024, 72023)]"]
 	0 -> 404
-	405 [label="each breed . the common goose has not given rise to any marked varieties ; hence the"]
+	405 [label="the caudal and sacral vertebræ vary"]
 	0 -> 405
-	406 [label="and the common breed , which differ only in colour , that most fleeting of characters , have lately been exhibited as distinct at our poultry - shows ."]
+	406 [label="[(4757, 4757), (17617, 17617), (30551, 30553), (43811, 43813), (57850, 57852), (72029, 72031)]"]
 	0 -> 406
-	407 [label="these views"]
+	407 [label="; as does the number of the ribs , together with their relative breadth and the presence of processes . the size and shape of the apertures in the sternum are highly variable ; so is the degree of divergence and relative size of the two arms of the furcula . the proportional width of the gape of mouth , the proportional length of the eyelids , of the orifice of the nostrils , of the tongue ( not always in strict correlation with the length of beak ), the size of the crop and of the upper part of the œsophagus ; the development and abortion of the oil - gland ; the number of the primary wing and caudal feathers ; the relative length of"]
 	0 -> 407
-	408 [label="explain what has sometimes been noticed — namely"]
+	408 [label="[(4884, 4884), (17744, 17744), (30680, 30680), (43940, 43940), (57979, 57979), (72158, 72159)]"]
 	0 -> 408
-	409 [label="that we know"]
+	409 [label="wing and tail to each other and to the body ; the relative length of"]
 	0 -> 409
-	410 [label="about the origin or history of any of our domestic breeds . but , in fact , a breed , like a dialect of a language , can hardly be said to have"]
+	410 [label="[(4899, 4899), (17759, 17759), (30695, 30695), (43955, 43955), (57994, 57994), (72174, 72175)]"]
 	0 -> 410
-	411 [label="origin . a man preserves and breeds from an individual with some slight deviation of structure , or takes more care than usual in matching his best animals"]
+	411 [label="leg and"]
 	0 -> 411
-	412 [label="and thus improves them , and the improved"]
+	412 [label="[(4901, 4904), (17761, 17764), (30697, 30700), (43957, 43960), (57996, 57999), (72177, 72178)]"]
 	0 -> 412
-	413 [label="slowly spread in the immediate neighbourhood . but"]
+	413 [label="; the number of scutellæ on the toes , the development of skin between the toes , are all points of structure which are variable . the period at which the perfect plumage is acquired varies , as does the state of the down with which the nestling birds are clothed when hatched . the shape and size of the eggs vary . the manner of flight"]
 	0 -> 413
-	414 [label="as yet"]
+	414 [label="[(4971, 4976), (17831, 17836), (30767, 30769), (44027, 44029), (58066, 58068), (72245, 72247)]"]
 	0 -> 414
-	415 [label="hardly have a distinct name , and from being only slightly valued , their history will"]
+	415 [label="in some breeds the voice and disposition"]
 	0 -> 415
-	416 [label="disregarded . when further improved by the same slow and gradual process , they will spread more widely , and will"]
+	416 [label="[(4983, 4983), (17843, 17843), (30776, 30779), (44036, 44039), (58075, 58078), (72254, 72257)]"]
 	0 -> 416
-	417 [label="recognised as something distinct and valuable , and will then probably first receive a provincial name . in semi - civilised countries , with little free communication , the spreading"]
+	417 [label=". lastly , in certain breeds , the males and females have come to differ"]
 	0 -> 417
-	418 [label="be a slow process . as soon as the points of value"]
+	418 [label="[(4998, 4999), (17858, 17859), (30794, 30795), (44054, 44055), (58093, 58094), (72272, 72273)]"]
 	0 -> 418
-	419 [label="are once"]
+	419 [label="a slight degree from each other . altogether at least a score of pigeons might be chosen , which"]
 	0 -> 419
-	420 [label="acknowledged , the principle , as i have called it , of unconscious selection will always tend , — perhaps more at one period than at another , as the breed rises or falls in fashion , — perhaps more in one district than in another , according to the state of"]
+	420 [label="[(5018, 5018), (17878, 17878), (30814, 30815), (44074, 44075), (58113, 58114), (72292, 72293)]"]
 	0 -> 420
-	421 [label="of the inhabitants , — slowly to add to the characteristic features of the breed , whatever they may be . but the chance will be infinitely small of any record having been preserved of such slow , varying , and insensible changes ."]
+	421 [label="if shown to an ornithologist , and he were told that they were wild birds , would certainly"]
 	0 -> 421
-	422 [label="now say a few words on the circumstances , favourable , or the reverse , to"]
+	422 [label="[(5036, 5040), (17896, 17900), (30833, 30833), (44093, 44093), (58132, 58132), (72311, 72311)]"]
 	0 -> 422
-	423 [label="power of selection . a high degree of variability is obviously favourable , as freely giving the materials for selection to work on ; not that mere individual differences are not amply sufficient , with extreme care , to allow of the accumulation of a large amount of modification in almost any desired direction . but as variations manifestly useful or pleasing to man appear only occasionally , the chance of their appearance will be much increased by a large number of individuals being kept"]
+	423 [label="be ranked by him as well - defined species . moreover , i do not believe that any ornithologist would"]
 	0 -> 423
-	424 [label="success . on this principle marshall"]
+	424 [label="[(5060, 5060), (17920, 17920), (30853, 30853), (44113, 44113), (58152, 58152), (72331, 72334)]"]
 	0 -> 424
-	425 [label="remarked , with respect to the sheep of parts of yorkshire"]
+	425 [label="place the english carrier , the short - faced tumbler , the runt , the barb , pouter , and fantail in the same genus ; more especially as in each of these breeds several truly - inherited sub - breeds , or species"]
 	0 -> 425
-	426 [label="as they generally belong to poor people , and are mostly in small lots , they never can be improved .\" on the other hand , nurserymen , from"]
+	426 [label="[(5104, 5109), (17964, 17969), (30897, 30902), (44157, 44162), (58196, 58201), (72378, 72383)]"]
 	0 -> 426
-	427 [label="large stocks of the same"]
+	427 [label="them , could be shown him . great as"]
 	0 -> 427
-	428 [label=", are generally far more successful than amateurs in"]
+	428 [label="[(5118, 5121), (17978, 17981), (30911, 30914), (44171, 44174), (58210, 58213), (72392, 72395)]"]
 	0 -> 428
-	429 [label="new and valuable varieties ."]
+	429 [label="between the breeds of"]
 	0 -> 429
-	430 [label="a large number of individuals of"]
+	430 [label="[(5125, 5126), (17985, 17986), (30918, 30919), (44178, 44179), (58217, 58218), (72399, 72401)]"]
 	0 -> 430
-	431 [label=". when the individuals"]
+	431 [label=", i am fully convinced that the common opinion of naturalists is correct , namely , that all"]
 	0 -> 431
-	432 [label="are scanty , all"]
+	432 [label="[(5144, 5150), (18004, 18010), (30937, 30943), (44197, 44203), (58236, 58242), (72419, 72424)]"]
 	0 -> 432
-	433 [label=", whatever their quality may be ,"]
+	433 [label="pigeon ( columba livia ), including under this term several geographical races or sub - species , which differ from each other in the most trifling respects . as several of the reasons which have led me to this belief are in some degree applicable in other cases , i will here briefly give them . if the several breeds are not varieties , and have not proceeded from the rock - pigeon , they must have descended from at least seven or eight aboriginal stocks ; for it is impossible to make the present domestic breeds by the crossing of any lesser number : how , for instance , could a pouter be produced by crossing two breeds unless one of the parent - stocks"]
 	0 -> 433
-	434 [label=", and this will effectually prevent selection . but probably the most important"]
+	434 [label="[(5276, 5277), (18136, 18137), (31069, 31070), (44329, 44330), (58368, 58369), (72550, 72551)]"]
 	0 -> 434
-	435 [label="that the animal or plant should be so highly"]
+	435 [label="the characteristic enormous crop ? the supposed aboriginal stocks must all have been rock - pigeons , that is ,"]
 	0 -> 435
-	436 [label=", that the closest attention"]
+	436 [label="[(5297, 5299), (18157, 18159), (31090, 31092), (44350, 44352), (58389, 58391), (72571, 72575)]"]
 	0 -> 436
-	437 [label="paid to even the slightest"]
+	437 [label="or willingly"]
 	0 -> 437
-	438 [label="qualities or structure"]
+	438 [label="[(5301, 5302), (18161, 18162), (31094, 31095), (44354, 44355), (58393, 58394), (72577, 72578)]"]
 	0 -> 438
-	439 [label=". unless such attention be paid nothing can be effected . i have seen it gravely remarked , that it was most fortunate that the strawberry began to vary just when gardeners began to attend"]
+	439 [label="on trees . but besides c . livia , with its geographical sub - species , only two or three other species of rock - pigeons are known ; and these have not any of the characters of the domestic breeds . hence the supposed aboriginal stocks must either still exist in the countries where they were originally domesticated , and yet be unknown to ornithologists ; and this , considering their size , habits , and remarkable characters , seems"]
 	0 -> 439
-	440 [label="to this plant . no doubt the strawberry had always varied since it was cultivated , but the slight varieties had been neglected . as soon , however , as gardeners picked out individual plants with slightly larger , earlier , or better fruit , and raised seedlings from them , and again picked out the best seedlings and bred from them , then"]
+	440 [label="[(5383, 5384), (18243, 18244), (31176, 31177), (44436, 44437), (58475, 58475), (72659, 72659)]"]
 	0 -> 440
-	441 [label="distinct species ) those many admirable varieties of the strawberry"]
+	441 [label="improbable ; or they must have become extinct in the wild state . but birds breeding on precipices , and good fliers , are unlikely to be exterminated ; and the common rock - pigeon , which has the same habits with the domestic breeds , has not been exterminated even on several of the smaller british islets , or on the shores of the mediterranean . hence the supposed extermination of so many species having similar habits with the rock - pigeon seems"]
 	0 -> 441
-	442 [label="during the last"]
+	442 [label="[(5468, 5470), (18328, 18330), (31261, 31263), (44521, 44523), (58559, 58559), (72743, 72743)]"]
 	0 -> 442
-	443 [label=", facility in preventing crosses is an important element"]
+	443 [label="a very rash assumption . moreover , the several above - named domesticated breeds have been transported to all parts of the world , and , therefore , some of them must have been carried back again into their native country ; but not one has"]
 	0 -> 443
-	444 [label="in the formation of new races , — at least , in a country which is already stocked with other races . in this respect enclosure of the land plays a part . wandering savages or the inhabitants of open plains rarely possess more than one breed of the same species . pigeons can be mated for life , and this is a great convenience to the fancier , for thus many races may be"]
+	444 [label="[(5516, 5517), (18376, 18377), (31309, 31310), (44569, 44570), (58605, 58606), (72789, 72789)]"]
 	0 -> 444
-	445 [label="kept true , though mingled in the same aviary ; and this circumstance must have largely favoured the"]
+	445 [label="become wild or feral , though the dovecot - pigeon , which is the rock - pigeon in a very slightly altered state , has become feral in several places . again , all recent experience shows that it is"]
 	0 -> 445
-	446 [label="formation of new breeds . pigeons , i may add , can be propagated in great numbers and at a very quick rate , and inferior birds may be freely rejected , as when killed they serve for food . on the other hand , cats , from their nocturnal rambling habits , cannot be"]
+	446 [label="[(5557, 5558), (18417, 18418), (31350, 31350), (44610, 44610), (58646, 58646), (72829, 72829)]"]
 	0 -> 446
-	447 [label="matched , and , although so much valued by women and children , we"]
+	447 [label="difficult to get"]
 	0 -> 447
-	448 [label="see a distinct breed"]
+	448 [label="[(5561, 5564), (18421, 18424), (31353, 31356), (44613, 44616), (58649, 58652), (72832, 72834)]"]
 	0 -> 448
-	449 [label="kept up ; such breeds as we do sometimes see are almost always imported from some other country"]
+	449 [label="to breed freely under domestication ; yet"]
 	0 -> 449
-	450 [label=". although i do not doubt that some domestic animals vary less than others , yet the rarity or absence of distinct breeds of the cat , the donkey , peacock , goose , & c ., may be attributed in main part to selection not having been brought into play : in cats , from the difficulty in pairing them"]
+	450 [label="[(5571, 5571), (18431, 18431), (31363, 31364), (44623, 44624), (58659, 58660), (72841, 72842)]"]
 	0 -> 450
-	451 [label="in donkeys , from only a few being kept by poor people , and little attention paid to their breeding ;"]
+	451 [label="on the hypothesis of the multiple origin of our pigeons , it must be assumed that at least seven or eight species were so thoroughly domesticated in ancient times by half -"]
 	0 -> 451
-	452 [label="in peacocks , from not being very easily reared and a large stock not kept"]
+	452 [label="[(5603, 5604), (18463, 18464), (31396, 31397), (44656, 44657), (58692, 58693), (72874, 72875)]"]
 	0 -> 452
-	453 [label="in geese , from being valuable only for two purposes , food and feathers , and more especially from no pleasure having been felt in the display of distinct breeds"]
+	453 [label="man , as to be quite prolific under confinement . an argument"]
 	0 -> 453
-	454 [label=". to sum up on the origin of our domestic races of animals and plants ."]
+	454 [label="[(5616, 5623), (18476, 18483), (31409, 31416), (44669, 44676), (58705, 58705), (72887, 72887)]"]
 	0 -> 454
-	455 [label="causing variability"]
+	455 [label="of great weight , and applicable in several other cases , is , that the above"]
 	0 -> 455
-	456 [label="that variability is an inherent and necessary"]
+	456 [label="[(5639, 5640), (18499, 18500), (31432, 31432), (44692, 44693), (58721, 58722), (72903, 72904)]"]
 	0 -> 456
-	457 [label=", under all circumstances"]
+	457 [label="specified breeds , though agreeing generally"]
 	0 -> 457
-	458 [label="of inheritance and"]
+	458 [label="[(5646, 5646), (18506, 18506), (31438, 31438), (44699, 44699), (58728, 58734), (72910, 72916)]"]
 	0 -> 458
-	459 [label=". variability is governed by many unknown laws ,"]
+	459 [label="in constitution , habits , voice , colouring , and in most parts of their structure ,"]
 	0 -> 459
-	460 [label="action of the conditions of life"]
+	460 [label="[(5663, 5669), (18523, 18529), (31455, 31461), (44716, 44722), (58751, 58750), (72933, 72932)]"]
 	0 -> 460
-	461 [label=". the final result is thus rendered infinitely complex . in some cases"]
+	461 [label=", yet are certainly highly abnormal in other parts"]
 	0 -> 461
-	462 [label="the intercrossing of"]
+	462 [label="[(5678, 5682), (18538, 18542), (31470, 31474), (44731, 44735), (58759, 58760), (72941, 72942)]"]
 	0 -> 462
-	463 [label="played an important part in the origin of our"]
+	463 [label="we may look in vain"]
 	0 -> 463
-	464 [label="breeds have once been"]
+	464 [label="[(5687, 5688), (18547, 18548), (31479, 31480), (44740, 44741), (58765, 58766), (72947, 72948)]"]
 	0 -> 464
-	465 [label=", their occasional intercrossing , with the aid of selection , has , no doubt , largely aided in"]
+	465 [label="the whole great family of columbidæ for a beak like that of the english carrier , or that of the short - faced tumbler , or barb ; for reversed feathers like those of the jacobin ; for a crop like that of the pouter ; for tail - feathers like those of the fantail . hence it must be assumed not only that half -"]
 	0 -> 465
-	466 [label="new sub - breeds ; but the importance of"]
+	466 [label="[(5754, 5755), (18614, 18615), (31546, 31547), (44807, 44808), (58832, 58833), (73014, 73015)]"]
 	0 -> 466
-	467 [label="exaggerated , both in regard to animals and to those plants which are propagated by seed ."]
+	467 [label="man succeeded in thoroughly domesticating several species , but that he intentionally or by chance picked out extraordinarily abnormal species ; and further , that these very species have since all become extinct or unknown . so many strange contingencies"]
 	0 -> 467
-	468 [label="plants which are temporarily propagated by cuttings , buds , & c ., the importance of"]
+	468 [label="[(5795, 5798), (18655, 18658), (31587, 31588), (44848, 44849), (58873, 58874), (73055, 73056)]"]
 	0 -> 468
-	469 [label="is immense ; for the cultivator"]
+	469 [label="improbable in the highest degree . some facts in regard to the colouring of pigeons well deserve consideration . the rock"]
 	0 -> 469
-	470 [label="the extreme variability both of hybrids and"]
+	470 [label="[(5819, 5820), (18679, 18680), (31609, 31610), (44870, 44871), (58895, 58896), (73077, 73077)]"]
 	0 -> 470
-	471 [label="mongrels , and the"]
+	471 [label="pigeon is of a slaty - blue ,"]
 	0 -> 471
-	472 [label="sterility of hybrids ; but"]
+	472 [label="[(5828, 5834), (18688, 18694), (31618, 31624), (44879, 44885), (58904, 58908), (73085, 73090)]"]
 	0 -> 472
-	473 [label="plants not propagated by seed are of little importance to us , for their endurance is only temporary . over all these causes of change"]
+	473 [label="the indian sub - species , c . intermedia of strickland ,"]
 	0 -> 473
-	474 [label="the accumulative action of selection , whether applied methodically and"]
+	474 [label="[(5846, 5848), (18706, 18708), (31636, 31638), (44897, 44899), (58920, 58923), (73102, 73105)]"]
 	0 -> 474
-	475 [label="quickly , or unconsciously and"]
+	475 [label=bluish]
 	0 -> 475
-	476 [label="but more efficiently ,"]
+	476 [label="[(5849, 5850), (18709, 18710), (31639, 31640), (44900, 44901), (58924, 58925), (73106, 73107)]"]
 	0 -> 476
-	477 [label="the predominant power ."]
+	477 [label="the tail has a terminal dark bar , with the"]
 	0 -> 477
+	478 [label="[(5860, 5862), (18720, 18722), (31650, 31652), (44911, 44913), (58935, 58934), (73117, 73116)]"]
+	0 -> 478
+	479 [label="the outer feathers externally edged"]
+	0 -> 479
+	480 [label="[(5867, 5870), (18727, 18730), (31657, 31660), (44918, 44921), (58939, 58945), (73121, 73127)]"]
+	0 -> 480
+	481 [label="the wings have two black bars"]
+	0 -> 481
+	482 [label="[(5876, 5877), (18736, 18737), (31666, 31667), (44927, 44928), (58951, 58952), (73133, 73134)]"]
+	0 -> 482
+	483 [label="some semi - domestic breeds"]
+	0 -> 483
+	484 [label="[(5882, 5885), (18742, 18745), (31672, 31676), (44933, 44937), (58957, 58960), (73139, 73142)]"]
+	0 -> 484
+	485 [label="truly wild breeds"]
+	0 -> 485
+	486 [label="[(5888, 5888), (18748, 18748), (31679, 31680), (44940, 44941), (58963, 58964), (73145, 73146)]"]
+	0 -> 486
+	487 [label="have , besides the two black bars , the wings chequered with black . these several marks do not occur together in any other species of the whole family . now , in every one of the domestic breeds , taking thoroughly well - bred birds , all the above marks , even to the white edging of the outer tail - feathers , sometimes concur perfectly developed . moreover , when"]
+	0 -> 487
+	488 [label="[(5960, 5961), (18820, 18821), (31752, 31752), (45013, 45013), (59036, 59036), (73218, 73218)]"]
+	0 -> 488
+	489 [label="birds belonging to two"]
+	0 -> 489
+	490 [label="[(5965, 5965), (18825, 18825), (31756, 31758), (45017, 45019), (59040, 59042), (73222, 73224)]"]
+	0 -> 490
+	491 [label="distinct breeds are crossed ,"]
+	0 -> 491
+	492 [label="[(5970, 5974), (18830, 18834), (31763, 31767), (45024, 45028), (59047, 59051), (73229, 73233)]"]
+	0 -> 492
+	493 [label="blue or"]
+	0 -> 493
+	494 [label="[(5976, 5977), (18836, 18837), (31769, 31770), (45030, 45031), (59053, 59054), (73235, 73236)]"]
+	0 -> 494
+	495 [label="any of the above - specified marks , the mongrel offspring are very apt suddenly to acquire these characters"]
+	0 -> 495
+	496 [label="[(5996, 6000), (18856, 18860), (31789, 31802), (45050, 45063), (59073, 59086), (73255, 73268)]"]
+	0 -> 496
+	497 [label="i crossed some"]
+	0 -> 497
+	498 [label="[(6003, 6004), (18863, 18864), (31805, 31805), (45066, 45066), (59089, 59089), (73271, 73271)]"]
+	0 -> 498
+	499 [label="white fantails"]
+	0 -> 499
+	500 [label="[(6006, 6005), (18866, 18865), (31807, 31899), (45068, 45160), (59091, 59183), (73273, 73365)]"]
+	0 -> 500
+	501 [label="fantails with"]
+	0 -> 501
+	502 [label="[(6007, 6011), (18867, 18871), (31901, 31906), (45162, 45167), (59185, 59190), (73367, 73372)]"]
+	0 -> 502
+	503 [label=", and they produced"]
+	0 -> 503
+	504 [label="[(6015, 6040), (18875, 18900), (31910, 31912), (45171, 45173), (59194, 59196), (73376, 73378)]"]
+	0 -> 504
+	505 [label="of as beautiful a blue colour , with the white"]
+	0 -> 505
+	506 [label="[(6050, 6051), (18910, 18911), (31922, 31923), (45183, 45184), (59206, 59207), (73388, 73389)]"]
+	0 -> 506
+	507 [label=", double black wing - bar , and barred and white - edged tail - feathers , as any wild rock"]
+	0 -> 507
+	508 [label="[(6072, 6073), (18932, 18933), (31944, 31945), (45205, 45206), (59228, 59229), (73410, 73410)]"]
+	0 -> 508
+	509 [label="pigeon ! we can understand these facts , on the well - known principle of reversion to ancestral characters"]
+	0 -> 509
+	510 [label="[(6092, 6093), (18952, 18953), (31964, 31978), (45225, 45226), (59248, 59249), (73429, 73430)]"]
+	0 -> 510
+	511 [label="if all the domestic breeds"]
+	0 -> 511
+	512 [label="[(6098, 6104), (18958, 18964), (31983, 31989), (45231, 45237), (59254, 59260), (73435, 73440)]"]
+	0 -> 512
+	513 [label="pigeon . but if we deny this , we must make one of the two following highly improbable suppositions . either ,"]
+	0 -> 513
+	514 [label="[(6126, 6127), (18986, 18987), (32011, 32012), (45259, 45260), (59282, 59283), (73462, 73463)]"]
+	0 -> 514
+	515 [label=", that all the several imagined aboriginal stocks were coloured and marked like the rock"]
+	0 -> 515
+	516 [label="[(6142, 6143), (19002, 19003), (32027, 32028), (45275, 45276), (59298, 59299), (73478, 73478)]"]
+	0 -> 516
+	517 [label="pigeon , although no other existing species is thus coloured and marked , so that in each separate breed there might be a tendency to revert to the very same colours and markings . or , secondly , that each breed , even the purest , has within a dozen"]
+	0 -> 517
+	518 [label="[(6193, 6195), (19053, 19055), (32078, 32080), (45326, 45328), (59349, 59351), (73528, 73530)]"]
+	0 -> 518
+	519 [label="at most"]
+	0 -> 519
+	520 [label="[(6197, 6198), (19057, 19058), (32082, 32082), (45330, 45330), (59353, 59353), (73532, 73532)]"]
+	0 -> 520
+	521 [label="within a score"]
+	0 -> 521
+	522 [label="[(6201, 6201), (19061, 19061), (32085, 32086), (45333, 45334), (59356, 59357), (73535, 73536)]"]
+	0 -> 522
+	523 [label="of generations , been crossed by the rock"]
+	0 -> 523
+	524 [label="[(6209, 6212), (19069, 19072), (32094, 32097), (45342, 45345), (59365, 59368), (73544, 73546)]"]
+	0 -> 524
+	525 [label="i say within a dozen or twenty generations , for"]
+	0 -> 525
+	526 [label="[(6222, 6239), (19082, 19099), (32107, 32124), (45355, 45372), (59378, 59392), (73556, 73570)]"]
+	0 -> 526
+	527 [label=", removed by a greater number of generations . in a breed which has been crossed only once"]
+	0 -> 527
+	528 [label="[(6257, 6261), (19117, 19121), (32142, 32146), (45390, 45394), (59410, 59410), (73588, 73588)]"]
+	0 -> 528
+	529 [label=", the tendency to"]
+	0 -> 529
+	530 [label="[(6265, 6266), (19125, 19126), (32150, 32151), (45398, 45399), (59414, 59415), (73592, 73593)]"]
+	0 -> 530
+	531 [label="to any character derived from such"]
+	0 -> 531
+	532 [label="[(6272, 6272), (19132, 19132), (32157, 32157), (45405, 45405), (59421, 59422), (73599, 73600)]"]
+	0 -> 532
+	533 [label="cross will naturally become less and less , as in each succeeding generation there will be less of the foreign blood ; but when there has been no cross"]
+	0 -> 533
+	534 [label="[(6301, 6305), (19161, 19165), (32186, 32190), (45434, 45438), (59451, 59451), (73629, 73629)]"]
+	0 -> 534
+	535 [label=", and there is a tendency in"]
+	0 -> 535
+	536 [label="[(6312, 6314), (19172, 19174), (32197, 32199), (45445, 45447), (59458, 59460), (73636, 73638)]"]
+	0 -> 536
+	537 [label="to revert to a character"]
+	0 -> 537
+	538 [label="[(6319, 6323), (19179, 19183), (32204, 32207), (45452, 45455), (59465, 59467), (73643, 73645)]"]
+	0 -> 538
+	539 [label="lost during some former generation , this tendency , for all that we can see to the contrary , may be transmitted undiminished for an indefinite number of generations . these two"]
+	0 -> 539
+	540 [label="[(6355, 6355), (19215, 19215), (32239, 32240), (45487, 45488), (59499, 59499), (73677, 73677)]"]
+	0 -> 540
+	541 [label="distinct cases"]
+	0 -> 541
+	542 [label="[(6357, 6357), (19217, 19217), (32242, 32242), (45490, 45490), (59501, 59503), (73679, 73681)]"]
+	0 -> 542
+	543 [label="are often confounded"]
+	0 -> 543
+	544 [label="[(6360, 6362), (19220, 19222), (32245, 32250), (45493, 45498), (59506, 59512), (73684, 73690)]"]
+	0 -> 544
+	545 [label="on inheritance . lastly , the hybrids or mongrels from between all the"]
+	0 -> 545
+	546 [label="[(6375, 6379), (19235, 19239), (32263, 32267), (45511, 45515), (59525, 59529), (73703, 73707)]"]
+	0 -> 546
+	547 [label="are perfectly fertile"]
+	0 -> 547
+	548 [label="[(6382, 6383), (19242, 19243), (32270, 32271), (45518, 45519), (59532, 59533), (73710, 73712)]"]
+	0 -> 548
+	549 [label="i can state"]
+	0 -> 549
+	550 [label="[(6386, 6387), (19246, 19247), (32274, 32275), (45522, 45523), (59536, 59537), (73715, 73715)]"]
+	0 -> 550
+	551 [label="from my own observations , purposely made"]
+	0 -> 551
+	552 [label="[(6394, 6394), (19254, 19255), (32282, 32283), (45530, 45531), (59544, 59545), (73722, 73723)]"]
+	0 -> 552
+	553 [label="on the most distinct breeds . now ,"]
+	0 -> 553
+	554 [label="[(6402, 6425), (19263, 19286), (32291, 32314), (45539, 45562), (59553, 59576), (73731, 73749)]"]
+	0 -> 554
+	555 [label="perfectly fertile . some authors believe that long - continued domestication eliminates this strong tendency to sterility"]
+	0 -> 555
+	556 [label="[(6442, 6443), (19303, 19304), (32331, 32332), (45579, 45580), (59593, 59594), (73766, 73769)]"]
+	0 -> 556
+	557 [label="from the history of the dog"]
+	0 -> 557
+	558 [label="[(6449, 6458), (19310, 19319), (32338, 32347), (45586, 45601), (59600, 59615), (73775, 73789)]"]
+	0 -> 558
+	559 [label=", if applied to species closely related"]
+	0 -> 559
+	560 [label="[(6465, 6475), (19326, 19336), (32354, 32364), (45608, 45620), (59622, 59634), (73796, 73799)]"]
+	0 -> 560
+	561 [label=". but to extend"]
+	0 -> 561
+	562 [label="[(6479, 6481), (19340, 19342), (32368, 32370), (45624, 45626), (59638, 59640), (73803, 73804)]"]
+	0 -> 562
+	563 [label="so far as to suppose that species , aboriginally as distinct as carriers , tumblers , pouters , and fantails now are , should yield offspring perfectly fertile"]
+	0 -> 563
+	564 [label="[(6509, 6510), (19370, 19371), (32398, 32398), (45654, 45654), (59668, 59668), (73832, 73832)]"]
+	0 -> 564
+	565 [label="inter se ,"]
+	0 -> 565
+	566 [label="[(6513, 6516), (19374, 19377), (32401, 32404), (45657, 45660), (59671, 59674), (73835, 73837)]"]
+	0 -> 566
+	567 [label="rash in the extreme . from these several reasons , namely"]
+	0 -> 567
+	568 [label="[(6527, 6528), (19388, 19389), (32415, 32416), (45671, 45672), (59685, 59686), (73848, 73849)]"]
+	0 -> 568
+	569 [label="the improbability of man having formerly"]
+	0 -> 569
+	570 [label="[(6534, 6535), (19395, 19396), (32422, 32423), (45678, 45679), (59692, 59693), (73855, 73856)]"]
+	0 -> 570
+	571 [label="seven or eight supposed species of pigeons to breed freely under domestication"]
+	0 -> 571
+	572 [label="[(6547, 6548), (19408, 19409), (32435, 32436), (45691, 45692), (59705, 59706), (73868, 73869)]"]
+	0 -> 572
+	573 [label="these supposed species being quite unknown in a wild state , and their"]
+	0 -> 573
+	574 [label="[(6561, 6565), (19422, 19426), (32449, 32453), (45705, 45709), (59719, 59723), (73882, 73888)]"]
+	0 -> 574
+	575 [label="these species"]
+	0 -> 575
+	576 [label="[(6567, 6568), (19428, 19429), (32455, 32456), (45711, 45712), (59725, 59726), (73890, 73892)]"]
+	0 -> 576
+	577 [label="very abnormal characters"]
+	0 -> 577
+	578 [label="[(6571, 6574), (19432, 19435), (32459, 32462), (45715, 45718), (59729, 59732), (73895, 73895)]"]
+	0 -> 578
+	579 [label=", as compared with all other columbidæ , though so like"]
+	0 -> 579
+	580 [label="[(6585, 6595), (19446, 19456), (32473, 32483), (45729, 45739), (59743, 59753), (73906, 73920)]"]
+	0 -> 580
+	581 [label="the blue colour and various"]
+	0 -> 581
+	582 [label="[(6600, 6603), (19461, 19464), (32488, 32492), (45744, 45748), (59758, 59762), (73925, 73927)]"]
+	0 -> 582
+	583 [label="in all the breeds , both when kept pure and when crossed"]
+	0 -> 583
+	584 [label="[(6615, 6616), (19476, 19477), (32504, 32505), (45760, 45761), (59774, 59775), (73939, 73943)]"]
+	0 -> 584
+	585 [label="the mongrel offspring being perfectly fertile ; — from these several reasons , taken together ,"]
+	0 -> 585
+	586 [label="[(6631, 6636), (19492, 19497), (32520, 32524), (45776, 45780), (59790, 59794), (73958, 73962)]"]
+	0 -> 586
+	587 [label="that all our domestic breeds"]
+	0 -> 587
+	588 [label="[(6641, 6645), (19502, 19506), (32529, 32533), (45785, 45789), (59799, 59803), (73967, 73975)]"]
+	0 -> 588
+	589 [label="columba livia with its geographical"]
+	0 -> 589
+	590 [label="[(6650, 6653), (19511, 19514), (32538, 32539), (45794, 45797), (59808, 59811), (73980, 73983)]"]
+	0 -> 590
+	591 [label=". in favour of this view , i may add ,"]
+	0 -> 591
+	592 [label="[(6664, 6677), (19525, 19538), (32550, 32563), (45808, 45821), (59822, 59835), (73994, 74002)]"]
+	0 -> 592
+	593 [label="has been found capable of domestication in europe and in india ; and that it agrees in habits and in a great number of points of structure with all the domestic breeds . secondly ,"]
+	0 -> 593
+	594 [label="[(6712, 6711), (19573, 19572), (32598, 32597), (45856, 45855), (59870, 59869), (74037, 74038)]"]
+	0 -> 594
+	595 [label=", although an english carrier or"]
+	0 -> 595
+	596 [label="[(6717, 6717), (19578, 19578), (32603, 32603), (45861, 45862), (59875, 59876), (74044, 74045)]"]
+	0 -> 596
+	597 [label="short - faced tumbler differs immensely in certain characters from the rock - pigeon , yet"]
+	0 -> 597
+	598 [label="[(6733, 6733), (19594, 19594), (32619, 32619), (45878, 45878), (59892, 59892), (74061, 74063)]"]
+	0 -> 598
+	599 [label="by comparing the several sub - breeds of these"]
+	0 -> 599
+	600 [label="[(6742, 6743), (19603, 19604), (32628, 32629), (45887, 45888), (59901, 59902), (74072, 74074)]"]
+	0 -> 600
+	601 [label=", more especially those brought from distant countries , we can make"]
+	0 -> 601
+	602 [label="[(6755, 6755), (19616, 19616), (32641, 32641), (45900, 45915), (59914, 59929), (74086, 74094)]"]
+	0 -> 602
+	603 [label="an almost perfect series"]
+	0 -> 603
+	604 [label="[(6759, 6764), (19620, 19625), (32645, 32650), (45919, 45924), (59933, 59938), (74098, 74113)]"]
+	0 -> 604
+	605 [label=". thirdly , those characters which are mainly distinctive of each breed"]
+	0 -> 605
+	606 [label="[(6776, 6808), (19637, 19669), (32662, 32694), (45936, 45968), (59950, 59982), (74125, 74125)]"]
+	0 -> 606
+	607 [label="are in each"]
+	0 -> 607
+	608 [label="[(6811, 6812), (19672, 19673), (32697, 32698), (45971, 45972), (59985, 59986), (74128, 74128)]"]
+	0 -> 608
+	609 [label="eminently variable"]
+	0 -> 609
+	610 [label="[(6814, 6814), (19675, 19675), (32700, 32700), (45974, 45974), (59988, 59988), (74130, 74161)]"]
+	0 -> 610
+	611 [label="; and the explanation of this fact will be obvious when we"]
+	0 -> 611
+	612 [label="[(6826, 6828), (19687, 19689), (32712, 32714), (45986, 45988), (60000, 60002), (74173, 74173)]"]
+	0 -> 612
+	613 [label="treat of selection . fourthly , pigeons have been watched"]
+	0 -> 613
+	614 [label="[(6838, 6839), (19699, 19700), (32724, 32724), (45998, 45998), (60012, 60012), (74183, 74183)]"]
+	0 -> 614
+	615 [label="and tended with the utmost care , and loved by many people . they have been domesticated for thousands of years in several quarters of the world ; the earliest known record of pigeons is in the fifth ægyptian dynasty , about 3000 b . c ., as was pointed out to me by professor lepsius ; but mr . birch informs me that pigeons are given in a bill of fare in the previous dynasty . in the time of the romans , as we hear from pliny , immense prices were given for pigeons ; \" nay , they are come to this pass , that they can reckon up their pedigree and race .\" pigeons were much valued by akber khan in india , about the year 1600 ; never less than 20 , 000 pigeons were taken with the court . \" the monarchs of iran and turan sent him some very rare birds"]
+	0 -> 615
+	616 [label="[(6995, 6996), (19856, 19857), (32880, 32881), (46154, 46155), (60168, 60169), (74339, 74340)]"]
+	0 -> 616
+	617 [label="and , continues the courtly historian , \" his majesty by crossing the breeds , which method was never practised before , has improved them astonishingly .\" about this same period the dutch were as eager about pigeons as were the old romans . the paramount importance of these considerations in explaining the immense amount of variation which pigeons have undergone , will"]
+	0 -> 617
+	618 [label="[(7058, 7058), (19919, 19919), (32943, 32943), (46217, 46217), (60231, 60231), (74402, 74403)]"]
+	0 -> 618
+	619 [label="be obvious when we treat of selection . we shall then , also , see how it is that the"]
+	0 -> 619
+	620 [label="[(7078, 7078), (19939, 19939), (32963, 32964), (46237, 46238), (60251, 60252), (74423, 74424)]"]
+	0 -> 620
+	621 [label="breeds so often have a somewhat monstrous character . it is also a most favourable circumstance for the production of distinct breeds , that male and female pigeons can be easily mated for life ; and thus different breeds can be kept together in the same aviary . i have discussed the probable origin of domestic pigeons at some , yet quite insufficient , length ; because when i first kept pigeons and watched the several kinds ,"]
+	0 -> 621
+	622 [label="[(7156, 7162), (20017, 20023), (33042, 33048), (46316, 46322), (60330, 60336), (74502, 74508)]"]
+	0 -> 622
+	623 [label=", i felt fully as much difficulty in believing that"]
+	0 -> 623
+	624 [label="[(7172, 7177), (20033, 20037), (33058, 33067), (46332, 46341), (60346, 60355), (74518, 74527)]"]
+	0 -> 624
+	625 [label="from a common parent , as any naturalist could in coming to a similar conclusion in regard to the many species of finches , or other"]
+	0 -> 625
+	626 [label="[(7203, 7204), (20063, 20064), (33093, 33094), (46367, 46368), (60381, 60381), (74553, 74553)]"]
+	0 -> 626
+	627 [label="groups of birds , in nature . one circumstance has struck me much ; namely , that"]
+	0 -> 627
+	628 [label="[(7221, 7221), (20081, 20081), (33111, 33112), (46385, 46386), (60398, 60399), (74570, 74571)]"]
+	0 -> 628
+	629 [label="all the breeders of the various domestic animals and the cultivators of plants , with whom i have"]
+	0 -> 629
+	630 [label="[(7239, 7240), (20099, 20100), (33130, 33130), (46404, 46404), (60417, 60417), (74589, 74589)]"]
+	0 -> 630
+	631 [label="conversed , or whose treatises i have read , are firmly convinced that the several breeds to which each has attended , are descended from so many aboriginally distinct species . ask , as i have asked , a celebrated raiser of hereford cattle , whether his cattle might not have descended from long - horns ,"]
+	0 -> 631
+	632 [label="[(7297, 7296), (20157, 20156), (33187, 33186), (46461, 46469), (60474, 60482), (74646, 74654)]"]
+	0 -> 632
+	633 [label=", and he will laugh you to scorn . i have never met a pigeon , or poultry , or"]
+	0 -> 633
+	634 [label="[(7316, 7316), (20176, 20176), (33206, 33206), (46489, 46489), (60502, 60503), (74674, 74674)]"]
+	0 -> 634
+	635 [label="duck , or rabbit fancier , who was not fully convinced that each main breed was descended from a distinct species . van mons , in his treatise on pears and apples , shows how utterly he disbelieves that the several sorts , for instance a ribston - pippin or codlin - apple , could ever have proceeded from the seeds of the same tree . innumerable other examples could be given . the explanation , i think , is simple : from long - continued study they are strongly impressed with the differences between the several races ; and though they well know that each race varies slightly , for they win their prizes by selecting such slight differences , yet they ignore all general arguments , and refuse to sum up in their minds slight differences accumulated during many"]
+	0 -> 635
+	636 [label="[(7457, 7458), (20317, 20318), (33347, 33348), (46630, 46631), (60644, 60645), (74815, 74816)]"]
+	0 -> 636
+	637 [label="generations . may not those naturalists who , knowing far less of the laws of inheritance than does the breeder , and knowing no more than he does of the intermediate links in the long lines of descent , yet admit that many of our domestic races"]
+	0 -> 637
+	638 [label="[(7505, 7506), (20365, 20366), (33395, 33396), (46678, 46679), (60692, 60693), (74863, 74864)]"]
+	0 -> 638
+	639 [label="descended from the same parents — may they not learn a lesson of caution , when they deride the idea of species in a state of nature being lineal descendants of other species ?"]
+	0 -> 639
+	640 [label="[(7540, 7542), (20400, 20402), (33430, 33432), (46713, 46723), (60727, 60737), (74898, 74908)]"]
+	0 -> 640
+	641 [label="let us now briefly consider the steps by which domestic races have been produced , either from one or from several allied species . some"]
+	0 -> 641
+	642 [label="[(7567, 7578), (20427, 20438), (33457, 33465), (46748, 46756), (60762, 60771), (74933, 74942)]"]
+	0 -> 642
+	643 [label="action of the external conditions of life , and some"]
+	0 -> 643
+	644 [label="[(7588, 7589), (20448, 20449), (33475, 33476), (46766, 46767), (60781, 60782), (74952, 74952)]"]
+	0 -> 644
+	645 [label="to habit ; but he would be a bold man who would account by such agencies for the differences"]
+	0 -> 645
+	646 [label="[(7608, 7609), (20468, 20469), (33495, 33496), (46786, 46787), (60801, 60802), (74971, 74972)]"]
+	0 -> 646
+	647 [label="a dray and race horse , a greyhound and"]
+	0 -> 647
+	648 [label="[(7618, 7619), (20478, 20479), (33505, 33506), (46796, 46799), (60811, 60812), (74981, 74982)]"]
+	0 -> 648
+	649 [label=", a carrier and tumbler pigeon . one of the most remarkable features in our domesticated races is that we see in them adaptation , not indeed to the"]
+	0 -> 649
+	650 [label="[(7648, 7655), (20508, 20515), (33535, 33542), (46828, 46835), (60841, 60844), (75011, 75018)]"]
+	0 -> 650
+	651 [label="own good , but to"]
+	0 -> 651
+	652 [label="[(7660, 7663), (20520, 20523), (33547, 33550), (46840, 46843), (60849, 60850), (75023, 75026)]"]
+	0 -> 652
+	653 [label="use or fancy . some variations useful to him have probably arisen suddenly , or by one step ; many botanists , for instance , believe that the"]
+	0 -> 653
+	654 [label="[(7691, 7695), (20551, 20555), (33578, 33582), (46871, 46875), (60878, 60880), (75054, 75058)]"]
+	0 -> 654
+	655 [label=", with its hooks , which cannot be rivalled by any mechanical contrivance , is only a variety of the wild dipsacus ; and this amount of change may have suddenly arisen in a seedling . so it has probably been with the turnspit dog ; and this is known to have been the case with the ancon sheep . but when we compare the dray - horse and race - horse , the dromedary and camel , the various breeds of sheep fitted either for cultivated land or mountain pasture , with the wool of one breed good for one purpose , and that of another breed for another purpose ; when we compare the many breeds of dogs , each good for man in"]
+	0 -> 655
+	656 [label="[(7821, 7822), (20681, 20682), (33708, 33709), (47001, 47002), (61006, 61007), (75184, 75184)]"]
+	0 -> 656
+	657 [label="different ways ; when we compare the game - cock , so pertinacious in battle , with other breeds so little"]
+	0 -> 657
+	658 [label="[(7843, 7844), (20703, 20706), (33730, 33733), (47023, 47024), (61028, 61029), (75205, 75206)]"]
+	0 -> 658
+	659 [label=", with \" everlasting layers \" which never desire to sit , and with the bantam so small and elegant ; when we compare the host of agricultural , culinary , orchard , and flower - garden races of plants , most useful to man at different seasons and for different purposes , or so beautiful in his eyes , we must , i think , look further than to mere variability . we cannot suppose that all the breeds were suddenly produced as perfect and as useful as we now see them ; indeed , in"]
+	0 -> 659
+	660 [label="[(7941, 7942), (20803, 20804), (33830, 33831), (47121, 47122), (61126, 61127), (75303, 75304)]"]
+	0 -> 660
+	661 [label="cases , we know that this has not been their history . the key is"]
+	0 -> 661
+	662 [label="[(7957, 7960), (20819, 20822), (33846, 33849), (47137, 47140), (61142, 61143), (75319, 75322)]"]
+	0 -> 662
+	663 [label="power of accumulative selection : nature gives successive variations ; man adds them up in certain directions useful to him . in this sense he may be said to"]
+	0 -> 663
+	664 [label="[(7989, 7990), (20851, 20852), (33878, 33879), (47169, 47171), (61172, 61174), (75351, 75353)]"]
+	0 -> 664
+	665 [label="for himself useful breeds . the great power of this principle of selection is not hypothetical . it is certain that several of our eminent breeders have , even within a single lifetime , modified to a large extent"]
+	0 -> 665
+	666 [label="[(8029, 8030), (20891, 20892), (33918, 33919), (47210, 47211), (61213, 61214), (75392, 75393)]"]
+	0 -> 666
+	667 [label="breeds of cattle and sheep . in order fully to realise what they have done , it is almost necessary to read several of the many treatises devoted to this subject , and to inspect the animals . breeders habitually speak of an"]
+	0 -> 667
+	668 [label="[(8073, 8076), (20935, 20938), (33962, 33965), (47254, 47257), (61257, 61258), (75436, 75439)]"]
+	0 -> 668
+	669 [label="organisation as something"]
+	0 -> 669
+	670 [label="[(8079, 8080), (20941, 20942), (33968, 33969), (47260, 47261), (61261, 61262), (75442, 75442)]"]
+	0 -> 670
+	671 [label="plastic , which they can model almost as they please . if i had space i could quote numerous passages to this effect from highly competent authorities . youatt , who was probably better acquainted with the works of"]
+	0 -> 671
+	672 [label="[(8119, 8120), (20981, 20982), (34008, 34009), (47300, 47301), (61301, 61302), (75481, 75482)]"]
+	0 -> 672
+	673 [label="than almost any other individual , and who was himself a very good judge of"]
+	0 -> 673
+	674 [label="[(8135, 8137), (20997, 20999), (34024, 34026), (47316, 47318), (61317, 61319), (75497, 75498)]"]
+	0 -> 674
+	675 [label=", speaks of the principle of selection as \" that which enables the agriculturist , not only to modify the character of his flock , but to change it altogether . it is the"]
+	0 -> 675
+	676 [label="[(8171, 8174), (21033, 21036), (34060, 34063), (47352, 47355), (61353, 61354), (75532, 75535)]"]
+	0 -> 676
+	677 [label="wand , by means of which he may summon into life whatever form and mould he pleases .\" lord somerville , speaking of what breeders have done for sheep , says : — \" it would seem as if they had chalked out upon a wall a form perfect in itself , and then had given it existence .\""]
+	0 -> 677
+	678 [label="[(8231, 8273), (21093, 21135), (34120, 34162), (47412, 47454), (61411, 61410), (75592, 75591)]"]
+	0 -> 678
+	679 [label=".\" in saxony the importance of the principle of selection in regard to merino sheep is so fully recognised , that men follow it as a trade"]
+	0 -> 679
+	680 [label="[(8300, 8301), (21162, 21163), (34189, 34190), (47481, 47482), (61437, 61438), (75618, 75619)]"]
+	0 -> 680
+	681 [label="the sheep are placed on a table and are studied , like a picture by a connoisseur ; this is done three times at intervals of months , and the sheep are each time marked and classed , so that the very best may ultimately be selected for breeding . what english breeders have actually effected is proved by the enormous prices given for animals with a good pedigree ; and these have"]
+	0 -> 681
+	682 [label="[(8374, 8375), (21236, 21237), (34263, 34264), (47555, 47556), (61511, 61512), (75692, 75692)]"]
+	0 -> 682
+	683 [label="been exported to almost every quarter of the world . the improvement is by no means generally due to crossing different breeds ; all the best breeders are strongly opposed to this practice , except sometimes amongst closely allied sub - breeds . and when a cross has been made , the closest selection is far more indispensable even than in ordinary cases . if selection consisted merely in separating some very distinct variety , and breeding from it , the principle would be so obvious as hardly to be worth notice ; but its importance consists in the great effect produced by the accumulation in one direction , during successive generations , of differences absolutely inappreciable by an uneducated eye — differences which i for one have vainly attempted to appreciate . not one man in a thousand has accuracy of eye and judgment sufficient to become an eminent breeder . if gifted with these qualities , and he studies his subject for years , and devotes his lifetime to it with indomitable perseverance , he will succeed , and may make great improvements ; if he wants any of these qualities , he will assuredly fail . few would readily believe in the natural capacity and years of practice requisite to become even a skilful pigeon - fancier . the same principles are followed by horticulturists ; but the variations are here often more abrupt . no one supposes that our choicest productions have been produced by a single variation from the aboriginal stock . we have proofs that this"]
+	0 -> 683
+	684 [label="[(8637, 8639), (21499, 21501), (34526, 34528), (47818, 47820), (61774, 61776), (75954, 75957)]"]
+	0 -> 684
+	685 [label="so in"]
+	0 -> 685
+	686 [label="[(8641, 8644), (21503, 21506), (34530, 34532), (47822, 47824), (61778, 61780), (75959, 75961)]"]
+	0 -> 686
+	687 [label="in which exact records have been kept ; thus , to give a very trifling instance , the steadily - increasing size of the common gooseberry may be quoted . we see an astonishing improvement in many florists"]
+	0 -> 687
+	688 [label="[(8682, 8683), (21544, 21545), (34570, 34571), (47862, 47863), (61818, 61818), (75999, 76000)]"]
+	0 -> 688
+	689 [label="flowers , when the flowers of the present day are compared with drawings made only twenty or thirty years ago . when a race of plants is once pretty well established , the seed - raisers do not pick out the best plants , but merely go over their seed - beds , and pull up the \" rogues ,\" as they call the plants that deviate from the proper standard . with animals this kind of selection is , in fact ,"]
+	0 -> 689
+	690 [label="[(8766, 8767), (21628, 21629), (34654, 34655), (47946, 47947), (61901, 61902), (76083, 76084)]"]
+	0 -> 690
+	691 [label="followed ; for hardly any one is so careless as to"]
+	0 -> 691
+	692 [label="[(8778, 8779), (21640, 21641), (34666, 34667), (47958, 47959), (61913, 61914), (76095, 76097)]"]
+	0 -> 692
+	693 [label="his worst animals"]
+	0 -> 693
+	694 [label="[(8782, 8784), (21644, 21646), (34670, 34672), (47962, 47964), (61917, 61919), (76100, 76100)]"]
+	0 -> 694
+	695 [label=". in regard to plants , there is another means of observing the accumulated effects of selection — namely , by comparing the diversity of flowers in the different varieties of the same species in the flower - garden ; the diversity of leaves , pods , or tubers , or whatever part is valued , in the kitchen - garden , in comparison with the flowers of the same varieties ; and the diversity of fruit of the same species in the orchard , in comparison with the leaves and flowers of the same set of varieties . see how different the leaves of the cabbage are , and how extremely alike the flowers ; how unlike the flowers of the heartsease are , and how alike the leaves ; how much the fruit of the different kinds of gooseberries differ in size , colour , shape , and hairiness , and yet the flowers present very slight differences . it is not that the varieties which differ largely in some one point do not differ at all in other points ; this is hardly ever"]
+	0 -> 695
+	696 [label="[(8971, 8972), (21833, 21834), (34859, 34866), (48151, 48158), (62106, 62113), (76287, 76294)]"]
+	0 -> 696
+	697 [label="perhaps never , the case . the"]
+	0 -> 697
+	698 [label="[(8979, 8984), (21841, 21846), (34873, 34878), (48165, 48170), (62120, 62124), (76301, 76305)]"]
+	0 -> 698
+	699 [label=", the importance of which should never be overlooked , will ensure some differences ; but , as a general rule ,"]
+	0 -> 699
+	700 [label="[(9006, 9009), (21868, 21871), (34900, 34903), (48192, 48195), (62146, 62149), (76327, 76331)]"]
+	0 -> 700
+	701 [label="that the continued selection of slight variations , either in the leaves , the flowers , or the fruit , will produce races differing from each other chiefly in these characters . it may be objected that the principle of selection has been reduced to methodical practice for scarcely more than three - quarters of a century ; it has certainly been more attended to of late years , and many treatises have been published on the subject ; and the result"]
+	0 -> 701
+	702 [label="[(9091, 9096), (21953, 21953), (34985, 34985), (48277, 48277), (62231, 62231), (76413, 76413)]"]
+	0 -> 702
+	703 [label="has been , in a corresponding degree , rapid and important . but it is very far from true that the principle is a modern discovery . i could give several references to"]
+	0 -> 703
+	704 [label="[(9129, 9129), (21986, 21986), (35018, 35018), (48310, 48310), (62264, 62264), (76446, 76453)]"]
+	0 -> 704
+	705 [label="the full"]
+	0 -> 705
+	706 [label="[(9131, 9143), (21988, 22000), (35020, 35032), (48312, 48324), (62266, 62278), (76455, 76461)]"]
+	0 -> 706
+	707 [label=". in rude and barbarous periods of english history choice animals were often imported , and laws were passed to prevent their exportation : the destruction of horses under a certain size was ordered , and this may be compared to the \" roguing \" of plants by nurserymen . the principle of selection i find distinctly given in an ancient chinese encyclopædia . explicit rules are laid down by some of the roman classical writers . from passages in genesis , it is clear that the colour of domestic animals was at that early period attended to . savages now sometimes cross their dogs with wild canine animals , to improve the breed , and they formerly did so , as is attested by passages in pliny . the savages in south africa match their draught cattle by colour , as do some of the esquimaux their teams of dogs . livingstone"]
+	0 -> 707
+	708 [label="[(9296, 9299), (22153, 22156), (35185, 35188), (48477, 48480), (62431, 62433), (76614, 76616)]"]
+	0 -> 708
+	709 [label="good domestic breeds"]
+	0 -> 709
+	710 [label="[(9302, 9303), (22159, 22160), (35191, 35192), (48483, 48484), (62436, 62439), (76619, 76621)]"]
+	0 -> 710
+	711 [label="valued by the negroes"]
+	0 -> 711
+	712 [label="[(9307, 9308), (22164, 22165), (35196, 35197), (48488, 48489), (62443, 62444), (76625, 76626)]"]
+	0 -> 712
+	713 [label="the interior of africa who have not associated with europeans . some of these facts do not show actual selection , but they show that the breeding of domestic animals was carefully attended to in ancient times , and is now attended to by the lowest savages . it would , indeed , have been a strange fact , had attention not been paid to breeding , for the inheritance of good and bad qualities is so obvious ."]
+	0 -> 713
+	714 [label="[(9387, 9386), (22244, 22243), (35276, 35275), (48568, 48570), (62523, 62525), (76705, 76707)]"]
+	0 -> 714
+	715 [label=". at the present time , eminent breeders try by methodical selection , with a distinct object in view , to make a new strain or sub - breed , superior to anything"]
+	0 -> 715
+	716 [label="[(9419, 9420), (22276, 22277), (35308, 35309), (48603, 48604), (62558, 62559), (76740, 76743)]"]
+	0 -> 716
+	717 [label="in the country . but , for our purpose , a"]
+	0 -> 717
+	718 [label="[(9431, 9432), (22288, 22289), (35320, 35321), (48615, 48616), (62570, 62571), (76754, 76755)]"]
+	0 -> 718
+	719 [label="of selection , which may be called unconscious , and which results from every one trying to possess and breed from the best individual animals , is more important . thus , a man who intends keeping pointers naturally tries to get as good dogs as he can , and afterwards breeds from his own best dogs , but he has no wish or expectation of permanently altering the breed . nevertheless"]
+	0 -> 719
+	720 [label="[(9504, 9507), (22361, 22364), (35393, 35396), (48688, 48691), (62643, 62646), (76827, 76830)]"]
+	0 -> 720
+	721 [label="that this process , continued during centuries , would improve and modify"]
+	0 -> 721
+	722 [label="[(9519, 9520), (22376, 22377), (35408, 35409), (48703, 48704), (62658, 62659), (76842, 76843)]"]
+	0 -> 722
+	723 [label="breed , in the same way as bakewell , collins , & c ., by this very same process , only carried on more methodically , did greatly modify , even during their"]
+	0 -> 723
+	724 [label="[(9552, 9553), (22409, 22410), (35441, 35442), (48736, 48737), (62691, 62692), (76875, 76875)]"]
+	0 -> 724
+	725 [label="lifetimes , the forms and qualities of their cattle . slow and insensible changes of this kind"]
+	0 -> 725
+	726 [label="[(9570, 9571), (22427, 22428), (35459, 35460), (48754, 48755), (62709, 62710), (76892, 76893)]"]
+	0 -> 726
+	727 [label="never be recognised unless actual measurements or careful drawings of the breeds in question"]
+	0 -> 727
+	728 [label="[(9585, 9586), (22442, 22443), (35474, 35475), (48769, 48770), (62724, 62725), (76907, 76908)]"]
+	0 -> 728
+	729 [label="been made long ago , which"]
+	0 -> 729
+	730 [label="[(9592, 9593), (22449, 22450), (35481, 35482), (48776, 48777), (62731, 62732), (76914, 76915)]"]
+	0 -> 730
+	731 [label="serve for comparison . in some cases , however , unchanged"]
+	0 -> 731
+	732 [label="[(9604, 9604), (22461, 22462), (35493, 35494), (48788, 48789), (62743, 62744), (76926, 76927)]"]
+	0 -> 732
+	733 [label="or but little changed individuals of the same breed"]
+	0 -> 733
+	734 [label="[(9613, 9616), (22471, 22474), (35503, 35506), (48798, 48801), (62753, 62756), (76936, 76937)]"]
+	0 -> 734
+	735 [label="in less civilised districts , where the breed has been less improved . there is reason to believe that king charles ' s spaniel has been unconsciously modified to a large extent since the time of that monarch . some highly competent authorities are convinced that the setter is directly derived from the spaniel , and has probably been slowly altered from it . it is known that the english pointer has been greatly changed within the last century , and in this case the change has , it is believed , been chiefly effected by crosses with the"]
+	0 -> 735
+	736 [label="[(9715, 9718), (22573, 22576), (35605, 35608), (48900, 48903), (62855, 62856), (77036, 77037)]"]
+	0 -> 736
+	737 [label="; but what concerns us is , that the change has been effected unconsciously and gradually , and yet so effectually , that , though the old spanish pointer certainly came from spain , mr . borrow has not seen , as i am informed by him , any native dog in spain like our pointer . by a similar process of selection , and by careful training ,"]
+	0 -> 737
+	738 [label="[(9787, 9791), (22645, 22649), (35677, 35681), (48972, 48976), (62925, 62929), (77106, 77106)]"]
+	0 -> 738
+	739 [label="english racehorses have come to surpass in fleetness and size the parent"]
+	0 -> 739
+	740 [label="[(9803, 9805), (22661, 22663), (35693, 35695), (48988, 48990), (62941, 62943), (77118, 77119)]"]
+	0 -> 740
+	741 [label=", so that the latter , by the regulations for the"]
+	0 -> 741
+	742 [label="[(9816, 9817), (22674, 22675), (35706, 35708), (49001, 49002), (62954, 62955), (77130, 77131)]"]
+	0 -> 742
+	743 [label="races , are favoured in the weights"]
+	0 -> 743
+	744 [label="[(9824, 9824), (22682, 22682), (35715, 35715), (49009, 49009), (62962, 62962), (77138, 77139)]"]
+	0 -> 744
+	745 [label="they carry . lord spencer and others have shown how the cattle of england have increased in weight and in early maturity , compared with the stock formerly kept in this country . by comparing the accounts given in"]
+	0 -> 745
+	746 [label="[(9863, 9865), (22721, 22723), (35754, 35756), (49048, 49050), (63001, 63003), (77178, 77180)]"]
+	0 -> 746
+	747 [label="treatises of"]
+	0 -> 747
+	748 [label="[(9867, 9876), (22725, 22734), (35758, 35767), (49052, 49061), (63005, 63014), (77182, 77192)]"]
+	0 -> 748
+	749 [label="in britain , india , and persia , we can"]
+	0 -> 749
+	750 [label="[(9886, 9891), (22744, 22749), (35777, 35782), (49071, 49076), (63024, 63029), (77202, 77202)]"]
+	0 -> 750
+	751 [label="trace the stages through which they have insensibly passed , and come to differ so greatly from the rock - pigeon . youatt gives an excellent illustration of the effects of a course of selection , which may be considered as"]
+	0 -> 751
+	752 [label="[(9932, 9934), (22790, 22792), (35823, 35825), (49117, 49119), (63070, 63072), (77243, 77244)]"]
+	0 -> 752
+	753 [label=", in so far that the breeders could never have expected"]
+	0 -> 753
+	754 [label="[(9945, 9948), (22803, 22806), (35836, 35839), (49130, 49134), (63083, 63087), (77255, 77258)]"]
+	0 -> 754
+	755 [label=wished]
+	0 -> 755
+	756 [label="[(9949, 9952), (22807, 22810), (35840, 35843), (49135, 49138), (63088, 63091), (77259, 77262)]"]
+	0 -> 756
+	757 [label="the result which ensued — namely , the production of two distinct strains . the two flocks of leicester sheep kept by mr . buckley and mr . burgess , as mr . youatt remarks , \" have been purely bred from the original stock of mr . bakewell for upwards of fifty years . there is not a suspicion existing in the mind of any one at all acquainted with the subject"]
+	0 -> 757
+	758 [label="[(10024, 10024), (22882, 22882), (35915, 35915), (49210, 49210), (63163, 63164), (77334, 77335)]"]
+	0 -> 758
+	759 [label="that the owner of either of them has deviated in any one instance from the pure blood of mr . bakewell ' s flock , and yet the difference between the sheep possessed by these two gentlemen is so great that they have the appearance of being quite different varieties .\" if there exist savages so barbarous as never to think of the inherited character of the offspring of their domestic animals , yet any one animal particularly useful to them , for any special purpose , would be carefully preserved during famines and other accidents , to which savages are so liable , and such choice animals would thus generally leave more offspring than the inferior ones ; so that in this case there would be a kind of unconscious selection going on . we see the value set on animals even by the barbarians of tierra del fuego , by their killing and devouring their old women , in times of dearth , as of less value than their dogs . in plants the same gradual process of improvement , through the occasional preservation of the best individuals , whether or not sufficiently distinct to be ranked at their first appearance as distinct varieties , and whether or not two or more species or races have become blended together by crossing , may plainly be recognised in the increased size and beauty which we now see in the varieties of the heartsease , rose , pelargonium , dahlia , and other plants , when compared with the older varieties or with their parent - stocks . no one would ever expect to get a first - rate heartsease or dahlia from the seed of a wild plant . no one would expect to raise a first - rate melting pear from the seed of the wild pear , though he might succeed from a poor seedling growing wild , if it had come from a garden - stock . the pear , though cultivated in classical times , appears , from"]
+	0 -> 759
+	760 [label="[(10367, 10370), (23225, 23228), (36258, 36261), (49553, 49556), (63507, 63508), (77678, 77681)]"]
+	0 -> 760
+	761 [label="description , to have been a fruit of very inferior quality . i have seen great surprise expressed in horticultural works at the wonderful skill of gardeners , in having produced such splendid results from such poor materials ; but the art"]
+	0 -> 761
+	762 [label="[(10412, 10417), (23270, 23275), (36303, 36303), (49598, 49598), (63550, 63550), (77723, 77723)]"]
+	0 -> 762
+	763 [label="has been simple , and , as far as the final result is concerned , has been followed almost unconsciously . it has consisted in always cultivating the best known variety , sowing its seeds , and , when a slightly better variety"]
+	0 -> 763
+	764 [label="[(10460, 10461), (23318, 23319), (36346, 36347), (49641, 49642), (63593, 63594), (77766, 77766)]"]
+	0 -> 764
+	765 [label="chanced to appear , selecting it , and so onwards . but the gardeners of the classical period , who cultivated the best"]
+	0 -> 765
+	766 [label="[(10484, 10485), (23342, 23343), (36370, 36371), (49665, 49666), (63617, 63618), (77789, 77791)]"]
+	0 -> 766
+	767 [label="they could procure , never thought what splendid fruit we should eat ; though we owe our excellent fruit , in some small degree , to their having naturally chosen and preserved the best varieties they could anywhere find . a large amount of change"]
+	0 -> 767
+	768 [label="[(10530, 10534), (23388, 23392), (36416, 36420), (49711, 49715), (63663, 63667), (77836, 77836)]"]
+	0 -> 768
+	769 [label=", thus slowly and unconsciously accumulated , explains , as i believe , the well - known fact , that in a"]
+	0 -> 769
+	770 [label="[(10556, 10557), (23414, 23415), (36442, 36443), (49737, 49738), (63689, 63689), (77858, 77858)]"]
+	0 -> 770
+	771 [label="number of cases we cannot recognise , and therefore do not know , the wild parent - stocks of the plants which have been longest cultivated in our flower and kitchen gardens . if it has taken centuries or thousands of years to improve or modify most of our plants up to their present standard of usefulness to man , we can understand how it is that neither australia , the cape of good hope , nor any other region inhabited by quite uncivilised man , has afforded us a single plant worth culture . it is not that these countries , so rich in species , do not by a strange chance possess the aboriginal stocks of any useful plants , but that the native plants have not been improved by continued selection up to a standard of perfection comparable with that"]
+	0 -> 771
+	772 [label="[(10700, 10702), (23558, 23560), (36586, 36588), (49881, 49883), (63832, 63834), (78001, 78003)]"]
+	0 -> 772
+	773 [label="the plants in countries anciently civilised . in regard to the domestic animals kept by uncivilised man , it should not be overlooked that they almost always have to struggle for their own food , at least during certain seasons . and in two countries very differently circumstanced , individuals of the same species , having slightly different constitutions or structure , would often succeed better in the one country than in the other"]
+	0 -> 773
+	774 [label="[(10776, 10777), (23634, 23635), (36662, 36663), (49957, 49958), (63908, 63909), (78077, 78078)]"]
+	0 -> 774
+	775 [label="and thus by a process of \" natural selection ,\" as will hereafter be more fully explained , two sub - breeds might be formed . this , perhaps , partly explains"]
+	0 -> 775
+	776 [label="[(10809, 10810), (23667, 23668), (36695, 36696), (49990, 49991), (63941, 63942), (78110, 78118)]"]
+	0 -> 776
+	777 [label="has been remarked by some authors ,"]
+	0 -> 777
+	778 [label="[(10817, 10825), (23675, 23683), (36703, 36711), (49998, 50006), (63949, 63957), (78125, 78125)]"]
+	0 -> 778
+	779 [label="have more of the character of"]
+	0 -> 779
+	780 [label="[(10831, 10831), (23689, 23689), (36717, 36717), (50012, 50012), (63963, 63963), (78131, 78132)]"]
+	0 -> 780
+	781 [label="species than the varieties kept in civilised countries . on the view here given of the"]
+	0 -> 781
+	782 [label="[(10847, 10849), (23705, 23707), (36733, 36735), (50028, 50030), (63979, 63981), (78148, 78148)]"]
+	0 -> 782
+	783 [label="important part which selection by man has played , it becomes at once obvious , how it is that our domestic races show adaptation in their structure or in their habits to"]
+	0 -> 783
+	784 [label="[(10881, 10884), (23739, 23740), (36767, 36770), (50062, 50065), (64013, 64014), (78180, 78183)]"]
+	0 -> 784
+	785 [label="wants or fancies . we can , i think , further understand the frequently abnormal character of our domestic races , and likewise their differences being so great in external characters"]
+	0 -> 785
+	786 [label="[(10915, 10915), (23771, 23771), (36801, 36801), (50096, 50096), (64045, 64045), (78214, 78215)]"]
+	0 -> 786
+	787 [label="and relatively so slight in internal parts or organs . man can hardly select , or only with much difficulty , any deviation of structure excepting such as is externally visible ; and indeed he rarely cares for what is internal . he can never act by selection , excepting on variations which are first given to him in some slight degree by nature . no man would ever try to make a fantail"]
+	0 -> 787
+	788 [label="[(10989, 10990), (23845, 23846), (36875, 36876), (50170, 50171), (64119, 64119), (78289, 78289)]"]
+	0 -> 788
+	789 [label="till he saw a pigeon with a tail developed in some slight degree in an unusual manner , or a pouter till he saw a pigeon with a crop of somewhat unusual size ; and the more abnormal or unusual any character was when it first appeared , the more likely it would be to catch his attention . but to use such an expression as trying to make a fantail , is , i have no doubt , in most cases , utterly"]
+	0 -> 789
+	790 [label="[(11074, 11075), (23930, 23931), (36960, 36961), (50255, 50258), (64203, 64204), (78373, 78374)]"]
+	0 -> 790
+	791 [label=". the man who first selected a pigeon with a slightly larger tail , never dreamed what the descendants of that pigeon would become through long - continued , partly unconscious and partly methodical"]
+	0 -> 791
+	792 [label="[(11109, 11109), (23965, 23965), (36995, 36995), (50292, 50292), (64238, 64238), (78408, 78409)]"]
+	0 -> 792
+	793 [label="selection . perhaps the parent"]
+	0 -> 793
+	794 [label="[(11114, 11114), (23970, 23970), (37000, 37001), (50297, 50298), (64243, 64244), (78414, 78415)]"]
+	0 -> 794
+	795 [label="bird of all fantails had only fourteen tail - feathers somewhat expanded , like the present java fantail , or like individuals of other and distinct breeds , in which as many as seventeen tail - feathers have been counted . perhaps the first pouter - pigeon did not inflate its crop much more than the turbit now does the upper part of its œsophagus , — a habit which is disregarded by all fanciers , as it is not one of the points of the breed . nor let it be thought that some great deviation of structure would be necessary to catch the"]
+	0 -> 795
+	796 [label="[(11218, 11221), (24074, 24075), (37105, 37108), (50402, 50405), (64348, 64349), (78519, 78522)]"]
+	0 -> 796
+	797 [label="eye : he perceives extremely small differences , and it is in human nature to value any novelty , however slight , in"]
+	0 -> 797
+	798 [label="[(11244, 11247), (24098, 24099), (37131, 37134), (50428, 50431), (64372, 64373), (78545, 78548)]"]
+	0 -> 798
+	799 [label="own possession . nor must the value which would formerly"]
+	0 -> 799
+	800 [label="[(11257, 11258), (24109, 24110), (37144, 37145), (50441, 50442), (64383, 64384), (78558, 78560)]"]
+	0 -> 800
+	801 [label="set on any slight differences in the individuals of the same species , be judged of by the value which"]
+	0 -> 801
+	802 [label="[(11278, 11281), (24130, 24133), (37165, 37168), (50462, 50465), (64404, 64407), (78580, 78582)]"]
+	0 -> 802
+	803 [label="set on them , after several breeds have"]
+	0 -> 803
+	804 [label="[(11289, 11290), (24141, 24142), (37176, 37177), (50473, 50474), (64415, 64416), (78590, 78590)]"]
+	0 -> 804
+	805 [label="fairly been established ."]
+	0 -> 805
+	806 [label="[(11294, 11309), (24146, 24161), (37181, 37196), (50478, 50493), (64420, 64435), (78594, 78609)]"]
+	0 -> 806
+	807 [label="are rejected as faults or deviations from the standard of perfection"]
+	0 -> 807
+	808 [label="[(11320, 11321), (24172, 24173), (37207, 37208), (50504, 50505), (64446, 64447), (78620, 78621)]"]
+	0 -> 808
+	809 [label="each breed . the common goose has not given rise to any marked varieties ; hence the"]
+	0 -> 809
+	810 [label="[(11338, 11339), (24190, 24191), (37225, 37226), (50522, 50523), (64464, 64465), (78638, 78639)]"]
+	0 -> 810
+	811 [label="and the common breed , which differ only in colour , that most fleeting of characters , have lately been exhibited as distinct at our poultry - shows ."]
+	0 -> 811
+	812 [label="[(11368, 11370), (24220, 24222), (37255, 37257), (50552, 50554), (64494, 64496), (78668, 78668)]"]
+	0 -> 812
+	813 [label="these views"]
+	0 -> 813
+	814 [label="[(11372, 11373), (24224, 24225), (37259, 37260), (50556, 50557), (64498, 64498), (78670, 78672)]"]
+	0 -> 814
+	815 [label="explain what has sometimes been noticed — namely"]
+	0 -> 815
+	816 [label="[(11381, 11381), (24233, 24234), (37268, 37269), (50565, 50566), (64506, 64507), (78680, 78681)]"]
+	0 -> 816
+	817 [label="that we know"]
+	0 -> 817
+	818 [label="[(11384, 11385), (24237, 24238), (37272, 37273), (50569, 50570), (64510, 64511), (78684, 78686)]"]
+	0 -> 818
+	819 [label="about the origin or history of any of our domestic breeds . but , in fact , a breed , like a dialect of a language , can hardly be said to have"]
+	0 -> 819
+	820 [label="[(11418, 11421), (24271, 24274), (37306, 37309), (50603, 50606), (64544, 64546), (78719, 78721)]"]
+	0 -> 820
+	821 [label="origin . a man preserves and breeds from an individual with some slight deviation of structure , or takes more care than usual in matching his best animals"]
+	0 -> 821
+	822 [label="[(11449, 11449), (24302, 24302), (37337, 37337), (50634, 50635), (64574, 64575), (78749, 78750)]"]
+	0 -> 822
+	823 [label="and thus improves them , and the improved"]
+	0 -> 823
+	824 [label="[(11457, 11458), (24310, 24311), (37345, 37346), (50643, 50644), (64583, 64584), (78758, 78759)]"]
+	0 -> 824
+	825 [label="slowly spread in the immediate neighbourhood . but"]
+	0 -> 825
+	826 [label="[(11466, 11466), (24319, 24319), (37354, 37354), (50652, 50652), (64592, 64592), (78767, 78769)]"]
+	0 -> 826
+	827 [label="as yet"]
+	0 -> 827
+	828 [label="[(11468, 11470), (24321, 24323), (37356, 37358), (50654, 50656), (64594, 64596), (78771, 78771)]"]
+	0 -> 828
+	829 [label="hardly have a distinct name , and from being only slightly valued , their history will"]
+	0 -> 829
+	830 [label="[(11486, 11487), (24339, 24340), (37374, 37375), (50672, 50673), (64612, 64613), (78787, 78789)]"]
+	0 -> 830
+	831 [label="disregarded . when further improved by the same slow and gradual process , they will spread more widely , and will"]
+	0 -> 831
+	832 [label="[(11508, 11509), (24361, 24362), (37396, 37397), (50694, 50695), (64634, 64635), (78810, 78811)]"]
+	0 -> 832
+	833 [label="recognised as something distinct and valuable , and will then probably first receive a provincial name . in semi - civilised countries , with little free communication , the spreading"]
+	0 -> 833
+	834 [label="[(11539, 11548), (24392, 24401), (37427, 37436), (50725, 50734), (64665, 64672), (78841, 78848)]"]
+	0 -> 834
+	835 [label="be a slow process . as soon as the points of value"]
+	0 -> 835
+	836 [label="[(11560, 11566), (24413, 24419), (37448, 37454), (50746, 50752), (64684, 64688), (78860, 78860)]"]
+	0 -> 836
+	837 [label="are once"]
+	0 -> 837
+	838 [label="[(11568, 11569), (24421, 24422), (37456, 37457), (50754, 50755), (64690, 64690), (78862, 78862)]"]
+	0 -> 838
+	839 [label="acknowledged , the principle , as i have called it , of unconscious selection will always tend , — perhaps more at one period than at another , as the breed rises or falls in fashion , — perhaps more in one district than in another , according to the state of"]
+	0 -> 839
+	840 [label="[(11619, 11620), (24472, 24473), (37507, 37508), (50805, 50806), (64740, 64741), (78912, 78913)]"]
+	0 -> 840
+	841 [label="of the inhabitants , — slowly to add to the characteristic features of the breed , whatever they may be . but the chance will be infinitely small of any record having been preserved of such slow , varying , and insensible changes ."]
+	0 -> 841
+	842 [label="[(11663, 11665), (24516, 24518), (37551, 37553), (50849, 50861), (64784, 64794), (78956, 78968)]"]
+	0 -> 842
+	843 [label="now say a few words on the circumstances , favourable , or the reverse , to"]
+	0 -> 843
+	844 [label="[(11681, 11684), (24534, 24535), (37569, 37572), (50877, 50880), (64810, 64811), (78984, 78987)]"]
+	0 -> 844
+	845 [label="power of selection . a high degree of variability is obviously favourable , as freely giving the materials for selection to work on ; not that mere individual differences are not amply sufficient , with extreme care , to allow of the accumulation of a large amount of modification in almost any desired direction . but as variations manifestly useful or pleasing to man appear only occasionally , the chance of their appearance will be much increased by a large number of individuals being kept"]
+	0 -> 845
+	846 [label="[(11769, 11781), (24620, 24632), (37657, 37669), (50965, 50977), (64896, 64908), (79072, 79082)]"]
+	0 -> 846
+	847 [label="success . on this principle marshall"]
+	0 -> 847
+	848 [label="[(11787, 11788), (24638, 24639), (37675, 37676), (50983, 50984), (64914, 64915), (79088, 79089)]"]
+	0 -> 848
+	849 [label="remarked , with respect to the sheep of parts of yorkshire"]
+	0 -> 849
+	850 [label="[(11799, 11802), (24650, 24653), (37687, 37690), (50995, 50998), (64926, 64929), (79100, 79101)]"]
+	0 -> 850
+	851 [label="as they generally belong to poor people , and are mostly in small lots , they never can be improved .\" on the other hand , nurserymen , from"]
+	0 -> 851
+	852 [label="[(11831, 11832), (24682, 24683), (37719, 37720), (51027, 51028), (64958, 64959), (79130, 79131)]"]
+	0 -> 852
+	853 [label="large stocks of the same"]
+	0 -> 853
+	854 [label="[(11837, 11838), (24688, 24689), (37725, 37726), (51033, 51034), (64964, 64965), (79136, 79137)]"]
+	0 -> 854
+	855 [label=", are generally far more successful than amateurs in"]
+	0 -> 855
+	856 [label="[(11847, 11848), (24698, 24699), (37735, 37736), (51043, 51044), (64974, 64975), (79146, 79147)]"]
+	0 -> 856
+	857 [label="new and valuable varieties ."]
+	0 -> 857
+	858 [label="[(11853, 11856), (24704, 24707), (37741, 37744), (51049, 51052), (64980, 64983), (79152, 79152)]"]
+	0 -> 858
+	859 [label="a large number of individuals of"]
+	0 -> 859
+	860 [label="[(11862, 11888), (24713, 24739), (37750, 37776), (51058, 51084), (64989, 65015), (79158, 79174)]"]
+	0 -> 860
+	861 [label=". when the individuals"]
+	0 -> 861
+	862 [label="[(11892, 11895), (24743, 24746), (37780, 37783), (51088, 51091), (65019, 65022), (79178, 79178)]"]
+	0 -> 862
+	863 [label="are scanty , all"]
+	0 -> 863
+	864 [label="[(11899, 11901), (24750, 24752), (37787, 37789), (51095, 51097), (65026, 65028), (79182, 79187)]"]
+	0 -> 864
+	865 [label=", whatever their quality may be ,"]
+	0 -> 865
+	866 [label="[(11908, 11914), (24759, 24765), (37796, 37802), (51104, 51110), (65035, 65041), (79194, 79193)]"]
+	0 -> 866
+	867 [label=", and this will effectually prevent selection . but probably the most important"]
+	0 -> 867
+	868 [label="[(11927, 11933), (24778, 24784), (37815, 37819), (51123, 51127), (65054, 65058), (79206, 79208)]"]
+	0 -> 868
+	869 [label="that the animal or plant should be so highly"]
+	0 -> 869
+	870 [label="[(11942, 11952), (24793, 24803), (37828, 37838), (51136, 51146), (65067, 65077), (79217, 79220)]"]
+	0 -> 870
+	871 [label=", that the closest attention"]
+	0 -> 871
+	872 [label="[(11957, 11959), (24808, 24810), (37843, 37845), (51151, 51152), (65082, 65083), (79225, 79226)]"]
+	0 -> 872
+	873 [label="paid to even the slightest"]
+	0 -> 873
+	874 [label="[(11964, 11967), (24815, 24818), (37850, 37853), (51157, 51160), (65088, 65091), (79231, 79234)]"]
+	0 -> 874
+	875 [label="qualities or structure"]
+	0 -> 875
+	876 [label="[(11970, 11973), (24821, 24824), (37856, 37859), (51163, 51166), (65094, 65097), (79237, 79237)]"]
+	0 -> 876
+	877 [label=". unless such attention be paid nothing can be effected . i have seen it gravely remarked , that it was most fortunate that the strawberry began to vary just when gardeners began to attend"]
+	0 -> 877
+	878 [label="[(12008, 12009), (24859, 24860), (37894, 37895), (51201, 51202), (65132, 65133), (79272, 79272)]"]
+	0 -> 878
+	879 [label="to this plant . no doubt the strawberry had always varied since it was cultivated , but the slight varieties had been neglected . as soon , however , as gardeners picked out individual plants with slightly larger , earlier , or better fruit , and raised seedlings from them , and again picked out the best seedlings and bred from them , then"]
+	0 -> 879
+	880 [label="[(12073, 12082), (24924, 24933), (37959, 37968), (51266, 51275), (65197, 65206), (79336, 79342)]"]
+	0 -> 880
+	881 [label="distinct species ) those many admirable varieties of the strawberry"]
+	0 -> 881
+	882 [label="[(12092, 12096), (24943, 24947), (37978, 37982), (51285, 51289), (65216, 65220), (79352, 79357)]"]
+	0 -> 882
+	883 [label="during the last"]
+	0 -> 883
+	884 [label="[(12099, 12112), (24950, 24963), (37985, 37998), (51292, 51305), (65223, 65236), (79360, 79366)]"]
+	0 -> 884
+	885 [label=", facility in preventing crosses is an important element"]
+	0 -> 885
+	886 [label="[(12121, 12123), (24972, 24974), (38007, 38009), (51314, 51316), (65245, 65247), (79375, 79375)]"]
+	0 -> 886
+	887 [label="in the formation of new races , — at least , in a country which is already stocked with other races . in this respect enclosure of the land plays a part . wandering savages or the inhabitants of open plains rarely possess more than one breed of the same species . pigeons can be mated for life , and this is a great convenience to the fancier , for thus many races may be"]
+	0 -> 887
+	888 [label="[(12197, 12197), (25048, 25048), (38083, 38085), (51390, 51392), (65321, 65323), (79449, 79451)]"]
+	0 -> 888
+	889 [label="kept true , though mingled in the same aviary ; and this circumstance must have largely favoured the"]
+	0 -> 889
+	890 [label="[(12215, 12217), (25066, 25068), (38103, 38103), (51410, 51410), (65341, 65341), (79469, 79469)]"]
+	0 -> 890
+	891 [label="formation of new breeds . pigeons , i may add , can be propagated in great numbers and at a very quick rate , and inferior birds may be freely rejected , as when killed they serve for food . on the other hand , cats , from their nocturnal rambling habits , cannot be"]
+	0 -> 891
+	892 [label="[(12272, 12272), (25123, 25123), (38158, 38159), (51465, 51466), (65396, 65397), (79524, 79525)]"]
+	0 -> 892
+	893 [label="matched , and , although so much valued by women and children , we"]
+	0 -> 893
+	894 [label="[(12286, 12288), (25137, 25139), (38173, 38175), (51480, 51482), (65411, 65413), (79539, 79540)]"]
+	0 -> 894
+	895 [label="see a distinct breed"]
+	0 -> 895
+	896 [label="[(12292, 12292), (25143, 25143), (38179, 38179), (51486, 51486), (65417, 65417), (79544, 79545)]"]
+	0 -> 896
+	897 [label="kept up ; such breeds as we do sometimes see are almost always imported from some other country"]
+	0 -> 897
+	898 [label="[(12310, 12314), (25161, 25165), (38197, 38197), (51504, 51504), (65435, 65435), (79563, 79563)]"]
+	0 -> 898
+	899 [label=". although i do not doubt that some domestic animals vary less than others , yet the rarity or absence of distinct breeds of the cat , the donkey , peacock , goose , & c ., may be attributed in main part to selection not having been brought into play : in cats , from the difficulty in pairing them"]
+	0 -> 899
+	900 [label="[(12374, 12375), (25225, 25226), (38257, 38258), (51564, 51565), (65495, 65496), (79623, 79624)]"]
+	0 -> 900
+	901 [label="in donkeys , from only a few being kept by poor people , and little attention paid to their breeding ;"]
+	0 -> 901
+	902 [label="[(12396, 12396), (25247, 25247), (38279, 38303), (51586, 51610), (65517, 65541), (79645, 79669)]"]
+	0 -> 902
+	903 [label="in peacocks , from not being very easily reared and a large stock not kept"]
+	0 -> 903
+	904 [label="[(12411, 12412), (25262, 25263), (38318, 38319), (51625, 51626), (65556, 65557), (79684, 79685)]"]
+	0 -> 904
+	905 [label="in geese , from being valuable only for two purposes , food and feathers , and more especially from no pleasure having been felt in the display of distinct breeds"]
+	0 -> 905
+	906 [label="[(12442, 12442), (25293, 25293), (38349, 38360), (51656, 51667), (65587, 65936), (79715, 80098)]"]
+	0 -> 906
+	907 [label=". to sum up on the origin of our domestic races of animals and plants ."]
+	0 -> 907
+	908 [label="[(12458, 12482), (25309, 25333), (38376, 38400), (51683, 51719), (65952, 65962), (80114, 80124)]"]
+	0 -> 908
+	909 [label="causing variability"]
+	0 -> 909
+	910 [label="[(12484, 12489), (25335, 25340), (38402, 38407), (51721, 51726), (65964, 65985), (80126, 80147)]"]
+	0 -> 910
+	911 [label="that variability is an inherent and necessary"]
+	0 -> 911
+	912 [label="[(12496, 12497), (25347, 25348), (38414, 38415), (51733, 51734), (65992, 65993), (80154, 80155)]"]
+	0 -> 912
+	913 [label=", under all circumstances"]
+	0 -> 913
+	914 [label="[(12501, 12522), (25352, 25373), (38419, 38440), (51738, 51759), (65997, 66003), (80159, 80165)]"]
+	0 -> 914
+	915 [label="of inheritance and"]
+	0 -> 915
+	916 [label="[(12525, 12527), (25376, 25378), (38443, 38445), (51762, 51764), (66006, 66012), (80168, 80174)]"]
+	0 -> 916
+	917 [label=". variability is governed by many unknown laws ,"]
+	0 -> 917
+	918 [label="[(12536, 12552), (25387, 25403), (38454, 38470), (51773, 51789), (66021, 66035), (80183, 80209)]"]
+	0 -> 918
+	919 [label="action of the conditions of life"]
+	0 -> 919
+	920 [label="[(12558, 12567), (25409, 25418), (38476, 38485), (51795, 51804), (66041, 66058), (80215, 80234)]"]
+	0 -> 920
+	921 [label=". the final result is thus rendered infinitely complex . in some cases"]
+	0 -> 921
+	922 [label="[(12580, 12586), (25431, 25437), (38498, 38498), (51817, 51817), (66071, 66071), (80247, 80247)]"]
+	0 -> 922
+	923 [label="the intercrossing of"]
+	0 -> 923
+	924 [label="[(12589, 12595), (25440, 25446), (38501, 38508), (51820, 51827), (66074, 66080), (80250, 80256)]"]
+	0 -> 924
+	925 [label="played an important part in the origin of our"]
+	0 -> 925
+	926 [label="[(12604, 12613), (25455, 25464), (38517, 38526), (51836, 51845), (66089, 66094), (80265, 80269)]"]
+	0 -> 926
+	927 [label="breeds have once been"]
+	0 -> 927
+	928 [label="[(12617, 12618), (25468, 25469), (38530, 38531), (51849, 51850), (66098, 66102), (80273, 80277)]"]
+	0 -> 928
+	929 [label=", their occasional intercrossing , with the aid of selection , has , no doubt , largely aided in"]
+	0 -> 929
+	930 [label="[(12637, 12640), (25488, 25491), (38550, 38553), (51869, 51872), (66121, 66122), (80296, 80299)]"]
+	0 -> 930
+	931 [label="new sub - breeds ; but the importance of"]
+	0 -> 931
+	932 [label="[(12649, 12660), (25500, 25511), (38562, 38569), (51881, 51888), (66131, 66135), (80308, 80312)]"]
+	0 -> 932
+	933 [label="exaggerated , both in regard to animals and to those plants which are propagated by seed ."]
+	0 -> 933
+	934 [label="[(12677, 12678), (25528, 25529), (38586, 38587), (51905, 51906), (66152, 66153), (80329, 80330)]"]
+	0 -> 934
+	935 [label="plants which are temporarily propagated by cuttings , buds , & c ., the importance of"]
+	0 -> 935
+	936 [label="[(12693, 12702), (25544, 25553), (38602, 38611), (51921, 51930), (66168, 66169), (80345, 80346)]"]
+	0 -> 936
+	937 [label="is immense ; for the cultivator"]
+	0 -> 937
+	938 [label="[(12708, 12711), (25559, 25562), (38617, 38620), (51936, 51939), (66175, 66178), (80352, 80355)]"]
+	0 -> 938
+	939 [label="the extreme variability both of hybrids and"]
+	0 -> 939
+	940 [label="[(12718, 12718), (25569, 25569), (38627, 38627), (51946, 51946), (66185, 66186), (80362, 80363)]"]
+	0 -> 940
+	941 [label="mongrels , and the"]
+	0 -> 941
+	942 [label="[(12722, 12723), (25573, 25574), (38631, 38632), (51950, 51951), (66190, 66191), (80367, 80367)]"]
+	0 -> 942
+	943 [label="sterility of hybrids ; but"]
+	0 -> 943
+	944 [label="[(12728, 12731), (25579, 25582), (38637, 38640), (51956, 51959), (66196, 66196), (80372, 80372)]"]
+	0 -> 944
+	945 [label="plants not propagated by seed are of little importance to us , for their endurance is only temporary . over all these causes of change"]
+	0 -> 945
+	946 [label="[(12756, 12760), (25607, 25611), (38665, 38669), (51984, 51988), (66221, 66221), (80397, 80398)]"]
+	0 -> 946
+	947 [label="the accumulative action of selection , whether applied methodically and"]
+	0 -> 947
+	948 [label="[(12770, 12771), (25621, 25622), (38679, 38680), (51998, 51999), (66231, 66231), (80408, 80408)]"]
+	0 -> 948
+	949 [label="quickly , or unconsciously and"]
+	0 -> 949
+	950 [label="[(12776, 12779), (25627, 25630), (38685, 38688), (52004, 52007), (66236, 66238), (80413, 80414)]"]
+	0 -> 950
+	951 [label="but more efficiently ,"]
+	0 -> 951
+	952 [label="[(12783, 12786), (25634, 25637), (38692, 38695), (52011, 52014), (66242, 66245), (80418, 80422)]"]
+	0 -> 952
+	953 [label="the predominant power ."]
+	0 -> 953
 }
