@@ -1,6 +1,6 @@
 digraph {
 	0 [label=Root]
-	1 [label="[(0, 4), (12791, 12795), (25642, 25646), (38700, 38708), (52019, 52026), (66250, 66257)]"]
+	1 [label="[(0, 4), (12791, 12795), (25642, 25646), (38700, 38708), (52019, 52026), (66250, 66257), Branching_node(id=955, children=[(0, 0), (5, 5), (10, 10), (15, 19), (24, 28), (32, 36)], processed=False), Leaf_node(id=956, string='when we', aligned=True)]"]
 	0 -> 1
 	2 [label="the individuals of the same variety or sub - variety of our older cultivated plants and animals , one of the first points which strikes us"]
 	0 -> 2
@@ -8,7 +8,7 @@ digraph {
 	0 -> 3
 	4 [label="is , that they generally differ"]
 	0 -> 4
-	5 [label="[(37, 43), (12828, 12832), (25679, 25683), (38741, 38745), (52058, 52062), (66289, 66293)]"]
+	5 [label="[(37, 43), (12828, 12832), (25679, 25683), (38741, 38745), (52058, 52062), (66289, 66293), Branching_node(id=957, children=[(0, 1), (7, 7), (12, 12), (17, 17), (22, 25), (27, 27)], processed=False), Leaf_node(id=958, string='we', aligned=True)]"]
 	0 -> 5
 	6 [label="than do the individuals of any one species or variety in a state of nature ."]
 	0 -> 6
@@ -20,7 +20,7 @@ digraph {
 	0 -> 9
 	10 [label="we are driven to conclude that this"]
 	0 -> 10
-	11 [label="[(100, 104), (12889, 12893), (25740, 25744), (38802, 38806), (52118, 52121), (66349, 66352)]"]
+	11 [label="[(100, 104), (12889, 12893), (25740, 25744), (38802, 38806), (52118, 52121), (66349, 66352), Branching_node(id=959, children=[(0, 1), (5, 6), (10, 11), (15, 16), (20, 21), (24, 25)], processed=False), Leaf_node(id=960, string='we look', aligned=True)]"]
 	0 -> 11
 	12 [label="due to our domestic productions having been raised under conditions of life not so uniform as , and somewhat different from , those to which the parent - species"]
 	0 -> 12
@@ -28,7 +28,7 @@ digraph {
 	0 -> 13
 	14 [label="been exposed under nature . there is"]
 	0 -> 14
-	15 [label="[(141, 146), (12930, 12934), (25781, 25785), (38843, 38847), (52158, 52162), (66389, 66391)]"]
+	15 [label="[(141, 146), (12930, 12934), (25781, 25785), (38843, 38847), (52158, 52162), (66389, 66391), Branching_node(id=961, children=[(0, 1), (6, 6), (11, 11), (16, 16), (21, 21), (26, 27)], processed=False), Leaf_node(id=962, string='we', aligned=True)]"]
 	0 -> 15
 	16 [label=", some probability in the view propounded by andrew knight , that this variability may be partly connected with excess of food . it seems"]
 	0 -> 16
@@ -36,7 +36,7 @@ digraph {
 	0 -> 17
 	18 [label="clear that organic beings must be exposed during several generations to"]
 	0 -> 18
-	19 [label="[(183, 188), (12971, 12976), (25822, 25827), (38884, 38889), (52198, 52200), (66427, 66429)]"]
+	19 [label="[(183, 188), (12971, 12976), (25822, 25827), (38884, 38889), (52198, 52200), (66427, 66429), Branching_node(id=963, children=[(0, 1), (6, 7), (12, 13), (18, 19), (24, 24), (27, 27)], processed=False), Leaf_node(id=964, string='we look', aligned=True)]"]
 	0 -> 19
 	20 [label="to cause any"]
 	0 -> 20
@@ -64,19 +64,19 @@ digraph {
 	0 -> 31
 	32 [label="yield new varieties : our oldest domesticated animals are still capable of rapid improvement or modification ."]
 	0 -> 32
-	33 [label="[(260, 320), (13048, 13108), (25899, 25959), (38962, 39022), (52270, 52760), (66499, 66991)]"]
+	33 [label="[(260, 320), (13048, 13108), (25899, 25959), (38962, 39022), (52270, 52760), (66499, 66991), Branching_node(id=965, children=[(0, 7), (61, 68), (122, 129), (183, 190), (244, 262), (735, 753)], processed=False), Leaf_node(id=966, string='the same', aligned=True), Branching_node(id=967, children=[(9, 50), (70, 111), (131, 172), (192, 233), (264, 302), (755, 793)], processed=False), Leaf_node(id=968, string='species', aligned=True), Branching_node(id=969, children=[(51, 57), (112, 118), (173, 179), (234, 240), (303, 730), (794, 1223)], processed=False), Leaf_node(id=970, string='nature', aligned=True)]"]
 	0 -> 33
 	34 [label="monstrosities cannot be separated by any"]
 	0 -> 34
-	35 [label="[(326, 332), (13114, 13120), (25965, 25971), (39028, 39034), (52766, 52770), (66997, 67001)]"]
+	35 [label="[(326, 332), (13114, 13120), (25965, 25971), (39028, 39034), (52766, 52770), (66997, 67001), Branching_node(id=971, children=[(0, 1), (7, 8), (14, 15), (21, 22), (28, 29), (33, 34)], processed=False), Leaf_node(id=972, string='we', aligned=True), Branching_node(id=973, children=[(2, 4), (9, 11), (16, 18), (23, 25), (30, 30), (35, 35)], processed=False), Leaf_node(id=974, string='the', aligned=True)]"]
 	0 -> 35
 	36 [label="variations ."]
 	0 -> 36
-	37 [label="[(334, 417), (13122, 13205), (25973, 26056), (39036, 39119), (52772, 52891), (67003, 67123)]"]
+	37 [label="[(334, 417), (13122, 13205), (25973, 26056), (39036, 39119), (52772, 52891), (67003, 67123), Branching_node(id=975, children=[(0, 1), (84, 85), (168, 169), (252, 253), (336, 416), (456, 536)], processed=False), Leaf_node(id=976, string='we', aligned=True), Branching_node(id=977, children=[(2, 7), (86, 91), (170, 175), (254, 259), (417, 438), (537, 559)], processed=False), Leaf_node(id=978, string='the', aligned=True), Branching_node(id=979, children=[(8, 13), (92, 97), (176, 181), (260, 265), (439, 439), (560, 560)], processed=False), Leaf_node(id=980, string='variety', aligned=True), Branching_node(id=981, children=[(14, 63), (98, 147), (182, 231), (266, 315), (440, 449), (561, 570)], processed=False), Leaf_node(id=982, string='the vast', aligned=True)]"]
 	0 -> 37
 	38 [label="any change in the conditions"]
 	0 -> 38
-	39 [label="[(422, 424), (13210, 13212), (26061, 26063), (39124, 39126), (52896, 52960), (67128, 67191)]"]
+	39 [label="[(422, 424), (13210, 13212), (26061, 26063), (39124, 39126), (52896, 52960), (67128, 67191), Branching_node(id=983, children=[(0, 0), (3, 3), (6, 6), (9, 9), (12, 34), (77, 99)], processed=False), Leaf_node(id=984, string='when', aligned=True)]"]
 	0 -> 39
 	40 [label=". nothing is more easy than to tame an animal , and few things more difficult than to get it to breed freely under confinement , even"]
 	0 -> 40
@@ -100,15 +100,15 @@ digraph {
 	0 -> 49
 	50 [label="cases it has been"]
 	0 -> 50
-	51 [label="[(518, 524), (13306, 13311), (26157, 26162), (39220, 39225), (53050, 53056), (67281, 67287)]"]
+	51 [label="[(518, 524), (13306, 13311), (26157, 26162), (39220, 39225), (53050, 53056), (67281, 67287), Branching_node(id=985, children=[(0, 2), (7, 8), (13, 14), (19, 20), (25, 26), (32, 33)], processed=False), Leaf_node(id=986, string='look', aligned=True), Branching_node(id=987, children=[(3, 3), (9, 9), (15, 15), (21, 21), (27, 28), (34, 35)], processed=False), Leaf_node(id=988, string='to the', aligned=True)]"]
 	0 -> 51
 	52 [label=", such as a little more or less water at some particular period of growth , will determine whether or not"]
 	0 -> 52
-	53 [label="[(545, 550), (13332, 13337), (26183, 26188), (39246, 39251), (53077, 53082), (67308, 67313)]"]
+	53 [label="[(545, 550), (13332, 13337), (26183, 26188), (39246, 39251), (53077, 53082), (67308, 67313), Branching_node(id=989, children=[(0, 1), (6, 7), (12, 13), (18, 19), (24, 25), (30, 31)], processed=False), Leaf_node(id=990, string='we', aligned=True)]"]
 	0 -> 53
 	54 [label=". i cannot here"]
 	0 -> 54
-	55 [label="[(554, 558), (13341, 13345), (26192, 26196), (39255, 39259), (53086, 53088), (67317, 67319)]"]
+	55 [label="[(554, 558), (13341, 13345), (26192, 26196), (39255, 39259), (53086, 53088), (67317, 67319), Branching_node(id=991, children=[(0, 2), (5, 7), (10, 12), (15, 17), (20, 21), (23, 24)], processed=False), Leaf_node(id=992, string='look', aligned=True)]"]
 	0 -> 55
 	56 [label="details which i have collected"]
 	0 -> 56
@@ -132,7 +132,7 @@ digraph {
 	0 -> 65
 	66 [label="condition as in the most sterile hybrids . when , on the one hand , we see domesticated animals and plants , though often weak and sickly ,"]
 	0 -> 66
-	67 [label="[(673, 676), (13459, 13462), (26315, 26318), (39378, 39381), (53208, 53210), (67439, 67440)]"]
+	67 [label="[(673, 676), (13459, 13462), (26315, 26318), (39378, 39381), (53208, 53210), (67439, 67440), Branching_node(id=993, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (19, 19)], processed=False), Leaf_node(id=994, string='we', aligned=True)]"]
 	0 -> 67
 	68 [label="freely under confinement ; and when , on the other hand , we see individuals , though taken young from a state of nature"]
 	0 -> 68
@@ -152,7 +152,7 @@ digraph {
 	0 -> 75
 	76 [label=", and producing offspring"]
 	0 -> 76
-	77 [label="[(760, 773), (13546, 13557), (26402, 26413), (39465, 39486), (53292, 53620), (67520, 67889)]"]
+	77 [label="[(760, 773), (13546, 13557), (26402, 26413), (39465, 39486), (53292, 53620), (67520, 67889), Branching_node(id=995, children=[(0, 3), (14, 17), (26, 29), (38, 41), (60, 62), (389, 391)], processed=False), Leaf_node(id=996, string='to the', aligned=True)]"]
 	0 -> 77
 	78 [label=influence]
 	0 -> 78
@@ -184,7 +184,7 @@ digraph {
 	0 -> 91
 	92 [label="of use . not"]
 	0 -> 92
-	93 [label="[(912, 916), (13696, 13700), (26552, 26556), (39626, 39630), (53758, 53763), (67995, 68000)]"]
+	93 [label="[(912, 916), (13696, 13700), (26552, 26556), (39626, 39630), (53758, 53763), (67995, 68000), Branching_node(id=997, children=[(0, 2), (5, 7), (10, 12), (15, 17), (20, 23), (26, 29)], processed=False), Leaf_node(id=998, string='look', aligned=True)]"]
 	0 -> 93
 	94 [label="can be named which has not in some country drooping ears ; and the view"]
 	0 -> 94
@@ -196,7 +196,7 @@ digraph {
 	0 -> 97
 	98 [label="that the drooping is due to the disuse of the muscles of the ear , from the animals"]
 	0 -> 98
-	99 [label="[(954, 957), (13738, 13741), (26594, 26597), (39667, 39669), (53800, 53802), (68037, 68040)]"]
+	99 [label="[(954, 957), (13738, 13741), (26594, 26597), (39667, 39669), (53800, 53802), (68037, 68040), Branching_node(id=999, children=[(0, 1), (4, 5), (8, 9), (12, 12), (15, 15), (18, 18)], processed=False), Leaf_node(id=1000, string='we', aligned=True)]"]
 	0 -> 99
 	100 [label=alarmed]
 	0 -> 100
@@ -212,11 +212,11 @@ digraph {
 	0 -> 105
 	106 [label="variation , some few of which can be dimly seen , and will"]
 	0 -> 106
-	107 [label="[(982, 986), (13766, 13770), (26622, 26626), (39694, 39698), (53825, 53829), (68061, 68065)]"]
+	107 [label="[(982, 986), (13766, 13770), (26622, 26626), (39694, 39698), (53825, 53829), (68061, 68065), Branching_node(id=1001, children=[(0, 0), (5, 5), (10, 10), (15, 15), (20, 21), (25, 26)], processed=False), Leaf_node(id=1002, string='when', aligned=True)]"]
 	0 -> 107
 	108 [label=". i will here only allude to what may be called"]
 	0 -> 108
-	109 [label="[(997, 1003), (13781, 13787), (26637, 26643), (39709, 39715), (53840, 53845), (68076, 68081)]"]
+	109 [label="[(997, 1003), (13781, 13787), (26637, 26643), (39709, 39715), (53840, 53845), (68076, 68081), Branching_node(id=1003, children=[(0, 3), (7, 10), (14, 17), (21, 24), (28, 30), (34, 36)], processed=False), Leaf_node(id=1004, string='to', aligned=True)]"]
 	0 -> 109
 	110 [label="in the embryo or larva will"]
 	0 -> 110
@@ -252,7 +252,7 @@ digraph {
 	0 -> 125
 	126 [label="hairless dogs have imperfect teeth"]
 	0 -> 126
-	127 [label="[(1131, 1135), (13915, 13919), (26873, 26877), (39950, 39954), (54080, 54084), (68334, 68338)]"]
+	127 [label="[(1131, 1135), (13915, 13919), (26873, 26877), (39950, 39954), (54080, 54084), (68334, 68338), Branching_node(id=1005, children=[(0, 1), (5, 6), (10, 11), (15, 16), (20, 21), (25, 26)], processed=False), Leaf_node(id=1006, string='we look', aligned=True)]"]
 	0 -> 127
 	128 [label="and coarse - haired animals are apt to have , as is asserted , long or many horns ; pigeons with feathered feet have skin between their outer toes ; pigeons with short beaks have small feet , and those with long beaks large feet . hence"]
 	0 -> 128
@@ -260,11 +260,11 @@ digraph {
 	0 -> 129
 	130 [label="if man goes on selecting , and thus augmenting , any peculiarity , he will almost certainly"]
 	0 -> 130
-	131 [label="[(1200, 1202), (13984, 13986), (26941, 26943), (40018, 40020), (54148, 54150), (68402, 68404)]"]
+	131 [label="[(1200, 1202), (13984, 13986), (26941, 26943), (40018, 40020), (54148, 54150), (68402, 68404), Branching_node(id=1007, children=[(0, 1), (3, 4), (6, 7), (9, 10), (12, 12), (15, 15)], processed=False), Leaf_node(id=1008, string='we', aligned=True)]"]
 	0 -> 131
 	132 [label="other parts of the structure , owing to the mysterious laws of"]
 	0 -> 132
-	133 [label="[(1214, 1221), (13998, 14005), (26955, 26962), (40032, 40039), (54162, 54166), (68416, 68420)]"]
+	133 [label="[(1214, 1221), (13998, 14005), (26955, 26962), (40032, 40039), (54162, 54166), (68416, 68420), Branching_node(id=1009, children=[(0, 1), (8, 9), (16, 17), (24, 25), (32, 32), (37, 37)], processed=False), Leaf_node(id=1010, string='we', aligned=True), Branching_node(id=1011, children=[(2, 4), (10, 12), (18, 20), (26, 28), (33, 33), (38, 38)], processed=False), Leaf_node(id=1012, string='the individuals', aligned=True)]"]
 	0 -> 133
 	134 [label="of the various ,"]
 	0 -> 134
@@ -272,7 +272,7 @@ digraph {
 	0 -> 135
 	136 [label="unknown , or"]
 	0 -> 136
-	137 [label="[(1229, 1231), (14013, 14015), (26970, 26972), (40047, 40049), (54173, 54176), (68427, 68430)]"]
+	137 [label="[(1229, 1231), (14013, 14015), (26970, 26972), (40047, 40049), (54173, 54176), (68427, 68430), Branching_node(id=1013, children=[(0, 0), (3, 3), (6, 6), (9, 9), (12, 13), (16, 17)], processed=False), Leaf_node(id=1014, string='when', aligned=True)]"]
 	0 -> 137
 	138 [label="laws of variation"]
 	0 -> 138
@@ -288,7 +288,7 @@ digraph {
 	0 -> 143
 	144 [label="structure and constitution in which the varieties and sub - varieties differ slightly from each other . the whole organisation seems to have become plastic , and"]
 	0 -> 144
-	145 [label="[(1311, 1317), (14095, 14101), (27052, 27058), (40128, 40134), (54255, 54261), (68509, 68513)]"]
+	145 [label="[(1311, 1317), (14095, 14101), (27052, 27058), (40128, 40134), (54255, 54261), (68509, 68513), Branching_node(id=1015, children=[(0, 3), (7, 10), (14, 17), (21, 24), (28, 31), (35, 36)], processed=False), Leaf_node(id=1016, string='to', aligned=True)]"]
 	0 -> 145
 	146 [label="degree from that of the parental type . any variation which is not inherited is unimportant for us . but the number and diversity of inheritable deviations of structure , both those of slight and those of considerable physiological importance ,"]
 	0 -> 146
@@ -304,11 +304,11 @@ digraph {
 	0 -> 151
 	152 [label="by theoretical writers"]
 	0 -> 152
-	153 [label="[(1413, 1421), (14197, 14206), (27154, 27163), (40230, 40239), (54359, 54367), (68611, 68619)]"]
+	153 [label="[(1413, 1421), (14197, 14206), (27154, 27163), (40230, 40239), (54359, 54367), (68611, 68619), Branching_node(id=1017, children=[(0, 1), (9, 10), (19, 20), (29, 30), (39, 39), (48, 48)], processed=False), Leaf_node(id=1018, string='we look', aligned=True), Branching_node(id=1019, children=[(3, 4), (12, 13), (22, 23), (32, 33), (41, 42), (50, 51)], processed=False), Leaf_node(id=1020, string='the', aligned=True), Branching_node(id=1021, children=[(5, 5), (14, 17), (24, 27), (34, 37), (43, 46), (52, 55)], processed=False), Leaf_node(id=1022, string='individuals', aligned=True)]"]
 	0 -> 153
 	154 [label=", and we see it in the father and child , we cannot tell whether it may not be due to the same"]
 	0 -> 154
-	155 [label="[(1444, 1447), (14229, 14232), (27186, 27189), (40262, 40265), (54390, 54393), (68642, 68645)]"]
+	155 [label="[(1444, 1447), (14229, 14232), (27186, 27189), (40262, 40265), (54390, 54393), (68642, 68645), Branching_node(id=1023, children=[(0, 1), (4, 4), (8, 8), (12, 12), (16, 16), (20, 20)], processed=False), Leaf_node(id=1024, string='we', aligned=True)]"]
 	0 -> 155
 	156 [label="on both ; but when amongst individuals , apparently exposed to the same conditions , any very rare deviation , due to some extraordinary combination of circumstances , appears in the parent — say , once"]
 	0 -> 156
@@ -324,7 +324,7 @@ digraph {
 	0 -> 161
 	162 [label="would be , to look at the inheritance of every character whatever as the rule , and non - inheritance as the anomaly . the laws governing inheritance are"]
 	0 -> 162
-	163 [label="[(1600, 1603), (14385, 14388), (27342, 27345), (40418, 40421), (54546, 54552), (68797, 68803)]"]
+	163 [label="[(1600, 1603), (14385, 14388), (27342, 27345), (40418, 40421), (54546, 54552), (68797, 68803), Branching_node(id=1025, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 20), (23, 27)], processed=False), Leaf_node(id=1026, string='we', aligned=True)]"]
 	0 -> 163
 	164 [label="no one can say why"]
 	0 -> 164
@@ -332,7 +332,7 @@ digraph {
 	0 -> 165
 	166 [label="peculiarity in different individuals of the same species ,"]
 	0 -> 166
-	167 [label="[(1619, 1623), (14403, 14407), (27360, 27364), (40436, 40440), (54568, 54570), (68819, 68821)]"]
+	167 [label="[(1619, 1623), (14403, 14407), (27360, 27364), (40436, 40440), (54568, 54570), (68819, 68821), Branching_node(id=1027, children=[(0, 1), (5, 6), (10, 11), (15, 16), (20, 21), (23, 24)], processed=False), Leaf_node(id=1028, string='we', aligned=True)]"]
 	0 -> 167
 	168 [label="different species , is sometimes inherited and sometimes not so ; why the child often reverts in certain"]
 	0 -> 168
@@ -388,7 +388,7 @@ digraph {
 	0 -> 193
 	194 [label="male element ; in nearly the same manner as"]
 	0 -> 194
-	195 [label="[(1921, 1924), (14704, 14707), (27663, 27665), (40740, 40742), (54871, 54873), (69123, 69131)]"]
+	195 [label="[(1921, 1924), (14704, 14707), (27663, 27665), (40740, 40742), (54871, 54873), (69123, 69131), Branching_node(id=1029, children=[(0, 0), (4, 4), (8, 8), (11, 11), (14, 14), (17, 23)], processed=False), Leaf_node(id=1030, string='when we', aligned=True)]"]
 	0 -> 195
 	196 [label="offspring from a short - horned cow by a long - horned bull ,"]
 	0 -> 196
@@ -404,7 +404,7 @@ digraph {
 	0 -> 201
 	202 [label="marked domestic varieties could not possibly live in a wild state . in many cases we do not know what the aboriginal stock was , and so could not tell whether or not nearly perfect reversion had ensued . it would be"]
 	0 -> 202
-	203 [label="[(2109, 2112), (14892, 14895), (27850, 27853), (40927, 40930), (55058, 55060), (69309, 69310)]"]
+	203 [label="[(2109, 2112), (14892, 14895), (27850, 27853), (40927, 40930), (55058, 55060), (69309, 69310), Branching_node(id=1031, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 16), (19, 19)], processed=False), Leaf_node(id=1032, string='we', aligned=True)]"]
 	0 -> 203
 	204 [label="in order to prevent the effects of intercrossing , that only a single variety should"]
 	0 -> 204
@@ -440,7 +440,7 @@ digraph {
 	0 -> 219
 	220 [label=". when we look to the hereditary varieties or races of our domestic animals and plants , and compare them with"]
 	0 -> 220
-	221 [label="[(2467, 2471), (15252, 15255), (28210, 28213), (41311, 41314), (55393, 55396), (69643, 69646)]"]
+	221 [label="[(2467, 2471), (15252, 15255), (28210, 28213), (41311, 41314), (55393, 55396), (69643, 69646), Branching_node(id=1033, children=[(0, 0), (5, 7), (9, 11), (13, 15), (17, 19), (21, 23)], processed=False), Leaf_node(id=1034, string='when', aligned=True)]"]
 	0 -> 221
 	222 [label=", we generally perceive in each domestic race , as already remarked , less uniformity of character than in true species . domestic races"]
 	0 -> 222
@@ -452,7 +452,7 @@ digraph {
 	0 -> 225
 	226 [label="other species of the same genus , in several trifling respects , they often differ in an extreme degree in some one part , both when compared one with another , and more especially when compared with"]
 	0 -> 226
-	227 [label="[(2562, 2566), (15345, 15349), (28303, 28307), (41397, 41400), (55479, 55482), (69729, 69732)]"]
+	227 [label="[(2562, 2566), (15345, 15349), (28303, 28307), (41397, 41400), (55479, 55482), (69729, 69732), Branching_node(id=1035, children=[(0, 1), (5, 6), (10, 11), (15, 15), (19, 19), (23, 23)], processed=False), Leaf_node(id=1036, string='we look', aligned=True)]"]
 	0 -> 227
 	228 [label="nature to which they are nearest allied . with these exceptions ( and with that of the perfect fertility of varieties when crossed , — a subject hereafter to be discussed ), domestic races of the same species differ from each other"]
 	0 -> 228
@@ -460,15 +460,15 @@ digraph {
 	0 -> 229
 	230 [label="in the same manner as"]
 	0 -> 230
-	231 [label="[(2612, 2626), (15395, 15409), (28353, 28367), (41456, 41459), (55538, 55541), (69778, 69781)]"]
+	231 [label="[(2612, 2626), (15395, 15409), (28353, 28367), (41456, 41459), (55538, 55541), (69778, 69781), Branching_node(id=1037, children=[(0, 11), (15, 26), (30, 41), (45, 45), (49, 49), (53, 53)], processed=False), Leaf_node(id=1038, string='sub', aligned=True), Branching_node(id=1039, children=[(12, 12), (27, 27), (42, 42), (46, 46), (50, 50), (54, 55)], processed=False), Leaf_node(id=1040, string='-', aligned=True)]"]
 	0 -> 231
 	232 [label="allied species of the same genus in a state of nature"]
 	0 -> 232
-	233 [label="[(2637, 2640), (15420, 15423), (28378, 28382), (41470, 41474), (55552, 55553), (69792, 69804)]"]
+	233 [label="[(2637, 2640), (15420, 15423), (28378, 28382), (41470, 41474), (55552, 55553), (69792, 69804), Branching_node(id=1041, children=[(0, 0), (4, 4), (8, 8), (13, 13), (18, 18), (20, 31)], processed=False), Leaf_node(id=1042, string='when', aligned=True)]"]
 	0 -> 233
 	234 [label="this must be admitted"]
 	0 -> 234
-	235 [label="[(2644, 2665), (15427, 15448), (28386, 28407), (41478, 41499), (55557, 55570), (69808, 69821)]"]
+	235 [label="[(2644, 2665), (15427, 15448), (28386, 28407), (41478, 41499), (55557, 55570), (69808, 69821), Branching_node(id=1043, children=[(0, 9), (22, 31), (44, 53), (66, 75), (88, 93), (102, 107)], processed=False), Leaf_node(id=1044, string='variety or', aligned=True), Branching_node(id=1045, children=[(11, 14), (33, 36), (55, 58), (77, 80), (95, 97), (109, 111)], processed=False), Leaf_node(id=1046, string='of', aligned=True), Branching_node(id=1047, children=[(15, 16), (37, 38), (59, 60), (81, 82), (98, 99), (112, 113)], processed=False), Leaf_node(id=1048, string='older', aligned=True), Branching_node(id=1049, children=[(17, 19), (39, 41), (61, 63), (83, 85), (100, 100), (114, 114)], processed=False), Leaf_node(id=1050, string='and', aligned=True)]"]
 	0 -> 235
 	236 [label="been ranked by"]
 	0 -> 236
@@ -484,7 +484,7 @@ digraph {
 	0 -> 241
 	242 [label="marked distinction existed between"]
 	0 -> 242
-	243 [label="[(2694, 2697), (15476, 15479), (28435, 28438), (41527, 41530), (55600, 55605), (69851, 69856)]"]
+	243 [label="[(2694, 2697), (15476, 15479), (28435, 28438), (41527, 41530), (55600, 55605), (69851, 69856), Branching_node(id=1051, children=[(0, 0), (4, 4), (8, 8), (12, 12), (16, 17), (22, 23)], processed=False), Leaf_node(id=1052, string='when', aligned=True), Branching_node(id=1053, children=[(1, 2), (5, 6), (9, 10), (13, 14), (18, 19), (24, 25)], processed=False), Leaf_node(id=1054, string='look', aligned=True)]"]
 	0 -> 243
 	244 [label="species , this source of doubt"]
 	0 -> 244
@@ -492,7 +492,7 @@ digraph {
 	0 -> 245
 	246 [label="not so perpetually recur . it has often been stated that domestic races do not differ from each other in characters of generic value ."]
 	0 -> 246
-	247 [label="[(2729, 2733), (15511, 15515), (28470, 28474), (41562, 41566), (55637, 55639), (69888, 69890)]"]
+	247 [label="[(2729, 2733), (15511, 15515), (28470, 28474), (41562, 41566), (55637, 55639), (69888, 69890), Branching_node(id=1055, children=[(0, 2), (5, 7), (10, 12), (15, 17), (20, 20), (23, 23)], processed=False), Leaf_node(id=1056, string='look', aligned=True)]"]
 	0 -> 247
 	248 [label="be shown that this statement is"]
 	0 -> 248
@@ -504,19 +504,19 @@ digraph {
 	0 -> 251
 	252 [label="in determining what characters are of generic value ; all such valuations being at present empirical ."]
 	0 -> 252
-	253 [label="[(2764, 2780), (15545, 15561), (28504, 28520), (41596, 41612), (55669, 55684), (69920, 69935)]"]
+	253 [label="[(2764, 2780), (15545, 15561), (28504, 28520), (41596, 41612), (55669, 55684), (69920, 69935), Branching_node(id=1057, children=[(0, 9), (17, 26), (34, 43), (51, 60), (68, 73), (84, 89)], processed=False), Leaf_node(id=1058, string='variety', aligned=True)]"]
 	0 -> 253
 	254 [label="we have no right to expect often to"]
 	0 -> 254
-	255 [label="[(2788, 2800), (15569, 15581), (28528, 28540), (41620, 41632), (55692, 55705), (69943, 69956)]"]
+	255 [label="[(2788, 2800), (15569, 15581), (28528, 28540), (41620, 41632), (55692, 55705), (69943, 69956), Branching_node(id=1059, children=[(0, 2), (13, 15), (26, 28), (39, 41), (52, 54), (66, 68)], processed=False), Leaf_node(id=1060, string='look', aligned=True), Branching_node(id=1061, children=[(3, 4), (16, 17), (29, 30), (42, 43), (55, 58), (69, 72)], processed=False), Leaf_node(id=1062, string='the individuals of', aligned=True), Branching_node(id=1063, children=[(7, 8), (20, 21), (33, 34), (46, 47), (61, 62), (75, 76)], processed=False), Leaf_node(id=1064, string='same', aligned=True)]"]
 	0 -> 255
 	256 [label="to estimate the amount of structural difference between"]
 	0 -> 256
-	257 [label="[(2808, 2815), (15589, 15596), (28548, 28555), (41640, 41647), (55713, 55720), (69964, 69967)]"]
+	257 [label="[(2808, 2815), (15589, 15596), (28548, 28555), (41640, 41647), (55713, 55720), (69964, 69967), Branching_node(id=1065, children=[(0, 1), (8, 9), (16, 17), (24, 25), (32, 33), (40, 41)], processed=False), Leaf_node(id=1066, string='we look', aligned=True)]"]
 	0 -> 257
 	258 [label=", we are soon involved in doubt , from not knowing whether they"]
 	0 -> 258
-	259 [label="[(2828, 2837), (15609, 15616), (28568, 28577), (41660, 41669), (55733, 55742), (69980, 69988)]"]
+	259 [label="[(2828, 2837), (15609, 15616), (28568, 28577), (41660, 41669), (55733, 55742), (69980, 69988), Branching_node(id=1067, children=[(0, 1), (10, 11), (18, 19), (28, 29), (38, 39), (48, 49)], processed=False), Leaf_node(id=1068, string='we look to the individuals', aligned=True)]"]
 	0 -> 259
 	260 [label=". this point , if it could be cleared up , would be interesting ; if , for instance , it could be shown that the greyhound , bloodhound , terrier , spaniel , and bull - dog , which we all know propagate their kind"]
 	0 -> 260
@@ -524,11 +524,11 @@ digraph {
 	0 -> 261
 	262 [label="truly , were the offspring of any single species , then such facts would have great weight in making us doubt about the immutability of the many"]
 	0 -> 262
-	263 [label="[(2911, 2915), (15690, 15693), (28651, 28654), (41743, 41746), (55816, 55819), (70061, 70063)]"]
+	263 [label="[(2911, 2915), (15690, 15693), (28651, 28654), (41743, 41746), (55816, 55819), (70061, 70063), Branching_node(id=1069, children=[(0, 1), (5, 6), (9, 10), (13, 14), (17, 18), (21, 21)], processed=False), Leaf_node(id=1070, string='we look', aligned=True)]"]
 	0 -> 263
 	264 [label="natural species — for instance , of the many foxes — inhabiting different quarters of the world . i do not believe , as we shall presently see , that"]
 	0 -> 264
-	265 [label="[(2945, 2966), (15723, 15768), (28684, 28729), (41776, 41821), (55849, 55898), (70093, 70142)]"]
+	265 [label="[(2945, 2966), (15723, 15768), (28684, 28729), (41776, 41821), (55849, 55898), (70093, 70142), Branching_node(id=1071, children=[(0, 4), (22, 54), (68, 100), (114, 146), (160, 192), (210, 242)], processed=False), Leaf_node(id=1072, string='the individuals', aligned=True), Branching_node(id=1073, children=[(6, 17), (56, 63), (102, 109), (148, 155), (194, 205), (244, 255)], processed=False), Leaf_node(id=1074, string='cultivated plants', aligned=True)]"]
 	0 -> 265
 	266 [label=", there is presumptive"]
 	0 -> 266
@@ -536,7 +536,7 @@ digraph {
 	0 -> 267
 	268 [label="or even strong"]
 	0 -> 268
-	269 [label="[(2974, 2981), (15776, 15789), (28737, 28750), (41829, 41842), (55906, 55917), (70149, 70160)]"]
+	269 [label="[(2974, 2981), (15776, 15789), (28737, 28750), (41829, 41842), (55906, 55917), (70149, 70160), Branching_node(id=1075, children=[(0, 0), (8, 9), (22, 23), (36, 37), (50, 51), (62, 63)], processed=False), Leaf_node(id=1076, string='when', aligned=True)]"]
 	0 -> 269
 	270 [label=". it has often been assumed that man has chosen for domestication animals and plants having an extraordinary inherent tendency to vary , and likewise to withstand diverse climates . i do not dispute that these capacities have added largely to the value of most of our domesticated productions ; but how could a savage possibly know , when he first tamed an animal , whether it would vary in succeeding generations , and whether it would endure other climates ? has the little variability of the ass"]
 	0 -> 270
@@ -556,15 +556,15 @@ digraph {
 	0 -> 277
 	278 [label="as largely as the parent species of our existing domesticated productions have varied . in the case of most of our anciently domesticated animals and plants ,"]
 	0 -> 278
-	279 [label="[(3181, 3187), (15989, 15995), (28949, 28952), (42040, 42043), (56115, 56118), (70358, 70361)]"]
+	279 [label="[(3181, 3187), (15989, 15995), (28949, 28952), (42040, 42043), (56115, 56118), (70358, 70361), Branching_node(id=1077, children=[(0, 2), (7, 9), (14, 16), (18, 20), (22, 24), (26, 28)], processed=False), Leaf_node(id=1078, string='look', aligned=True)]"]
 	0 -> 279
 	280 [label="possible to come to any definite conclusion , whether they"]
 	0 -> 280
-	281 [label="[(3197, 3203), (16005, 16012), (28962, 28969), (42053, 42060), (56128, 56135), (70371, 70378)]"]
+	281 [label="[(3197, 3203), (16005, 16012), (28962, 28969), (42053, 42060), (56128, 56135), (70371, 70378), Branching_node(id=1079, children=[(0, 1), (7, 8), (15, 16), (23, 24), (31, 32), (39, 40)], processed=False), Leaf_node(id=1080, string='we look to the individuals', aligned=True)]"]
 	0 -> 281
 	282 [label="species . the argument mainly relied on by those who believe in the multiple origin of our domestic animals is , that we find in the most ancient"]
 	0 -> 282
-	283 [label="[(3231, 3235), (16040, 16044), (28997, 29001), (42088, 42090), (56163, 56165), (70406, 70408)]"]
+	283 [label="[(3231, 3235), (16040, 16044), (28997, 29001), (42088, 42090), (56163, 56165), (70406, 70408), Branching_node(id=1081, children=[(0, 1), (5, 6), (10, 11), (15, 16), (18, 19), (21, 22)], processed=False), Leaf_node(id=1082, string='we', aligned=True)]"]
 	0 -> 283
 	284 [label="on the monuments of egypt ,"]
 	0 -> 284
@@ -576,7 +576,7 @@ digraph {
 	0 -> 287
 	288 [label="breeds closely resemble"]
 	0 -> 288
-	289 [label="[(3255, 3258), (16064, 16067), (29021, 29024), (42120, 42123), (56195, 56198), (70438, 70442)]"]
+	289 [label="[(3255, 3258), (16064, 16067), (29021, 29024), (42120, 42123), (56195, 56198), (70438, 70442), Branching_node(id=1083, children=[(0, 2), (4, 6), (8, 10), (12, 13), (16, 17), (20, 22)], processed=False), Leaf_node(id=1084, string='look', aligned=True)]"]
 	0 -> 289
 	290 [label="identical with"]
 	0 -> 290
@@ -584,11 +584,11 @@ digraph {
 	0 -> 291
 	292 [label="those still existing ."]
 	0 -> 292
-	293 [label="[(3265, 3390), (16074, 16199), (29031, 29156), (42129, 42330), (56204, 56403), (70449, 70646)]"]
+	293 [label="[(3265, 3390), (16074, 16199), (29031, 29156), (42129, 42330), (56204, 56403), (70449, 70646), Branching_node(id=1085, children=[(0, 5), (126, 131), (252, 257), (378, 393), (580, 595), (780, 795)], processed=False), Leaf_node(id=1086, string='individuals', aligned=True), Branching_node(id=1087, children=[(6, 12), (132, 138), (258, 264), (394, 400), (596, 602), (796, 802)], processed=False), Leaf_node(id=1088, string='-', aligned=True), Branching_node(id=1089, children=[(13, 65), (139, 191), (265, 303), (401, 517), (603, 718), (803, 915)], processed=False), Leaf_node(id=1090, string='diversity of', aligned=True), Branching_node(id=1091, children=[(67, 107), (193, 233), (305, 371), (519, 573), (720, 773), (917, 971)], processed=False), Leaf_node(id=1092, string='domestic', aligned=True)]"]
 	0 -> 293
 	294 [label="remain vague"]
 	0 -> 294
-	295 [label="[(3392, 3429), (16201, 16293), (29158, 29221), (42332, 42397), (56405, 56469), (70648, 70712)]"]
+	295 [label="[(3392, 3429), (16201, 16293), (29158, 29221), (42332, 42397), (56405, 56469), (70648, 70712), Branching_node(id=1093, children=[(0, 3), (38, 41), (131, 133), (195, 197), (261, 263), (326, 328)], processed=False), Leaf_node(id=1094, string='to the', aligned=True), Branching_node(id=1095, children=[(5, 7), (43, 45), (135, 135), (199, 199), (265, 265), (330, 330)], processed=False), Leaf_node(id=1096, string='the', aligned=True), Branching_node(id=1097, children=[(8, 18), (46, 56), (136, 175), (200, 240), (266, 306), (331, 371)], processed=False), Leaf_node(id=1098, string='plants', aligned=True), Branching_node(id=1099, children=[(19, 28), (57, 66), (176, 190), (241, 256), (307, 322), (372, 387)], processed=False), Leaf_node(id=1100, string='strikes', aligned=True)]"]
 	0 -> 295
 	296 [label=". in regard to sheep and goats i can form no"]
 	0 -> 296
@@ -600,11 +600,11 @@ digraph {
 	0 -> 299
 	300 [label="from facts communicated to me by mr . blyth , on the habits , voice ,"]
 	0 -> 300
-	301 [label="[(3462, 3467), (16326, 16331), (29250, 29255), (42426, 42430), (56499, 56503), (70742, 70746)]"]
+	301 [label="[(3462, 3467), (16326, 16331), (29250, 29255), (42426, 42430), (56499, 56503), (70742, 70746), Branching_node(id=1101, children=[(0, 1), (6, 7), (12, 13), (18, 18), (23, 23), (28, 28)], processed=False), Leaf_node(id=1102, string='we', aligned=True)]"]
 	0 -> 301
 	302 [label="of the humped indian cattle ,"]
 	0 -> 302
-	303 [label="[(3473, 3476), (16337, 16340), (29261, 29266), (42436, 42442), (56509, 56516), (70752, 70759)]"]
+	303 [label="[(3473, 3476), (16337, 16340), (29261, 29266), (42436, 42442), (56509, 56516), (70752, 70759), Branching_node(id=1103, children=[(0, 0), (4, 4), (8, 11), (14, 17), (21, 25), (29, 33)], processed=False), Leaf_node(id=1104, string='when', aligned=True)]"]
 	0 -> 303
 	304 [label="descended from a different aboriginal stock from our european cattle ; and"]
 	0 -> 304
@@ -612,15 +612,15 @@ digraph {
 	0 -> 305
 	306 [label="competent judges believe that these latter have had"]
 	0 -> 306
-	307 [label="[(3497, 3502), (16361, 16366), (29287, 29292), (42463, 42511), (56537, 56588), (70780, 70830)]"]
+	307 [label="[(3497, 3502), (16361, 16366), (29287, 29292), (42463, 42511), (56537, 56588), (70780, 70830), Branching_node(id=1105, children=[(0, 3), (6, 9), (12, 15), (18, 19), (67, 70), (119, 122)], processed=False), Leaf_node(id=1106, string='to', aligned=True)]"]
 	0 -> 307
 	308 [label=". with respect to horses , from reasons which i cannot"]
 	0 -> 308
-	309 [label="[(3513, 3519), (16377, 16383), (29303, 29311), (42522, 42530), (56599, 56605), (70841, 70847)]"]
+	309 [label="[(3513, 3519), (16377, 16383), (29303, 29311), (42522, 42530), (56599, 56605), (70841, 70847), Branching_node(id=1107, children=[(0, 1), (7, 8), (14, 14), (23, 23), (32, 32), (39, 39)], processed=False), Leaf_node(id=1108, string='we', aligned=True), Branching_node(id=1109, children=[(2, 2), (9, 9), (15, 16), (24, 25), (33, 34), (40, 41)], processed=False), Leaf_node(id=1110, string='look to the', aligned=True)]"]
 	0 -> 309
 	310 [label="inclined to believe , in opposition to several authors , that all the races"]
 	0 -> 310
-	311 [label="[(3533, 3579), (16397, 16443), (29325, 29371), (42544, 42590), (56619, 56661), (70861, 70903)]"]
+	311 [label="[(3533, 3579), (16397, 16443), (29325, 29371), (42544, 42590), (56619, 56661), (70861, 70903), Branching_node(id=1111, children=[(0, 30), (47, 77), (94, 124), (141, 171), (188, 221), (231, 264)], processed=False), Leaf_node(id=1112, string=',', aligned=True), Branching_node(id=1113, children=[(31, 35), (78, 82), (125, 129), (172, 176), (222, 223), (265, 266)], processed=False), Leaf_node(id=1114, string='generally differ', aligned=True)]"]
 	0 -> 311
 	312 [label="wild indian fowl"]
 	0 -> 312
@@ -636,7 +636,7 @@ digraph {
 	0 -> 317
 	318 [label="breeds of which differ"]
 	0 -> 318
-	319 [label="[(3598, 3613), (16462, 16477), (29390, 29406), (42649, 42666), (56701, 56714), (70943, 70956)]"]
+	319 [label="[(3598, 3613), (16462, 16477), (29390, 29406), (42649, 42666), (56701, 56714), (70943, 70956), Branching_node(id=1115, children=[(0, 1), (16, 17), (32, 33), (49, 50), (67, 68), (81, 82)], processed=False), Leaf_node(id=1116, string='we look to', aligned=True), Branching_node(id=1117, children=[(4, 6), (20, 22), (36, 38), (53, 55), (71, 71), (85, 85)], processed=False), Leaf_node(id=1118, string='of', aligned=True), Branching_node(id=1119, children=[(7, 13), (23, 30), (39, 47), (56, 65), (72, 79), (86, 93)], processed=False), Leaf_node(id=1120, string='variety', aligned=True)]"]
 	0 -> 319
 	320 [label="descended from the common wild duck and rabbit . the doctrine of the origin of our several domestic races from several aboriginal stocks , has been carried to an absurd extreme by some authors . they believe that every race which breeds true , let the distinctive characters be ever so slight , has had its wild prototype . at this rate there must have existed at least a score of species of wild cattle , as many sheep , and several goats"]
 	0 -> 320
@@ -664,7 +664,7 @@ digraph {
 	0 -> 331
 	332 [label="have originated in europe ; for whence"]
 	0 -> 332
-	333 [label="[(3792, 3795), (16656, 16659), (29585, 29588), (42846, 42849), (56895, 56897), (71133, 71137)]"]
+	333 [label="[(3792, 3795), (16656, 16659), (29585, 29588), (42846, 42849), (56895, 56897), (71133, 71137), Branching_node(id=1121, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (19, 21)], processed=False), Leaf_node(id=1122, string='we', aligned=True)]"]
 	0 -> 333
 	334 [label="been derived"]
 	0 -> 334
@@ -672,19 +672,19 @@ digraph {
 	0 -> 335
 	336 [label="? so it is in india . even in the case of the"]
 	0 -> 336
-	337 [label="[(3828, 3833), (16692, 16697), (29621, 29626), (42882, 42887), (56931, 56936), (71152, 71159)]"]
+	337 [label="[(3828, 3833), (16692, 16697), (29621, 29626), (42882, 42887), (56931, 56936), (71152, 71159), Branching_node(id=1123, children=[(0, 0), (6, 6), (12, 12), (18, 18), (24, 24), (30, 33)], processed=False), Leaf_node(id=1124, string='when', aligned=True)]"]
 	0 -> 337
 	338 [label="world , which i"]
 	0 -> 338
-	339 [label="[(3837, 3841), (16701, 16705), (29630, 29633), (42891, 42894), (56940, 56943), (71163, 71165)]"]
+	339 [label="[(3837, 3841), (16701, 16705), (29630, 29633), (42891, 42894), (56940, 56943), (71163, 71165), Branching_node(id=1125, children=[(0, 1), (5, 6), (10, 10), (14, 14), (18, 18), (22, 22)], processed=False), Leaf_node(id=1126, string='we', aligned=True)]"]
 	0 -> 339
 	340 [label="descended from several wild species ,"]
 	0 -> 340
-	341 [label="[(3847, 3850), (16711, 16714), (29639, 29643), (42900, 42904), (56949, 56953), (71171, 71175)]"]
+	341 [label="[(3847, 3850), (16711, 16714), (29639, 29643), (42900, 42904), (56949, 56953), (71171, 71175), Branching_node(id=1127, children=[(0, 1), (4, 5), (8, 9), (13, 14), (18, 19), (23, 24)], processed=False), Leaf_node(id=1128, string='we', aligned=True)]"]
 	0 -> 341
 	342 [label="that there has been an immense amount of inherited variation"]
 	0 -> 342
-	343 [label="[(3860, 3863), (16724, 16727), (29653, 29657), (42914, 42918), (56963, 56967), (71185, 71189)]"]
+	343 [label="[(3860, 3863), (16724, 16727), (29653, 29657), (42914, 42918), (56963, 56967), (71185, 71189), Branching_node(id=1129, children=[(0, 1), (4, 5), (8, 10), (13, 15), (18, 20), (23, 25)], processed=False), Leaf_node(id=1130, string='we', aligned=True)]"]
 	0 -> 343
 	344 [label="believe that animals closely resembling the italian greyhound , the bloodhound , the bull - dog ,"]
 	0 -> 344
@@ -696,7 +696,7 @@ digraph {
 	0 -> 347
 	348 [label="in a state of nature ? it has often been loosely said that all our races of dogs have been produced by the crossing of a few aboriginal species ; but by crossing we can"]
 	0 -> 348
-	349 [label="[(3930, 3932), (16794, 16796), (29728, 29730), (42989, 42991), (57038, 57040), (71259, 71261)]"]
+	349 [label="[(3930, 3932), (16794, 16796), (29728, 29730), (42989, 42991), (57038, 57040), (71259, 71261), Branching_node(id=1131, children=[(0, 0), (3, 4), (6, 7), (9, 10), (12, 13), (15, 16)], processed=False), Leaf_node(id=1132, string='when', aligned=True)]"]
 	0 -> 349
 	350 [label="forms in some degree intermediate between their parents ; and if we account for our several domestic races by this process , we must admit the former existence of the most extreme forms , as the italian greyhound , bloodhound , bull - dog , & c ., in the wild state . moreover , the possibility of making distinct races by crossing has been greatly exaggerated ."]
 	0 -> 350
@@ -712,7 +712,7 @@ digraph {
 	0 -> 355
 	356 [label="desired character ; but"]
 	0 -> 356
-	357 [label="[(4032, 4052), (16896, 16916), (29831, 29851), (43091, 43109), (57140, 57158), (71361, 71376)]"]
+	357 [label="[(4032, 4052), (16896, 16916), (29831, 29851), (43091, 43109), (57140, 57158), (71361, 71376), Branching_node(id=1133, children=[(0, 1), (21, 22), (42, 43), (63, 65), (82, 84), (101, 103)], processed=False), Leaf_node(id=1134, string='we look', aligned=True), Branching_node(id=1135, children=[(3, 4), (24, 25), (45, 46), (67, 78), (86, 97), (105, 113)], processed=False), Leaf_node(id=1136, string='the', aligned=True)]"]
 	0 -> 357
 	358 [label=". sir j . sebright expressly"]
 	0 -> 358
@@ -720,15 +720,15 @@ digraph {
 	0 -> 359
 	360 [label="this object , and failed . the offspring from the first cross between two pure breeds is tolerably and sometimes ( as i have found with pigeons )"]
 	0 -> 360
-	361 [label="[(4088, 4090), (16952, 16954), (29887, 29889), (43145, 43147), (57194, 57196), (71412, 71416)]"]
+	361 [label="[(4088, 4090), (16952, 16954), (29887, 29889), (43145, 43147), (57194, 57196), (71412, 71416), Branching_node(id=1137, children=[(0, 1), (3, 4), (6, 7), (9, 10), (12, 13), (15, 16)], processed=False), Leaf_node(id=1138, string='we', aligned=True)]"]
 	0 -> 361
 	362 [label=", and everything seems simple enough ; but when these mongrels are crossed one with another for several generations , hardly two of them"]
 	0 -> 362
-	363 [label="[(4114, 4118), (16978, 16982), (29913, 29917), (43171, 43175), (57220, 57223), (71440, 71443)]"]
+	363 [label="[(4114, 4118), (16978, 16982), (29913, 29917), (43171, 43175), (57220, 57223), (71440, 71443), Branching_node(id=1139, children=[(0, 2), (5, 7), (10, 12), (15, 17), (20, 21), (24, 25)], processed=False), Leaf_node(id=1140, string='look', aligned=True)]"]
 	0 -> 363
 	364 [label="and then the"]
 	0 -> 364
-	365 [label="[(4121, 4129), (16985, 16993), (29920, 29928), (43178, 43185), (57226, 57228), (71446, 71447)]"]
+	365 [label="[(4121, 4129), (16985, 16993), (29920, 29928), (43178, 43185), (57226, 57228), (71446, 71447), Branching_node(id=1141, children=[(0, 1), (9, 10), (18, 19), (27, 28), (35, 36), (38, 38)], processed=False), Leaf_node(id=1142, string='we', aligned=True)]"]
 	0 -> 365
 	366 [label="of the task becomes"]
 	0 -> 366
@@ -768,7 +768,7 @@ digraph {
 	0 -> 383
 	384 [label="short and conical beak , with a line of reversed feathers down the breast ; and it has the habit of continually expanding"]
 	0 -> 384
-	385 [label="[(4565, 4566), (17427, 17428), (30362, 30363), (43622, 43623), (57661, 57662), (71839, 71842)]"]
+	385 [label="[(4565, 4566), (17427, 17428), (30362, 30363), (43622, 43623), (57661, 57662), (71839, 71842), Branching_node(id=1143, children=[(0, 0), (2, 2), (4, 4), (6, 6), (8, 8), (10, 11)], processed=False), Leaf_node(id=1144, string='when', aligned=True)]"]
 	0 -> 385
 	386 [label="the upper part of the œsophagus . the jacobin has the feathers so much reversed along the back of the neck that they form a hood"]
 	0 -> 386
@@ -852,11 +852,11 @@ digraph {
 	0 -> 425
 	426 [label="place the english carrier , the short - faced tumbler , the runt , the barb , pouter , and fantail in the same genus ; more especially as in each of these breeds several truly - inherited sub - breeds , or species"]
 	0 -> 426
-	427 [label="[(5104, 5109), (17964, 17969), (30897, 30902), (44157, 44162), (58196, 58201), (72378, 72383)]"]
+	427 [label="[(5104, 5109), (17964, 17969), (30897, 30902), (44157, 44162), (58196, 58201), (72378, 72383), Branching_node(id=1145, children=[(0, 0), (6, 6), (12, 12), (18, 18), (24, 24), (30, 31)], processed=False), Leaf_node(id=1146, string='when we', aligned=True)]"]
 	0 -> 427
 	428 [label="them , could be shown him . great as"]
 	0 -> 428
-	429 [label="[(5118, 5121), (17978, 17981), (30911, 30914), (44171, 44174), (58210, 58213), (72392, 72395)]"]
+	429 [label="[(5118, 5121), (17978, 17981), (30911, 30914), (44171, 44174), (58210, 58213), (72392, 72395), Branching_node(id=1147, children=[(0, 2), (4, 6), (8, 10), (12, 14), (16, 18), (20, 20)], processed=False), Leaf_node(id=1148, string='look', aligned=True)]"]
 	0 -> 429
 	430 [label="between the breeds of"]
 	0 -> 430
@@ -864,7 +864,7 @@ digraph {
 	0 -> 431
 	432 [label=", i am fully convinced that the common opinion of naturalists is correct , namely , that all"]
 	0 -> 432
-	433 [label="[(5144, 5150), (18004, 18010), (30937, 30943), (44197, 44203), (58236, 58242), (72419, 72424)]"]
+	433 [label="[(5144, 5150), (18004, 18010), (30937, 30943), (44197, 44203), (58236, 58242), (72419, 72424), Branching_node(id=1149, children=[(0, 1), (7, 8), (14, 15), (21, 22), (28, 29), (35, 36)], processed=False), Leaf_node(id=1150, string='we look to the', aligned=True)]"]
 	0 -> 433
 	434 [label="pigeon ( columba livia ), including under this term several geographical races or sub - species , which differ from each other in the most trifling respects . as several of the reasons which have led me to this belief are in some degree applicable in other cases , i will here briefly give them . if the several breeds are not varieties , and have not proceeded from the rock - pigeon , they must have descended from at least seven or eight aboriginal stocks ; for it is impossible to make the present domestic breeds by the crossing of any lesser number : how , for instance , could a pouter be produced by crossing two breeds unless one of the parent - stocks"]
 	0 -> 434
@@ -872,7 +872,7 @@ digraph {
 	0 -> 435
 	436 [label="the characteristic enormous crop ? the supposed aboriginal stocks must all have been rock - pigeons , that is ,"]
 	0 -> 436
-	437 [label="[(5297, 5299), (18157, 18159), (31090, 31092), (44350, 44352), (58389, 58391), (72571, 72575)]"]
+	437 [label="[(5297, 5299), (18157, 18159), (31090, 31092), (44350, 44352), (58389, 58391), (72571, 72575), Branching_node(id=1151, children=[(0, 0), (3, 3), (6, 6), (9, 9), (12, 12), (15, 17)], processed=False), Leaf_node(id=1152, string='when', aligned=True)]"]
 	0 -> 437
 	438 [label="or willingly"]
 	0 -> 438
@@ -896,7 +896,7 @@ digraph {
 	0 -> 447
 	448 [label="difficult to get"]
 	0 -> 448
-	449 [label="[(5561, 5564), (18421, 18424), (31353, 31356), (44613, 44616), (58649, 58652), (72832, 72834)]"]
+	449 [label="[(5561, 5564), (18421, 18424), (31353, 31356), (44613, 44616), (58649, 58652), (72832, 72834), Branching_node(id=1153, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (20, 20)], processed=False), Leaf_node(id=1154, string='we', aligned=True)]"]
 	0 -> 449
 	450 [label="to breed freely under domestication ; yet"]
 	0 -> 450
@@ -944,7 +944,7 @@ digraph {
 	0 -> 471
 	472 [label="pigeon is of a slaty - blue ,"]
 	0 -> 472
-	473 [label="[(5828, 5834), (18688, 18694), (31618, 31624), (44879, 44885), (58904, 58908), (73085, 73090)]"]
+	473 [label="[(5828, 5834), (18688, 18694), (31618, 31624), (44879, 44885), (58904, 58908), (73085, 73090), Branching_node(id=1155, children=[(0, 3), (7, 10), (14, 17), (21, 24), (28, 29), (33, 34)], processed=False), Leaf_node(id=1156, string='to', aligned=True)]"]
 	0 -> 473
 	474 [label="the indian sub - species , c . intermedia of strickland ,"]
 	0 -> 474
@@ -960,7 +960,7 @@ digraph {
 	0 -> 479
 	480 [label="the outer feathers externally edged"]
 	0 -> 480
-	481 [label="[(5867, 5870), (18727, 18730), (31657, 31660), (44918, 44921), (58939, 58945), (73121, 73127)]"]
+	481 [label="[(5867, 5870), (18727, 18730), (31657, 31660), (44918, 44921), (58939, 58945), (73121, 73127), Branching_node(id=1157, children=[(0, 0), (4, 4), (8, 8), (12, 12), (16, 19), (23, 26)], processed=False), Leaf_node(id=1158, string='when we', aligned=True)]"]
 	0 -> 481
 	482 [label="the wings have two black bars"]
 	0 -> 482
@@ -968,7 +968,7 @@ digraph {
 	0 -> 483
 	484 [label="some semi - domestic breeds"]
 	0 -> 484
-	485 [label="[(5882, 5885), (18742, 18745), (31672, 31676), (44933, 44937), (58957, 58960), (73139, 73142)]"]
+	485 [label="[(5882, 5885), (18742, 18745), (31672, 31676), (44933, 44937), (58957, 58960), (73139, 73142), Branching_node(id=1159, children=[(0, 0), (4, 4), (8, 9), (13, 14), (18, 19), (22, 23)], processed=False), Leaf_node(id=1160, string='when we', aligned=True)]"]
 	0 -> 485
 	486 [label="truly wild breeds"]
 	0 -> 486
@@ -984,7 +984,7 @@ digraph {
 	0 -> 491
 	492 [label="distinct breeds are crossed ,"]
 	0 -> 492
-	493 [label="[(5970, 5974), (18830, 18834), (31763, 31767), (45024, 45028), (59047, 59051), (73229, 73233)]"]
+	493 [label="[(5970, 5974), (18830, 18834), (31763, 31767), (45024, 45028), (59047, 59051), (73229, 73233), Branching_node(id=1161, children=[(0, 1), (5, 6), (10, 11), (15, 16), (20, 21), (25, 26)], processed=False), Leaf_node(id=1162, string='we look', aligned=True)]"]
 	0 -> 493
 	494 [label="blue or"]
 	0 -> 494
@@ -992,7 +992,7 @@ digraph {
 	0 -> 495
 	496 [label="any of the above - specified marks , the mongrel offspring are very apt suddenly to acquire these characters"]
 	0 -> 496
-	497 [label="[(5996, 6000), (18856, 18860), (31789, 31802), (45050, 45063), (59073, 59086), (73255, 73268)]"]
+	497 [label="[(5996, 6000), (18856, 18860), (31789, 31802), (45050, 45063), (59073, 59086), (73255, 73268), Branching_node(id=1163, children=[(0, 2), (5, 7), (10, 14), (24, 28), (38, 42), (52, 56)], processed=False), Leaf_node(id=1164, string='look', aligned=True)]"]
 	0 -> 497
 	498 [label="i crossed some"]
 	0 -> 498
@@ -1024,7 +1024,7 @@ digraph {
 	0 -> 511
 	512 [label="if all the domestic breeds"]
 	0 -> 512
-	513 [label="[(6098, 6104), (18958, 18964), (31983, 31989), (45231, 45237), (59254, 59260), (73435, 73440)]"]
+	513 [label="[(6098, 6104), (18958, 18964), (31983, 31989), (45231, 45237), (59254, 59260), (73435, 73440), Branching_node(id=1165, children=[(0, 1), (7, 8), (14, 15), (21, 22), (28, 29), (35, 36)], processed=False), Leaf_node(id=1166, string='we look to the', aligned=True)]"]
 	0 -> 513
 	514 [label="pigeon . but if we deny this , we must make one of the two following highly improbable suppositions . either ,"]
 	0 -> 514
@@ -1036,7 +1036,7 @@ digraph {
 	0 -> 517
 	518 [label="pigeon , although no other existing species is thus coloured and marked , so that in each separate breed there might be a tendency to revert to the very same colours and markings . or , secondly , that each breed , even the purest , has within a dozen"]
 	0 -> 518
-	519 [label="[(6193, 6195), (19053, 19055), (32078, 32080), (45326, 45328), (59349, 59351), (73528, 73530)]"]
+	519 [label="[(6193, 6195), (19053, 19055), (32078, 32080), (45326, 45328), (59349, 59351), (73528, 73530), Branching_node(id=1167, children=[(0, 0), (3, 3), (6, 7), (9, 10), (12, 13), (15, 16)], processed=False), Leaf_node(id=1168, string='when', aligned=True)]"]
 	0 -> 519
 	520 [label="at most"]
 	0 -> 520
@@ -1048,11 +1048,11 @@ digraph {
 	0 -> 523
 	524 [label="of generations , been crossed by the rock"]
 	0 -> 524
-	525 [label="[(6209, 6212), (19069, 19072), (32094, 32097), (45342, 45345), (59365, 59368), (73544, 73546)]"]
+	525 [label="[(6209, 6212), (19069, 19072), (32094, 32097), (45342, 45345), (59365, 59368), (73544, 73546), Branching_node(id=1169, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (20, 20)], processed=False), Leaf_node(id=1170, string='we', aligned=True)]"]
 	0 -> 525
 	526 [label="i say within a dozen or twenty generations , for"]
 	0 -> 526
-	527 [label="[(6222, 6239), (19082, 19099), (32107, 32124), (45355, 45372), (59378, 59392), (73556, 73570)]"]
+	527 [label="[(6222, 6239), (19082, 19099), (32107, 32124), (45355, 45372), (59378, 59392), (73556, 73570), Branching_node(id=1171, children=[(0, 3), (18, 21), (36, 39), (54, 57), (72, 72), (87, 87)], processed=False), Leaf_node(id=1172, string='to', aligned=True), Branching_node(id=1173, children=[(4, 13), (22, 31), (40, 49), (58, 67), (73, 80), (88, 95)], processed=False), Leaf_node(id=1174, string='variety', aligned=True), Branching_node(id=1175, children=[(14, 16), (32, 34), (50, 52), (68, 70), (81, 82), (96, 97)], processed=False), Leaf_node(id=1176, string='older', aligned=True)]"]
 	0 -> 527
 	528 [label=", removed by a greater number of generations . in a breed which has been crossed only once"]
 	0 -> 528
@@ -1076,7 +1076,7 @@ digraph {
 	0 -> 537
 	538 [label="to revert to a character"]
 	0 -> 538
-	539 [label="[(6319, 6323), (19179, 19183), (32204, 32207), (45452, 45455), (59465, 59467), (73643, 73645)]"]
+	539 [label="[(6319, 6323), (19179, 19183), (32204, 32207), (45452, 45455), (59465, 59467), (73643, 73645), Branching_node(id=1177, children=[(0, 1), (5, 6), (10, 10), (14, 14), (18, 18), (21, 21)], processed=False), Leaf_node(id=1178, string='we', aligned=True)]"]
 	0 -> 539
 	540 [label="lost during some former generation , this tendency , for all that we can see to the contrary , may be transmitted undiminished for an indefinite number of generations . these two"]
 	0 -> 540
@@ -1092,7 +1092,7 @@ digraph {
 	0 -> 545
 	546 [label="on inheritance . lastly , the hybrids or mongrels from between all the"]
 	0 -> 546
-	547 [label="[(6375, 6379), (19235, 19239), (32263, 32267), (45511, 45515), (59525, 59529), (73703, 73707)]"]
+	547 [label="[(6375, 6379), (19235, 19239), (32263, 32267), (45511, 45515), (59525, 59529), (73703, 73707), Branching_node(id=1179, children=[(0, 1), (5, 6), (10, 11), (15, 16), (20, 21), (25, 25)], processed=False), Leaf_node(id=1180, string='we look', aligned=True)]"]
 	0 -> 547
 	548 [label="are perfectly fertile"]
 	0 -> 548
@@ -1108,7 +1108,7 @@ digraph {
 	0 -> 553
 	554 [label="on the most distinct breeds . now ,"]
 	0 -> 554
-	555 [label="[(6402, 6425), (19263, 19286), (32291, 32314), (45539, 45562), (59553, 59576), (73731, 73749)]"]
+	555 [label="[(6402, 6425), (19263, 19286), (32291, 32314), (45539, 45562), (59553, 59576), (73731, 73749), Branching_node(id=1181, children=[(0, 17), (24, 41), (48, 65), (72, 89), (96, 113), (120, 131)], processed=False), Leaf_node(id=1182, string='cultivated', aligned=True), Branching_node(id=1183, children=[(18, 18), (42, 42), (66, 66), (90, 90), (114, 114), (132, 136)], processed=False), Leaf_node(id=1184, string='plants', aligned=True)]"]
 	0 -> 555
 	556 [label="perfectly fertile . some authors believe that long - continued domestication eliminates this strong tendency to sterility"]
 	0 -> 556
@@ -1116,7 +1116,7 @@ digraph {
 	0 -> 557
 	558 [label="from the history of the dog"]
 	0 -> 558
-	559 [label="[(6449, 6458), (19310, 19319), (32338, 32347), (45586, 45601), (59600, 59615), (73775, 73789)]"]
+	559 [label="[(6449, 6458), (19310, 19319), (32338, 32347), (45586, 45601), (59600, 59615), (73775, 73789), Branching_node(id=1185, children=[(0, 3), (10, 13), (20, 23), (30, 39), (46, 55), (62, 72)], processed=False), Leaf_node(id=1186, string='to', aligned=True)]"]
 	0 -> 559
 	560 [label=", if applied to species closely related"]
 	0 -> 560
@@ -1148,7 +1148,7 @@ digraph {
 	0 -> 573
 	574 [label="these supposed species being quite unknown in a wild state , and their"]
 	0 -> 574
-	575 [label="[(6561, 6565), (19422, 19426), (32449, 32453), (45705, 45709), (59719, 59723), (73882, 73888)]"]
+	575 [label="[(6561, 6565), (19422, 19426), (32449, 32453), (45705, 45709), (59719, 59723), (73882, 73888), Branching_node(id=1187, children=[(0, 2), (5, 7), (10, 12), (15, 17), (20, 22), (25, 29)], processed=False), Leaf_node(id=1188, string='look', aligned=True)]"]
 	0 -> 575
 	576 [label="these species"]
 	0 -> 576
@@ -1160,11 +1160,11 @@ digraph {
 	0 -> 579
 	580 [label=", as compared with all other columbidæ , though so like"]
 	0 -> 580
-	581 [label="[(6585, 6595), (19446, 19456), (32473, 32483), (45729, 45739), (59743, 59753), (73906, 73920)]"]
+	581 [label="[(6585, 6595), (19446, 19456), (32473, 32483), (45729, 45739), (59743, 59753), (73906, 73920), Branching_node(id=1189, children=[(0, 0), (11, 11), (22, 22), (33, 33), (44, 44), (55, 59)], processed=False), Leaf_node(id=1190, string='when we', aligned=True), Branching_node(id=1191, children=[(2, 3), (13, 14), (24, 25), (35, 36), (46, 47), (61, 61)], processed=False), Leaf_node(id=1192, string='to', aligned=True)]"]
 	0 -> 581
 	582 [label="the blue colour and various"]
 	0 -> 582
-	583 [label="[(6600, 6603), (19461, 19464), (32488, 32492), (45744, 45748), (59758, 59762), (73925, 73927)]"]
+	583 [label="[(6600, 6603), (19461, 19464), (32488, 32492), (45744, 45748), (59758, 59762), (73925, 73927), Branching_node(id=1193, children=[(0, 0), (4, 4), (8, 9), (13, 14), (18, 19), (23, 24)], processed=False), Leaf_node(id=1194, string='when', aligned=True)]"]
 	0 -> 583
 	584 [label="in all the breeds , both when kept pure and when crossed"]
 	0 -> 584
@@ -1176,7 +1176,7 @@ digraph {
 	0 -> 587
 	588 [label="that all our domestic breeds"]
 	0 -> 588
-	589 [label="[(6641, 6645), (19502, 19506), (32529, 32533), (45785, 45789), (59799, 59803), (73967, 73975)]"]
+	589 [label="[(6641, 6645), (19502, 19506), (32529, 32533), (45785, 45789), (59799, 59803), (73967, 73975), Branching_node(id=1195, children=[(0, 1), (5, 6), (10, 11), (15, 16), (20, 21), (25, 26)], processed=False), Leaf_node(id=1196, string='we look to', aligned=True)]"]
 	0 -> 589
 	590 [label="columba livia with its geographical"]
 	0 -> 590
@@ -1184,7 +1184,7 @@ digraph {
 	0 -> 591
 	592 [label=". in favour of this view , i may add ,"]
 	0 -> 592
-	593 [label="[(6664, 6677), (19525, 19538), (32550, 32563), (45808, 45821), (59822, 59835), (73994, 74002)]"]
+	593 [label="[(6664, 6677), (19525, 19538), (32550, 32563), (45808, 45821), (59822, 59835), (73994, 74002), Branching_node(id=1197, children=[(0, 1), (14, 15), (28, 29), (42, 43), (56, 57), (70, 71)], processed=False), Leaf_node(id=1198, string='we look', aligned=True), Branching_node(id=1199, children=[(3, 8), (17, 22), (31, 36), (45, 50), (59, 64), (73, 73)], processed=False), Leaf_node(id=1200, string='same', aligned=True)]"]
 	0 -> 593
 	594 [label="has been found capable of domestication in europe and in india ; and that it agrees in habits and in a great number of points of structure with all the domestic breeds . secondly ,"]
 	0 -> 594
@@ -1208,7 +1208,7 @@ digraph {
 	0 -> 603
 	604 [label="an almost perfect series"]
 	0 -> 604
-	605 [label="[(6759, 6764), (19620, 19625), (32645, 32650), (45919, 45924), (59933, 59938), (74098, 74113)]"]
+	605 [label="[(6759, 6764), (19620, 19625), (32645, 32650), (45919, 45924), (59933, 59938), (74098, 74113), Branching_node(id=1201, children=[(0, 1), (6, 7), (12, 13), (18, 19), (24, 25), (30, 43)], processed=False), Leaf_node(id=1202, string='we', aligned=True)]"]
 	0 -> 605
 	606 [label=". thirdly , those characters which are mainly distinctive of each breed"]
 	0 -> 606
@@ -1244,7 +1244,7 @@ digraph {
 	0 -> 621
 	622 [label="breeds so often have a somewhat monstrous character . it is also a most favourable circumstance for the production of distinct breeds , that male and female pigeons can be easily mated for life ; and thus different breeds can be kept together in the same aviary . i have discussed the probable origin of domestic pigeons at some , yet quite insufficient , length ; because when i first kept pigeons and watched the several kinds ,"]
 	0 -> 622
-	623 [label="[(7156, 7162), (20017, 20023), (33042, 33048), (46316, 46322), (60330, 60336), (74502, 74508)]"]
+	623 [label="[(7156, 7162), (20017, 20023), (33042, 33048), (46316, 46322), (60330, 60336), (74502, 74508), Branching_node(id=1203, children=[(0, 1), (7, 8), (14, 15), (21, 21), (28, 28), (35, 35)], processed=False), Leaf_node(id=1204, string='we', aligned=True), Branching_node(id=1205, children=[(2, 4), (9, 11), (16, 18), (22, 25), (29, 32), (36, 39)], processed=False), Leaf_node(id=1206, string='the', aligned=True)]"]
 	0 -> 623
 	624 [label=", i felt fully as much difficulty in believing that"]
 	0 -> 624
@@ -1280,11 +1280,11 @@ digraph {
 	0 -> 639
 	640 [label="descended from the same parents — may they not learn a lesson of caution , when they deride the idea of species in a state of nature being lineal descendants of other species ?"]
 	0 -> 640
-	641 [label="[(7540, 7542), (20400, 20402), (33430, 33432), (46713, 46723), (60727, 60737), (74898, 74908)]"]
+	641 [label="[(7540, 7542), (20400, 20402), (33430, 33432), (46713, 46723), (60727, 60737), (74898, 74908), Branching_node(id=1207, children=[(0, 0), (3, 3), (6, 6), (9, 11), (20, 22), (31, 33)], processed=False), Leaf_node(id=1208, string='when', aligned=True)]"]
 	0 -> 641
 	642 [label="let us now briefly consider the steps by which domestic races have been produced , either from one or from several allied species . some"]
 	0 -> 642
-	643 [label="[(7567, 7578), (20427, 20438), (33457, 33465), (46748, 46756), (60762, 60771), (74933, 74942)]"]
+	643 [label="[(7567, 7578), (20427, 20438), (33457, 33465), (46748, 46756), (60762, 60771), (74933, 74942), Branching_node(id=1209, children=[(0, 1), (12, 13), (24, 25), (33, 34), (42, 42), (52, 52)], processed=False), Leaf_node(id=1210, string='we look', aligned=True), Branching_node(id=1211, children=[(3, 6), (15, 18), (27, 27), (36, 36), (44, 44), (54, 54)], processed=False), Leaf_node(id=1212, string='of the same variety or', aligned=True)]"]
 	0 -> 643
 	644 [label="action of the external conditions of life , and some"]
 	0 -> 644
@@ -1300,7 +1300,7 @@ digraph {
 	0 -> 649
 	650 [label=", a carrier and tumbler pigeon . one of the most remarkable features in our domesticated races is that we see in them adaptation , not indeed to the"]
 	0 -> 650
-	651 [label="[(7648, 7655), (20508, 20515), (33535, 33542), (46828, 46835), (60841, 60844), (75011, 75018)]"]
+	651 [label="[(7648, 7655), (20508, 20515), (33535, 33542), (46828, 46835), (60841, 60844), (75011, 75018), Branching_node(id=1213, children=[(0, 3), (8, 11), (16, 19), (24, 27), (32, 33), (36, 39)], processed=False), Leaf_node(id=1214, string='to', aligned=True)]"]
 	0 -> 651
 	652 [label="own good , but to"]
 	0 -> 652
@@ -1368,11 +1368,11 @@ digraph {
 	0 -> 683
 	684 [label="been exported to almost every quarter of the world . the improvement is by no means generally due to crossing different breeds ; all the best breeders are strongly opposed to this practice , except sometimes amongst closely allied sub - breeds . and when a cross has been made , the closest selection is far more indispensable even than in ordinary cases . if selection consisted merely in separating some very distinct variety , and breeding from it , the principle would be so obvious as hardly to be worth notice ; but its importance consists in the great effect produced by the accumulation in one direction , during successive generations , of differences absolutely inappreciable by an uneducated eye — differences which i for one have vainly attempted to appreciate . not one man in a thousand has accuracy of eye and judgment sufficient to become an eminent breeder . if gifted with these qualities , and he studies his subject for years , and devotes his lifetime to it with indomitable perseverance , he will succeed , and may make great improvements ; if he wants any of these qualities , he will assuredly fail . few would readily believe in the natural capacity and years of practice requisite to become even a skilful pigeon - fancier . the same principles are followed by horticulturists ; but the variations are here often more abrupt . no one supposes that our choicest productions have been produced by a single variation from the aboriginal stock . we have proofs that this"]
 	0 -> 684
-	685 [label="[(8637, 8639), (21499, 21501), (34526, 34528), (47818, 47820), (61774, 61776), (75954, 75957)]"]
+	685 [label="[(8637, 8639), (21499, 21501), (34526, 34528), (47818, 47820), (61774, 61776), (75954, 75957), Branching_node(id=1215, children=[(0, 1), (3, 4), (6, 7), (9, 10), (12, 13), (15, 16)], processed=False), Leaf_node(id=1216, string='we', aligned=True)]"]
 	0 -> 685
 	686 [label="so in"]
 	0 -> 686
-	687 [label="[(8641, 8644), (21503, 21506), (34530, 34532), (47822, 47824), (61778, 61780), (75959, 75961)]"]
+	687 [label="[(8641, 8644), (21503, 21506), (34530, 34532), (47822, 47824), (61778, 61780), (75959, 75961), Branching_node(id=1217, children=[(0, 1), (4, 5), (8, 9), (11, 12), (14, 15), (17, 18)], processed=False), Leaf_node(id=1218, string='we', aligned=True)]"]
 	0 -> 687
 	688 [label="in which exact records have been kept ; thus , to give a very trifling instance , the steadily - increasing size of the common gooseberry may be quoted . we see an astonishing improvement in many florists"]
 	0 -> 688
@@ -1400,7 +1400,7 @@ digraph {
 	0 -> 699
 	700 [label=", the importance of which should never be overlooked , will ensure some differences ; but , as a general rule ,"]
 	0 -> 700
-	701 [label="[(9006, 9009), (21868, 21871), (34900, 34903), (48192, 48195), (62146, 62149), (76327, 76331)]"]
+	701 [label="[(9006, 9009), (21868, 21871), (34900, 34903), (48192, 48195), (62146, 62149), (76327, 76331), Branching_node(id=1219, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (20, 21)], processed=False), Leaf_node(id=1220, string='we', aligned=True)]"]
 	0 -> 701
 	702 [label="that the continued selection of slight variations , either in the leaves , the flowers , or the fruit , will produce races differing from each other chiefly in these characters . it may be objected that the principle of selection has been reduced to methodical practice for scarcely more than three - quarters of a century ; it has certainly been more attended to of late years , and many treatises have been published on the subject ; and the result"]
 	0 -> 702
@@ -1412,7 +1412,7 @@ digraph {
 	0 -> 705
 	706 [label="the full"]
 	0 -> 706
-	707 [label="[(9131, 9143), (21988, 22000), (35020, 35032), (48312, 48324), (62266, 62278), (76455, 76461)]"]
+	707 [label="[(9131, 9143), (21988, 22000), (35020, 35032), (48312, 48324), (62266, 62278), (76455, 76461), Branching_node(id=1221, children=[(0, 3), (13, 16), (26, 29), (39, 42), (52, 55), (65, 65)], processed=False), Leaf_node(id=1222, string='to the individuals of', aligned=True)]"]
 	0 -> 707
 	708 [label=". in rude and barbarous periods of english history choice animals were often imported , and laws were passed to prevent their exportation : the destruction of horses under a certain size was ordered , and this may be compared to the \" roguing \" of plants by nurserymen . the principle of selection i find distinctly given in an ancient chinese encyclopædia . explicit rules are laid down by some of the roman classical writers . from passages in genesis , it is clear that the colour of domestic animals was at that early period attended to . savages now sometimes cross their dogs with wild canine animals , to improve the breed , and they formerly did so , as is attested by passages in pliny . the savages in south africa match their draught cattle by colour , as do some of the esquimaux their teams of dogs . livingstone"]
 	0 -> 708
@@ -1420,7 +1420,7 @@ digraph {
 	0 -> 709
 	710 [label="good domestic breeds"]
 	0 -> 710
-	711 [label="[(9302, 9303), (22159, 22160), (35191, 35192), (48483, 48484), (62436, 62439), (76619, 76621)]"]
+	711 [label="[(9302, 9303), (22159, 22160), (35191, 35192), (48483, 48484), (62436, 62439), (76619, 76621), Branching_node(id=1223, children=[(0, 0), (2, 2), (4, 4), (6, 6), (8, 9), (12, 12)], processed=False), Leaf_node(id=1224, string='when', aligned=True)]"]
 	0 -> 711
 	712 [label="valued by the negroes"]
 	0 -> 712
@@ -1492,7 +1492,7 @@ digraph {
 	0 -> 745
 	746 [label="they carry . lord spencer and others have shown how the cattle of england have increased in weight and in early maturity , compared with the stock formerly kept in this country . by comparing the accounts given in"]
 	0 -> 746
-	747 [label="[(9863, 9865), (22721, 22723), (35754, 35756), (49048, 49050), (63001, 63003), (77178, 77180)]"]
+	747 [label="[(9863, 9865), (22721, 22723), (35754, 35756), (49048, 49050), (63001, 63003), (77178, 77180), Branching_node(id=1225, children=[(0, 0), (3, 3), (6, 6), (9, 9), (12, 12), (15, 16)], processed=False), Leaf_node(id=1226, string='when', aligned=True)]"]
 	0 -> 747
 	748 [label="treatises of"]
 	0 -> 748
@@ -1508,11 +1508,11 @@ digraph {
 	0 -> 753
 	754 [label=", in so far that the breeders could never have expected"]
 	0 -> 754
-	755 [label="[(9945, 9948), (22803, 22806), (35836, 35839), (49130, 49134), (63083, 63087), (77255, 77258)]"]
+	755 [label="[(9945, 9948), (22803, 22806), (35836, 35839), (49130, 49134), (63083, 63087), (77255, 77258), Branching_node(id=1227, children=[(0, 0), (4, 4), (8, 8), (12, 13), (17, 18), (22, 23)], processed=False), Leaf_node(id=1228, string='when we', aligned=True)]"]
 	0 -> 755
 	756 [label=wished]
 	0 -> 756
-	757 [label="[(9949, 9952), (22807, 22810), (35840, 35843), (49135, 49138), (63088, 63091), (77259, 77262)]"]
+	757 [label="[(9949, 9952), (22807, 22810), (35840, 35843), (49135, 49138), (63088, 63091), (77259, 77262), Branching_node(id=1229, children=[(0, 0), (4, 4), (8, 8), (12, 13), (16, 17), (20, 21)], processed=False), Leaf_node(id=1230, string='when', aligned=True)]"]
 	0 -> 757
 	758 [label="the result which ensued — namely , the production of two distinct strains . the two flocks of leicester sheep kept by mr . buckley and mr . burgess , as mr . youatt remarks , \" have been purely bred from the original stock of mr . bakewell for upwards of fifty years . there is not a suspicion existing in the mind of any one at all acquainted with the subject"]
 	0 -> 758
@@ -1604,7 +1604,7 @@ digraph {
 	0 -> 801
 	802 [label="set on any slight differences in the individuals of the same species , be judged of by the value which"]
 	0 -> 802
-	803 [label="[(11278, 11281), (24130, 24133), (37165, 37168), (50462, 50465), (64404, 64407), (78580, 78582)]"]
+	803 [label="[(11278, 11281), (24130, 24133), (37165, 37168), (50462, 50465), (64404, 64407), (78580, 78582), Branching_node(id=1231, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (20, 21)], processed=False), Leaf_node(id=1232, string='we', aligned=True)]"]
 	0 -> 803
 	804 [label="set on them , after several breeds have"]
 	0 -> 804
@@ -1612,7 +1612,7 @@ digraph {
 	0 -> 805
 	806 [label="fairly been established ."]
 	0 -> 806
-	807 [label="[(11294, 11309), (24146, 24161), (37181, 37196), (50478, 50493), (64420, 64435), (78594, 78609)]"]
+	807 [label="[(11294, 11309), (24146, 24161), (37181, 37196), (50478, 50493), (64420, 64435), (78594, 78609), Branching_node(id=1233, children=[(0, 12), (16, 28), (32, 44), (48, 60), (64, 76), (80, 85)], processed=False), Leaf_node(id=1234, string='-', aligned=True)]"]
 	0 -> 807
 	808 [label="are rejected as faults or deviations from the standard of perfection"]
 	0 -> 808
@@ -1640,7 +1640,7 @@ digraph {
 	0 -> 819
 	820 [label="about the origin or history of any of our domestic breeds . but , in fact , a breed , like a dialect of a language , can hardly be said to have"]
 	0 -> 820
-	821 [label="[(11418, 11421), (24271, 24274), (37306, 37309), (50603, 50606), (64544, 64546), (78719, 78721)]"]
+	821 [label="[(11418, 11421), (24271, 24274), (37306, 37309), (50603, 50606), (64544, 64546), (78719, 78721), Branching_node(id=1235, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 16), (19, 19)], processed=False), Leaf_node(id=1236, string='we', aligned=True)]"]
 	0 -> 821
 	822 [label="origin . a man preserves and breeds from an individual with some slight deviation of structure , or takes more care than usual in matching his best animals"]
 	0 -> 822
@@ -1668,7 +1668,7 @@ digraph {
 	0 -> 833
 	834 [label="recognised as something distinct and valuable , and will then probably first receive a provincial name . in semi - civilised countries , with little free communication , the spreading"]
 	0 -> 834
-	835 [label="[(11539, 11548), (24392, 24401), (37427, 37436), (50725, 50734), (64665, 64672), (78841, 78848)]"]
+	835 [label="[(11539, 11548), (24392, 24401), (37427, 37436), (50725, 50734), (64665, 64672), (78841, 78848), Branching_node(id=1237, children=[(0, 2), (10, 12), (20, 22), (30, 32), (40, 40), (48, 48)], processed=False), Leaf_node(id=1238, string='look', aligned=True), Branching_node(id=1239, children=[(3, 4), (13, 14), (23, 24), (33, 34), (41, 42), (49, 50)], processed=False), Leaf_node(id=1240, string='the individuals of the', aligned=True)]"]
 	0 -> 835
 	836 [label="be a slow process . as soon as the points of value"]
 	0 -> 836
@@ -1684,7 +1684,7 @@ digraph {
 	0 -> 841
 	842 [label="of the inhabitants , — slowly to add to the characteristic features of the breed , whatever they may be . but the chance will be infinitely small of any record having been preserved of such slow , varying , and insensible changes ."]
 	0 -> 842
-	843 [label="[(11663, 11665), (24516, 24518), (37551, 37553), (50849, 50861), (64784, 64794), (78956, 78968)]"]
+	843 [label="[(11663, 11665), (24516, 24518), (37551, 37553), (50849, 50861), (64784, 64794), (78956, 78968), Branching_node(id=1241, children=[(0, 0), (3, 3), (6, 6), (9, 19), (22, 30), (33, 43)], processed=False), Leaf_node(id=1242, string='when', aligned=True)]"]
 	0 -> 843
 	844 [label="now say a few words on the circumstances , favourable , or the reverse , to"]
 	0 -> 844
@@ -1692,7 +1692,7 @@ digraph {
 	0 -> 845
 	846 [label="power of selection . a high degree of variability is obviously favourable , as freely giving the materials for selection to work on ; not that mere individual differences are not amply sufficient , with extreme care , to allow of the accumulation of a large amount of modification in almost any desired direction . but as variations manifestly useful or pleasing to man appear only occasionally , the chance of their appearance will be much increased by a large number of individuals being kept"]
 	0 -> 846
-	847 [label="[(11769, 11781), (24620, 24632), (37657, 37669), (50965, 50977), (64896, 64908), (79072, 79082)]"]
+	847 [label="[(11769, 11781), (24620, 24632), (37657, 37669), (50965, 50977), (64896, 64908), (79072, 79082), Branching_node(id=1243, children=[(0, 2), (13, 15), (26, 28), (39, 41), (52, 54), (65, 66)], processed=False), Leaf_node(id=1244, string='look', aligned=True), Branching_node(id=1245, children=[(3, 7), (16, 20), (29, 33), (42, 46), (55, 59), (67, 70)], processed=False), Leaf_node(id=1246, string='the same variety or', aligned=True)]"]
 	0 -> 847
 	848 [label="success . on this principle marshall"]
 	0 -> 848
@@ -1720,7 +1720,7 @@ digraph {
 	0 -> 859
 	860 [label="a large number of individuals of"]
 	0 -> 860
-	861 [label="[(11862, 11888), (24713, 24739), (37750, 37776), (51058, 51084), (64989, 65015), (79158, 79174)]"]
+	861 [label="[(11862, 11888), (24713, 24739), (37750, 37776), (51058, 51084), (64989, 65015), (79158, 79174), Branching_node(id=1247, children=[(0, 10), (27, 37), (54, 64), (81, 91), (108, 118), (135, 140)], processed=False), Leaf_node(id=1248, string='or', aligned=True), Branching_node(id=1249, children=[(11, 14), (38, 41), (65, 68), (92, 95), (119, 122), (141, 145)], processed=False), Leaf_node(id=1250, string='of', aligned=True)]"]
 	0 -> 861
 	862 [label=". when the individuals"]
 	0 -> 862
@@ -1736,11 +1736,11 @@ digraph {
 	0 -> 867
 	868 [label=", and this will effectually prevent selection . but probably the most important"]
 	0 -> 868
-	869 [label="[(11927, 11933), (24778, 24784), (37815, 37819), (51123, 51127), (65054, 65058), (79206, 79208)]"]
+	869 [label="[(11927, 11933), (24778, 24784), (37815, 37819), (51123, 51127), (65054, 65058), (79206, 79208), Branching_node(id=1251, children=[(0, 4), (7, 11), (14, 17), (19, 22), (24, 27), (29, 30)], processed=False), Leaf_node(id=1252, string='the', aligned=True)]"]
 	0 -> 869
 	870 [label="that the animal or plant should be so highly"]
 	0 -> 870
-	871 [label="[(11942, 11952), (24793, 24803), (37828, 37838), (51136, 51146), (65067, 65077), (79217, 79220)]"]
+	871 [label="[(11942, 11952), (24793, 24803), (37828, 37838), (51136, 51146), (65067, 65077), (79217, 79220), Branching_node(id=1253, children=[(0, 2), (11, 13), (22, 24), (33, 35), (44, 46), (55, 57)], processed=False), Leaf_node(id=1254, string='look', aligned=True)]"]
 	0 -> 871
 	872 [label=", that the closest attention"]
 	0 -> 872
@@ -1748,7 +1748,7 @@ digraph {
 	0 -> 873
 	874 [label="paid to even the slightest"]
 	0 -> 874
-	875 [label="[(11964, 11967), (24815, 24818), (37850, 37853), (51157, 51160), (65088, 65091), (79231, 79234)]"]
+	875 [label="[(11964, 11967), (24815, 24818), (37850, 37853), (51157, 51160), (65088, 65091), (79231, 79234), Branching_node(id=1255, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 17), (20, 21)], processed=False), Leaf_node(id=1256, string='we', aligned=True)]"]
 	0 -> 875
 	876 [label="qualities or structure"]
 	0 -> 876
@@ -1760,15 +1760,15 @@ digraph {
 	0 -> 879
 	880 [label="to this plant . no doubt the strawberry had always varied since it was cultivated , but the slight varieties had been neglected . as soon , however , as gardeners picked out individual plants with slightly larger , earlier , or better fruit , and raised seedlings from them , and again picked out the best seedlings and bred from them , then"]
 	0 -> 880
-	881 [label="[(12073, 12082), (24924, 24933), (37959, 37968), (51266, 51275), (65197, 65206), (79336, 79342)]"]
+	881 [label="[(12073, 12082), (24924, 24933), (37959, 37968), (51266, 51275), (65197, 65206), (79336, 79342), Branching_node(id=1257, children=[(0, 3), (10, 13), (20, 23), (30, 33), (40, 43), (50, 50)], processed=False), Leaf_node(id=1258, string='to', aligned=True), Branching_node(id=1259, children=[(4, 5), (14, 15), (24, 25), (34, 35), (44, 45), (51, 54)], processed=False), Leaf_node(id=1260, string='individuals', aligned=True), Branching_node(id=1261, children=[(6, 7), (16, 17), (26, 27), (36, 37), (46, 47), (55, 55)], processed=False), Leaf_node(id=1262, string='the', aligned=True)]"]
 	0 -> 881
 	882 [label="distinct species ) those many admirable varieties of the strawberry"]
 	0 -> 882
-	883 [label="[(12092, 12096), (24943, 24947), (37978, 37982), (51285, 51289), (65216, 65220), (79352, 79357)]"]
+	883 [label="[(12092, 12096), (24943, 24947), (37978, 37982), (51285, 51289), (65216, 65220), (79352, 79357), Branching_node(id=1263, children=[(0, 0), (5, 5), (10, 10), (15, 15), (20, 20), (25, 27)], processed=False), Leaf_node(id=1264, string='when we', aligned=True)]"]
 	0 -> 883
 	884 [label="during the last"]
 	0 -> 884
-	885 [label="[(12099, 12112), (24950, 24963), (37985, 37998), (51292, 51305), (65223, 65236), (79360, 79366)]"]
+	885 [label="[(12099, 12112), (24950, 24963), (37985, 37998), (51292, 51305), (65223, 65236), (79360, 79366), Branching_node(id=1265, children=[(0, 4), (14, 18), (28, 32), (42, 46), (56, 60), (70, 73)], processed=False), Leaf_node(id=1266, string='the', aligned=True), Branching_node(id=1267, children=[(5, 9), (19, 23), (33, 37), (47, 51), (61, 65), (74, 75)], processed=False), Leaf_node(id=1268, string='variety', aligned=True)]"]
 	0 -> 885
 	886 [label=", facility in preventing crosses is an important element"]
 	0 -> 886
@@ -1816,11 +1816,11 @@ digraph {
 	0 -> 907
 	908 [label=". to sum up on the origin of our domestic races of animals and plants ."]
 	0 -> 908
-	909 [label="[(12458, 12482), (25309, 25333), (38376, 38400), (51683, 51719), (65952, 65962), (80114, 80124)]"]
+	909 [label="[(12458, 12482), (25309, 25333), (38376, 38400), (51683, 51719), (65952, 65962), (80114, 80124), Branching_node(id=1269, children=[(0, 4), (25, 29), (50, 54), (75, 79), (112, 113), (123, 124)], processed=False), Leaf_node(id=1270, string='the individuals of', aligned=True), Branching_node(id=1271, children=[(7, 20), (32, 45), (57, 70), (82, 107), (116, 118), (127, 129)], processed=False), Leaf_node(id=1272, string='animals , one', aligned=True)]"]
 	0 -> 909
 	910 [label="causing variability"]
 	0 -> 910
-	911 [label="[(12484, 12489), (25335, 25340), (38402, 38407), (51721, 51726), (65964, 65985), (80126, 80147)]"]
+	911 [label="[(12484, 12489), (25335, 25340), (38402, 38407), (51721, 51726), (65964, 65985), (80126, 80147), Branching_node(id=1273, children=[(0, 0), (6, 6), (12, 12), (18, 18), (24, 40), (46, 62)], processed=False), Leaf_node(id=1274, string='when', aligned=True), Branching_node(id=1275, children=[(1, 3), (7, 9), (13, 15), (19, 21), (41, 43), (63, 65)], processed=False), Leaf_node(id=1276, string='to', aligned=True)]"]
 	0 -> 911
 	912 [label="that variability is an inherent and necessary"]
 	0 -> 912
@@ -1828,19 +1828,19 @@ digraph {
 	0 -> 913
 	914 [label=", under all circumstances"]
 	0 -> 914
-	915 [label="[(12501, 12522), (25352, 25373), (38419, 38440), (51738, 51759), (65997, 66003), (80159, 80165)]"]
+	915 [label="[(12501, 12522), (25352, 25373), (38419, 38440), (51738, 51759), (65997, 66003), (80159, 80165), Branching_node(id=1277, children=[(0, 11), (22, 33), (44, 55), (66, 77), (88, 88), (95, 95)], processed=False), Leaf_node(id=1278, string='sub -', aligned=True)]"]
 	0 -> 915
 	916 [label="of inheritance and"]
 	0 -> 916
-	917 [label="[(12525, 12527), (25376, 25378), (38443, 38445), (51762, 51764), (66006, 66012), (80168, 80174)]"]
+	917 [label="[(12525, 12527), (25376, 25378), (38443, 38445), (51762, 51764), (66006, 66012), (80168, 80174), Branching_node(id=1279, children=[(0, 1), (3, 4), (6, 7), (9, 10), (12, 12), (19, 19)], processed=False), Leaf_node(id=1280, string='we', aligned=True)]"]
 	0 -> 917
 	918 [label=". variability is governed by many unknown laws ,"]
 	0 -> 918
-	919 [label="[(12536, 12552), (25387, 25403), (38454, 38470), (51773, 51789), (66021, 66035), (80183, 80209)]"]
+	919 [label="[(12536, 12552), (25387, 25403), (38454, 38470), (51773, 51789), (66021, 66035), (80183, 80209), Branching_node(id=1281, children=[(0, 8), (17, 25), (34, 42), (51, 59), (68, 74), (83, 92)], processed=False), Leaf_node(id=1282, string='same variety', aligned=True), Branching_node(id=1283, children=[(10, 10), (27, 27), (44, 44), (61, 61), (76, 76), (94, 103)], processed=False), Leaf_node(id=1284, string='or sub - variety of', aligned=True)]"]
 	0 -> 919
 	920 [label="action of the conditions of life"]
 	0 -> 920
-	921 [label="[(12558, 12567), (25409, 25418), (38476, 38485), (51795, 51804), (66041, 66058), (80215, 80234)]"]
+	921 [label="[(12558, 12567), (25409, 25418), (38476, 38485), (51795, 51804), (66041, 66058), (80215, 80234), Branching_node(id=1285, children=[(0, 0), (10, 10), (20, 20), (30, 30), (40, 48), (58, 58)], processed=False), Leaf_node(id=1286, string='when', aligned=True), Branching_node(id=1287, children=[(1, 3), (11, 13), (21, 23), (31, 33), (49, 51), (59, 67)], processed=False), Leaf_node(id=1288, string='to the individuals', aligned=True), Branching_node(id=1289, children=[(6, 6), (16, 16), (26, 26), (36, 36), (54, 54), (70, 72)], processed=False), Leaf_node(id=1290, string='of', aligned=True), Branching_node(id=1291, children=[(7, 8), (17, 18), (27, 28), (37, 38), (55, 56), (73, 74)], processed=False), Leaf_node(id=1292, string='same', aligned=True)]"]
 	0 -> 921
 	922 [label=". the final result is thus rendered infinitely complex . in some cases"]
 	0 -> 922
@@ -1848,11 +1848,11 @@ digraph {
 	0 -> 923
 	924 [label="the intercrossing of"]
 	0 -> 924
-	925 [label="[(12589, 12595), (25440, 25446), (38501, 38508), (51820, 51827), (66074, 66080), (80250, 80256)]"]
+	925 [label="[(12589, 12595), (25440, 25446), (38501, 38508), (51820, 51827), (66074, 66080), (80250, 80256), Branching_node(id=1293, children=[(0, 2), (7, 9), (14, 16), (22, 24), (30, 30), (37, 37)], processed=False), Leaf_node(id=1294, string='look to', aligned=True)]"]
 	0 -> 925
 	926 [label="played an important part in the origin of our"]
 	0 -> 926
-	927 [label="[(12604, 12613), (25455, 25464), (38517, 38526), (51836, 51845), (66089, 66094), (80265, 80269)]"]
+	927 [label="[(12604, 12613), (25455, 25464), (38517, 38526), (51836, 51845), (66089, 66094), (80265, 80269), Branching_node(id=1295, children=[(0, 2), (10, 12), (20, 22), (30, 32), (40, 42), (46, 47)], processed=False), Leaf_node(id=1296, string='look to', aligned=True), Branching_node(id=1297, children=[(4, 7), (14, 17), (24, 27), (34, 37), (44, 44), (49, 49)], processed=False), Leaf_node(id=1298, string='the', aligned=True)]"]
 	0 -> 927
 	928 [label="breeds have once been"]
 	0 -> 928
@@ -1864,7 +1864,7 @@ digraph {
 	0 -> 931
 	932 [label="new sub - breeds ; but the importance of"]
 	0 -> 932
-	933 [label="[(12649, 12660), (25500, 25511), (38562, 38569), (51881, 51888), (66131, 66135), (80308, 80312)]"]
+	933 [label="[(12649, 12660), (25500, 25511), (38562, 38569), (51881, 51888), (66131, 66135), (80308, 80312), Branching_node(id=1299, children=[(0, 1), (12, 13), (24, 25), (32, 33), (40, 40), (45, 45)], processed=False), Leaf_node(id=1300, string='we', aligned=True), Branching_node(id=1301, children=[(2, 4), (14, 16), (26, 28), (34, 36), (41, 41), (46, 46)], processed=False), Leaf_node(id=1302, string='the', aligned=True), Branching_node(id=1303, children=[(5, 9), (17, 21), (29, 29), (37, 37), (42, 42), (47, 47)], processed=False), Leaf_node(id=1304, string='variety', aligned=True)]"]
 	0 -> 933
 	934 [label="exaggerated , both in regard to animals and to those plants which are propagated by seed ."]
 	0 -> 934
@@ -1872,11 +1872,11 @@ digraph {
 	0 -> 935
 	936 [label="plants which are temporarily propagated by cuttings , buds , & c ., the importance of"]
 	0 -> 936
-	937 [label="[(12693, 12702), (25544, 25553), (38602, 38611), (51921, 51930), (66168, 66169), (80345, 80346)]"]
+	937 [label="[(12693, 12702), (25544, 25553), (38602, 38611), (51921, 51930), (66168, 66169), (80345, 80346), Branching_node(id=1305, children=[(0, 1), (10, 11), (20, 21), (30, 31), (40, 40), (42, 42)], processed=False), Leaf_node(id=1306, string='we', aligned=True)]"]
 	0 -> 937
 	938 [label="is immense ; for the cultivator"]
 	0 -> 938
-	939 [label="[(12708, 12711), (25559, 25562), (38617, 38620), (51936, 51939), (66175, 66178), (80352, 80355)]"]
+	939 [label="[(12708, 12711), (25559, 25562), (38617, 38620), (51936, 51939), (66175, 66178), (80352, 80355), Branching_node(id=1307, children=[(0, 0), (4, 4), (8, 8), (12, 12), (16, 17), (20, 21)], processed=False), Leaf_node(id=1308, string='when', aligned=True)]"]
 	0 -> 939
 	940 [label="the extreme variability both of hybrids and"]
 	0 -> 940
@@ -1900,7 +1900,7 @@ digraph {
 	0 -> 949
 	950 [label="quickly , or unconsciously and"]
 	0 -> 950
-	951 [label="[(12776, 12779), (25627, 25630), (38685, 38688), (52004, 52007), (66236, 66238), (80413, 80414)]"]
+	951 [label="[(12776, 12779), (25627, 25630), (38685, 38688), (52004, 52007), (66236, 66238), (80413, 80414), Branching_node(id=1309, children=[(0, 1), (4, 5), (8, 9), (12, 13), (16, 16), (19, 19)], processed=False), Leaf_node(id=1310, string='we', aligned=True)]"]
 	0 -> 951
 	952 [label="but more efficiently ,"]
 	0 -> 952
