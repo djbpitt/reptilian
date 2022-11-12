@@ -15,8 +15,8 @@ def _tokenize_witnesses(witness_strings: List[str]):  # one string per witness
 
 
 def import_witnesses():
-    filenames = ['src/darwin/darwin1859.txt', 'src/darwin/darwin1860.txt', 'src/darwin/darwin1861.txt',
-                 'src/darwin/darwin1866.txt', 'src/darwin/darwin1869.txt', 'src/darwin/darwin1872.txt']
+    filenames = ['darwin/darwin1859.txt', 'darwin/darwin1860.txt', 'darwin/darwin1861.txt',
+                 'darwin/darwin1866.txt', 'darwin/darwin1869.txt', 'darwin/darwin1872.txt']
     sigla = ["".join(['w', str(i)]) for i in range(len(filenames))]
     first_paragraph = 0
     last_paragraph = 50
@@ -28,5 +28,4 @@ def import_witnesses():
             raw_data_dict[siglum] = " ".join(lines[first_paragraph: last_paragraph])
     witness_sigla = [key for key in raw_data_dict.keys()]
     witnesses = _tokenize_witnesses([value for value in raw_data_dict.values()])  # strings
-
     return witness_sigla, witnesses
