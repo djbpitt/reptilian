@@ -25,7 +25,3 @@ token_array, token_membership_array, token_witness_offset_array, token_ranges = 
 
 # 2022-11-12
 # Resume by deciding how to create root node (and other nodes)
-# Use len(alignment_tree.node_by_id) + 1 to get new id value
-# Should alignment_tree be a traditional class with a method to
-#   add a new node? Should we consider a monad?
-# Do we want to expose node_by_id?
