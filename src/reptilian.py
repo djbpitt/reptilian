@@ -1,11 +1,8 @@
 # ###
 # External imports
 # ###
-from bisect import bisect_right
 import graphviz
-from heapq import *  # priority heap, https://docs.python.org/3/library/heapq.html
 from IPython.display import display, HTML, SVG
-import numpy as np
 import pprint
 pp = pprint.PrettyPrinter(indent=2)
 import re
@@ -16,12 +13,32 @@ from typing import List
 # ###
 from import_witnesses import import_witnesses
 from create_blocks import create_token_array
+from alignment_tree import *
 
 # ###
-# Main
+# Create full token array and related resources from witness data
 # ###
 sigla, witnesses = import_witnesses()
 token_array, token_membership_array, token_witness_offset_array, token_ranges = create_token_array(witnesses)
 
-# 2022-11-12
-# Resume by deciding how to create root node (and other nodes)
+# ###
+# Initialize alignment tree and add root
+# No longer need node_by_id dictionary because
+#   networkx builds that in
+# nodes_to_process is queue of nodes to check for expansion
+# TODO: Constrain cooccurrence of node attributes
+# ###
+alignment_tree = create_tree()
+alignment_tree.add_node(0, type="branching", token_ranges=token_ranges, expanded=False, children=[])
+nodes_to_process = deque([0])
+
+# ###
+# Expand tree, starting at root
+# ###
+frequent_sequences = expand_node(alignment_tree,
+            nodes_to_process,
+            token_array,
+            token_membership_array,
+            len(witnesses))
+
+
