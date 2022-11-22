@@ -29,7 +29,7 @@ token_array, token_membership_array, token_witness_offset_array, token_ranges = 
 # TODO: Constrain cooccurrence of node attributes
 # ###
 alignment_tree = create_tree()
-alignment_tree.add_node(0, type="branching", token_ranges=token_ranges, expanded=False, children=[])
+alignment_tree.add_node(0, type="potential", token_ranges=token_ranges, children=[])
 nodes_to_process = deque([0])
 
 # ###
