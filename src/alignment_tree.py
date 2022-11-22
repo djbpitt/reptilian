@@ -54,37 +54,49 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         prepare_for_beam_search(_witness_count, _token_membership_array, _largest_blocks)
     _finished = perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witness,
                                     _witness_offsets_to_blocks, _score_by_block)
-    # Only if current head of queue has blocks
+    # TODO: Only if current head of queue has blocks
     # Get information about parent
     _parent_id = _node_ids.popleft()
     _parent = _graph.nodes[_parent_id] # dictionary of properties
-    # Add leading unaligned tokens (if any)
-    # Add new node
-    # Add node as child of parent
-    # Add node to queue
-    _parent_starts = [i[0] for i in _parent["token_ranges"]]
-    _first_block_starts = _largest_blocks[_finished[0].path[-1]][1]
-    if _parent_starts != _first_block_starts:
-        _token_ranges = [(i, j) for i, j in zip(_parent_starts, _first_block_starts)]
-        _id = _graph.number_of_nodes()
-        _graph.add_node(_id, type="potential", token_ranges=_token_ranges, children=[])
-        _parent["children"].append(_id)
-        _node_ids.append(_id)
+    # Start range for leading unaligned tokens (if any) is start of parent
+    _preceding_ends = [i[0] for i in _parent["token_ranges"]]
+
     # Add blocks as leaf node children (do not add leaf nodes to queue)
-    # TODO: Except for first block, add unaligned tokens as potential node before each block
+    # Precede with potential blocks if there are unaligned preceding tokens
     for _block_id in _finished[0].path[::-1]:
         # _largest_blocks[block] is a leaf node with shape (26, [4, 12795, 25646, 38708, 52026, 66257])
         # The first value is the length of the block (exclusive)
         # The second is the start positions of the block in each witness, using global token position
-        # If not first block, add potential block first
-        if 
-        # Now add block as aligned leaf node
         _block = _largest_blocks[_block_id]
+        # ###
+        # Add potential block first
+        # ###
+        _current_starts = _block[1]
+        if _current_starts != _preceding_ends:
+            _id = _graph.number_of_nodes()
+            # expand zip for legibility
+            _token_ranges = list(zip(_preceding_ends, _current_starts))
+            _graph.add_node(_id, type="potential", token_ranges=_token_ranges, children=[])
+            _parent["children"].append(_id)
+            _node_ids.append(_id)
+        # ###
+        # Now add block as aligned leaf node
+        # ###
         _id = _graph.number_of_nodes()
         _token_ranges = [(i, i + _block[0]) for i in _block[1]]
         _graph.add_node(_id, type="leaf", token_ranges=_token_ranges, children=[])
         _parent["children"].append(_id)
+        # reset _preceding_ends for loop
+        _preceding_ends = [i + _block[0] for i in _block[1]]
     # Add trailing unaligned tokens (if any)
+    _parent_ends = [i[1] for i in _parent["token_ranges"]]
+    if _parent_ends != _preceding_ends:
+        # TODO: Process, don't just announce
+        print("Need to process trailing tokens")
+    else:
+        print("No trailing tokens")
+    # Reset _parent type property to branching
+    _parent["type"] = "branching"
     # Debug report
     for n in _graph.nodes(data=True):
         print(n)
