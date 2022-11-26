@@ -46,6 +46,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
 
     No return because graph and deque are both modified in place
     """
+
     _sa = create_suffix_array(_token_array)
     _frequent_sequences = create_blocks(_sa,_token_membership_array, _witness_count)
     _largest_blocks = find_longest_sequences(_frequent_sequences, _sa)
@@ -60,6 +61,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     _parent = _graph.nodes[_parent_id] # dictionary of properties
     # Start range for leading unaligned tokens (if any) is start of parent
     _preceding_ends = [i[0] for i in _parent["token_ranges"]]
+    # print("Finished: ", _finished)
 
     # Add blocks as leaf node children (do not add leaf nodes to queue)
     # Precede with potential blocks if there are unaligned preceding tokens
@@ -98,6 +100,5 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     # Reset _parent type property to branching
     _parent["type"] = "branching"
     # Debug report
-    for n in _graph.nodes(data=True):
-        print(n)
-    print(_node_ids)
+    # print('Node count: ', len(_graph.nodes))
+    # print('Queue size: ', len(_node_ids))
