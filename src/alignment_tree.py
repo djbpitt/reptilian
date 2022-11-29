@@ -69,11 +69,13 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # _largest_blocks[block] is a leaf node with shape (26, [4, 12795, 25646, 38708, 52026, 66257])
         # The first value is the length of the block (exclusive)
         # The second is the start positions of the block in each witness, using global token position
-        _block = _largest_blocks[_block_id]
+        _block = _largest_blocks[_block_id] # local offsets
         # ###
         # Add potential block first
+        # TODO: Is this different for first potential vs inter-block potential?
         # ###
-        _current_starts = _block[1]
+        _current_starts = _block[1] # local offsets
+        _parent_starts = [i[0] for i in _parent["token_ranges"]]
         if _current_starts != _preceding_ends:
             _id = _graph.number_of_nodes()
             # expand zip for legibility
@@ -83,9 +85,12 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
             _node_ids.append(_id)
         # ###
         # Now add block as aligned leaf node
+        # Token range is local range + start positions of parent range through same plus block length
         # ###
         _id = _graph.number_of_nodes()
-        _token_ranges = [(i, i + _block[0]) for i in _block[1]]
+        _token_ranges = [
+            (_current_starts[i] + _parent_starts[i], _current_starts[i] + _parent_starts[i] + _block[0])
+            for i in range(_witness_count)]
         _graph.add_node(_id, type="leaf", token_ranges=_token_ranges, children=[])
         _parent["children"].append(_id)
         # reset _preceding_ends for loop
