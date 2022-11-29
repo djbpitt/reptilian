@@ -55,8 +55,8 @@ while nodes_to_process and counter < 2:
             local_token_membership_array.extend(token_membership_array[token_range[0]: token_range[1]])
             if index < len(witnesses) - 1:
                 local_token_membership_array.append(' #' + str(index + 1) + ' ')
-        print("Local token array: ", local_token_array)
-        print("Local token membership array: ", local_token_membership_array)
+        # print("Local token array: ", local_token_array)
+        # print("Local token membership array: ", local_token_membership_array)
         expand_node(alignment_tree,
                     nodes_to_process,
                     local_token_array,

@@ -55,13 +55,14 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         prepare_for_beam_search(_witness_count, _token_membership_array, _largest_blocks)
     _finished = perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witness,
                                     _witness_offsets_to_blocks, _score_by_block)
+    print(f"{_largest_blocks=}")
     # TODO: Only if current head of queue has blocks
     # Get information about parent
     _parent_id = _node_ids.popleft()
     _parent = _graph.nodes[_parent_id] # dictionary of properties
     # Start range for leading unaligned tokens (if any) is start of parent
     _preceding_ends = [i[0] for i in _parent["token_ranges"]]
-    # print("Finished: ", _finished)
+    print("Finished: ", _finished)
 
     # Add blocks as leaf node children (do not add leaf nodes to queue)
     # Precede with potential blocks if there are unaligned preceding tokens
@@ -71,11 +72,23 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # The second is the start positions of the block in each witness, using global token position
         _block = _largest_blocks[_block_id] # local offsets
         # ###
+        # FIXME: Convert here from local to absolute offsets
+        # FIXME: Remove conversion for blocks (which currently works, but needs to be moved here)
+        # FIXME: Remove conversion for pre-block unaligned tokens (currently broken)
+        # ###
+        print(f"{_block=}")
+        # ###
         # Add potential block first
         # TODO: Is this different for first potential vs inter-block potential?
+        # FIXME: End position of initial unaligned token range is incorrect
         # ###
         _current_starts = _block[1] # local offsets
         _parent_starts = [i[0] for i in _parent["token_ranges"]]
+        # print(f"{_current_starts=}")
+        # print(f"{_parent_starts=}")
+        # print(f"{_preceding_ends=}")
+        # print([_current_starts[i] + _parent_starts[i] for i in range(_witness_count)])
+        # print([_preceding_ends[i] + _current_starts[i] for i in range(_witness_count)])
         if _current_starts != _preceding_ends:
             _id = _graph.number_of_nodes()
             # expand zip for legibility
