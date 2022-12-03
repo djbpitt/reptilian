@@ -37,7 +37,7 @@ nodes_to_process = deque([0])
 # Expand tree, starting at root
 # ###
 counter = 0
-while nodes_to_process and counter < 2:
+while nodes_to_process and counter < 10:
     print('Iteration #', counter)
     # TODO: Make it pretty
     # TODO: Compute len(witnesses) just once
