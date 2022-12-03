@@ -14,6 +14,7 @@ import networkx as nx
 from collections import deque
 from typing import List
 from create_blocks import *
+import graphviz
 
 def create_tree() -> nx.DiGraph:
     """Create new DiGraph with no nodes
@@ -67,7 +68,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # Start range for leading unaligned tokens (if any) is start of parent
         _preceding_ends = [i[0] for i in _parent["token_ranges"]]
         # print("Finished: ", _finished)
-        print(f"{_parent['token_ranges']=}")
+        # print(f"{_parent['token_ranges']=}")
 
         # Add blocks as leaf node children (do not add leaf nodes to queue)
         # Precede with potential blocks if there are unaligned preceding tokens
@@ -80,12 +81,12 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
             # FIXME: Remove conversion for blocks (which currently works, but needs to be moved here)
             # FIXME: Remove conversion for pre-block unaligned tokens (currently broken)
             # ###
-            print(f"{_block=}")
+            # print(f"{_block=}")
             if _parent_id == 0: # don't adjust for root
                 _adjusted_coordinates = _block[1]
             else:
                 _adjusted_coordinates = [i + j[0] for i, j in zip(_block[1], _parent['token_ranges'])]
-            print("Adjusted coordinates: ", _adjusted_coordinates)
+            # print("Adjusted coordinates: ", _adjusted_coordinates)
             # ###
             # Add potential block first
             # ###
@@ -127,3 +128,39 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # Debug report
         # print('Node count: ', len(_graph.nodes))
         # print('Queue size: ', len(_node_ids))
+
+
+def visualize_graph(_graph: nx.DiGraph):
+    # Visualize the tree
+    # Create digraph and add root node
+    tree = graphviz.Digraph(format="svg")
+    # Add all nodes
+    # ###
+    # RESUME HERE
+    # FIXME: Store networkX edges as proper edges (currently property of node)
+    # TODO: Add leaf nodes with tokens
+    # FIXME YET AGAIN: ranges are wrong and will overrun token array)
+    # TODO: Add branching nodes
+    # TODO: Add edges (filter out target potential nodes because we aren't adding them)
+    # ###
+    for node, properties in _graph.nodes(data=True):
+        if properties["type"] != "potential":
+            print(node, properties)
+    # def populate_tree(_digraph, _parent):  # void
+    #     for n in _parent.children:
+    #         # print(n.id)
+    #         if isinstance(n, tuple):  # TODO: remove tuples after creating child nodes
+    #             continue
+    #         elif isinstance(n, Leaf_node):
+    #             label = n.string
+    #         else:
+    #             label = repr(n.children)
+    #         _digraph.node(str(n.id), label=label)
+    #         _digraph.edge(str(_parent.id), str(n.id))
+    #
+    # populate_tree(tree, root)
+    # for child in root.children:
+    #     if isinstance(child, Branching_node) and child.processed == False:
+    #         populate_tree(tree, child)
+    # svg_tree = tree.render()
+    # display(SVG(svg_tree))

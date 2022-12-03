@@ -37,7 +37,7 @@ nodes_to_process = deque([0])
 # Expand tree, starting at root
 # ###
 counter = 0
-while nodes_to_process and counter < 10:
+while nodes_to_process and counter < 2:
     print('Iteration #', counter)
     # TODO: Make it pretty
     # TODO: Compute len(witnesses) just once
@@ -76,3 +76,4 @@ with open('nodes.txt', 'w') as f:
 with open('queue.txt', 'w') as f:
     f.write(str(nodes_to_process))
 # print(f"{witnesses=}")
+visualize_graph(alignment_tree)
