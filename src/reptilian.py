@@ -2,7 +2,6 @@
 # External imports
 # ###
 import graphviz
-from IPython.display import display, HTML, SVG
 import pprint
 
 pp = pprint.PrettyPrinter(indent=2)
@@ -30,17 +29,16 @@ token_array, token_membership_array, token_witness_offset_array, token_ranges = 
 # TODO: Constrain cooccurrence of node attributes
 # ###
 alignment_tree = create_tree()
-alignment_tree.add_node(0, type="potential", token_ranges=token_ranges, children=[])
+alignment_tree.add_node(0, type="potential", token_ranges=token_ranges)
 nodes_to_process = deque([0])
 
 # ###
 # Expand tree, starting at root
 # ###
 counter = 0
-while nodes_to_process and counter < 2:
+while nodes_to_process and counter < 900:
     print('Iteration #', counter)
     # TODO: Make it pretty
-    # TODO: Compute len(witnesses) just once
     # FIXME: Blocks in tiers after the first are storing local, rather than global, token offsets
     # FIXME: Pre-block unaligned tokens in tiers after the first have incorrect (local?) second range values
     print("Head of queue: ", alignment_tree.nodes[nodes_to_process[0]]['token_ranges'])
@@ -69,11 +67,14 @@ while nodes_to_process and counter < 2:
                     token_membership_array,
                     len(witnesses))
     counter += 1
-print('Node count: ', len(alignment_tree.nodes))
-print('Queue size: ', len(nodes_to_process))
+# print('Node count: ', len(alignment_tree.nodes))
+# print('Edge count: ', len(alignment_tree.edges))
+# print('Queue size: ', len(nodes_to_process))
 with open('nodes.txt', 'w') as f:
     f.write(str(alignment_tree.nodes(data=True)))
+with open('edges.txt', 'w') as f:
+    f.write(str(alignment_tree.edges(data=True)))
 with open('queue.txt', 'w') as f:
     f.write(str(nodes_to_process))
 # print(f"{witnesses=}")
-visualize_graph(alignment_tree)
+visualize_graph(alignment_tree, token_array)

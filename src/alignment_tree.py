@@ -1,20 +1,16 @@
 """Tree of nodes
 
 Node properties:
-    All nodes:
-        id:int : consecutive integers
-        type:str : aligned, unaligned, branching, potential (= unexpended)
-        token_ranges:list[Tuple] : offsets in global token array
-        children:list[Int] : ids of child nodes
-    TODO: children make sense only for branching nodes, but we don't know how to
-        add an attribute for some nodes but not others, so we add an empty list
-        for all. We are embarrassed.
+    id:int : consecutive integers
+    type:str : aligned, unaligned, branching, potential (= unexpended)
+    token_ranges:list[Tuple] : offsets in global token array
 """
 import networkx as nx
 from collections import deque
 from typing import List
 from create_blocks import *
 import graphviz
+from IPython.display import SVG, HTML, display
 
 def create_tree() -> nx.DiGraph:
     """Create new DiGraph with no nodes
@@ -51,9 +47,9 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     _sa = create_suffix_array(_token_array)
     _frequent_sequences = create_blocks(_sa,_token_membership_array, _witness_count)
     _largest_blocks = find_longest_sequences(_frequent_sequences, _sa)
-    if not _largest_blocks: # no blocks, so change type to leaf and remove from queue
+    if not _largest_blocks: # no blocks, so change type to unaligned and remove from queue
         _parent_id = _node_ids.popleft()
-        _graph.nodes[_parent_id]["type"] = "leaf"
+        _graph.nodes[_parent_id]["type"] = "unaligned"
     else:
         _block_offsets_by_witness, _witness_offsets_to_blocks, _first_token_offset_in_block_by_witness, \
             _first_absolute_token_by_witness, _score_by_block = \
@@ -61,7 +57,6 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         _finished = perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witness,
                                         _witness_offsets_to_blocks, _score_by_block)
         # print(f"{_largest_blocks=}")
-        # TODO: Only if current head of queue has blocks
         # Get information about parent
         _parent_id = _node_ids.popleft()
         _parent = _graph.nodes[_parent_id] # dictionary of properties
@@ -70,7 +65,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # print("Finished: ", _finished)
         # print(f"{_parent['token_ranges']=}")
 
-        # Add blocks as leaf node children (do not add leaf nodes to queue)
+        # Add blocks as aligned nodes and add edges from parent to new node (do not add leaf nodes to queue)
         # Precede with potential blocks if there are unaligned preceding tokens
         for _block_id in _finished[0].path[::-1]:
             # _largest_blocks[block] is a leaf node with shape (26, [4, 12795, 25646, 38708, 52026, 66257])
@@ -101,8 +96,8 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
                 _id = _graph.number_of_nodes()
                 # expand zip for legibility
                 _token_ranges = list(zip(_preceding_ends, _current_starts))
-                _graph.add_node(_id, type="potential", token_ranges=_token_ranges, children=[])
-                _parent["children"].append(_id)
+                _graph.add_node(_id, type="potential", token_ranges=_token_ranges)
+                _graph.add_edge(_parent_id, _id)
                 _node_ids.append(_id)
             # ###
             # Now add block as aligned leaf node
@@ -112,8 +107,8 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
             _token_ranges = [
                 (_current_starts[i] + _parent_starts[i], _current_starts[i] + _parent_starts[i] + _block[0])
                 for i in range(_witness_count)]
-            _graph.add_node(_id, type="leaf", token_ranges=_token_ranges, children=[])
-            _parent["children"].append(_id)
+            _graph.add_node(_id, type="aligned", token_ranges=_token_ranges)
+            _graph.add_edge(_parent_id, _id)
             # reset _preceding_ends for loop
             _preceding_ends = [i + _block[0] for i in _adjusted_coordinates]
         # Add trailing unaligned tokens (if any)
@@ -130,22 +125,46 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # print('Queue size: ', len(_node_ids))
 
 
-def visualize_graph(_graph: nx.DiGraph):
+def visualize_graph(_graph: nx.DiGraph, _token_array: list):
     # Visualize the tree
     # Create digraph and add root node
     tree = graphviz.Digraph(format="svg")
     # Add all nodes
     # ###
     # RESUME HERE
-    # FIXME: Store networkX edges as proper edges (currently property of node)
-    # TODO: Add leaf nodes with tokens
+    # FIXME: Unaligned nodes are being created incorretly, e.g., #955
     # FIXME YET AGAIN: ranges are wrong and will overrun token array)
     # TODO: Add branching nodes
-    # TODO: Add edges (filter out target potential nodes because we aren't adding them)
     # ###
     for node, properties in _graph.nodes(data=True):
-        if properties["type"] != "potential":
-            print(node, properties)
+    # Types are aligned, unaligned, potential, branching
+        match properties["type"]:
+            case 'aligned':
+                _tokens = " ".join(_token_array[properties["token_ranges"][0][0]: properties["token_ranges"][0][1]])
+                tree.node(str(node), "\n".join([str(node), _tokens]))
+            case 'unaligned':
+                print("Visualizing node #" + str(node))
+                print(properties["token_ranges"])
+                _unaligned_ranges = []
+                for i, j in properties["token_ranges"]:
+                    # print(" ".join(_token_array[i: j]))
+                    _unaligned_ranges.append(" ".join(_token_array[i: j]))
+                _tokens = "\n".join(_unaligned_ranges)
+                print(_tokens)
+                tree.node(str(node), "\n".join([str(node), _tokens]))
+            case 'potential':
+                # Should not appear once alignment is complete
+                tree.node(str(node), "POTENTIAL")
+            case 'branching':
+                tree.node(str(node), "BRANCHING")
+            case _:
+                raise Exception("Unexpected node type: " + properties["type"])
+    for source, target, properties in _graph.edges(data=True):
+        tree.edge(str(source), str(target))
+    tree.render() # saves automatically as Digraph.gv.svg
+
+    # if properties["type"] != "potential":
+    #     print(node, properties)
     # def populate_tree(_digraph, _parent):  # void
     #     for n in _parent.children:
     #         # print(n.id)
