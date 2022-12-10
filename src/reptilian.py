@@ -1,18 +1,14 @@
 # ###
 # External imports
 # ###
-import graphviz
 import pprint
 
 pp = pprint.PrettyPrinter(indent=2)
-import re
-from typing import List
 
 # ###
 # Local imports
 # ###
 from import_witnesses import import_witnesses
-from create_blocks import create_token_array
 from alignment_tree import *
 
 # ###
@@ -20,6 +16,7 @@ from alignment_tree import *
 # ###
 sigla, witnesses = import_witnesses()
 token_array, token_membership_array, token_witness_offset_array, token_ranges = create_token_array(witnesses)
+print(f"{len(token_array)=}")
 
 # ###
 # Initialize alignment tree and add root
@@ -36,36 +33,35 @@ nodes_to_process = deque([0])
 # Expand tree, starting at root
 # ###
 counter = 0
-while nodes_to_process and counter < 900:
+while nodes_to_process and counter < 480:
     print('Iteration #', counter)
     # TODO: Make it pretty
-    # FIXME: Blocks in tiers after the first are storing local, rather than global, token offsets
     # FIXME: Pre-block unaligned tokens in tiers after the first have incorrect (local?) second range values
+    # FIXME: Increment counter in only one place
     print("Head of queue: ", alignment_tree.nodes[nodes_to_process[0]]['token_ranges'])
-    if counter > 0:
-        local_token_array = []
-        for index, token_range in enumerate(alignment_tree.nodes[nodes_to_process[0]]['token_ranges']):
-            local_token_array.extend(token_array[token_range[0]: token_range[1]])
-            if index < len(witnesses) - 1:
-                local_token_array.append(' #' + str(index + 1) + ' ')
-        local_token_membership_array = []
-        for index, token_range in enumerate(alignment_tree.nodes[nodes_to_process[0]]['token_ranges']):
-            local_token_membership_array.extend(token_membership_array[token_range[0]: token_range[1]])
-            if index < len(witnesses) - 1:
-                local_token_membership_array.append(' #' + str(index + 1) + ' ')
-        # print("Local token array: ", local_token_array)
-        # print("Local token membership array: ", local_token_membership_array)
-        expand_node(alignment_tree,
-                    nodes_to_process,
-                    local_token_array,
-                    local_token_membership_array,
-                    len(witnesses))
-    else:
+    if counter == 0:  # special handling for root node
         expand_node(alignment_tree,
                     nodes_to_process,
                     token_array,
                     token_membership_array,
                     len(witnesses))
+        counter += 1
+        continue
+    local_token_array = []
+    local_token_membership_array = []
+    for index, token_range in enumerate(alignment_tree.nodes[nodes_to_process[0]]['token_ranges']):
+        local_token_array.extend(token_array[token_range[0]: token_range[1]])
+        local_token_membership_array.extend(token_membership_array[token_range[0]: token_range[1]])
+        if index < len(witnesses) - 1:
+            local_token_array.append(' #' + str(index + 1) + ' ')
+            local_token_membership_array.append(' #' + str(index + 1) + ' ')
+    # print("Local token array: ", local_token_array)
+    # print("Local token membership array: ", local_token_membership_array)
+    expand_node(alignment_tree,
+                nodes_to_process,
+                local_token_array,
+                local_token_membership_array,
+                len(witnesses))
     counter += 1
 # print('Node count: ', len(alignment_tree.nodes))
 # print('Edge count: ', len(alignment_tree.edges))

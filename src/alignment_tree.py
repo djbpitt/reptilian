@@ -50,79 +50,80 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     if not _largest_blocks: # no blocks, so change type to unaligned and remove from queue
         _parent_id = _node_ids.popleft()
         _graph.nodes[_parent_id]["type"] = "unaligned"
-    else:
-        _block_offsets_by_witness, _witness_offsets_to_blocks, _first_token_offset_in_block_by_witness, \
-            _first_absolute_token_by_witness, _score_by_block = \
-            prepare_for_beam_search(_witness_count, _token_membership_array, _largest_blocks)
-        _finished = perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witness,
-                                        _witness_offsets_to_blocks, _score_by_block)
-        # print(f"{_largest_blocks=}")
-        # Get information about parent
-        _parent_id = _node_ids.popleft()
-        _parent = _graph.nodes[_parent_id] # dictionary of properties
-        # Start range for leading unaligned tokens (if any) is start of parent
-        _preceding_ends = [i[0] for i in _parent["token_ranges"]]
-        # print("Finished: ", _finished)
-        # print(f"{_parent['token_ranges']=}")
+        return
+    _block_offsets_by_witness, _witness_offsets_to_blocks, _first_token_offset_in_block_by_witness, \
+        _first_absolute_token_by_witness, _score_by_block = \
+        prepare_for_beam_search(_witness_count, _token_membership_array, _largest_blocks)
+    _finished = perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witness,
+                                    _witness_offsets_to_blocks, _score_by_block)
+    # print(f"{_largest_blocks=}")
+    # Get information about parent
+    _parent_id = _node_ids.popleft()
+    _parent = _graph.nodes[_parent_id] # dictionary of properties
+    # Start range for leading unaligned tokens (if any) is start of parent
+    _preceding_ends = [i[0] for i in _parent["token_ranges"]]
+    # print("Finished: ", _finished)
+    # print(f"{_parent['token_ranges']=}")
 
-        # Add blocks as aligned nodes and add edges from parent to new node (do not add leaf nodes to queue)
-        # Precede with potential blocks if there are unaligned preceding tokens
-        for _block_id in _finished[0].path[::-1]:
-            # _largest_blocks[block] is a leaf node with shape (26, [4, 12795, 25646, 38708, 52026, 66257])
-            # The first value is the length of the block (exclusive)
-            # The second is the start positions of the block in each witness, using global token position
-            _block = _largest_blocks[_block_id] # local offsets
-            # ###
-            # FIXME: Remove conversion for blocks (which currently works, but needs to be moved here)
-            # FIXME: Remove conversion for pre-block unaligned tokens (currently broken)
-            # ###
-            # print(f"{_block=}")
-            if _parent_id == 0: # don't adjust for root
-                _adjusted_coordinates = _block[1]
-            else:
-                _adjusted_coordinates = [i + j[0] for i, j in zip(_block[1], _parent['token_ranges'])]
-            # print("Adjusted coordinates: ", _adjusted_coordinates)
-            # ###
-            # Add potential block first
-            # ###
-            _current_starts = _adjusted_coordinates # global coordinates
-            _parent_starts = [i[0] for i in _parent["token_ranges"]]
-            # print(f"{_current_starts=}")
-            # print(f"{_parent_starts=}")
-            # print(f"{_preceding_ends=}")
-            # print([_current_starts[i] + _parent_starts[i] for i in range(_witness_count)])
-            # print([_preceding_ends[i] + _current_starts[i] for i in range(_witness_count)])
-            if _current_starts != _preceding_ends:
-                _id = _graph.number_of_nodes()
-                # expand zip for legibility
-                _token_ranges = list(zip(_preceding_ends, _current_starts))
-                _graph.add_node(_id, type="potential", token_ranges=_token_ranges)
-                _graph.add_edge(_parent_id, _id)
-                _node_ids.append(_id)
-            # ###
-            # Now add block as aligned leaf node
-            # Token range is local range + start positions of parent range through same plus block length
-            # ###
-            _id = _graph.number_of_nodes()
-            _token_ranges = [
-                (_current_starts[i] + _parent_starts[i], _current_starts[i] + _parent_starts[i] + _block[0])
-                for i in range(_witness_count)]
-            _graph.add_node(_id, type="aligned", token_ranges=_token_ranges)
-            _graph.add_edge(_parent_id, _id)
-            # reset _preceding_ends for loop
-            _preceding_ends = [i + _block[0] for i in _adjusted_coordinates]
-        # Add trailing unaligned tokens (if any)
-        _parent_ends = [i[1] for i in _parent["token_ranges"]]
-        if _parent_ends != _preceding_ends:
-            # TODO: Process, don't just announce
-            print("Need to process trailing tokens")
+    # Add blocks as aligned nodes and add edges from parent to new node (do not add leaf nodes to queue)
+    # Precede with potential blocks if there are unaligned preceding tokens
+    for _block_id in _finished[0].path[::-1]:
+        # _largest_blocks[block] is a leaf node with shape (26, [4, 12795, 25646, 38708, 52026, 66257])
+        # The first value is the length of the block (exclusive)
+        # The second is the start positions of the block in each witness, using global token position
+        _block = _largest_blocks[_block_id] # local offsets
+        # ###
+        # FIXME: Token ranges for potential nodes are wrong
+        # FIXME: Token ranges for aligned leaf nodes are wrong (incremented twice?)
+        # ###
+        # print(f"{_block=}")
+        if _parent_id == 0: # don't adjust for root
+            _adjusted_coordinates = _block[1]
         else:
-            print("No trailing tokens")
-        # Reset _parent type property to branching
-        _parent["type"] = "branching"
-        # Debug report
-        # print('Node count: ', len(_graph.nodes))
-        # print('Queue size: ', len(_node_ids))
+            _adjusted_coordinates = [i + j[0] for i, j in zip(_block[1], _parent['token_ranges'])]
+        # print("Adjusted coordinates: ", _adjusted_coordinates)
+        # ###
+        # Add potential block first
+        # ###
+        _current_starts = _adjusted_coordinates # global coordinates
+        print(f"{_current_starts=}")
+        _parent_starts = [i[0] for i in _parent["token_ranges"]]
+        # print(f"{_current_starts=}")
+        # print(f"{_parent_starts=}")
+        # print(f"{_preceding_ends=}")
+        # print([_current_starts[i] + _parent_starts[i] for i in range(_witness_count)])
+        # print([_preceding_ends[i] + _current_starts[i] for i in range(_witness_count)])
+        if _current_starts != _preceding_ends:
+            _id = _graph.number_of_nodes()
+            # expand zip for legibility
+            _token_ranges = list(zip(_preceding_ends, _current_starts))
+            _graph.add_node(_id, type="potential", token_ranges=_token_ranges)
+            _graph.add_edge(_parent_id, _id)
+            _node_ids.append(_id)
+        # ###
+        # Now add block as aligned leaf node
+        # Token range is local range + start positions of parent range through same plus block length
+        # ###
+        _id = _graph.number_of_nodes()
+        _token_ranges = [
+            (_current_starts[i], _current_starts[i] + _block[0])
+            for i in range(_witness_count)]
+        _graph.add_node(_id, type="aligned", token_ranges=_token_ranges)
+        _graph.add_edge(_parent_id, _id)
+        # reset _preceding_ends for loop
+        _preceding_ends = [i + _block[0] for i in _adjusted_coordinates]
+    # Add trailing unaligned tokens (if any)
+    _parent_ends = [i[1] for i in _parent["token_ranges"]]
+    if _parent_ends != _preceding_ends:
+        # TODO: Process, don't just announce
+        print("Need to process trailing tokens")
+    else:
+        print("No trailing tokens")
+    # Reset _parent type property to branching
+    _parent["type"] = "branching"
+    # Debug report
+    # print('Node count: ', len(_graph.nodes))
+    # print('Queue size: ', len(_node_ids))
 
 
 def visualize_graph(_graph: nx.DiGraph, _token_array: list):
@@ -132,9 +133,6 @@ def visualize_graph(_graph: nx.DiGraph, _token_array: list):
     # Add all nodes
     # ###
     # RESUME HERE
-    # FIXME: Unaligned nodes are being created incorretly, e.g., #955
-    # FIXME YET AGAIN: ranges are wrong and will overrun token array)
-    # TODO: Add branching nodes
     # ###
     for node, properties in _graph.nodes(data=True):
     # Types are aligned, unaligned, potential, branching
@@ -143,14 +141,14 @@ def visualize_graph(_graph: nx.DiGraph, _token_array: list):
                 _tokens = " ".join(_token_array[properties["token_ranges"][0][0]: properties["token_ranges"][0][1]])
                 tree.node(str(node), "\n".join([str(node), _tokens]))
             case 'unaligned':
-                print("Visualizing node #" + str(node))
-                print(properties["token_ranges"])
+                # print("Visualizing node #" + str(node))
+                # print(properties["token_ranges"])
                 _unaligned_ranges = []
                 for i, j in properties["token_ranges"]:
                     # print(" ".join(_token_array[i: j]))
                     _unaligned_ranges.append(" ".join(_token_array[i: j]))
                 _tokens = "\n".join(_unaligned_ranges)
-                print(_tokens)
+                # print(_tokens)
                 tree.node(str(node), "\n".join([str(node), _tokens]))
             case 'potential':
                 # Should not appear once alignment is complete
