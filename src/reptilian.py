@@ -37,15 +37,14 @@ while nodes_to_process and counter < 480:
     print('Iteration #', counter)
     # TODO: Make it pretty
     # FIXME: Pre-block unaligned tokens in tiers after the first have incorrect (local?) second range values
-    # FIXME: Increment counter in only one place
+    counter += 1 # increment first to avoid repetition of increment statement
     print("Head of queue: ", alignment_tree.nodes[nodes_to_process[0]]['token_ranges'])
-    if counter == 0:  # special handling for root node
+    if counter == 1:  # special handling for root node
         expand_node(alignment_tree,
                     nodes_to_process,
                     token_array,
                     token_membership_array,
                     len(witnesses))
-        counter += 1
         continue
     local_token_array = []
     local_token_membership_array = []
@@ -62,7 +61,6 @@ while nodes_to_process and counter < 480:
                 local_token_array,
                 local_token_membership_array,
                 len(witnesses))
-    counter += 1
 # print('Node count: ', len(alignment_tree.nodes))
 # print('Edge count: ', len(alignment_tree.edges))
 # print('Queue size: ', len(nodes_to_process))
