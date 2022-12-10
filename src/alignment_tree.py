@@ -74,20 +74,24 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         _block = _largest_blocks[_block_id] # local offsets
         # ###
         # FIXME: Token ranges for potential nodes are wrong
+        # FIXME: We incorrectly assume that **all** potentials start at end of
+        #   preceding block, but that end is different for the first potential
+        #   than for others (e.g., Potential, then Aligned, then Potential, then
+        #   Aligned, then Potential)
         # FIXME: Token ranges for aligned leaf nodes are wrong (incremented twice?)
         # ###
-        # print(f"{_block=}")
+        print(f"{_block=}")
+        print(f"{_parent['token_ranges']=}")
         if _parent_id == 0: # don't adjust for root
             _adjusted_coordinates = _block[1]
         else:
             _adjusted_coordinates = [i + j[0] for i, j in zip(_block[1], _parent['token_ranges'])]
-        # print("Adjusted coordinates: ", _adjusted_coordinates)
+        print("Adjusted coordinates: ", _adjusted_coordinates)
         # ###
         # Add potential block first
         # ###
         _current_starts = _adjusted_coordinates # global coordinates
         print(f"{_current_starts=}")
-        _parent_starts = [i[0] for i in _parent["token_ranges"]]
         # print(f"{_current_starts=}")
         # print(f"{_parent_starts=}")
         # print(f"{_preceding_ends=}")
@@ -97,7 +101,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
             _id = _graph.number_of_nodes()
             # expand zip for legibility
             _token_ranges = list(zip(_preceding_ends, _current_starts))
-            _graph.add_node(_id, type="potential", token_ranges=_token_ranges)
+            _graph.add_node(_id, type="potential", token_ranges=_token_ranges, parent_id=_parent_id)
             _graph.add_edge(_parent_id, _id)
             _node_ids.append(_id)
         # ###
@@ -108,7 +112,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         _token_ranges = [
             (_current_starts[i], _current_starts[i] + _block[0])
             for i in range(_witness_count)]
-        _graph.add_node(_id, type="aligned", token_ranges=_token_ranges)
+        _graph.add_node(_id, type="aligned", token_ranges=_token_ranges, parent_id=_parent_id)
         _graph.add_edge(_parent_id, _id)
         # reset _preceding_ends for loop
         _preceding_ends = [i + _block[0] for i in _adjusted_coordinates]

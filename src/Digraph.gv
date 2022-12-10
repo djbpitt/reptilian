@@ -3540,7 +3540,7 @@ causes of variability . when we compare the individuals of the same variety or s
 causes of variability . when we compare the individuals of the same variety or sub - variety of our older cultivated plants and animals , one of the first points which strikes us is , that"]
 	956 [label="956
 when we"]
-	957 [label=BRANCHING]
+	957 [label=POTENTIAL]
 	958 [label="958
 from each other"]
 	959 [label=POTENTIAL]
@@ -4101,9 +4101,6 @@ here"]
 	1329 [label=POTENTIAL]
 	1330 [label="1330
 slowly"]
-	1331 [label=POTENTIAL]
-	1332 [label="1332
-more"]
 	0 -> 1
 	0 -> 2
 	0 -> 3
@@ -5434,6 +5431,4 @@ more"]
 	939 -> 1328
 	951 -> 1329
 	951 -> 1330
-	957 -> 1331
-	957 -> 1332
 }

@@ -33,7 +33,7 @@ nodes_to_process = deque([0])
 # Expand tree, starting at root
 # ###
 counter = 0
-while nodes_to_process and counter < 480:
+while nodes_to_process and counter < 479:
     print('Iteration #', counter)
     # TODO: Make it pretty
     # FIXME: Pre-block unaligned tokens in tiers after the first have incorrect (local?) second range values
