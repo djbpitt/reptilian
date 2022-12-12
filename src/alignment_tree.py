@@ -85,7 +85,8 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         if _parent_id == 0: # don't adjust for root
             _adjusted_coordinates = _block[1]
         else:
-            _adjusted_coordinates = [i + j[0] for i, j in zip(_block[1], _parent['token_ranges'])]
+            _adjusted_coordinates = [i + j[0] - k for i, j, k in zip(_block[1], _parent['token_ranges'],
+                                                                     _first_absolute_token_by_witness)]
         print("Adjusted coordinates: ", _adjusted_coordinates)
         # ###
         # Add potential block first
@@ -153,7 +154,7 @@ def visualize_graph(_graph: nx.DiGraph, _token_array: list):
                     _unaligned_ranges.append(" ".join(_token_array[i: j]))
                 _tokens = "\n".join(_unaligned_ranges)
                 # print(_tokens)
-                tree.node(str(node), "\n".join([str(node), _tokens]))
+                tree.node(str(node), "\n".join([str(node)+" unaligned", _tokens]))
             case 'potential':
                 # Should not appear once alignment is complete
                 tree.node(str(node), "POTENTIAL")
