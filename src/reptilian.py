@@ -72,4 +72,5 @@ with open('queue.txt', 'w') as f:
     f.write(str(nodes_to_process))
 # print(f"{witnesses=}")
 # visualize_graph(alignment_tree, token_array)
-visualize_graph_no_branching_nodes(alignment_tree, token_array)
+# visualize_graph_no_branching_nodes(alignment_tree, token_array)
+visualize_table(alignment_tree, token_array, len(witnesses))
