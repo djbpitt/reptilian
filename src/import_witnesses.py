@@ -19,7 +19,7 @@ def import_witnesses():
                  'darwin/darwin1866.txt', 'darwin/darwin1869.txt', 'darwin/darwin1872.txt']
     sigla = ["".join(['w', str(i)]) for i in range(len(filenames))]
     first_paragraph = 0
-    last_paragraph = 50
+    last_paragraph = 100
     raw_data_dict = {}
     for siglum, filename in zip(sigla, filenames):
         with open(filename) as f:

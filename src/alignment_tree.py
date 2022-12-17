@@ -80,8 +80,8 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         #   Aligned, then Potential)
         # FIXME: Token ranges for aligned leaf nodes are wrong (incremented twice?)
         # ###
-        print(f"{_block=}")
-        print(f"{_parent['token_ranges']=}")
+        # print(f"{_block=}")
+        # print(f"{_parent['token_ranges']=}")
         if _parent_id == 0: # don't adjust for root
             _adjusted_coordinates = _block[1]
         else:
@@ -120,8 +120,15 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     # Add trailing unaligned tokens (if any)
     _parent_ends = [i[1] for i in _parent["token_ranges"]]
     if _parent_ends != _preceding_ends:
-        # TODO: Process, don't just announce
-        print("Need to process trailing tokens")
+        # print("Need to process trailing tokens")
+        # print(f"{_preceding_ends=}")
+        # print(f"{_parent_ends=}")
+        _token_ranges = list(zip(_preceding_ends, _parent_ends))
+        # print(f"{_token_ranges=}")
+        _id = _graph.number_of_nodes()
+        _graph.add_node(_id, type="potential", token_ranges=_token_ranges, parent_id = _parent_id)
+        _graph.add_edge(_parent_id, _id)
+        _node_ids.append(_id)
     else:
         print("No trailing tokens")
     # Reset _parent type property to branching
@@ -164,25 +171,5 @@ def visualize_graph(_graph: nx.DiGraph, _token_array: list):
                 raise Exception("Unexpected node type: " + properties["type"])
     for source, target, properties in _graph.edges(data=True):
         tree.edge(str(source), str(target))
-    tree.render() # saves automatically as Digraph.gv.svg
+    tree.render("with_branches.gv") # saves automatically as Digraph.gv.svg
 
-    # if properties["type"] != "potential":
-    #     print(node, properties)
-    # def populate_tree(_digraph, _parent):  # void
-    #     for n in _parent.children:
-    #         # print(n.id)
-    #         if isinstance(n, tuple):  # TODO: remove tuples after creating child nodes
-    #             continue
-    #         elif isinstance(n, Leaf_node):
-    #             label = n.string
-    #         else:
-    #             label = repr(n.children)
-    #         _digraph.node(str(n.id), label=label)
-    #         _digraph.edge(str(_parent.id), str(n.id))
-    #
-    # populate_tree(tree, root)
-    # for child in root.children:
-    #     if isinstance(child, Branching_node) and child.processed == False:
-    #         populate_tree(tree, child)
-    # svg_tree = tree.render()
-    # display(SVG(svg_tree))
