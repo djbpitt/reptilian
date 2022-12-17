@@ -72,14 +72,6 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # The first value is the length of the block (exclusive)
         # The second is the start positions of the block in each witness, using global token position
         _block = _largest_blocks[_block_id] # local offsets
-        # ###
-        # FIXME: Token ranges for potential nodes are wrong
-        # FIXME: We incorrectly assume that **all** potentials start at end of
-        #   preceding block, but that end is different for the first potential
-        #   than for others (e.g., Potential, then Aligned, then Potential, then
-        #   Aligned, then Potential)
-        # FIXME: Token ranges for aligned leaf nodes are wrong (incremented twice?)
-        # ###
         # print(f"{_block=}")
         # print(f"{_parent['token_ranges']=}")
         if _parent_id == 0: # don't adjust for root
@@ -87,12 +79,12 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         else:
             _adjusted_coordinates = [i + j[0] - k for i, j, k in zip(_block[1], _parent['token_ranges'],
                                                                      _first_absolute_token_by_witness)]
-        print("Adjusted coordinates: ", _adjusted_coordinates)
+        # print("Adjusted coordinates: ", _adjusted_coordinates)
         # ###
         # Add potential block first
         # ###
         _current_starts = _adjusted_coordinates # global coordinates
-        print(f"{_current_starts=}")
+        # print(f"{_current_starts=}")
         # print(f"{_current_starts=}")
         # print(f"{_parent_starts=}")
         # print(f"{_preceding_ends=}")
@@ -173,3 +165,11 @@ def visualize_graph(_graph: nx.DiGraph, _token_array: list):
         tree.edge(str(source), str(target))
     tree.render("with_branches.gv") # saves automatically as Digraph.gv.svg
 
+def visualize_graph_no_branching_nodes(_graph: nx.DiGraph, _token_array: list):
+    # Visualize the tree without branching nodes
+    # Order of nodes is depth-first traversal of networkx digraph, which
+    #   corresponds to witness order
+    # All nodes are children of the root, with edges ordered
+    preorder = nx.dfs_preorder_nodes(_graph)
+    no_branching_nodes = [node for node in preorder if _graph.nodes[node]["type"] != "branching"]
+    return no_branching_nodes
