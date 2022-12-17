@@ -171,23 +171,27 @@ def visualize_graph_no_branching_nodes(_graph: nx.DiGraph, _token_array: list):
     #   corresponds to witness order
     # Create root only later, when we create edges
     tree = graphviz.Digraph(format="svg")
-    preorder = nx.dfs_preorder_nodes(_graph)
-    no_branching_nodes = [node for node in preorder if _graph.nodes[node]["type"] != "branching"]
-    for _node in no_branching_nodes: # id number of node, access as G.nodes[n]
-        # Types are aligned and unaligned
-        if _graph.nodes[_node]["type"] == "aligned":
-            _tokens = " ".join(_token_array[_graph.nodes[_node]["token_ranges"][0][0]: _graph.nodes[_node]["token_ranges"][0][1]])
-            tree.node(str(_node), "\n".join([str(_node), _tokens]))
-        elif _graph.nodes[_node]["type"] == 'unaligned':
-            _unaligned_ranges = []
-            for i, j in _graph.nodes[_node]["token_ranges"]:
-                _unaligned_ranges.append(" ".join(_token_array[i: j]))
-            _tokens = "\n".join(_unaligned_ranges)
-            tree.node(str(_node), "\n".join([str(_node)+" unaligned", _tokens]))
-        else:
-            raise Exception("Unexpected node type: " + _graph[_node]["type"])
-    # Create root; creates edges so that all nodes are children of root
     tree.node("root", "ROOT")
-    for _node in no_branching_nodes:
+    preorder = nx.dfs_preorder_nodes(_graph)
+    # no_branching_nodes = [node for node in preorder if _graph.nodes[node]["type"] != "branching"]
+    for _node in preorder: # id number of node, access as G.nodes[n]
+        _properties = _graph.nodes[_node]
+        _type = _properties["type"]
+        _token_ranges = _properties["token_ranges"]
+        # Types are aligned and unaligned
+        match(_type):
+            case 'aligned':
+                _tokens = " ".join(_token_array[_token_ranges[0][0]: _token_ranges[0][1]])
+                tree.node(str(_node), "\n".join([str(_node), _tokens]))
+            case 'unaligned':
+                _unaligned_ranges = []
+                for i, j in _token_ranges:
+                    _unaligned_ranges.append(" ".join(_token_array[i: j]))
+                _tokens = "\n".join(_unaligned_ranges)
+                tree.node(str(_node), "\n".join([str(_node)+" unaligned", _tokens]))
+            case 'branching':
+                continue
+            case _:
+                raise Exception("Unexpected node type: " + _graph[_node]["type"])
         tree.edge("root", str(_node))
     tree.render("no_branches.gv")
