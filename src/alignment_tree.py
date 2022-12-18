@@ -199,13 +199,21 @@ def visualize_graph_no_branching_nodes(_graph: nx.DiGraph, _token_array: list):
 def visualize_table(_graph: nx.DiGraph, _token_array: list, _witness_count: int):
     # Create table top and bottom
     _table_top = """
-        <html>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE html>
+        <html xmlns="http://www.w3.org/1999/xhtml">
             <head>
                 <style type="text/css">
                     table, tr, th, td {border: 1px solid black; border-collapse: collapse;}
                     th, td {padding: 3px;}
-                    td:first-child {text-align: right;}
-                </style></head><body><table><tr style="background-color: pink;"><th>Node</th>
+                    tr:not(:first-child) > th {
+                        text-align: right;
+                        font-size: smaller;
+                        color: gray;
+                    }
+                    .aligned > td {background-color: #dcdcdc;}
+                    .unaligned > td {background-color: beige;}
+                </style></head><body><table><tr style="background-color: pink;"><th>Row</th><th>Node</th>
         """ + '\n'.join(
         ['<th style="border: 1px black solid; border-collapse: collapse; text-align: center;">w' + str(i) + '</th>' for
          i in range(_witness_count)]) + '</tr>'
@@ -213,6 +221,7 @@ def visualize_table(_graph: nx.DiGraph, _token_array: list, _witness_count: int)
 
     # Create data rows
     _data_rows = []
+    _row_number = -1
     preorder = nx.dfs_preorder_nodes(_graph)
     for _node in preorder: # id number of node, access as G.nodes[n]
         _properties = _graph.nodes[_node]
@@ -221,15 +230,16 @@ def visualize_table(_graph: nx.DiGraph, _token_array: list, _witness_count: int)
         # Types are aligned and unaligned
         match(_type):
             case 'aligned':
+                _row_number += 1
                 _tokens = " ".join(_token_array[_token_ranges[0][0]: _token_ranges[0][1]])
-                _new_row = "".join(['<tr><th style="text-align: right;">', str(_node), '</th><td colspan=' + str(_witness_count) + '>' + _tokens +'</td></tr>'])
+                _new_row = "".join(['<tr class="aligned"><th>' + str(_row_number) + '</th><th>', str(_node), '</th><td colspan=' + str(_witness_count) + '>' + _tokens +'</td></tr>'])
             case 'unaligned':
-                continue
-                # _unaligned_ranges = []
-                # for i, j in _token_ranges:
-                #     _unaligned_ranges.append(" ".join(_token_array[i: j]))
-                # _tokens = "\n".join(_unaligned_ranges)
-                # tree.node(str(_node), "\n".join([str(_node)+" unaligned", _tokens]))
+                _row_number += 1
+                _unaligned_ranges = []
+                for i, j in _token_ranges:
+                    _unaligned_ranges.append(" ".join(_token_array[i: j]))
+                _new_data_cells = '\n'.join(['<td>' + i + '</td>' for i in _unaligned_ranges])
+                _new_row = "".join(['<tr class="unaligned"><th>' + str(_row_number) + '</th><th>' + str(_node) +'</th>' + _new_data_cells + '</tr>'])
             case 'branching':
                 continue
             case _:
