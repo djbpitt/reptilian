@@ -2,7 +2,7 @@
 
 Node properties:
     id:int : consecutive integers
-    type:str : aligned, unaligned, branching, potential (= unexpended)
+    type:str : aligned, unaligned, branching, potential (= unexpanded)
     token_ranges:list[Tuple] : offsets in global token array
 """
 import networkx as nx
@@ -29,13 +29,13 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
             most tokens placed, subsorted by fewest blocks
 
     Traverse best path and update tree and deque:
-        Create new nodes: leaf (necessarily aligned) or branching
-            We learn whether a branching node is actually branching or an unaligned leaf
+        Create new nodes: leaf (necessarily aligned) or potential
+            We learn whether a potential node is actually branching or an unaligned leaf
                 only when we try to expand it.
             Eventually we can expand it immediately, so that we'll be able to add three
                 types of nodes: aligned leaf, unaligned leaf, and genuine branching.
         Add new nodes to tree
-        Add new branching nodes to tail of deque
+        Add new potential nodes to tail of deque
 
     Remove head of deque after processing
 
@@ -45,8 +45,8 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     _sa = create_suffix_array(_token_array)
     _frequent_sequences = create_blocks(_sa, _token_membership_array, _witness_count)
     _largest_blocks = find_longest_sequences(_frequent_sequences, _sa)
-    if not _largest_blocks:  # no blocks, so change type to unaligned and remove from queue
-        _parent_id = _node_ids.popleft()
+    _parent_id = _node_ids.popleft()  # pop head of deque
+    if not _largest_blocks:  # no blocks, change type to unaligned
         _graph.nodes[_parent_id]["type"] = "unaligned"
         return
     _block_offsets_by_witness, _witness_offsets_to_blocks, _first_token_offset_in_block_by_witness, \
@@ -56,7 +56,6 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
                                     _witness_offsets_to_blocks, _score_by_block)
     # print(f"{_largest_blocks=}")
     # Get information about parent
-    _parent_id = _node_ids.popleft()
     _parent = _graph.nodes[_parent_id]  # dictionary of properties
     # Start range for leading unaligned tokens (if any) is start of parent
     _preceding_ends = [i[0] for i in _parent["token_ranges"]]
@@ -119,8 +118,6 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         _graph.add_node(_id, type="potential", token_ranges=_token_ranges, parent_id=_parent_id)
         _graph.add_edge(_parent_id, _id)
         _node_ids.append(_id)
-    else:
-        print("No trailing tokens")
     # Reset _parent type property to branching
     _parent["type"] = "branching"
     # Debug report

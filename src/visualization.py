@@ -3,13 +3,10 @@ import networkx as nx
 
 
 def visualize_graph(_graph: nx.DiGraph, _token_array: list):
-    # Visualize the tree
-    # Create digraph and add root node
+    # Visualize the tree including branching nodes
+    # Create digraph
     tree = graphviz.Digraph(format="svg")
     # Add all nodes
-    # ###
-    # RESUME HERE
-    # ###
     for node, properties in _graph.nodes(data=True):
         # Types are aligned, unaligned, potential, branching
         match properties["type"]:
@@ -33,20 +30,20 @@ def visualize_graph(_graph: nx.DiGraph, _token_array: list):
                 tree.node(str(node), "BRANCHING")
             case _:
                 raise Exception("Unexpected node type: " + properties["type"])
+    # Add all edges
     for source, target, properties in _graph.edges(data=True):
         tree.edge(str(source), str(target))
-    tree.render("with_branches.gv")  # saves automatically as Digraph.gv.svg
+    tree.render("with_branches.gv")  # override automatic filename
 
 
 def visualize_graph_no_branching_nodes(_graph: nx.DiGraph, _token_array: list):
     # Visualize the tree without branching nodes
     # Order of nodes is depth-first traversal of networkx digraph, which
     #   corresponds to witness order
-    # Create root only later, when we create edges
+    # Create root specially, since it's a branching node and would otherwise be skipped
     tree = graphviz.Digraph(format="svg")
     tree.node("root", "ROOT")
     preorder = nx.dfs_preorder_nodes(_graph)
-    # no_branching_nodes = [node for node in preorder if _graph.nodes[node]["type"] != "branching"]
     for _node in preorder:  # id number of node, access as G.nodes[n]
         _properties = _graph.nodes[_node]
         _type = _properties["type"]
@@ -66,12 +63,12 @@ def visualize_graph_no_branching_nodes(_graph: nx.DiGraph, _token_array: list):
                 continue
             case _:
                 raise Exception("Unexpected node type: " + _graph[_node]["type"])
-        tree.edge("root", str(_node))
+        tree.edge("root", str(_node))  # All nodes are children of the root
     tree.render("no_branches.gv")
 
 
 def visualize_table(_graph: nx.DiGraph, _token_array: list, _witness_count: int):
-    # Create table; top and bottom
+    # Create table top and bottom
     _table_top = """
         <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE html>
@@ -121,65 +118,7 @@ def visualize_table(_graph: nx.DiGraph, _token_array: list, _witness_count: int)
             case _:
                 raise Exception("Unexpected node type: " + _graph[_node]["type"])
         _data_rows.append(_new_row)
-    # block0_start_positions = largest_blocks[finished[0].path[-1]][1]
-    # # if debug:
-    # #     print(block0_start_positions)
-    # #     print(first_absolute_token_by_witness)
-    # if block0_start_positions != first_absolute_token_by_witness:
-    #     leading_unaligned_tokens = ['<td>' + " ".join(token_array[i: j]) + '</td>' for i, j in
-    #                                 zip(first_absolute_token_by_witness, block0_start_positions)]
-    #     leading_unaligned_row = '<tr style="background-color: lightgray; border: 1px black solid;
-    #     border-collapse: collapse;"><td style="background-color: pink;">unaligned</td>' + "".join(
-    #         leading_unaligned_tokens) + '</tr>'
-    #
-    # rows = []
-    # # Rows with aligned tokens are the same in all witness by definition
-    # # The path contains largest_blocks keys, which represent the last token of
-    # #   a block in witness 0
-    # # The value of a block is a tuple, the first member of which is the length
-    # # We can retrieve the aligned tokens by slicing them from the token_array
-    # for index, end_token_offset in enumerate(finished[0].path[::-1]):  # path is ordered from last to first
-    #     # ###
-    #     # Information for aligned block
-    #     # This is the same for all witnesses, taken from witness 0
-    #     # ###
-    #     block_length = largest_blocks[end_token_offset][0]
-    #     start_token_offset = end_token_offset - block_length
-    #     tokens = token_array[start_token_offset: end_token_offset]
-    #     # ###
-    #     # Information for preceding non-aligned block
-    #     # This is different for each witness
-    #     #
-    #     # Loop over witnesses using range(len(witnesses))
-    #     # Get start token offset for aligned block for current witness
-    #     # Get end token offset for preceding aligned block for current witness
-    #     # Get tokens by slicing token array
-    #     # ###
-    #     if index > 0:
-    #         current_block = largest_blocks[end_token_offset]
-    #         preceding_block = largest_blocks[finished[0].path[::-1][index - 1]]
-    #         unaligned_row = []
-    #         unaligned_row.append(
-    #             '<tr style="background-color: lightgray; border: 1px black solid;
-    #             border-collapse: collapse;"><td style="background-color: pink;">unaligned</td>')
-    #         for i in range(len(witnesses)):
-    #             unaligned_start_token_offset = preceding_block[1][i] + preceding_block[0]
-    #             unaligned_end_token_offset = current_block[1][i] - 1
-    #             unaligned_tokens = token_array[unaligned_start_token_offset: unaligned_end_token_offset + 1]
-    #             unaligned_row.append('<td style="border: 1px black solid; border-collapse: collapse;">' + " ".join(
-    #                 unaligned_tokens) + '</td>')
-    #         unaligned_row.append('</tr>')
-    #         rows.append("".join(unaligned_row))
-    #     # ###
-    #     # Create aligned block
-    #     # ###
-    #     rows.append(
-    #         '<tr style="background-color: beige; border: 1px black solid; border-collapse: collapse;">
-    #         <td style="background-color: pink; border: 1px black solid; border-collapse: collapse;">' + str(
-    #             index) + ' (' + str(
-    #             end_token_offset) + ')</td><td  style="border: 1px black solid;
-    #             border-collapse: collapse;" colspan="' + str(
-    #             len(witnesses)) + '">' + " ".join(tokens) + '</td></tr>')
+    # Compose table (top, data rows, bottom) and write to disk
     table = _table_top + '\n'.join(_data_rows) + _table_bottom
     with open('table-output.html', 'w') as f:
         f.write(table)
