@@ -19,7 +19,7 @@ print(f"{len(token_array)=}")
 # No longer need node_by_id dictionary because
 #   networkx builds that in
 # nodes_to_process is queue of nodes to check for expansion
-# TODO: Constrain cooccurrence of node attributes
+# TODO: Constrain co-occurrence of node attributes
 # ###
 alignment_tree = create_tree()
 alignment_tree.add_node(0, type="potential", token_ranges=token_ranges)
@@ -33,7 +33,7 @@ while nodes_to_process:
     # print('Iteration #', counter)
     # TODO: Make it pretty
     # FIXME: Pre-block unaligned tokens in tiers after the first have incorrect (local?) second range values
-    counter += 1 # increment first to avoid repetition of increment statement
+    counter += 1  # increment first to avoid repetition of increment statement
     # print("Head of queue: ", alignment_tree.nodes[nodes_to_process[0]]['token_ranges'])
     if counter == 1:  # special handling for root node
         expand_node(alignment_tree,

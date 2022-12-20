@@ -9,6 +9,7 @@ import networkx as nx
 from collections import deque
 from create_blocks import *
 
+
 def create_tree() -> nx.DiGraph:
     """Create new DiGraph with no nodes
 
@@ -20,11 +21,11 @@ def create_tree() -> nx.DiGraph:
 def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membership_array, _witness_count: int):
     """Expand and then remove head of deque
 
-    Find best path through blocks:
+    Find the best path through blocks:
         Create suffix array and LCP array
         Find longest full-depth, non-repeating frequent sequences
-        Find largest blocks
-        Use beam search to find best path through blocks:
+        Find the largest blocks
+        Use beam search to find the best path through blocks:
             most tokens placed, subsorted by fewest blocks
 
     Traverse best path and update tree and deque:
@@ -42,9 +43,9 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     """
 
     _sa = create_suffix_array(_token_array)
-    _frequent_sequences = create_blocks(_sa,_token_membership_array, _witness_count)
+    _frequent_sequences = create_blocks(_sa, _token_membership_array, _witness_count)
     _largest_blocks = find_longest_sequences(_frequent_sequences, _sa)
-    if not _largest_blocks: # no blocks, so change type to unaligned and remove from queue
+    if not _largest_blocks:  # no blocks, so change type to unaligned and remove from queue
         _parent_id = _node_ids.popleft()
         _graph.nodes[_parent_id]["type"] = "unaligned"
         return
@@ -56,7 +57,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     # print(f"{_largest_blocks=}")
     # Get information about parent
     _parent_id = _node_ids.popleft()
-    _parent = _graph.nodes[_parent_id] # dictionary of properties
+    _parent = _graph.nodes[_parent_id]  # dictionary of properties
     # Start range for leading unaligned tokens (if any) is start of parent
     _preceding_ends = [i[0] for i in _parent["token_ranges"]]
     # print("Finished: ", _finished)
@@ -68,10 +69,10 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # _largest_blocks[block] is a leaf node with shape (26, [4, 12795, 25646, 38708, 52026, 66257])
         # The first value is the length of the block (exclusive)
         # The second is the start positions of the block in each witness, using global token position
-        _block = _largest_blocks[_block_id] # local offsets
+        _block = _largest_blocks[_block_id]  # local offsets
         # print(f"{_block=}")
         # print(f"{_parent['token_ranges']=}")
-        if _parent_id == 0: # don't adjust for root
+        if _parent_id == 0:  # don't adjust for root
             _adjusted_coordinates = _block[1]
         else:
             _adjusted_coordinates = [i + j[0] - k for i, j, k in zip(_block[1], _parent['token_ranges'],
@@ -80,7 +81,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         # ###
         # Add potential block first
         # ###
-        _current_starts = _adjusted_coordinates # global coordinates
+        _current_starts = _adjusted_coordinates  # global coordinates
         # print(f"{_current_starts=}")
         # print(f"{_current_starts=}")
         # print(f"{_parent_starts=}")
@@ -115,7 +116,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
         _token_ranges = list(zip(_preceding_ends, _parent_ends))
         # print(f"{_token_ranges=}")
         _id = _graph.number_of_nodes()
-        _graph.add_node(_id, type="potential", token_ranges=_token_ranges, parent_id = _parent_id)
+        _graph.add_node(_id, type="potential", token_ranges=_token_ranges, parent_id=_parent_id)
         _graph.add_edge(_parent_id, _id)
         _node_ids.append(_id)
     else:
@@ -125,5 +126,3 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     # Debug report
     # print('Node count: ', len(_graph.nodes))
     # print('Queue size: ', len(_node_ids))
-
-
