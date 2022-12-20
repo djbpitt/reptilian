@@ -1,15 +1,11 @@
-# ###
-# External imports
-# ###
+
 import pprint
 
-pp = pprint.PrettyPrinter(indent=2)
-
-# ###
-# Local imports
-# ###
 from import_witnesses import import_witnesses
 from alignment_tree import *
+from visualisation import visualize_table
+
+pp = pprint.PrettyPrinter(indent=2)
 
 # ###
 # Create full token array and related resources from witness data
