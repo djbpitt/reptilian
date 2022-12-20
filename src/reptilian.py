@@ -3,6 +3,7 @@ import pprint
 from import_witnesses import import_witnesses
 from alignment_tree import *
 from visualization import *
+from export import *
 
 pp = pprint.PrettyPrinter(indent=2)
 
@@ -69,6 +70,7 @@ while nodes_to_process:
 #   with_branches.gv.svg
 #   table-output.html
 # ###
-visualize_graph(alignment_tree, token_array)
-visualize_graph_no_branching_nodes(alignment_tree, token_array)
-visualize_table(alignment_tree, token_array, len(witnesses))
+# visualize_graph(alignment_tree, token_array)
+# visualize_graph_no_branching_nodes(alignment_tree, token_array)
+# visualize_table(alignment_tree, token_array, len(witnesses))
+export_unaligned(alignment_tree, token_array)
