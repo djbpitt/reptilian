@@ -11,7 +11,16 @@
 # https://www.cse.uoi.gr/~tsap/teaching/cse012/tutorials/Introduction-SciKit-Learn-Clustering.html
 #
 # https://joernhees.de/blog/2015/08/26/scipy-hierarchical-clustering-and-dendrogram-tutorial/
+#
+# Normalization: https://ryanwingate.com/intro-to-machine-learning/unsupervised/hierarchical-clustering/
+# See also:
+# https://towardsai.net/p/data-science/scaling-vs-normalizing-data-5c3514887a84
+# https://benalexkeen.com/feature-scaling-with-scikit-learn/
+# https://www.digitalocean.com/community/tutorials/standardscaler-function-in-python
+# https://www.digitalocean.com/community/tutorials/normalize-data-in-python (about the axis parameter)
+
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn import preprocessing
 import sklearn.metrics as metrics
 from sklearn.cluster import AgglomerativeClustering as ag
 from matplotlib import pyplot as plt
@@ -51,7 +60,9 @@ darwin_X = darwin_vectorizer.fit_transform((node125))
 darwin_feature_matrix = darwin_X.toarray()
 print("Darwin Feature Matrix (witness, token)")
 print(darwin_feature_matrix)
-
+darwin_feature_matrix_normalized = preprocessing.normalize(darwin_feature_matrix)
+print("With normalization")
+print(darwin_feature_matrix_normalized)
 # C = metrics.pairwise.cosine_similarity(feature_matrix)
 # print('Cosine Similarity')
 # print(C)
@@ -70,8 +81,14 @@ print(darwin_feature_matrix)
 # print(c)
 
 darwin_Z = linkage(darwin_feature_matrix, 'ward')
+darwin_Z_normalized = linkage(darwin_feature_matrix_normalized, 'ward')
 print("scipy: Agglomerative Clustering")
 print(darwin_Z)
+print("With normalization")
+print(darwin_Z_normalized)
 darwin_c, darwin_coph_dists = cophenet(darwin_Z, pdist(darwin_feature_matrix))
+darwin_c_normalized, darwin_coph_dists = cophenet(darwin_Z_normalized, pdist(darwin_feature_matrix_normalized))
 print("Cophenetic Correlation Coefficient")
 print(darwin_c)
+print("With normalization")
+print(darwin_c_normalized)
