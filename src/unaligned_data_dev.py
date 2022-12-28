@@ -25,7 +25,7 @@ from sklearn import preprocessing
 import sklearn.metrics as metrics
 from sklearn.cluster import AgglomerativeClustering as ag
 from matplotlib import pyplot as plt
-from scipy.cluster.hierarchy import dendrogram, linkage
+from scipy.cluster.hierarchy import dendrogram, linkage, fcluster, ward
 import numpy as np
 from scipy.cluster.hierarchy import cophenet
 from scipy.spatial.distance import pdist
@@ -40,23 +40,8 @@ for node in darwin:
     if node["nodeno"] == 125:
         node125 = node["readings"] # list of lists
 
-# corpus = [
-#     ['this', 'is', 'the', 'first', 'document', '.'],
-#     ['this', 'document', 'is', 'the', 'second', 'document', '.'],
-#     ['and', 'this', 'is', 'the', 'third', 'one', '.'],
-#     ['is', 'this', 'the', 'first', 'document', '?'],
-# ]
 def dummy(doc):
     return doc
-
-# vectorizer = CountVectorizer(tokenizer=dummy, preprocessor=dummy)
-# X = vectorizer.fit_transform(corpus)
-# feature_names = vectorizer.get_feature_names_out()
-# feature_matrix = X.toarray()
-# print("Feature Names")
-# print(feature_names)
-# print("Feature Matrix (doc, feature)")
-# print(feature_matrix)
 
 darwin_vectorizer = CountVectorizer(tokenizer=dummy, preprocessor=dummy)
 darwin_X = darwin_vectorizer.fit_transform((node125))
@@ -119,3 +104,7 @@ plt.bar(k, y)
 plt.xlabel('Number of clusters', fontsize = 20)
 plt.ylabel('S(i)', fontsize = 20)
 plt.show()
+print(silhouette_scores)
+silhouette = max(silhouette_scores, key=silhouette_scores.get)
+print(f"{silhouette=}")
+print(fcluster(darwin_Z_normalized, silhouette, criterion="maxclust"))
