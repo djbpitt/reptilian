@@ -92,7 +92,7 @@ dendrogram(
     leaf_font_size=8.,  # font size for the x axis labels
 )
 plt.show()
-# pp.pprint(dir(darwin_Z_normalized))
+
 k = range(2, 5)
 silhouette_scores = {}
 silhouette_scores.fromkeys(k)
@@ -104,7 +104,7 @@ plt.bar(k, y)
 plt.xlabel('Number of clusters', fontsize = 20)
 plt.ylabel('S(i)', fontsize = 20)
 plt.show()
-print(silhouette_scores)
-silhouette = max(silhouette_scores, key=silhouette_scores.get)
-print(f"{silhouette=}")
+silhouette = max(silhouette_scores, key=silhouette_scores.get) # key with highest value
 print(fcluster(darwin_Z_normalized, silhouette, criterion="maxclust"))
+# Silhouette, like elbow, cannot find an endpoint (all singletons or all one cluster)
+#   because it evaluates change and the endpoints have no basis for comparison
