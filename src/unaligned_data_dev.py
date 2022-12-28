@@ -18,6 +18,7 @@
 # https://benalexkeen.com/feature-scaling-with-scikit-learn/
 # https://www.digitalocean.com/community/tutorials/standardscaler-function-in-python
 # https://www.digitalocean.com/community/tutorials/normalize-data-in-python (about the axis parameter)
+# https://twintowertech.com/2020/03/22/automatic-clustering-with-silhouette-analysis-on-agglomerative-hierarchical-clustering/
 
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn import preprocessing
@@ -29,6 +30,8 @@ import numpy as np
 from scipy.cluster.hierarchy import cophenet
 from scipy.spatial.distance import pdist
 import json
+import pprint
+pp = pprint.PrettyPrinter(2)
 
 with open("unaligned_data.json", "r") as f:
     darwin = json.load(f)
@@ -60,6 +63,7 @@ darwin_X = darwin_vectorizer.fit_transform((node125))
 darwin_feature_matrix = darwin_X.toarray()
 print("Darwin Feature Matrix (witness, token)")
 print(darwin_feature_matrix)
+print(darwin_feature_matrix.shape)
 darwin_feature_matrix_normalized = preprocessing.normalize(darwin_feature_matrix)
 print("With normalization")
 print(darwin_feature_matrix_normalized)
@@ -80,8 +84,8 @@ print(darwin_feature_matrix_normalized)
 # print("Cophenetic Correlation Coefficient")
 # print(c)
 
-darwin_Z = linkage(darwin_feature_matrix, 'ward')
-darwin_Z_normalized = linkage(darwin_feature_matrix_normalized, 'ward')
+darwin_Z = linkage(darwin_feature_matrix, 'ward', optimal_ordering=True)
+darwin_Z_normalized = linkage(darwin_feature_matrix_normalized, 'ward', optimal_ordering=True)
 print("scipy: Agglomerative Clustering")
 print(darwin_Z)
 print("With normalization")
@@ -92,3 +96,26 @@ print("Cophenetic Correlation Coefficient")
 print(darwin_c)
 print("With normalization")
 print(darwin_c_normalized)
+
+plt.figure(figsize=(25, 10))
+plt.title('Hierarchical Clustering Dendrogram')
+plt.xlabel('sample index')
+plt.ylabel('distance')
+dendrogram(
+    darwin_Z_normalized,
+    leaf_rotation=90.,  # rotates the x axis labels
+    leaf_font_size=8.,  # font size for the x axis labels
+)
+plt.show()
+# pp.pprint(dir(darwin_Z_normalized))
+k = range(2, 5)
+silhouette_scores = {}
+silhouette_scores.fromkeys(k)
+ag_list = [ag(n_clusters=i) for i in k]
+for i, j in enumerate(k):
+    silhouette_scores[j] = metrics.silhouette_score(darwin_Z_normalized, ag_list[i].fit_predict(darwin_Z_normalized))
+y = list(silhouette_scores.values())
+plt.bar(k, y)
+plt.xlabel('Number of clusters', fontsize = 20)
+plt.ylabel('S(i)', fontsize = 20)
+plt.show()
