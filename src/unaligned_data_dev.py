@@ -36,8 +36,8 @@ def render_dendrogram(current_linkage_object):
     plt.ylabel('distance')
     dendrogram(
         current_linkage_object,
-        leaf_rotation=90.,  # rotates the x axis labels
-        leaf_font_size=8.,  # font size for the x axis labels
+        # leaf_rotation=90.,  # rotates the x axis labels
+        leaf_font_size=20.,  # font size for the x axis labels
     )
     plt.show()
 
@@ -67,14 +67,14 @@ def group_readings_by_cluster(linkage_object, silhouette):
 
 
 for node in darwin:
-    if node["nodeno"] < 150:
-        current_node = node["readings"] # list of lists
-        current_linkage_object, current_cophenetic = create_linkage_object(current_node)
-        current_silhouette, current_silhouette_range = compute_silhouette_cutoff(current_linkage_object)
-        readings_by_cluster = group_readings_by_cluster(current_linkage_object, current_silhouette)
-        if current_silhouette > 2:
-            print(node["nodeno"], readings_by_cluster, current_silhouette, current_cophenetic)
-            # render_dendrogram(current_linkage_object)
-            # render_silhouette_profile(range(2, 5), current_silhouette_range)
+    current_node = node["readings"] # list of lists
+    current_linkage_object, current_cophenetic = create_linkage_object(current_node)
+    current_silhouette, current_silhouette_range = compute_silhouette_cutoff(current_linkage_object)
+    readings_by_cluster = group_readings_by_cluster(current_linkage_object, current_silhouette)
+    if node["nodeno"] == 1146:
+        print(node["nodeno"], readings_by_cluster, current_silhouette, current_cophenetic)
+        print(current_linkage_object)
+        render_dendrogram(current_linkage_object)
+        render_silhouette_profile(range(2, 5), current_silhouette_range)
 
 
