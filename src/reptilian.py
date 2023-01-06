@@ -1,7 +1,7 @@
 import pprint
 
 from import_witnesses import import_witnesses
-from alignment_tree import *
+from alignment_tree import * # TODO: Fix indirect import of create_token_array()
 from visualization import *
 from export import *
 
