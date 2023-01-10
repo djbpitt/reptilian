@@ -8,6 +8,7 @@ import numpy as np
 from scipy.cluster.hierarchy import cophenet
 from scipy.spatial.distance import pdist
 import json
+from collections import deque
 import pprint
 from alignment_tree import * # TODO: Fix indirect import of create_token_array()
 pp = pprint.PrettyPrinter(2)
@@ -26,7 +27,8 @@ def dummy(doc):
 def create_linkage_object(input_node):
     """Prepare witness data for clustering
 
-    Input: Tokens of individual unaligned node as list of token lists
+    Input:
+        input_node : Tokens of individual unaligned node as list of token lists
 
     Returns:
         Normalized distance matrix of token counts per witness (Ward linkage method)
@@ -45,7 +47,8 @@ def create_linkage_object(input_node):
 def render_dendrogram(current_linkage_object):
     """Render dendrogram of single unaligned node
 
-    Input: linkage object
+    Input:
+        current_linkage_object : linkage object
 
     Returns: Void (renders image with matplotlib)
     """
@@ -64,7 +67,8 @@ def render_dendrogram(current_linkage_object):
 def compute_silhouette_cutoff(current_linkage_object) -> int:
     """Apply silhouette method to find optimum number of clusters
 
-    Input: linkage object
+    Input:
+        current_linkage_object : linkage object
 
     Returns:
         Optimal number of clusters (key with highest value)
@@ -88,8 +92,8 @@ def render_silhouette_profile(silhouette_range, silhouette_values):
     """Render histogram of silhouette values
 
     Input:
-        Range of cluster numbers to test (1 < k < n - 1)
-        Dictionary of silhouette values by k
+        silhouette_range : Range of cluster numbers to test (1 < k < n - 1)
+        silhouette_values : Dictionary of silhouette values by k
 
     Returns: Void (renders histogram)
     """
@@ -103,8 +107,8 @@ def group_readings_by_cluster(linkage_object, silhouette):
     """Return mapping of readings to clusters
 
     Input:
-        Linkage object
-        Number of clusters (from silhouette)
+        linkage_object : Linkage object
+        silhouette : Number of clusters (from silhouette)
 
     Returns: list of cluster numbers, one per reading
     """
@@ -177,19 +181,57 @@ for node in darwin: # Each unaligned zone is its own node
     # readings_by_cluster = group_readings_by_cluster(current_linkage_object, current_silhouette)
     if node["nodeno"] == 1146:
         # print(node["nodeno"], readings_by_cluster, current_silhouette, current_cophenetic)
-        print(node["nodeno"], current_cophenetic)
-        for witness_number, witness_data in enumerate(current_node):
-            print(witness_number, ': ', ' '.join(witness_data))
+        # print(node["nodeno"], current_cophenetic)
+        global_token_array, global_token_membership_array, global_token_witness_offset_array, global_token_ranges = create_token_array(current_node)
+        # print(f"{global_token_array=}")
+        # print(f"{global_token_membership_array=}")
+        # print(f"{global_token_witness_offset_array=}")
+        print(f"{global_token_ranges=}")
+        # for witness_number, witness_data in enumerate(current_node):
+        #     print(witness_number, ': ', ' '.join(witness_data))
         print(current_linkage_object)
-        render_dendrogram(current_linkage_object)
+        # render_dendrogram(current_linkage_object)
         merge_stages = {} # alignment trees for merged nodes
         for row_number, row in enumerate(current_linkage_object):
+            # In a linkage object the columns are:
+            #   0 : (super)witness id
+            #   1 : (super)witness id
+            #   2 : distance
+            #   3 : number of original witnesses in resulting cluster
+            # Witness id is:
+            #   Real witness if less than total witness count
+            #   Constructed superwitness if greater than or equal to witness count
+            #   To get from witness id to original witnesses:
+            #       Witness id less than total witness count is original witness
+            #       Otherwise, witness id - total witness count - 1 = row in linkage object
+            #           Apply recursively and collect all values less than witness count
             new_node_number = len(current_node) + row_number
-            if row[0] < len(current_node) and row[1] < len(current_node):
-                merge_stages[new_node_number] = align_two_readings([current_node[int(row[0])], current_node[int(row[1])]])
-            elif row[0] < len(current_node) or row[1] < len(current_node):
+            row_0_witness_id = int(row[0])
+            row_1_witness_id = int(row[1])
+            witness_ids = (row_0_witness_id, row_1_witness_id)
+            if row_0_witness_id < len(current_node) and row_1_witness_id < len(current_node):
+                print("Merging two single readings:", row_0_witness_id, 'and', row_1_witness_id)
+                interim_alignment_tree = align_two_readings([current_node[row_0_witness_id], current_node[row_1_witness_id]])
+                # print("Ranges for alignment tree:", interim_alignment_tree.nodes[0]["token_ranges"])
+                # print("Corresponding global ranges:", (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))
+                adjustments_for_witnesses = [g[0] - l[0] for l, g in zip(interim_alignment_tree.nodes[0]["token_ranges"], (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))]
+                # print(f"{adjustments_for_witnesses=}")
+                for node_no in interim_alignment_tree.nodes:
+                    for index, range in enumerate(interim_alignment_tree.nodes[node_no]["token_ranges"]):
+                        # print("Local range:", range) # local range
+                        adjusted_range = tuple(item + adjustments_for_witnesses[index] for item in range)
+                        # print("Adjusted range:", adjusted_range)
+                        # print(global_token_array[adjusted_range[0]: adjusted_range[1]])
+                        interim_alignment_tree.nodes[node_no]["token_ranges"][index] = adjusted_range
+                merge_stages[new_node_number] = interim_alignment_tree
+                # print(f"{merge_stages[new_node_number].nodes=}")
+                for node in merge_stages[new_node_number].nodes:
+                    print(merge_stages[new_node_number].nodes[node])
+                print(f"{merge_stages[new_node_number].edges=}")
+            elif row_0_witness_id < len(current_node) or row_1_witness_id < len(current_node):
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
                 merge_stages[new_node_number] = "Merge two alignment trees"
-        for key, value in merge_stages.items():
-            print(key, value)
+        # print("Merge stages:")
+        # for key, value in merge_stages.items():
+        #     print(key, value)
