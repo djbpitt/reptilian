@@ -174,6 +174,179 @@ def align_two_readings(readings:list):
     return alignment_tree
 
 
+def check_for_block_contains_witness_and_repetition(_suffix_array, _token_membership_array, _lcp_interval: LcpIntervalCandidate) -> bool:
+    """Write a docstring someday
+
+    The first witness (0) is the singleton
+    Filter out blocks that have no relation with witness we are adding
+    A block should know which witnesses it’s in
+
+    Number of prefixes >= total number of witnesses
+    Accumulate set of witness sigla for prefixes
+    if:
+        no witness occurs more than once, return True to keep this block
+    else:
+        return False
+    """
+    print(f"{_lcp_interval.lcp_start_offset=}")
+    print(f"{_lcp_interval.lcp_end_offset=}")
+    print(type(range))
+    print(range(3, 4 + 1))
+    print(range(_lcp_interval.lcp_start_offset, _lcp_interval.lcp_end_offset + 1))
+    _witnesses_found = []
+    for _lcp_interval_item_offset in range(_lcp_interval.lcp_start_offset, _lcp_interval.lcp_end_offset + 1):
+        _token_position = _suffix_array.SA[_lcp_interval_item_offset]  # point from prefix to suffix array position
+        _witness_siglum = _token_membership_array[
+            _token_position]  # point from token array position to witness identifier
+        if _witness_siglum in _witnesses_found:
+            return False
+        else:
+            _witnesses_found.append(_witness_siglum)
+    if 0 in _witnesses_found:
+        return True
+    else:
+        return False
+
+
+def create_blocks_for_witness_and_alignment_tree(_suffix_array, _token_membership_array):
+    """Write a docstring someday
+
+    The singleton witness is witness 0, identifiable from the token_membership_array
+    Other witnesses (two or more) follow
+
+    Look at changes in length of LCP array
+    Initial value is 0 or -1 because it's a comparison with previous, and first has no previous
+    Next value is number of tokens shared with previous
+    Exact length doesn't matter, but if it changes, new pattern:
+        If it stays the same, take note but do nothing yet; it means that the pattern repeats
+        No change for a while, then goes to 0:
+            Number of repetitions plus 1, e.g., 5 5 5 0 = 4 instances of 5
+            Once it changes to 0, we've seen complete pattern
+        Changer to smaller means hidden, deeper block
+        Changes to longer means ???
+    """
+    _accumulator = []  # lcp positions (not values) since most recent 0
+    _frequent_sequences = []  # lcp intervals to be considered for mfs
+    _lcp_array = _suffix_array._LCP_values
+    #
+    # lcp value
+    # if == 0 it's a new interval, so:
+    #   1. if there is already an accumulation, commit (process) it
+    #      "committing the buffer" means checking for repetition and depth
+    #          if it passes check: store in mfs list
+    #          otherwise throw it away
+    #   2. clear buffer (accumulator) and begin accumulating new buffer with the new offset with 0 value
+    # otherwise it isn't zero, so there must be a buffer in place, so add to it (for now)
+    for _offset, _value in enumerate(_lcp_array):
+        if not _accumulator and _value == 0:  # if accumulator is empty and new value is 0, do nothing
+            continue
+        elif not _accumulator:  # accumulator is empty and new value is non-zero, so begin new accumulator
+            _accumulator.append(LcpIntervalCandidate(lcp_start_offset=_offset - 1, lcp_interval_token_count=_value))
+        elif _value > _accumulator[-1].lcp_interval_token_count:  # new interval, so add to accumulator and continue
+            _accumulator.append(LcpIntervalCandidate(lcp_start_offset=_offset - 1, lcp_interval_token_count=_value))
+        elif _value == _accumulator[-1].lcp_interval_token_count:  # same block as before, so do nothing
+            continue
+        else:  # new value is less than top of accumulator, so pop everything that is higher
+            # Positions in lcp array and suffix array coincide:
+            #   The lcp array value is the length of the sequence
+            #   The suffix array value is the start position of the sequence
+            # Assume accumulator values (offsets into lcp array) point to [3, 6] and new value is 4, so:
+            #   First: Pop pointer to 6 (length value in lcp array), store in frequent_sequences
+            #   Second: Push new pointer to same position in lcp array, but change value in lcp array to 4
+            while _accumulator and _accumulator[-1].lcp_interval_token_count > _value:
+                # Create pointer to last closed block that is not filtered (like frequent_sequences)
+                _newly_closed_block = _accumulator.pop()
+                _newly_closed_block.lcp_end_offset = _offset - 1
+                if check_for_block_contains_witness_and_repetition(_suffix_array, _token_membership_array, _newly_closed_block):
+                    _frequent_sequences.append(
+                        [_newly_closed_block.lcp_start_offset, _newly_closed_block.lcp_end_offset,
+                         _newly_closed_block.lcp_interval_token_count])
+            # There are three options:
+            #   1. there is content in the accumulator and latest value is not 0
+            #   2. accumulator is empty and latest value is 0
+            #   3. accumulator is empty and latest value is not 0
+            # (the fourth logical combination, content in the accumulator and 0 value, cannot occur
+            #     because a 0 value will empty the accumulator)
+            if _value > 0 and (not _accumulator or _accumulator[-1].lcp_interval_token_count != _value):
+                _accumulator.append(LcpIntervalCandidate(lcp_start_offset=_newly_closed_block.lcp_start_offset,
+                                                         lcp_interval_token_count=_value))
+    # End of lcp array; run through any residual accumulator values
+    while _accumulator:
+        _newly_closed_block = _accumulator.pop()
+        _newly_closed_block.lcp_end_offset = len(_lcp_array) - 1
+        if check_for_block_contains_witness_and_repetition(_suffix_array, _token_membership_array, _newly_closed_block):
+            _frequent_sequences.append([_newly_closed_block.lcp_start_offset, len(_lcp_array) - 1,
+                                        _newly_closed_block.lcp_interval_token_count])
+    return _frequent_sequences
+
+
+def add_reading_to_alignment_tree(readings:list):
+    """Fold new reading into existing alignment tree
+
+    Input:
+        readings: list of three or more token lists
+
+    Returns: Alignment tree (not variant graph)
+    """
+    # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
+    token_array, token_membership_array, token_witness_offset_array, token_ranges = create_token_array(readings)
+    print("Inside add_reading_to_alignment_tree()")
+    print(f"{token_array=}")
+    print(f"{token_membership_array=}")
+    print(f"{token_witness_offset_array=}")
+    print(f"{token_ranges=}")
+
+    alignment_tree = create_tree()
+    alignment_tree.add_node(0, type="potential", token_ranges=token_ranges)
+
+    # ###
+    # Initialize alignment tree and add root
+    # nodes_to_process is queue of nodes to check for expansion
+    # (deque for performance reasons; we use only FIFO, so regular queue)
+    # ###
+    alignment_tree = create_tree()
+    alignment_tree.add_node(0, type="potential", token_ranges=token_ranges)
+    _sa = create_suffix_array(token_array)
+
+    print(_sa)
+    frequent_sequences = create_blocks_for_witness_and_alignment_tree(_sa, token_membership_array)
+    print(frequent_sequences)
+    return
+
+    # ###
+    # Expand tree, starting at root
+    # ###
+    counter = 0
+    while nodes_to_process:
+        # print('Iteration #', counter)
+        counter += 1
+        # print("Head of queue: ", alignment_tree.nodes[nodes_to_process[0]]['token_ranges'])
+        if counter == 1:  # special handling for root node
+            expand_node(alignment_tree,
+                        nodes_to_process,
+                        token_array,
+                        token_membership_array,
+                        len(token_ranges))
+            continue
+        # All nodes except root
+        local_token_array = []
+        local_token_membership_array = []
+        for index, token_range in enumerate(alignment_tree.nodes[nodes_to_process[0]]['token_ranges']):
+            local_token_array.extend(token_array[token_range[0]: token_range[1]])
+            local_token_membership_array.extend(token_membership_array[token_range[0]: token_range[1]])
+            if index < len(token_ranges) - 1:
+                local_token_array.append(' #' + str(index + 1) + ' ')
+                local_token_membership_array.append(' #' + str(index + 1) + ' ')
+        # print("Local token array: ", local_token_array)
+        # print("Local token membership array: ", local_token_membership_array)
+        expand_node(alignment_tree,
+                    nodes_to_process,
+                    local_token_array,
+                    local_token_membership_array,
+                    len(token_ranges))
+    return alignment_tree
+
+
 for node in darwin: # Each unaligned zone is its own node
     current_node = node["readings"] # list of lists
     current_linkage_object, current_cophenetic = create_linkage_object(current_node)
@@ -190,7 +363,7 @@ for node in darwin: # Each unaligned zone is its own node
         # for witness_number, witness_data in enumerate(current_node):
         #     print(witness_number, ': ', ' '.join(witness_data))
         print(current_linkage_object)
-        # render_dendrogram(current_linkage_object)
+        render_dendrogram(current_linkage_object)
         merge_stages = {} # alignment trees for merged nodes
         for row_number, row in enumerate(current_linkage_object):
             # In a linkage object the columns are:
@@ -210,28 +383,41 @@ for node in darwin: # Each unaligned zone is its own node
             row_1_witness_id = int(row[1])
             witness_ids = (row_0_witness_id, row_1_witness_id)
             if row_0_witness_id < len(current_node) and row_1_witness_id < len(current_node):
-                print("Merging two single readings:", row_0_witness_id, 'and', row_1_witness_id)
+                # print("Merging two single readings:", row_0_witness_id, 'and', row_1_witness_id)
                 interim_alignment_tree = align_two_readings([current_node[row_0_witness_id], current_node[row_1_witness_id]])
                 # print("Ranges for alignment tree:", interim_alignment_tree.nodes[0]["token_ranges"])
                 # print("Corresponding global ranges:", (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))
                 adjustments_for_witnesses = [g[0] - l[0] for l, g in zip(interim_alignment_tree.nodes[0]["token_ranges"], (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))]
                 # print(f"{adjustments_for_witnesses=}")
                 for node_no in interim_alignment_tree.nodes:
-                    for index, range in enumerate(interim_alignment_tree.nodes[node_no]["token_ranges"]):
-                        # print("Local range:", range) # local range
-                        adjusted_range = tuple(item + adjustments_for_witnesses[index] for item in range)
+                    for index, token_range in enumerate(interim_alignment_tree.nodes[node_no]["token_ranges"]):
+                        # print("Local token range:", token_range) # local range
+                        adjusted_range = tuple(item + adjustments_for_witnesses[index] for item in token_range)
                         # print("Adjusted range:", adjusted_range)
                         # print(global_token_array[adjusted_range[0]: adjusted_range[1]])
                         interim_alignment_tree.nodes[node_no]["token_ranges"][index] = adjusted_range
                 merge_stages[new_node_number] = interim_alignment_tree
                 # print(f"{merge_stages[new_node_number].nodes=}")
-                for node in merge_stages[new_node_number].nodes:
-                    print(merge_stages[new_node_number].nodes[node])
-                print(f"{merge_stages[new_node_number].edges=}")
+                # for node in merge_stages[new_node_number].nodes:
+                #     print(merge_stages[new_node_number].nodes[node])
+                # print(f"{merge_stages[new_node_number].edges=}")
             elif row_0_witness_id < len(current_node) or row_1_witness_id < len(current_node):
+                # For merged node the tokens are the ranges in the root, which is the nodes[0] property
+                print("Merging singleton into alignment tree:", row_0_witness_id, 'and', row_1_witness_id)
+                tokens = []
+                for witness_id in sorted([row_0_witness_id, row_1_witness_id]):
+                    if witness_id < len(current_node): # singleton
+                        tokens.extend([current_node[witness_id]])
+                    else: # alignment tree
+                        for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
+                            tokens.extend([global_token_array[token_range[0]: token_range[1]]])
+                print(f"{tokens=}")
+                print(f"{len(tokens)=}")
+                add_reading_to_alignment_tree(tokens) # TODO: Just diagnostic printout for now
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
                 merge_stages[new_node_number] = "Merge two alignment trees"
-        # print("Merge stages:")
-        # for key, value in merge_stages.items():
-        #     print(key, value)
+        print("Merge stages:")
+        for key, value in merge_stages.items():
+            print(key, value)
+        pp.pprint(merge_stages[7])
