@@ -174,7 +174,7 @@ def align_two_readings(readings:list):
     return alignment_tree
 
 
-def check_for_block_contains_witness_and_repetition(_suffix_array, _token_membership_array, _lcp_interval: LcpIntervalCandidate) -> bool:
+def check_for_block_contains_witness_and_repetition(_suffix_array: SuffixArray, _token_membership_array: list, _lcp_interval: LcpIntervalCandidate) -> bool:
     """Write a docstring someday
 
     The first witness (0) is the singleton
@@ -188,11 +188,9 @@ def check_for_block_contains_witness_and_repetition(_suffix_array, _token_member
     else:
         return False
     """
-    print(f"{_lcp_interval.lcp_start_offset=}")
-    print(f"{_lcp_interval.lcp_end_offset=}")
-    print(type(range))
-    print(range(3, 4 + 1))
-    print(range(_lcp_interval.lcp_start_offset, _lcp_interval.lcp_end_offset + 1))
+    # print(f"{_lcp_interval.lcp_start_offset=}")
+    # print(f"{_lcp_interval.lcp_end_offset=}") # inclusive
+    # print(range(_lcp_interval.lcp_start_offset, _lcp_interval.lcp_end_offset + 1))
     _witnesses_found = []
     for _lcp_interval_item_offset in range(_lcp_interval.lcp_start_offset, _lcp_interval.lcp_end_offset + 1):
         _token_position = _suffix_array.SA[_lcp_interval_item_offset]  # point from prefix to suffix array position
@@ -208,7 +206,7 @@ def check_for_block_contains_witness_and_repetition(_suffix_array, _token_member
         return False
 
 
-def create_blocks_for_witness_and_alignment_tree(_suffix_array, _token_membership_array):
+def create_blocks_for_witness_and_alignment_tree(_suffix_array: SuffixArray, _token_membership_array: list):
     """Write a docstring someday
 
     The singleton witness is witness 0, identifiable from the token_membership_array
@@ -280,7 +278,36 @@ def create_blocks_for_witness_and_alignment_tree(_suffix_array, _token_membershi
     return _frequent_sequences
 
 
-def add_reading_to_alignment_tree(readings:list):
+def get_tokens_for_block(_block: Block, _suffix_array: SuffixArray, _ta: list):
+    """Return tokens for block
+
+    NB: Blocks are not necessarily full-depth or non-repeating here (they are in first-pass version)
+
+    Parameters:
+        _block: individual Block (values are SA start, LCP end, token count)
+        _sa : suffix array (provides LCP array)
+        _ta : full token array of all witnesses in block
+
+    Returns:
+        list of tokens
+
+    LCP start and end are 1-based offset into SA array (end position is inclusive)
+    """
+    _sa = _suffix_array.SA
+    _lcp = _suffix_array._LCP_values
+    # print(_suffix_array)
+    # print(f"{_sa=}")
+    # print(f"{_lcp=}")
+    # print(f"{_block=}")
+    # print(f"{_token_start_offset=}")
+    # print(f"{_block[2]=}")
+    _token_array_offsets = _sa[_block[0]: _block[1] + 1]
+    print(f"{_token_array_offsets=}")
+    for _t in _token_array_offsets:
+        print(_ta[_t: _t + _block[2]])
+    # print(" ".join(_ta[125: 125 + _block[2]]))
+
+def add_reading_to_alignment_tree(_readings:list):
     """Fold new reading into existing alignment tree
 
     Input:
@@ -289,15 +316,15 @@ def add_reading_to_alignment_tree(readings:list):
     Returns: Alignment tree (not variant graph)
     """
     # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
-    token_array, token_membership_array, token_witness_offset_array, token_ranges = create_token_array(readings)
-    print("Inside add_reading_to_alignment_tree()")
-    print(f"{token_array=}")
-    print(f"{token_membership_array=}")
-    print(f"{token_witness_offset_array=}")
-    print(f"{token_ranges=}")
+    _token_array, _token_membership_array, _token_witness_offset_array, _token_ranges = create_token_array(_readings)
+    # print("Inside add_reading_to_alignment_tree()")
+    # print(f"{_token_array=}")
+    # print(f"{_token_membership_array=}")
+    # print(f"{_token_witness_offset_array=}")
+    # print(f"{_token_ranges=}")
 
     alignment_tree = create_tree()
-    alignment_tree.add_node(0, type="potential", token_ranges=token_ranges)
+    alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
 
     # ###
     # Initialize alignment tree and add root
@@ -305,12 +332,14 @@ def add_reading_to_alignment_tree(readings:list):
     # (deque for performance reasons; we use only FIFO, so regular queue)
     # ###
     alignment_tree = create_tree()
-    alignment_tree.add_node(0, type="potential", token_ranges=token_ranges)
-    _sa = create_suffix_array(token_array)
+    alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
+    _sa = create_suffix_array(_token_array)
 
-    print(_sa)
-    frequent_sequences = create_blocks_for_witness_and_alignment_tree(_sa, token_membership_array)
-    print(frequent_sequences)
+    # print(_sa)
+    _frequent_sequences = create_blocks_for_witness_and_alignment_tree(_sa, _token_membership_array)
+    # print(_frequent_sequences) # List of lists; block is LCP interval start offset, end offset, and token count
+    print(_frequent_sequences[0])
+    get_tokens_for_block(_frequent_sequences[0], _sa, _token_array) # local token array, since that's what's in the suffix array
     return
 
     # ###
@@ -412,7 +441,6 @@ for node in darwin: # Each unaligned zone is its own node
                         for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
                             tokens.extend([global_token_array[token_range[0]: token_range[1]]])
                 print(f"{tokens=}")
-                print(f"{len(tokens)=}")
                 add_reading_to_alignment_tree(tokens) # TODO: Just diagnostic printout for now
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
