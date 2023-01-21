@@ -173,6 +173,11 @@ def create_blocks(_suffix_array, _token_membership_array, _witness_count):
 def find_longest_sequences(_frequent_sequences, _suffix_array):
     """Returns largest blocks from list of all blocks
 
+    Returns dictionary where the key is the length of the block and the value is a list of
+        start positions, one per witness
+
+    TODO: Input and output are different types of objects, so not a filter (eek!)
+
     Remove embedded prefixes"""
     _largest_blocks = {}  # key is token end position, value is (length, [witness-start-positions])
     for _frequent_sequence in _frequent_sequences:

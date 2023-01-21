@@ -10,7 +10,7 @@ from scipy.spatial.distance import pdist
 import json
 from collections import deque
 import pprint
-from alignment_tree import * # TODO: Fix indirect import of create_token_array()
+from alignment_tree import * # TODO: Fix indirect import of create_token_array(), find_longest_sequences()
 pp = pprint.PrettyPrinter(2)
 
 # ===
@@ -278,15 +278,20 @@ def create_blocks_for_witness_and_alignment_tree(_suffix_array: SuffixArray, _to
     return _frequent_sequences
 
 
-def get_tokens_for_block(_block: Block, _suffix_array: SuffixArray, _ta: list):
+def get_tokens_for_block(_block: dict, _suffix_array: SuffixArray, _ta: list):
     """Return tokens for block
 
     NB: Blocks are not necessarily full-depth or non-repeating here (they are in first-pass version)
 
     Parameters:
-        _block: individual Block (values are SA start, LCP end, token count)
+        _block: frequent sequence object (see below)
         _sa : suffix array (provides LCP array)
         _ta : full token array of all witnesses in block
+
+    _block is a dictionary, where:
+      key : end position of longest witness (used only to get rid of shorter, embedded sequences)
+      value: tuple of length (int) and start positions in each witness (list of ints)
+          To examine tokens we need the start position for just the first witness plus the length
 
     Returns:
         list of tokens
@@ -295,16 +300,19 @@ def get_tokens_for_block(_block: Block, _suffix_array: SuffixArray, _ta: list):
     """
     _sa = _suffix_array.SA
     _lcp = _suffix_array._LCP_values
+    _end, _starts = next(iter(_block.items())) # key is end position of first witness, value is (length, [all starts])
     # print(_suffix_array)
     # print(f"{_sa=}")
     # print(f"{_lcp=}")
     # print(f"{_block=}")
     # print(f"{_token_start_offset=}")
     # print(f"{_block[2]=}")
-    _token_array_offsets = _sa[_block[0]: _block[1] + 1]
-    print(f"{_token_array_offsets=}")
-    for _t in _token_array_offsets:
-        print(_ta[_t: _t + _block[2]])
+    _start = _starts[1][0]
+    # print(f"{_token_array_offsets=}")
+    # print(f"{_token_array_offsets=}")
+    print(f"{_start=}")
+    print(f"{_end=}")
+    print(_ta[_start: _end])
     # print(" ".join(_ta[125: 125 + _block[2]]))
 
 def add_reading_to_alignment_tree(_readings:list):
@@ -317,11 +325,6 @@ def add_reading_to_alignment_tree(_readings:list):
     """
     # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
     _token_array, _token_membership_array, _token_witness_offset_array, _token_ranges = create_token_array(_readings)
-    # print("Inside add_reading_to_alignment_tree()")
-    # print(f"{_token_array=}")
-    # print(f"{_token_membership_array=}")
-    # print(f"{_token_witness_offset_array=}")
-    # print(f"{_token_ranges=}")
 
     alignment_tree = create_tree()
     alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
@@ -337,9 +340,16 @@ def add_reading_to_alignment_tree(_readings:list):
 
     # print(_sa)
     _frequent_sequences = create_blocks_for_witness_and_alignment_tree(_sa, _token_membership_array)
-    # print(_frequent_sequences) # List of lists; block is LCP interval start offset, end offset, and token count
-    print(_frequent_sequences[0])
-    get_tokens_for_block(_frequent_sequences[0], _sa, _token_array) # local token array, since that's what's in the suffix array
+    # print(_frequent_sequences[0]) # List of lists; block is LCP interval start offset, end offset, and token count
+    # print(f"{len(_frequent_sequences)=}")
+    # longest sequences is a dictionary, where:
+    #   key : end position of longest witness (used only to get rid of shorter, embedded sequences)
+    #   value: tuple of length (int) and start positions in each witness (list of ints)
+    #       To examine tokens we need the start position for just the first witness plus the length
+    _longest_sequences = find_longest_sequences(_frequent_sequences, _sa)
+    for _key, _value in _longest_sequences.items():
+        print({_key: _value})
+        get_tokens_for_block({_key: _value}, _sa, _token_array)
     return
 
     # ###
@@ -440,7 +450,7 @@ for node in darwin: # Each unaligned zone is its own node
                     else: # alignment tree
                         for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
                             tokens.extend([global_token_array[token_range[0]: token_range[1]]])
-                print(f"{tokens=}")
+                # print(f"{tokens=}")
                 add_reading_to_alignment_tree(tokens) # TODO: Just diagnostic printout for now
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
