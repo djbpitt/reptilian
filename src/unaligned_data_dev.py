@@ -278,19 +278,19 @@ def create_blocks_for_witness_and_alignment_tree(_suffix_array: SuffixArray, _to
     return _frequent_sequences
 
 
-def get_tokens_for_block(_block: dict, _suffix_array: SuffixArray, _ta: list):
+def get_tokens_for_block(_block: tuple, _suffix_array: SuffixArray, _ta: list):
     """Return tokens for block
 
     NB: Blocks are not necessarily full-depth or non-repeating here (they are in first-pass version)
 
     Parameters:
-        _block: frequent sequence object (see below)
+        _block: tuple (see below)
         _sa : suffix array (provides LCP array)
         _ta : full token array of all witnesses in block
 
-    _block is a dictionary, where:
-      key : end position of longest witness (used only to get rid of shorter, embedded sequences)
-      value: tuple of length (int) and start positions in each witness (list of ints)
+    _block is a tuple of:
+      length
+      value: start positions in each witness (list of ints)
           To examine tokens we need the start position for just the first witness plus the length
 
     Returns:
@@ -300,19 +300,19 @@ def get_tokens_for_block(_block: dict, _suffix_array: SuffixArray, _ta: list):
     """
     _sa = _suffix_array.SA
     _lcp = _suffix_array._LCP_values
-    _end, _starts = next(iter(_block.items())) # key is end position of first witness, value is (length, [all starts])
+    _length, _starts = _block # unpack tuple
     # print(_suffix_array)
     # print(f"{_sa=}")
     # print(f"{_lcp=}")
     # print(f"{_block=}")
     # print(f"{_token_start_offset=}")
     # print(f"{_block[2]=}")
-    _start = _starts[1][0]
+    _start = _starts[0]
     # print(f"{_token_array_offsets=}")
     # print(f"{_token_array_offsets=}")
-    print(f"{_start=}")
-    print(f"{_end=}")
-    print(_ta[_start: _end])
+    # print(f"{_start=}")
+    # print(f"{_end=}")
+    print(_ta[_start: _start + _length])
     # print(" ".join(_ta[125: 125 + _block[2]]))
 
 def add_reading_to_alignment_tree(_readings:list):
@@ -347,9 +347,15 @@ def add_reading_to_alignment_tree(_readings:list):
     #   value: tuple of length (int) and start positions in each witness (list of ints)
     #       To examine tokens we need the start position for just the first witness plus the length
     _longest_sequences = find_longest_sequences(_frequent_sequences, _sa)
-    for _key, _value in _longest_sequences.items():
-        print({_key: _value})
-        get_tokens_for_block({_key: _value}, _sa, _token_array)
+    # Sort by order of new witness, breaking ties with total tokens that would be aligned
+    # We favor token count over depth because depth has already been encoded in the existing
+    #   alignment tree into which we're merging
+    _sorted_sequences = sorted(_longest_sequences.values(), key=lambda x: (x[1][0], -x[0]))
+    for _ss in _sorted_sequences:
+        print(_ss)
+        get_tokens_for_block(_ss, _sa, _token_array)
+    # TODO: Sort in other order, beam search checks for transposition
+    # NB: We don't replicate the extra step in Java used to break ties
     return
 
     # ###
