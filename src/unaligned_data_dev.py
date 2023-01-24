@@ -373,9 +373,29 @@ def add_reading_to_alignment_tree(_readings:list, _existing_alignment_tree:nx.Di
     # Sort blocks (_longest sequences) in alignment_tree order
     print("***_longest_sequences***")
     pp.pprint(_longest_sequences)
-    _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(), key=lambda x: (x[1][1],-x[0]))
-    print("***_sorted_blocks_by_alignment_tree***")
-    pp.pprint(_sorted_blocks_by_alignment_tree)
+    # The second value in the block is a position in the token array occupied by a token from one member of the
+    #   existing alignment tree. Use that to index into those nodes and it will return a node number.
+    print("***")
+    for i in _longest_sequences.values():
+        print(i, _nodes_in_existing_alignment_tree[i[1][1]])
+    print(list(zip(enumerate(_nodes_in_existing_alignment_tree))))
+    print("***")
+    # ###
+    # RESUME HERE
+    ###
+    # We've been sorting by the existing alignment tree incorrectly. Trying to fix it here
+    # suggests that there may also be an error in our _nodes_in_existing_alignment_tree list.
+    # We map nodes for tokens only for leaf nodes, and if we're walking all nodes in alignment
+    # tree, we may be stumbling over a branching node.
+    #
+    # Break the sort routines into separate functions and test them.
+    #
+    # We should revisit and scrutinize the beam search, as well.
+    ###
+    # _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(),
+    #                                           key=lambda x: (_nodes_in_existing_alignment_tree[x[1][1]],-x[0]))
+    # print("***_sorted_blocks_by_alignment_tree***")
+    # pp.pprint(_sorted_blocks_by_alignment_tree)
     print("***_sorted_blocks_by_singleton***")
     pp.pprint(_sorted_blocks_by_singleton)
     return
