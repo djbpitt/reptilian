@@ -52,6 +52,7 @@ def expand_node(_graph: nx.DiGraph, _node_ids: deque, _token_array, _token_membe
     _block_offsets_by_witness, _witness_offsets_to_blocks, _first_token_offset_in_block_by_witness, \
         _first_absolute_token_by_witness, _score_by_block = \
         prepare_for_beam_search(_witness_count, _token_membership_array, _largest_blocks)
+    # print(f"{_block_offsets_by_witness=}")
     _finished = perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witness,
                                     _witness_offsets_to_blocks, _score_by_block)
     # print(f"{_largest_blocks=}")
