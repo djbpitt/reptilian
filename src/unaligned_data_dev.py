@@ -315,7 +315,7 @@ def get_tokens_for_block(_block: tuple, _suffix_array: SuffixArray, _ta: list):
     print(_ta[_start: _start + _length])
     # print(" ".join(_ta[125: 125 + _block[2]]))
 
-def add_reading_to_alignment_tree(_readings:list):
+def add_reading_to_alignment_tree(_readings:list, _existing_alignment_tree:nx.DiGraph, _global_token_array_length: int):
     """Fold new reading into existing alignment tree
 
     Input:
@@ -326,16 +326,16 @@ def add_reading_to_alignment_tree(_readings:list):
     # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
     _token_array, _token_membership_array, _token_witness_offset_array, _token_ranges = create_token_array(_readings)
 
-    alignment_tree = create_tree()
-    alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
+    new_alignment_tree = create_tree()
+    new_alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
 
     # ###
     # Initialize alignment tree and add root
     # nodes_to_process is queue of nodes to check for expansion
     # (deque for performance reasons; we use only FIFO, so regular queue)
     # ###
-    alignment_tree = create_tree()
-    alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
+    new_alignment_tree = create_tree()
+    new_alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
     _sa = create_suffix_array(_token_array)
 
     # print(_sa)
@@ -350,12 +350,34 @@ def add_reading_to_alignment_tree(_readings:list):
     # Sort by order of new witness, breaking ties with total tokens that would be aligned
     # We favor token count over depth because depth has already been encoded in the existing
     #   alignment tree into which we're merging
-    _sorted_sequences = sorted(_longest_sequences.values(), key=lambda x: (x[1][0], -x[0]))
-    for _ss in _sorted_sequences:
-        print(_ss)
-        get_tokens_for_block(_ss, _sa, _token_array)
-    # TODO: Sort in other order, beam search checks for transposition
-    # NB: We don't replicate the extra step in Java used to break ties
+    #   We don't replicate the extra step in Java used to break ties
+    _sorted_blocks_by_singleton = sorted(_longest_sequences.values(), key=lambda x: (x[1][0], -x[0]))
+    # for _ss in _sorted_sequences:
+    #     print(_ss)
+    #     get_tokens_for_block(_ss, _sa, _token_array)
+    # Existing alignment tree is already sorted
+    # Array where each position is a token in the token array, and store there the node to which the token belongs
+    # Create mapping between nodes in existing alignment tree and tokens
+    # Create list of same length as global (sic) token array,
+    #   traverse nodes (except root) in existing alignment tree in order,
+    #   determine which tokens they contain,
+    #   place node identifier into list for that token.
+    # TODO: Wasted space in list for global token array when we're working only with local data
+    _nodes_in_existing_alignment_tree = [None] * _global_token_array_length
+    for _node in _existing_alignment_tree.nodes(data=True):
+        if _node[0] > 0:
+            print(_node[0], _node[1]["token_ranges"])
+            for _token_range in _node[1]["token_ranges"]:
+                _nodes_in_existing_alignment_tree[_token_range[0]: _token_range[1]] = [_node[0]] * (_token_range[1] - _token_range[0])
+    print(len(_nodes_in_existing_alignment_tree), _nodes_in_existing_alignment_tree)
+    # Sort blocks (_longest sequences) in alignment_tree order
+    print("***_longest_sequences***")
+    pp.pprint(_longest_sequences)
+    _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(), key=lambda x: (x[1][1],-x[0]))
+    print("***_sorted_blocks_by_alignment_tree***")
+    pp.pprint(_sorted_blocks_by_alignment_tree)
+    print("***_sorted_blocks_by_singleton***")
+    pp.pprint(_sorted_blocks_by_singleton)
     return
 
     # ###
@@ -367,7 +389,7 @@ def add_reading_to_alignment_tree(_readings:list):
         counter += 1
         # print("Head of queue: ", alignment_tree.nodes[nodes_to_process[0]]['token_ranges'])
         if counter == 1:  # special handling for root node
-            expand_node(alignment_tree,
+            expand_node(new_alignment_tree,
                         nodes_to_process,
                         token_array,
                         token_membership_array,
@@ -376,7 +398,7 @@ def add_reading_to_alignment_tree(_readings:list):
         # All nodes except root
         local_token_array = []
         local_token_membership_array = []
-        for index, token_range in enumerate(alignment_tree.nodes[nodes_to_process[0]]['token_ranges']):
+        for index, token_range in enumerate(new_alignment_tree.nodes[nodes_to_process[0]]['token_ranges']):
             local_token_array.extend(token_array[token_range[0]: token_range[1]])
             local_token_membership_array.extend(token_membership_array[token_range[0]: token_range[1]])
             if index < len(token_ranges) - 1:
@@ -384,12 +406,12 @@ def add_reading_to_alignment_tree(_readings:list):
                 local_token_membership_array.append(' #' + str(index + 1) + ' ')
         # print("Local token array: ", local_token_array)
         # print("Local token membership array: ", local_token_membership_array)
-        expand_node(alignment_tree,
+        expand_node(new_alignment_tree,
                     nodes_to_process,
                     local_token_array,
                     local_token_membership_array,
                     len(token_ranges))
-    return alignment_tree
+    return new_alignment_tree
 
 
 for node in darwin: # Each unaligned zone is its own node
@@ -442,6 +464,7 @@ for node in darwin: # Each unaligned zone is its own node
                         # print(global_token_array[adjusted_range[0]: adjusted_range[1]])
                         interim_alignment_tree.nodes[node_no]["token_ranges"][index] = adjusted_range
                 merge_stages[new_node_number] = interim_alignment_tree
+                # print(interim_alignment_tree.nodes(data=True))
                 # print(f"{merge_stages[new_node_number].nodes=}")
                 # for node in merge_stages[new_node_number].nodes:
                 #     print(merge_stages[new_node_number].nodes[node])
@@ -456,8 +479,9 @@ for node in darwin: # Each unaligned zone is its own node
                     else: # alignment tree
                         for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
                             tokens.extend([global_token_array[token_range[0]: token_range[1]]])
+                        existing_alignment_tree = merge_stages[witness_id]
                 # print(f"{tokens=}")
-                add_reading_to_alignment_tree(tokens) # TODO: Just diagnostic printout for now
+                add_reading_to_alignment_tree(tokens, existing_alignment_tree, len(global_token_array)) # TODO: Just diagnostic printout for now
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
                 merge_stages[new_node_number] = "Merge two alignment trees"
