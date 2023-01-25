@@ -373,42 +373,41 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
             print(_node[0], _node[1]["token_ranges"])
             for _token_range in _node[1]["token_ranges"]:
                 _nodes_in_existing_alignment_tree[_token_range[0]: _token_range[1]] = [_node[0]] * (_token_range[1] - _token_range[0])
-    print(len(_nodes_in_existing_alignment_tree), _nodes_in_existing_alignment_tree)
+    # print(len(_nodes_in_existing_alignment_tree), _nodes_in_existing_alignment_tree)
     # Sort blocks (_longest sequences) in alignment_tree order
     print("***_longest_sequences***")
     pp.pprint(_longest_sequences)
     # The second value in the block is a position in the token array occupied by a token from one member of the
     #   existing alignment tree. Use that to index into those nodes and it will return a node number.
-    print("***")
-    for i in _longest_sequences.values():
-        local_token_position_block_that_is_part_of_alignment_tree = i[1][1]
-        global_token_position_block_that_is_part_of_alignment_tree = _token_range_mapping[local_token_position_block_that_is_part_of_alignment_tree]
-        position_in_alignment_tree = _nodes_in_existing_alignment_tree[global_token_position_block_that_is_part_of_alignment_tree]
-        print(i, position_in_alignment_tree)
-        # Note: this should never happen
-        if not position_in_alignment_tree:
-            print(get_tokens_for_block(i, _sa, _token_array))
-            raise Exception("Block is not found in a node of the alignment tree. ")
-    print(list(zip(enumerate(_nodes_in_existing_alignment_tree))))
-    print("***")
+    # print("***")
+    # for i in _longest_sequences.values():
+    #     local_token_position_block_that_is_part_of_alignment_tree = i[1][1]
+    #     global_token_position_block_that_is_part_of_alignment_tree =
+    #     _token_range_mapping[local_token_position_block_that_is_part_of_alignment_tree]
+    #     position_in_alignment_tree = _nodes_in_existing_alignment_tree[
+    #     global_token_position_block_that_is_part_of_alignment_tree]
+    #     print(i, position_in_alignment_tree)
+    #     # Note: this should never happen
+    #     if not position_in_alignment_tree:
+    #         print(get_tokens_for_block(i, _sa, _token_array))
+    #         raise Exception("Block is not found in a node of the alignment tree. ")
+    # # print(list(zip(enumerate(_nodes_in_existing_alignment_tree))))
+    # print("***")
+    _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(),
+                                              key=lambda x: (_nodes_in_existing_alignment_tree[_token_range_mapping[x[1][1]]],-x[0]))
+    print("***_sorted_blocks_by_alignment_tree***")
+    pp.pprint(_sorted_blocks_by_alignment_tree)
+    print("***_sorted_blocks_by_singleton***")
+    pp.pprint(_sorted_blocks_by_singleton)
+
     # ###
     # RESUME HERE
     ###
-    # We've been sorting by the existing alignment tree incorrectly. Trying to fix it here
-    # suggests that there may also be an error in our _nodes_in_existing_alignment_tree list.
-    # We map nodes for tokens only for leaf nodes, and if we're walking all nodes in alignment
-    # tree, we may be stumbling over a branching node.
     #
     # Break the sort routines into separate functions and test them.
     #
     # We should revisit and scrutinize the beam search, as well.
     ###
-    # _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(),
-    #                                           key=lambda x: (_nodes_in_existing_alignment_tree[x[1][1]],-x[0]))
-    # print("***_sorted_blocks_by_alignment_tree***")
-    # pp.pprint(_sorted_blocks_by_alignment_tree)
-    print("***_sorted_blocks_by_singleton***")
-    pp.pprint(_sorted_blocks_by_singleton)
     return
 
     # ###
@@ -524,9 +523,9 @@ for node in darwin: # Each unaligned zone is its own node
                                 token_range_mapping.append(None)  # splitter token
                             token_range_mapping.extend(range(token_range[0], token_range[1]))
                         existing_alignment_tree = merge_stages[witness_id]
-                print("Tokens before we start merging...")
-                print(f"{tokens=}")
-                print("token_range_mapping list looks like this: " + str(token_range_mapping))
+                # print("Tokens before we start merging...")
+                # print(f"{tokens=}")
+                # print("token_range_mapping list looks like this: " + str(token_range_mapping))
                 add_reading_to_alignment_tree(tokens, token_range_mapping, existing_alignment_tree, len(global_token_array)) # TODO: Just diagnostic printout for now
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
