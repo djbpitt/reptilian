@@ -328,7 +328,7 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
     _token_array, _token_membership_array, _token_witness_offset_array, _token_ranges = create_token_array(_readings)
 
     if len(_token_array) != len(_token_range_mapping):
-        raise "The token range mapping should have the same length as the local token array."
+        raise Exception("The token range mapping should have the same length as the local token array.")
 
     new_alignment_tree = create_tree()
     new_alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
@@ -381,10 +381,14 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
     #   existing alignment tree. Use that to index into those nodes and it will return a node number.
     print("***")
     for i in _longest_sequences.values():
-        position_in_alignment_tree = _nodes_in_existing_alignment_tree[i[1][1]]
+        local_token_position_block_that_is_part_of_alignment_tree = i[1][1]
+        global_token_position_block_that_is_part_of_alignment_tree = _token_range_mapping[local_token_position_block_that_is_part_of_alignment_tree]
+        position_in_alignment_tree = _nodes_in_existing_alignment_tree[global_token_position_block_that_is_part_of_alignment_tree]
         print(i, position_in_alignment_tree)
+        # Note: this should never happen
         if not position_in_alignment_tree:
             print(get_tokens_for_block(i, _sa, _token_array))
+            raise Exception("Block is not found in a node of the alignment tree. ")
     print(list(zip(enumerate(_nodes_in_existing_alignment_tree))))
     print("***")
     # ###
@@ -480,7 +484,8 @@ for node in darwin: # Each unaligned zone is its own node
                 # print("Merging two single readings:", row_0_witness_id, 'and', row_1_witness_id)
                 interim_alignment_tree = align_two_readings([readings[row_0_witness_id], readings[row_1_witness_id]])
                 # print("Ranges for alignment tree:", interim_alignment_tree.nodes[0]["token_ranges"])
-                # print("Corresponding global ranges:", (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))
+                # print("Corresponding global ranges:", (global_token_ranges[row_0_witness_id],
+                # global_token_ranges[row_1_witness_id]))
                 adjustments_for_witnesses = [g[0] - l[0] for l, g in zip(interim_alignment_tree.nodes[0]["token_ranges"], (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))]
                 # print(f"{adjustments_for_witnesses=}")
                 for node_no in interim_alignment_tree.nodes:
@@ -507,8 +512,9 @@ for node in darwin: # Each unaligned zone is its own node
                     if witness_id < len(readings): # singleton
                         global_tokens_singleton = readings[witness_id]
                         global_token_range_singleton = global_token_ranges[witness_id]
-                        print("The tokens of the witness to be aligned in the original array is: "+str(global_tokens_singleton))
-                        print("The token ranges of the witness to be aligned is: "+str(global_token_range_singleton))
+                        # print("The tokens of the witness to be aligned in the original array is: "+
+                        # str(global_tokens_singleton))
+                        # print("The token ranges of the witness to be aligned is: "+str(global_token_range_singleton))
                         tokens.extend([global_tokens_singleton])
                         token_range_mapping.extend(range(global_token_range_singleton[0], global_token_range_singleton[1]))
                     else: # alignment tree
