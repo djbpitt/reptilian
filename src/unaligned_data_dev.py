@@ -315,7 +315,8 @@ def get_tokens_for_block(_block: tuple, _suffix_array: SuffixArray, _ta: list):
     print(_ta[_start: _start + _length])
     # print(" ".join(_ta[125: 125 + _block[2]]))
 
-def add_reading_to_alignment_tree(_readings:list, _existing_alignment_tree:nx.DiGraph, _global_token_array_length: int):
+
+def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _existing_alignment_tree:nx.DiGraph, _global_token_array_length: int):
     """Fold new reading into existing alignment tree
 
     Input:
@@ -377,7 +378,10 @@ def add_reading_to_alignment_tree(_readings:list, _existing_alignment_tree:nx.Di
     #   existing alignment tree. Use that to index into those nodes and it will return a node number.
     print("***")
     for i in _longest_sequences.values():
-        print(i, _nodes_in_existing_alignment_tree[i[1][1]])
+        position_in_alignment_tree = _nodes_in_existing_alignment_tree[i[1][1]]
+        print(i, position_in_alignment_tree)
+        if not position_in_alignment_tree:
+            print(get_tokens_for_block(i, _sa, _token_array))
     print(list(zip(enumerate(_nodes_in_existing_alignment_tree))))
     print("***")
     # ###
@@ -493,15 +497,28 @@ for node in darwin: # Each unaligned zone is its own node
                 # For merged node the tokens are the ranges in the root, which is the nodes[0] property
                 print("Merging singleton into alignment tree:", row_0_witness_id, 'and', row_1_witness_id)
                 tokens = []
+                # a linear list of integers that maps a position from the local token array to a position
+                # in the global token array
+                token_range_mapping = []
                 for witness_id in sorted([row_0_witness_id, row_1_witness_id]):
                     if witness_id < len(current_node): # singleton
-                        tokens.extend([current_node[witness_id]])
+                        global_tokens_singleton = current_node[witness_id]
+                        global_token_range_singleton = global_token_ranges[witness_id]
+                        print("The tokens of the witness to be aligned in the original array is: "+str(global_tokens_singleton))
+                        print("The token ranges of the witness to be aligned is: "+str(global_token_range_singleton))
+                        tokens.extend([global_tokens_singleton])
+                        token_range_mapping.extend(range(global_token_range_singleton[0], global_token_range_singleton[1]))
+                        token_range_mapping.append(None)   # splitter token
                     else: # alignment tree
                         for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
                             tokens.extend([global_token_array[token_range[0]: token_range[1]]])
+                            token_range_mapping.extend(range(token_range[0], token_range[1]))
+                            token_range_mapping.append(None)  # splitter token
                         existing_alignment_tree = merge_stages[witness_id]
-                # print(f"{tokens=}")
-                add_reading_to_alignment_tree(tokens, existing_alignment_tree, len(global_token_array)) # TODO: Just diagnostic printout for now
+                print("Tokens before we start merging...")
+                print(f"{tokens=}")
+                print("token_range_mapping list looks like this: " + str(token_range_mapping))
+                add_reading_to_alignment_tree(tokens, token_range_mapping, existing_alignment_tree, len(global_token_array)) # TODO: Just diagnostic printout for now
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
                 merge_stages[new_node_number] = "Merge two alignment trees"
