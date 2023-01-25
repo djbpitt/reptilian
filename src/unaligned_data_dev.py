@@ -327,6 +327,9 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
     # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
     _token_array, _token_membership_array, _token_witness_offset_array, _token_ranges = create_token_array(_readings)
 
+    if len(_token_array) != len(_token_range_mapping):
+        raise "The token range mapping should have the same length as the local token array."
+
     new_alignment_tree = create_tree()
     new_alignment_tree.add_node(0, type="potential", token_ranges=_token_ranges)
 
@@ -439,14 +442,14 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
 
 
 for node in darwin: # Each unaligned zone is its own node
-    current_node = node["readings"] # list of lists
-    current_linkage_object, current_cophenetic = create_linkage_object(current_node)
+    readings = node["readings"] # list of lists
+    current_linkage_object, current_cophenetic = create_linkage_object(readings)
     # current_silhouette, current_silhouette_range = compute_silhouette_cutoff(current_linkage_object)
     # readings_by_cluster = group_readings_by_cluster(current_linkage_object, current_silhouette)
     if node["nodeno"] == 1146:
         # print(node["nodeno"], readings_by_cluster, current_silhouette, current_cophenetic)
         # print(node["nodeno"], current_cophenetic)
-        global_token_array, global_token_membership_array, global_token_witness_offset_array, global_token_ranges = create_token_array(current_node)
+        global_token_array, global_token_membership_array, global_token_witness_offset_array, global_token_ranges = create_token_array(readings)
         # print(f"{global_token_array=}")
         # print(f"{global_token_membership_array=}")
         # print(f"{global_token_witness_offset_array=}")
@@ -469,13 +472,13 @@ for node in darwin: # Each unaligned zone is its own node
             #       Witness id less than total witness count is original witness
             #       Otherwise, witness id - total witness count - 1 = row in linkage object
             #           Apply recursively and collect all values less than witness count
-            new_node_number = len(current_node) + row_number
+            new_node_number = len(readings) + row_number
             row_0_witness_id = int(row[0])
             row_1_witness_id = int(row[1])
             witness_ids = (row_0_witness_id, row_1_witness_id)
-            if row_0_witness_id < len(current_node) and row_1_witness_id < len(current_node):
+            if row_0_witness_id < len(readings) and row_1_witness_id < len(readings):
                 # print("Merging two single readings:", row_0_witness_id, 'and', row_1_witness_id)
-                interim_alignment_tree = align_two_readings([current_node[row_0_witness_id], current_node[row_1_witness_id]])
+                interim_alignment_tree = align_two_readings([readings[row_0_witness_id], readings[row_1_witness_id]])
                 # print("Ranges for alignment tree:", interim_alignment_tree.nodes[0]["token_ranges"])
                 # print("Corresponding global ranges:", (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))
                 adjustments_for_witnesses = [g[0] - l[0] for l, g in zip(interim_alignment_tree.nodes[0]["token_ranges"], (global_token_ranges[row_0_witness_id], global_token_ranges[row_1_witness_id]))]
@@ -493,7 +496,7 @@ for node in darwin: # Each unaligned zone is its own node
                 # for node in merge_stages[new_node_number].nodes:
                 #     print(merge_stages[new_node_number].nodes[node])
                 # print(f"{merge_stages[new_node_number].edges=}")
-            elif row_0_witness_id < len(current_node) or row_1_witness_id < len(current_node):
+            elif row_0_witness_id < len(readings) or row_1_witness_id < len(readings):
                 # For merged node the tokens are the ranges in the root, which is the nodes[0] property
                 print("Merging singleton into alignment tree:", row_0_witness_id, 'and', row_1_witness_id)
                 tokens = []
@@ -501,19 +504,19 @@ for node in darwin: # Each unaligned zone is its own node
                 # in the global token array
                 token_range_mapping = []
                 for witness_id in sorted([row_0_witness_id, row_1_witness_id]):
-                    if witness_id < len(current_node): # singleton
-                        global_tokens_singleton = current_node[witness_id]
+                    if witness_id < len(readings): # singleton
+                        global_tokens_singleton = readings[witness_id]
                         global_token_range_singleton = global_token_ranges[witness_id]
                         print("The tokens of the witness to be aligned in the original array is: "+str(global_tokens_singleton))
                         print("The token ranges of the witness to be aligned is: "+str(global_token_range_singleton))
                         tokens.extend([global_tokens_singleton])
                         token_range_mapping.extend(range(global_token_range_singleton[0], global_token_range_singleton[1]))
-                        token_range_mapping.append(None)   # splitter token
                     else: # alignment tree
                         for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
                             tokens.extend([global_token_array[token_range[0]: token_range[1]]])
+                            if token_range_mapping:
+                                token_range_mapping.append(None)  # splitter token
                             token_range_mapping.extend(range(token_range[0], token_range[1]))
-                            token_range_mapping.append(None)  # splitter token
                         existing_alignment_tree = merge_stages[witness_id]
                 print("Tokens before we start merging...")
                 print(f"{tokens=}")
