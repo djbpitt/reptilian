@@ -499,7 +499,7 @@ for node in darwin: # Each unaligned zone is its own node
             elif row_0_witness_id < len(readings) or row_1_witness_id < len(readings):
                 # For merged node the tokens are the ranges in the root, which is the nodes[0] property
                 print("Merging singleton into alignment tree:", row_0_witness_id, 'and', row_1_witness_id)
-                tokens = []
+                local_readings = []
                 # a linear list of integers that maps a position from the local token array to a position
                 # in the global token array
                 token_range_mapping = []
@@ -510,11 +510,11 @@ for node in darwin: # Each unaligned zone is its own node
                         # print("The tokens of the witness to be aligned in the original array is: "+
                         # str(global_tokens_singleton))
                         # print("The token ranges of the witness to be aligned is: "+str(global_token_range_singleton))
-                        tokens.extend([global_tokens_singleton])
+                        local_readings.extend([global_tokens_singleton])
                         token_range_mapping.extend(range(global_token_range_singleton[0], global_token_range_singleton[1]))
                     else: # alignment tree
                         for token_range in merge_stages[witness_id].nodes[0]["token_ranges"]:
-                            tokens.extend([global_token_array[token_range[0]: token_range[1]]])
+                            local_readings.extend([global_token_array[token_range[0]: token_range[1]]])
                             if token_range_mapping:
                                 token_range_mapping.append(None)  # splitter token
                             token_range_mapping.extend(range(token_range[0], token_range[1]))
@@ -524,7 +524,7 @@ for node in darwin: # Each unaligned zone is its own node
                 # print("token_range_mapping list looks like this: " + str(token_range_mapping))
                 map_local_token_to_alignment_tree = create_alignment_tree_to_token_mapping(len(global_token_array),
                                                                         existing_alignment_tree, token_range_mapping)
-                add_reading_to_alignment_tree(tokens, map_local_token_to_alignment_tree)
+                add_reading_to_alignment_tree(local_readings, map_local_token_to_alignment_tree)
                 merge_stages[new_node_number] = "Merge singleton into alignment tree"
             else:
                 merge_stages[new_node_number] = "Merge two alignment trees"
