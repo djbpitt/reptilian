@@ -359,21 +359,6 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
     # for _ss in _sorted_sequences:
     #     print(_ss)
     #     get_tokens_for_block(_ss, _sa, _token_array)
-    # Existing alignment tree is already sorted
-    # Array where each position is a token in the token array, and store there the node to which the token belongs
-    # Create mapping between nodes in existing alignment tree and tokens
-    # Create list of same length as global (sic) token array,
-    #   traverse nodes (except root) in existing alignment tree in order,
-    #   determine which tokens they contain,
-    #   place node identifier into list for that token.
-    # TODO: Wasted space in list for global token array when we're working only with local data
-    _nodes_in_existing_alignment_tree = [None] * _global_token_array_length
-    for _node in _existing_alignment_tree.nodes(data=True):
-        if _node[0] > 0:
-            print(_node[0], _node[1]["token_ranges"])
-            for _token_range in _node[1]["token_ranges"]:
-                _nodes_in_existing_alignment_tree[_token_range[0]: _token_range[1]] = [_node[0]] * (_token_range[1] - _token_range[0])
-    # print(len(_nodes_in_existing_alignment_tree), _nodes_in_existing_alignment_tree)
     # Sort blocks (_longest sequences) in alignment_tree order
     print("***_longest_sequences***")
     pp.pprint(_longest_sequences)
@@ -383,8 +368,26 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
     # Order by position in the alignment tree, if equal, order by position in the singleton,
     #                                                       if equal prefer larger block
 
-    def map_local_token_to_alignment_tree(x):
-        return _nodes_in_existing_alignment_tree[_token_range_mapping[x]]
+    def create_alignment_tree_to_token_mapping():
+        # Existing alignment tree is already sorted
+        # Array where each position is a token in the token array, and store there the node to which the token belongs
+        # Create mapping between nodes in existing alignment tree and tokens
+        # Create list of same length as global (sic) token array,
+        #   traverse nodes (except root) in existing alignment tree in order,
+        #   determine which tokens they contain,
+        #   place node identifier into list for that token.
+        # TODO: Wasted space in list for global token array when we're working only with local data
+        _nodes_in_existing_alignment_tree = [None] * _global_token_array_length
+        for _node in _existing_alignment_tree.nodes(data=True):
+            if _node[0] > 0:
+                print(_node[0], _node[1]["token_ranges"])
+                for _token_range in _node[1]["token_ranges"]:
+                    _nodes_in_existing_alignment_tree[_token_range[0]: _token_range[1]] = [_node[0]] * (
+                                _token_range[1] - _token_range[0])
+        # print(len(_nodes_in_existing_alignment_tree), _nodes_in_existing_alignment_tree)
+        return lambda x: _nodes_in_existing_alignment_tree[_token_range_mapping[x]]
+
+    map_local_token_to_alignment_tree = create_alignment_tree_to_token_mapping()
 
     _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(),
                                               key=lambda x: (
