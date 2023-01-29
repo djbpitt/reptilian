@@ -125,7 +125,7 @@ def align_two_readings(readings:list):
 
     Returns: Alignment tree (not variant graph)
     """
-    # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
+    # TODO: This is the same method as in the first pass in reptilian-project.py, so fold into main code base
     token_array, token_membership_array, token_witness_offset_array, token_ranges = create_token_array(readings)
     # print(f"{token_array=}")
     # print(f"{token_membership_array=}")
@@ -347,7 +347,7 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
 
     Returns: Alignment tree (not variant graph)
     """
-    # TODO: This is the same method as in the first pass in reptilian.py, so fold into main code base
+    # TODO: This is the same method as in the first pass in reptilian-project.py, so fold into main code base
     _token_array, _token_membership_array, _token_witness_offset_array, _token_ranges = create_token_array(_readings)
 
     new_alignment_tree = create_tree()

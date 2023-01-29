@@ -33,7 +33,7 @@ import json
 import pprint
 pp = pprint.PrettyPrinter(2)
 
-with open("../unaligned_data.json", "r") as f:
+with open("../../reptilian/unaligned_data.json", "r") as f:
     darwin = json.load(f)
 
 for node in darwin:

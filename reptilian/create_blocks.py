@@ -1,6 +1,9 @@
 from dataclasses import dataclass
-from linsuffarr import SuffixArray
-from linsuffarr import UNIT_BYTE
+
+import networkx as nx
+
+from reptilian.linsuffarr import SuffixArray
+from reptilian.linsuffarr import UNIT_BYTE
 from typing import List
 from bisect import bisect_right
 from heapq import *  # priority heap, https://docs.python.org/3/library/heapq.html
@@ -359,3 +362,35 @@ def perform_beam_search(_witness_count, _largest_blocks, _block_offsets_by_witne
     _finished = list(set(_finished))  # TODO: Remove this because we'll sort later?
     _finished.sort(reverse=True, key=lambda f: (sum([_largest_blocks[b][0] for b in f.path]), -1 * len(f.path)))
     return _finished
+
+
+# ===
+# Rewrite beam search
+#
+# 1. Transform list of blocks into graph (possibly with cycles)
+# 2. Perform beam search on graph
+#
+# NB: Can we use the beam search functionality built into networkx?
+
+def map_blocks_to_graph(_blocks:list = []):
+    """Create interim graph structure for beam search over blocks
+
+    Parameter:
+        _blocks: list of lists, sorted by candidates
+            Blocks are tuples with (length, [start positions for all witnesses])
+            When aligning against an alignment tree, the sorted blocks need
+                to be passed in because we can't sort by witness order
+
+    Return:
+        Networkx directed graph, possibly with cycles
+        Nodes are blocks
+        Edges are sequences, weighted by number of witnesses
+            NB: We don't record which witnesses are on each edge (we could label the edges if we care)
+        Serves as input into beam search to find best route between START and END
+        Always connected because all paths pass through at least one block
+    """
+    result = nx.DiGraph()
+    result.add_node(0, label="START")
+    result.add_node(1, label="END")
+    return result
+
