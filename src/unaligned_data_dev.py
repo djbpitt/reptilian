@@ -10,6 +10,7 @@ from scipy.spatial.distance import pdist
 import json
 from collections import deque
 import pprint
+from typing import Callable
 from alignment_tree import * # TODO: Fix indirect import of create_token_array(), find_longest_sequences()
 pp = pprint.PrettyPrinter(2)
 
@@ -329,7 +330,7 @@ def create_alignment_tree_to_token_mapping(_global_token_array_length: int, _exi
     _nodes_in_existing_alignment_tree = [None] * _global_token_array_length
     for _node in _existing_alignment_tree.nodes(data=True):
         if _node[0] > 0:
-            print(_node[0], _node[1]["token_ranges"])
+            # print(_node[0], _node[1]["token_ranges"])
             for _token_range in _node[1]["token_ranges"]:
                 _nodes_in_existing_alignment_tree[_token_range[0]: _token_range[1]] = [_node[0]] * (
                             _token_range[1] - _token_range[0])
@@ -341,7 +342,8 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
     """Fold new reading into existing alignment tree
 
     Input:
-        readings: list of three or more token lists
+        _readings: list of three or more token lists
+        _map_local_token_to_alignment_tree: function
 
     Returns: Alignment tree (not variant graph)
     """
@@ -379,8 +381,8 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
     #     print(_ss)
     #     get_tokens_for_block(_ss, _sa, _token_array)
     # Sort blocks (_longest sequences) in alignment_tree order
-    print("***_longest_sequences***")
-    pp.pprint(_longest_sequences)
+    # print("***_longest_sequences***")
+    # pp.pprint(_longest_sequences)
     # The second value in the block is a position in the token array occupied by a token from one member of the
     #   existing alignment tree. Use that to index into those nodes and it will return a node number.
     # Mind the local to global token position mapping.
@@ -440,7 +442,22 @@ def sort_blocks_by_singleton_order(blocks):
     return sorted(blocks, key=lambda x: (x[1][0], -x[0]))
 
 
-def sort_blocks_by_alignment_tree_order(blocks, _map_local_token_to_alignment_tree):
+def sort_blocks_by_alignment_tree_order(blocks, _map_local_token_to_alignment_tree:Callable[[int], int]):
+    """Returns function to sort alignment tree nodes
+
+    Parameters:
+        blocks : list of two-item tuples (token length, [start offsets for all witnesses])
+        _map_local_token_to_alignment_tree : anonymous function with
+            one argument: token position in local token array as int
+            returns: node identifier in alignment tree as int
+
+    Returns:
+        List of blocks ordered by three factors:
+            Order in alignment tree
+            Singleton order
+            Length of block (we don't care about depth here because we've already accounted for it)
+    # TODO: Replace inner parameters to second argument with type aliases
+    """
     _sorted_blocks_by_alignment_tree = sorted(blocks,
                                               key=lambda x: (
                                                   _map_local_token_to_alignment_tree(x[1][1]),
