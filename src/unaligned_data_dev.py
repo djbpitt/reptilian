@@ -373,7 +373,8 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
     # We favor token count over depth because depth has already been encoded in the existing
     #   alignment tree into which we're merging
     #   We don't replicate the extra step in Java used to break ties
-    _sorted_blocks_by_singleton = sorted(_longest_sequences.values(), key=lambda x: (x[1][0], -x[0]))
+    blocks = _longest_sequences.values()
+    _sorted_blocks_by_singleton = sort_blocks_by_singleton_order(blocks)
     # for _ss in _sorted_sequences:
     #     print(_ss)
     #     get_tokens_for_block(_ss, _sa, _token_array)
@@ -385,7 +386,6 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
     # Mind the local to global token position mapping.
     # Order by position in the alignment tree, if equal, order by position in the singleton,
     #                                                       if equal prefer larger block
-    blocks = _longest_sequences.values()
     _sorted_blocks_by_alignment_tree = sort_blocks_by_alignment_tree_order(blocks, _map_local_token_to_alignment_tree)
     print("***_sorted_blocks_by_alignment_tree***")
     pp.pprint(_sorted_blocks_by_alignment_tree)
@@ -434,6 +434,10 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
                     local_token_membership_array,
                     len(token_ranges))
     return new_alignment_tree
+
+
+def sort_blocks_by_singleton_order(blocks):
+    return sorted(blocks, key=lambda x: (x[1][0], -x[0]))
 
 
 def sort_blocks_by_alignment_tree_order(blocks, _map_local_token_to_alignment_tree):
