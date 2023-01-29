@@ -385,12 +385,8 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
     # Mind the local to global token position mapping.
     # Order by position in the alignment tree, if equal, order by position in the singleton,
     #                                                       if equal prefer larger block
-
-    _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(),
-                                              key=lambda x: (
-                                                  _map_local_token_to_alignment_tree(x[1][1]),
-                                                  x[1][0],
-                                                  -x[0]))
+    blocks = _longest_sequences.values()
+    _sorted_blocks_by_alignment_tree = sort_blocks_by_alignment_tree_order(blocks, _map_local_token_to_alignment_tree)
     print("***_sorted_blocks_by_alignment_tree***")
     pp.pprint(_sorted_blocks_by_alignment_tree)
     print("***_sorted_blocks_by_singleton***")
@@ -438,6 +434,15 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
                     local_token_membership_array,
                     len(token_ranges))
     return new_alignment_tree
+
+
+def sort_blocks_by_alignment_tree_order(blocks, _map_local_token_to_alignment_tree):
+    _sorted_blocks_by_alignment_tree = sorted(blocks,
+                                              key=lambda x: (
+                                                  _map_local_token_to_alignment_tree(x[1][1]),
+                                                  x[1][0],
+                                                  -x[0]))
+    return _sorted_blocks_by_alignment_tree
 
 
 for node in darwin: # Each unaligned zone is its own node
