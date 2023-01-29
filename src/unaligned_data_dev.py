@@ -382,9 +382,13 @@ def add_reading_to_alignment_tree(_readings:list, _token_range_mapping:list, _ex
     # Mind the local to global token position mapping.
     # Order by position in the alignment tree, if equal, order by position in the singleton,
     #                                                       if equal prefer larger block
+
+    def map_local_token_to_alignment_tree(x):
+        return _nodes_in_existing_alignment_tree[_token_range_mapping[x]]
+
     _sorted_blocks_by_alignment_tree = sorted(_longest_sequences.values(),
                                               key=lambda x: (
-                                                  _nodes_in_existing_alignment_tree[_token_range_mapping[x[1][1]]],
+                                                  map_local_token_to_alignment_tree(x[1][1]),
                                                   x[1][0],
                                                   -x[0]))
     print("***_sorted_blocks_by_alignment_tree***")
