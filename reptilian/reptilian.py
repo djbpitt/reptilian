@@ -1,7 +1,9 @@
 import pprint
+from collections import deque
 
 from import_witnesses import import_witnesses
-from alignment_tree import * # TODO: Fix indirect import of create_token_array()
+# from alignment_tree import create_tree, expand_node # FIXME: functions are now in create_blocks.py, so remove
+from create_blocks import create_token_array, create_tree, expand_node
 from visualization import *
 from export import *
 

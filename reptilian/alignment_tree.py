@@ -7,7 +7,7 @@ Node properties:
 """
 import networkx as nx
 from collections import deque
-from create_blocks import *
+# from create_blocks import
 
 
 def create_tree() -> nx.DiGraph:

@@ -11,7 +11,10 @@ import json
 from collections import deque
 import pprint
 from typing import Callable
-from alignment_tree import * # TODO: Fix indirect import of create_token_array(), find_longest_sequences()
+# from alignment_tree import * # TODO: Fix indirect import of create_token_array(), find_longest_sequences()
+from create_blocks import create_token_array, create_tree, expand_node, LcpIntervalCandidate, create_suffix_array, \
+    find_longest_sequences
+from linsuffarr import SuffixArray, UNIT_BYTE
 pp = pprint.PrettyPrinter(2)
 
 # ===
