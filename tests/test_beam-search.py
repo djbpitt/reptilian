@@ -4,6 +4,8 @@ from reptilian import map_blocks_to_graph
 
 def test_map_blocks_to_graph():
     # START, END, 8 in first list, 1 duplicate and 1 new in second
+    # Input is list of exactly two ordered lists: new singleton and existing alignment tree
+    # List items in both cases are blocks (end-position of w0, (tuple of start positions of all witnesses))
     data = [[(36, (0, 113, 229)),
             (1, (38, 152, 268)),
             (25, (41, 153, 269)),
