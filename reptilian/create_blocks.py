@@ -270,8 +270,8 @@ def create_blocks(_suffix_array, _token_membership_array, _witness_count):
                 if check_for_depth_and_repetition(_suffix_array, _token_membership_array, _newly_closed_block,
                                                   _witness_count):
                     _frequent_sequences.append(
-                        [_newly_closed_block.lcp_start_offset, _newly_closed_block.lcp_end_offset,
-                         _newly_closed_block.lcp_interval_token_count])
+                        (_newly_closed_block.lcp_start_offset, _newly_closed_block.lcp_end_offset,
+                         _newly_closed_block.lcp_interval_token_count))
             # There are three options:
             #   1. there is content in the accumulator and latest value is not 0
             #   2. accumulator is empty and latest value is 0
@@ -286,8 +286,8 @@ def create_blocks(_suffix_array, _token_membership_array, _witness_count):
         _newly_closed_block = _accumulator.pop()
         _newly_closed_block.lcp_end_offset = len(_lcp_array) - 1
         if check_for_depth_and_repetition(_suffix_array, _token_membership_array, _newly_closed_block, _witness_count):
-            _frequent_sequences.append([_newly_closed_block.lcp_start_offset, len(_lcp_array) - 1,
-                                        _newly_closed_block.lcp_interval_token_count])
+            _frequent_sequences.append((_newly_closed_block.lcp_start_offset, len(_lcp_array) - 1,
+                                        _newly_closed_block.lcp_interval_token_count))
     return _frequent_sequences
 
 
@@ -303,13 +303,15 @@ def find_longest_sequences(_frequent_sequences, _suffix_array):
     _largest_blocks = {}  # key is token end position, value is (length, [witness-start-positions])
     for _frequent_sequence in _frequent_sequences:
         _length = _frequent_sequence[2]
-        _suffix_array_values = [_suffix_array.SA[i] for i in range(_frequent_sequence[0], _frequent_sequence[1] + 1)]
+        _suffix_array_values = tuple(_suffix_array.SA[i] for i in range(_frequent_sequence[0], _frequent_sequence[1] + 1))
         _token_end_position = min(_suffix_array_values) + _length  # token end position for first witness
         if _token_end_position not in _largest_blocks:  # first block with this end position, so create new key
-            _largest_blocks[_token_end_position] = (_length, sorted(_suffix_array_values))
+            _largest_blocks[_token_end_position] = (_length, tuple(sorted(_suffix_array_values)))
         else:  # if new block is longer, replace old one with same key
             if _length > _largest_blocks[_token_end_position][0]:
-                _largest_blocks[_token_end_position] = (_length, sorted(_suffix_array_values))
+                _largest_blocks[_token_end_position] = (_length, tuple(sorted(_suffix_array_values)))
+    print(f"{_frequent_sequences=}")
+    print(f"{_largest_blocks=}")
     return _largest_blocks
 
 

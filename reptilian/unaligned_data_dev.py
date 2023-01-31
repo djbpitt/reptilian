@@ -261,8 +261,8 @@ def create_blocks_for_witness_and_alignment_tree(_suffix_array: SuffixArray, _to
                 _newly_closed_block.lcp_end_offset = _offset - 1
                 if check_for_block_contains_witness_and_repetition(_suffix_array, _token_membership_array, _newly_closed_block):
                     _frequent_sequences.append(
-                        [_newly_closed_block.lcp_start_offset, _newly_closed_block.lcp_end_offset,
-                         _newly_closed_block.lcp_interval_token_count])
+                        (_newly_closed_block.lcp_start_offset, _newly_closed_block.lcp_end_offset,
+                         _newly_closed_block.lcp_interval_token_count))
             # There are three options:
             #   1. there is content in the accumulator and latest value is not 0
             #   2. accumulator is empty and latest value is 0
@@ -277,8 +277,9 @@ def create_blocks_for_witness_and_alignment_tree(_suffix_array: SuffixArray, _to
         _newly_closed_block = _accumulator.pop()
         _newly_closed_block.lcp_end_offset = len(_lcp_array) - 1
         if check_for_block_contains_witness_and_repetition(_suffix_array, _token_membership_array, _newly_closed_block):
-            _frequent_sequences.append([_newly_closed_block.lcp_start_offset, len(_lcp_array) - 1,
-                                        _newly_closed_block.lcp_interval_token_count])
+            _frequent_sequences.append((_newly_closed_block.lcp_start_offset, len(_lcp_array) - 1,
+                                        _newly_closed_block.lcp_interval_token_count))
+    # print(_frequent_sequences)
     return _frequent_sequences
 
 
@@ -374,6 +375,7 @@ def add_reading_to_alignment_tree(_readings:list, _map_local_token_to_alignment_
     #   value: tuple of length (int) and start positions in each witness (list of ints)
     #       To examine tokens we need the start position for just the first witness plus the length
     _longest_sequences = find_longest_sequences(_frequent_sequences, _sa)
+    # print(_longest_sequences)
     # Sort by order of new witness, breaking ties with total tokens that would be aligned
     # We favor token count over depth because depth has already been encoded in the existing
     #   alignment tree into which we're merging
